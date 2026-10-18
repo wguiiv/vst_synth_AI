@@ -31,11 +31,11 @@ if (APPLE)
 endif()
 
 juce_add_plugin (tapSynth
-    PRODUCT_NAME "tapSynth"
+    PRODUCT_NAME "tapSynth2"
     COMPANY_NAME "tapSynth"
-    BUNDLE_ID "com.tapsynth.tapSynth"
-    PLUGIN_MANUFACTURER_CODE Manu
-    PLUGIN_CODE Cnks
+    BUNDLE_ID "com.tapsynth.tapSynth2"
+    PLUGIN_MANUFACTURER_CODE Tpsy
+    PLUGIN_CODE Tsy2
     FORMATS ${TAPSYNTH_FORMATS}
     IS_SYNTH TRUE
     NEEDS_MIDI_INPUT TRUE
