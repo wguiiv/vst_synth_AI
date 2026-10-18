@@ -3,6 +3,9 @@ cmake_minimum_required (VERSION 3.22)
 # Must be set before project() to take effect on macOS
 set (CMAKE_OSX_DEPLOYMENT_TARGET "10.13" CACHE STRING "Minimum macOS version")
 
+# Link the MSVC runtime statically so the plugin loads on machines without the VC++ redistributable
+set (CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+
 project (tapSynth VERSION 1.0.0 LANGUAGES C CXX)
 
 set (CMAKE_CXX_STANDARD 17)
