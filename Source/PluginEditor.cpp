@@ -260,7 +260,8 @@ void TapSynthAudioProcessorEditor::applyAiPatch (const juce::var& params, const 
 // sendPrompt implementation
 void TapSynthAudioProcessorEditor::sendPrompt (const juce::String& promptText)
 {
-    const juce::String apiKey   = "";
+    // Read from the environment so a real key never lives in the source tree
+    const juce::String apiKey   = juce::SystemStats::getEnvironmentVariable ("GEMINI_API_KEY", {}).trim();
     const juce::String modelId  = "gemini-flash-latest"; // HERE HERE HERE "gemini-2.5-flash" if things go bad
     const juce::String endpoint =
         "https://generativelanguage.googleapis.com/v1beta/models/"
@@ -269,7 +270,7 @@ void TapSynthAudioProcessorEditor::sendPrompt (const juce::String& promptText)
 
     if (apiKey.isEmpty())
     {
-        promptBar.showError (Tap::utf8 ("Chave da API não configurada"));
+        promptBar.showError (Tap::utf8 ("Defina GEMINI_API_KEY"));
         return;
     }
 

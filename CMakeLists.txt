@@ -90,3 +90,11 @@ target_link_libraries (tapSynth
     PUBLIC
         juce::juce_recommended_config_flags
         juce::juce_recommended_lto_flags)
+
+# Automated audio tests (GoogleTest). Off with -DTAPSYNTH_BUILD_TESTS=OFF.
+option (TAPSYNTH_BUILD_TESTS "Build the tapSynth_tests executable" ON)
+
+if (TAPSYNTH_BUILD_TESTS)
+    enable_testing()
+    add_subdirectory (tests)
+endif()
