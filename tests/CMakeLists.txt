@@ -34,4 +34,5 @@ target_compile_options (tapSynth_tests PRIVATE
 target_link_libraries (tapSynth_tests PRIVATE tapSynth GTest::gtest)
 
 include (GoogleTest)
-gtest_discover_tests (tapSynth_tests DISCOVERY_TIMEOUT 60 PROPERTIES TIMEOUT 600)
+# NO_PRETTY_VALUES keeps CTest names stable: the parameter structs would otherwise be printed as raw bytes, pointers included
+gtest_discover_tests (tapSynth_tests NO_PRETTY_VALUES DISCOVERY_TIMEOUT 60 PROPERTIES TIMEOUT 600)
