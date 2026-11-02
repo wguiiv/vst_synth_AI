@@ -23,6 +23,8 @@ New source files must be added to `target_sources` in `CMakeLists.txt`. `JuceHea
 
 Tests: `tests/` builds the `tapSynth_tests` executable (GoogleTest, fetched at configure time; disable with `-DTAPSYNTH_BUILD_TESTS=OFF`). It links the plugin's shared-code library (the `tapSynth` target) and borrows its include paths and definitions, so the JUCE modules are not compiled twice. Run with `cmake --build build --target tapSynth_tests && ctest --test-dir build`. There is no lint configuration.
 
+Test layout: `tests/common/` has `render()` (real processor, MIDI notes, optional JSON patch through `applyParametersFromJson`), the audio measurements (`Analysis.h`), the tolerances and grids (`Tolerances.h`), and `within()` (`Check.h`), which records each measured value in the XML report as `<tolerance>|<label>` and asserts the default. Suites, one per strategy: `Sanity*`, `Spectral*`, `Temporal*`, `Golden*`; `AnalysisSelfTest` checks the measurements on synthetic signals and is not a strategy. Golden references are 32-bit float WAVs in `tests/references/`, recorded with `TAPSYNTH_RECORD_GOLDEN=1 tapSynth_tests --gtest_filter='*Golden*'`. `tapSynth_tests --tapsynth-list-tolerances` prints every tolerance and grid as JSON.
+
 Local tools (ignored by git, in `tools/`): `tools/pluginval/pluginval` (v1.0.4), Mull 0.36 for LLVM 19 extracted to `tools/mull/usr/bin/` (`mull-runner-19`), and a JUCE 8.0.9 clone in `tools/JUCE` for builds with `-DTAPSYNTH_JUCE_DIR`.
 
 ## Architecture

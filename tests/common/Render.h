@@ -24,6 +24,9 @@ namespace tapsynth::test
         // Parameter ID -> value in the parameter's own units (Hz, dB, choice index...)
         std::map<juce::String, float> params;
 
+        // Optional JSON object applied after `params` through applyParametersFromJson, the path AI responses use
+        juce::var jsonPatch;
+
         std::vector<Note> notes { Note {} };
     };
 

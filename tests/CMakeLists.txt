@@ -11,8 +11,14 @@ FetchContent_MakeAvailable (googletest)
 
 add_executable (tapSynth_tests
     main.cpp
+    common/Analysis.cpp
+    common/Check.cpp
     common/Render.cpp
-    smoke/SmokeTest.cpp)
+    analysis/AnalysisTest.cpp
+    sanity/SanityTest.cpp
+    spectral/SpectralTest.cpp
+    temporal/TemporalTest.cpp
+    golden/GoldenTest.cpp)
 
 # The JUCE modules are linked PRIVATE into tapSynth, so reuse its include paths and definitions
 # (JuceHeader.h, module headers, JucePlugin_* macros) instead of compiling the modules a second time
@@ -20,11 +26,12 @@ target_include_directories (tapSynth_tests PRIVATE
     "${PROJECT_SOURCE_DIR}/Source"
     $<TARGET_PROPERTY:tapSynth,INCLUDE_DIRECTORIES>)
 target_compile_definitions (tapSynth_tests PRIVATE
-    $<TARGET_PROPERTY:tapSynth,COMPILE_DEFINITIONS>)
+    $<TARGET_PROPERTY:tapSynth,COMPILE_DEFINITIONS>
+    TAPSYNTH_REFERENCES_DIR="${CMAKE_CURRENT_SOURCE_DIR}/references")
 target_compile_options (tapSynth_tests PRIVATE
     $<TARGET_PROPERTY:tapSynth,COMPILE_OPTIONS>)
 
 target_link_libraries (tapSynth_tests PRIVATE tapSynth GTest::gtest)
 
 include (GoogleTest)
-gtest_discover_tests (tapSynth_tests DISCOVERY_TIMEOUT 60)
+gtest_discover_tests (tapSynth_tests DISCOVERY_TIMEOUT 60 PROPERTIES TIMEOUT 600)

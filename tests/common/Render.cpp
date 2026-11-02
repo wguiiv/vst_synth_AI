@@ -17,6 +17,9 @@ namespace tapsynth::test
                 param->setValueNotifyingHost (param->convertTo0to1 (value));
         }
 
+        if (! spec.jsonPatch.isVoid())
+            processor.applyParametersFromJson (spec.jsonPatch);
+
         processor.prepareToPlay (spec.sampleRate, spec.blockSize);
 
         const auto totalSamples = (int) std::lround (spec.lengthSeconds * spec.sampleRate);
