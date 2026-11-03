@@ -64,7 +64,7 @@ Cada verificação com tolerância grava o valor medido no relatório XML do Goo
 1. Uma tolerância por vez percorre sua grade; as demais ficam no valor padrão.
 2. Num ponto da grade, um teste falha se algum valor gravado para aquela tolerância viola o ponto, ou se o teste falhou por um motivo que não é uma tolerância.
 3. "Motivo que não é uma tolerância": o teste falhou no padrão, mas nenhum valor gravado viola o padrão (por exemplo, asserção sem tolerância, travamento, tempo esgotado). Esse teste conta como falha em todos os pontos da grade.
-4. Valores `nan` ou `inf` violam qualquer ponto da grade.
+4. Valores `nan` violam qualquer ponto da grade. Valores `inf` são comparados como na própria asserção do teste: falham num limite "no máximo" e passam num limite "no mínimo".
 5. As tolerâncias com grade de um único valor (as de sanidade) não variam.
 
 Para cada abordagem e cada ponto da grade, calcula-se a taxa de detecção nos defeitos e mutantes e o número de alarmes falsos nas condições inofensivas.
@@ -110,3 +110,7 @@ Os relatórios XML brutos ficam em `experiment/results/raw/`, um diretório por 
 
 - Os defeitos foram criados por um agente de IA sem acesso aos testes, e não pelo colega previsto no plano. Os patches seguem o guia em `experiment/GUIA_DEFEITOS.pdf` e foram revisados pelo autor do estudo.
 - São 11 defeitos e 4 refatorações inofensivas.
+
+### Emendas antes da primeira execução
+
+- 2026-11-03, regra 6.4: a versão anterior dizia que `inf` viola qualquer ponto da grade. Uma atenuação de `inf` dB é um resultado válido para um limite "no mínimo" e passa na asserção do teste, então a regra faria o código limpo falhar na varredura. Corrigido antes de qualquer execução.
