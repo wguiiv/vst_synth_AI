@@ -1,0 +1,20 @@
+# id: F06
+# category: numerico
+# origin: projeto
+# target: Source/PluginProcessor.cpp
+# source: https://github.com/asb2m10/dexed/commit/a428fe8a51edc23cca33ac42b410a9c470031576
+# original-fix: O Dexed calculava números denormais muito abaixo do audível depois do note-off, o que aumentava o uso de CPU; a correção adicionou juce::ScopedNoDenormals no início de processBlock.
+# adaptation: Remove o juce::ScopedNoDenormals de TapSynthAudioProcessor::processBlock, então as caudas do filtro, do ADSR e do reverb passam a gerar denormais.
+
+diff --git a/Source/PluginProcessor.cpp b/Source/PluginProcessor.cpp
+index 8e1d8be..3ff4a6c 100644
+--- a/Source/PluginProcessor.cpp
++++ b/Source/PluginProcessor.cpp
+@@ -153,7 +153,6 @@ bool TapSynthAudioProcessor::isBusesLayoutSupported (const BusesLayout& layouts)
+ 
+ void TapSynthAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce::MidiBuffer& midiMessages)
+ {
+-    juce::ScopedNoDenormals noDenormals;
+     auto totalNumInputChannels  = getTotalNumInputChannels();
+     auto totalNumOutputChannels = getTotalNumOutputChannels();
+ 

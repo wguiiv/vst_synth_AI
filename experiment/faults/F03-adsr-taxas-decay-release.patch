@@ -1,0 +1,23 @@
+# id: F03
+# category: envelope
+# origin: juce
+# target: modules/juce_audio_basics/utilities/juce_ADSR.h
+# source: https://github.com/juce-framework/JUCE/commit/088dd14037cb571ba4f08dcf0fd05a1c754ade68
+# original-fix: ADSR::calculateRates() calculava as taxas de decay e release como se as duas fases percorressem a escala inteira (1,0), em vez de (1 − sustain) e sustain; a correção passou a usar a distância real de cada fase.
+# adaptation: Em recalculateRates() do JUCE 8.0.9, as distâncias do decay e do release voltam a ser 1,0, então as duas fases terminam antes do tempo configurado.
+
+diff --git a/modules/juce_audio_basics/utilities/juce_ADSR.h b/modules/juce_audio_basics/utilities/juce_ADSR.h
+index 11efa2e..625f1dc 100644
+--- a/modules/juce_audio_basics/utilities/juce_ADSR.h
++++ b/modules/juce_audio_basics/utilities/juce_ADSR.h
+@@ -267,8 +267,8 @@ private:
+         };
+ 
+         attackRate  = getRate (1.0f, parameters.attack, sampleRate);
+-        decayRate   = getRate (1.0f - parameters.sustain, parameters.decay, sampleRate);
+-        releaseRate = getRate (parameters.sustain, parameters.release, sampleRate);
++        decayRate   = getRate (1.0f, parameters.decay, sampleRate);
++        releaseRate = getRate (1.0f, parameters.release, sampleRate);
+ 
+         if ((state == State::attack && attackRate <= 0.0f)
+             || (state == State::decay && (decayRate <= 0.0f || envelopeVal <= parameters.sustain))

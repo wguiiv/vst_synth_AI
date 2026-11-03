@@ -1,0 +1,24 @@
+# id: H03
+# kind: refatoracao
+# origin: projeto
+# target: Source/SynthVoice.cpp
+# description: Em SynthVoice::updateModParams, calcula o cutoff limitado uma vez antes do laço dos canais, em vez de repetir o jlimit em cada iteração. Os operandos não mudam dentro do laço, então cada filtro recebe o mesmo valor que antes.
+
+diff --git a/Source/SynthVoice.cpp b/Source/SynthVoice.cpp
+index e7dadb0..b794d5a 100644
+--- a/Source/SynthVoice.cpp
++++ b/Source/SynthVoice.cpp
+@@ -130,9 +130,12 @@ void SynthVoice::updateModParams (const int filterType, const float filterCutoff
+     filterAdsrDepth = adsrDepth;
+     lfoDepth = lfoDepthAmount;
+ 
++    const auto maxCutoff = juce::jmin (20000.0f, (float) currentSampleRate * 0.49f);
++    const auto clampedCutoff = juce::jlimit (20.0f, maxCutoff, filterCutoff);
++
+     for (int ch = 0; ch < numChannelsToProcess; ++ch)
+     {
+-        filter[ch].setParams (filterType, juce::jlimit (20.0f, juce::jmin (20000.0f, (float) currentSampleRate * 0.49f), filterCutoff), filterResonance);
++        filter[ch].setParams (filterType, clampedCutoff, filterResonance);
+         lfo[ch].setFrequency (lfoFreq);
+     }
+ }

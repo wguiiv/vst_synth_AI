@@ -1,0 +1,22 @@
+# id: F11
+# category: numerico
+# origin: projeto
+# target: Source/Data/MeterData.cpp
+# source: https://github.com/diamondjirapat/LufsNormalizer/commit/8d38625b518ebf3c642c07904a68deadeebdbac9
+# original-fix: AutoGain::processBlock do LufsNormalizer (JUCE) dividia por zero no cálculo do RMS quando o buffer vinha vazio; a correção adicionou um retorno antecipado se numChannels ou numSamples for 0.
+# adaptation: Remove o retorno antecipado de MeterData::process. Com um bloco de 0 amostras, sum / numSamples vira 0/0 = NaN e contamina a média quadrática do medidor; com 0 canais, o índice do canal fica negativo.
+
+diff --git a/Source/Data/MeterData.cpp b/Source/Data/MeterData.cpp
+index ffd10a7..23f459d 100644
+--- a/Source/Data/MeterData.cpp
++++ b/Source/Data/MeterData.cpp
+@@ -27,9 +27,6 @@ void MeterData::process (const juce::AudioBuffer<float>& buffer)
+     const auto numSamples = buffer.getNumSamples();
+     const auto numChannels = buffer.getNumChannels();
+ 
+-    if (numSamples == 0 || numChannels == 0)
+-        return;
+-
+     // One-pole smoothing of the mean square, so the RMS reads over a fixed time window whatever the block size
+     const auto coeff = (float) (1.0 - std::exp (-numSamples / (rmsWindowSeconds * sampleRate)));
+ 

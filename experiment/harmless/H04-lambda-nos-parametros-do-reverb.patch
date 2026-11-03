@@ -1,0 +1,31 @@
+# id: H04
+# kind: refatoracao
+# origin: projeto
+# target: Source/PluginProcessor.cpp
+# description: Em setReverbParams, as seis leituras de *apvts.getRawParameterValue (...) passam por uma lambda local rawValue. Desreferenciar o std::atomic<float> já fazia um load() sequencialmente consistente, que é o mesmo load() que a lambda chama, e os IDs e a ordem das atribuições não mudam.
+
+diff --git a/Source/PluginProcessor.cpp b/Source/PluginProcessor.cpp
+index 8e1d8be..db34c22 100644
+--- a/Source/PluginProcessor.cpp
++++ b/Source/PluginProcessor.cpp
+@@ -330,12 +330,14 @@ void TapSynthAudioProcessor::setFilterParams()
+ 
+ void TapSynthAudioProcessor::setReverbParams()
+ {
+-    reverbParams.roomSize = *apvts.getRawParameterValue ("REVERBSIZE");
+-    reverbParams.width = *apvts.getRawParameterValue ("REVERBWIDTH");
+-    reverbParams.damping = *apvts.getRawParameterValue ("REVERBDAMPING");
+-    reverbParams.dryLevel = *apvts.getRawParameterValue ("REVERBDRY");
+-    reverbParams.wetLevel = *apvts.getRawParameterValue ("REVERBWET");
+-    reverbParams.freezeMode = *apvts.getRawParameterValue ("REVERBFREEZE");
++    const auto rawValue = [this] (const char* parameterID) { return apvts.getRawParameterValue (parameterID)->load(); };
++
++    reverbParams.roomSize = rawValue ("REVERBSIZE");
++    reverbParams.width = rawValue ("REVERBWIDTH");
++    reverbParams.damping = rawValue ("REVERBDAMPING");
++    reverbParams.dryLevel = rawValue ("REVERBDRY");
++    reverbParams.wetLevel = rawValue ("REVERBWET");
++    reverbParams.freezeMode = rawValue ("REVERBFREEZE");
+     
+     reverb.setParameters (reverbParams);
+ }

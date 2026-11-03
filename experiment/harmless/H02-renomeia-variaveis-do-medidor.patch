@@ -1,0 +1,41 @@
+# id: H02
+# kind: refatoracao
+# origin: projeto
+# target: Source/Data/MeterData.cpp
+# description: Renomeia as variáveis locais de MeterData::process (output → samples, sum → sumOfSquares, max → blockPeak) para descrever melhor o que guardam e não usar o nome max. Só os nomes mudam; as operações, os tipos e a ordem são os mesmos.
+
+diff --git a/Source/Data/MeterData.cpp b/Source/Data/MeterData.cpp
+index ffd10a7..9e59fa6 100644
+--- a/Source/Data/MeterData.cpp
++++ b/Source/Data/MeterData.cpp
+@@ -36,23 +36,23 @@ void MeterData::process (const juce::AudioBuffer<float>& buffer)
+     for (int ch = 0; ch < maxChannels; ++ch)
+     {
+         // A mono output feeds both meter channels
+-        auto output = buffer.getReadPointer (juce::jmin (ch, numChannels - 1));
+-        float sum = 0.0f;
+-        float max = 0.0f;
++        auto samples = buffer.getReadPointer (juce::jmin (ch, numChannels - 1));
++        float sumOfSquares = 0.0f;
++        float blockPeak = 0.0f;
+ 
+         for (int s = 0; s < numSamples; ++s)
+         {
+-            sum += output[s] * output[s];
+-            max = juce::jmax (max, std::abs (output[s]));
++            sumOfSquares += samples[s] * samples[s];
++            blockPeak = juce::jmax (blockPeak, std::abs (samples[s]));
+         }
+ 
+         auto& ms = meanSquare[(size_t) ch];
+-        ms += coeff * (sum / (float) numSamples - ms);
++        ms += coeff * (sumOfSquares / (float) numSamples - ms);
+         rms[(size_t) ch].store (std::sqrt (ms));
+ 
+         // Keep the highest peak until the editor takes it
+         auto& p = peak[(size_t) ch];
+         auto current = p.load();
+-        while (max > current && ! p.compare_exchange_weak (current, max)) {}
++        while (blockPeak > current && ! p.compare_exchange_weak (current, blockPeak)) {}
+     }
+ }
