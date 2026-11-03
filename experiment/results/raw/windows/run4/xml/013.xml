@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.028" timestamp="2026-11-03T01:03:21.232" name="AllTests">
+  <testsuite name="TemporalVoices" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.028" timestamp="2026-11-03T01:03:21.232">
+    <testcase name="ReleasingOneNoteLeavesTheOtherUntouched" file="D:\a\vst_synth_AI\vst_synth_AI\frozen\tests\temporal\TemporalTest.cpp" line="169" status="run" result="completed" time="0.028" timestamp="2026-11-03T01:03:21.232" classname="TemporalVoices">
+      <properties>
+        <property name="temporal.sustain|heldNote" value="1.7301798e-07"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

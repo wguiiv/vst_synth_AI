@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.019" timestamp="2026-11-03T00:59:45.504" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.019" timestamp="2026-11-03T00:59:45.504">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Quiet" value_param="112-byte object &lt;51-75 69-65 74-00 00-00 08-00 00-00 00-00 00-00 13-00 00-00 00-00 00-05 00-00 00-00 00-70 E7-40 00-02 00-00 00-00 00-00 00-00 00-00 00-00 F0-3F 00-C3 01-19 08-00 00-00 00-C3 01-19 08-00 00-00 02-00 00-00 00-00 00-00 80-AA 69-02 01-00 00-00 20-D2 B8-6D 01-00 00-00 60-40 C4-18 08-00 00-00 78-40 C4-18 08-00 00-00 78-40 C4-18 08-00 00-00&gt;" file="/Users/runner/work/vst_synth_AI/vst_synth_AI/frozen/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.019" timestamp="2026-11-03T00:59:45.504" classname="Configs/Sanity">
+      <properties>
+        <property name="sanity.peak|Quiet/ch0" value="0.00279186084"/>
+        <property name="sanity.audible|Quiet/ch0" value="0.00279186084"/>
+        <property name="sanity.dc|Quiet/ch0" value="1.68917336e-09"/>
+        <property name="sanity.peak|Quiet/ch1" value="0.00279186084"/>
+        <property name="sanity.audible|Quiet/ch1" value="0.00279186084"/>
+        <property name="sanity.dc|Quiet/ch1" value="1.68917336e-09"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

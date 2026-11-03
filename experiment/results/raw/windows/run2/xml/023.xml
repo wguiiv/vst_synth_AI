@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.01" timestamp="2026-11-03T01:02:35.206" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.01" timestamp="2026-11-03T01:02:35.206">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Lfo" value_param="112-byte object &lt;4C-66 6F-00 00-00 00-00 00-00 00-00 00-00 00-00 03-00 00-00 00-00 00-00 0F-00 00-00 00-00 00-00 00-00 00-00 00-70 E7-40 00-02 00-00 00-00 00-00 00-00 00-00 00-00 F0-3F 00-39 16-AD 62-02 00-00 05-00 00-00 00-00 00-00 F0-3F 99-0E F7-7F 00-00 00-00 00-00 00-00 00-00 60-90 15-AD 62-02 00-00 78-90 15-AD 62-02 00-00 78-90 15-AD 62-02 00-00&gt;" file="D:\a\vst_synth_AI\vst_synth_AI\frozen\tests\sanity\SanityTest.cpp" line="114" status="run" result="completed" time="0.009" timestamp="2026-11-03T01:02:35.206" classname="Configs/Sanity">
+      <properties>
+        <property name="sanity.peak|Lfo/ch0" value="0.147184953"/>
+        <property name="sanity.audible|Lfo/ch0" value="0.147183299"/>
+        <property name="sanity.dc|Lfo/ch0" value="0.000105995081"/>
+        <property name="sanity.peak|Lfo/ch1" value="0.147184953"/>
+        <property name="sanity.audible|Lfo/ch1" value="0.147183299"/>
+        <property name="sanity.dc|Lfo/ch1" value="0.000105995081"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

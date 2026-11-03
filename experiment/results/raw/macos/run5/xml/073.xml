@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.035" timestamp="2026-11-03T01:00:33.899" name="AllTests">
+  <testsuite name="Configs/Golden" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.035" timestamp="2026-11-03T01:00:33.899">
+    <testcase name="MatchesReference/Fm" value_param="72-byte object &lt;46-6D 00-6B 01-00 00-00 90-98 63-6B 01-00 00-00 1E-00 00-00 00-00 00-02 70-1A 01-73 0B-00 00-00 40-1A 01-73 0B-00 00-00 04-00 00-00 00-00 00-00 C0-34 C0-72 0B-00 00-00 D8-34 C0-72 0B-00 00-00 D8-34 C0-72 0B-00 00-00&gt;" file="/Users/runner/work/vst_synth_AI/vst_synth_AI/frozen/tests/golden/GoldenTest.cpp" line="67" status="run" result="completed" time="0.035" timestamp="2026-11-03T01:00:33.899" classname="Configs/Golden">
+      <properties>
+        <property name="golden.maxAbsDiff|Fm" value="3.42726707e-07"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

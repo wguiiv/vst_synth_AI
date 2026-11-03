@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.012" timestamp="2026-11-03T01:03:48.671" name="AllTests">
+  <testsuite name="Configs/Golden" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.012" timestamp="2026-11-03T01:03:48.671">
+    <testcase name="MatchesReference/BandPass" value_param="72-byte object &lt;42-61 6E-64 50-61 73-73 00-00 00-00 00-00 00-00 08-00 00-00 00-00 00-00 0F-00 00-00 00-00 00-00 E0-5C C4-18 A9-01 00-00 06-00 00-00 00-00 00-00 00-4B C3-18 A9-01 00-00 18-4B C3-18 A9-01 00-00 18-4B C3-18 A9-01 00-00&gt;" file="D:\a\vst_synth_AI\vst_synth_AI\frozen\tests\golden\GoldenTest.cpp" line="67" status="run" result="completed" time="0.012" timestamp="2026-11-03T01:03:48.671" classname="Configs/Golden">
+      <properties>
+        <property name="golden.maxAbsDiff|BandPass" value="0"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>
