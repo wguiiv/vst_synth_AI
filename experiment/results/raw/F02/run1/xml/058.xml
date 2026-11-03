@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.241" timestamp="2026-11-03T00:54:15.795" name="AllTests">
+  <testsuite name="Rates/SpectralFilter" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.241" timestamp="2026-11-03T00:54:15.795">
+    <testcase name="BandPassPeaksAtCutoff/96000" value_param="96000" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp" line="184" status="run" result="completed" time="0.24" timestamp="2026-11-03T00:54:15.795" classname="Rates/SpectralFilter">
+      <properties>
+        <property name="spectral.stopband|c500/below" value="36.2084183"/>
+        <property name="spectral.stopband|c500/above" value="38.2318341"/>
+        <property name="spectral.stopband|c1000/below" value="41.4774774"/>
+        <property name="spectral.stopband|c1000/above" value="40.2021"/>
+        <property name="spectral.stopband|c2000/below" value="42.8278003"/>
+        <property name="spectral.stopband|c2000/above" value="44.7059222"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

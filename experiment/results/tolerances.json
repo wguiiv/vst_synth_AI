@@ -1,0 +1,150 @@
+[
+ {
+  "name": "sanity.peak",
+  "unit": "linear",
+  "bound": "atMost",
+  "value": 1.0,
+  "grid": [
+   1.0
+  ]
+ },
+ {
+  "name": "sanity.peakRandom",
+  "unit": "linear",
+  "bound": "atMost",
+  "value": 4.0,
+  "grid": [
+   4.0
+  ]
+ },
+ {
+  "name": "sanity.audible",
+  "unit": "linear",
+  "bound": "atLeast",
+  "value": 0.001,
+  "grid": [
+   0.001
+  ]
+ },
+ {
+  "name": "sanity.dc",
+  "unit": "linear",
+  "bound": "atMost",
+  "value": 0.01,
+  "grid": [
+   0.01
+  ]
+ },
+ {
+  "name": "sanity.dcRandom",
+  "unit": "linear",
+  "bound": "atMost",
+  "value": 0.05,
+  "grid": [
+   0.05
+  ]
+ },
+ {
+  "name": "spectral.pitch",
+  "unit": "cents",
+  "bound": "atMost",
+  "value": 5.0,
+  "grid": [
+   1.0,
+   2.0,
+   5.0,
+   10.0,
+   25.0,
+   50.0
+  ]
+ },
+ {
+  "name": "spectral.stopband",
+  "unit": "dB",
+  "bound": "atLeast",
+  "value": 18.0,
+  "grid": [
+   24.0,
+   18.0,
+   12.0,
+   6.0
+  ]
+ },
+ {
+  "name": "spectral.passband",
+  "unit": "dB",
+  "bound": "atMost",
+  "value": 1.0,
+  "grid": [
+   0.25,
+   0.5,
+   1.0,
+   3.0
+  ]
+ },
+ {
+  "name": "spectral.aliasing",
+  "unit": "dB",
+  "bound": "atMost",
+  "value": 3.0,
+  "grid": [
+   1.0,
+   3.0,
+   6.0,
+   10.0
+  ]
+ },
+ {
+  "name": "temporal.time",
+  "unit": "s",
+  "bound": "atMost",
+  "value": 0.01,
+  "grid": [
+   0.002,
+   0.005,
+   0.01,
+   0.02,
+   0.05
+  ]
+ },
+ {
+  "name": "temporal.release",
+  "unit": "s",
+  "bound": "atMost",
+  "value": 0.02,
+  "grid": [
+   0.005,
+   0.01,
+   0.02,
+   0.05,
+   0.1
+  ]
+ },
+ {
+  "name": "temporal.sustain",
+  "unit": "dB",
+  "bound": "atMost",
+  "value": 0.5,
+  "grid": [
+   0.1,
+   0.25,
+   0.5,
+   1.0,
+   3.0
+  ]
+ },
+ {
+  "name": "golden.maxAbsDiff",
+  "unit": "linear",
+  "bound": "atMost",
+  "value": 0.0001,
+  "grid": [
+   0.0,
+   1e-06,
+   1e-05,
+   0.0001,
+   0.001,
+   0.01
+  ]
+ }
+]

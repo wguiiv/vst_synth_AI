@@ -1,0 +1,15 @@
+{
+ "id": "H01",
+ "kind": "inofensiva",
+ "config": "release",
+ "patch": "/home/guiz/vst_synth_AI/experiment/harmless/H01-extrai-nota-para-frequencia.patch",
+ "origin": "projeto",
+ "category": "",
+ "run": 1,
+ "started": "2026-11-03T01:18:19",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 88.35832262039185,
+ "finished": "2026-11-03T01:19:59"
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.007" timestamp="2026-11-03T00:54:16.148" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.007" timestamp="2026-11-03T00:54:16.148">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Lfo" value_param="144-byte object &lt;40-18 E8-FD 70-55 00-00 03-00 00-00 00-00 00-00 4C-66 6F-00 65-72 45-6E 76-65 6C-6F 70-65 00-00 00-00 00-00 00-70 E7-40 00-02 00-00 70-55 00-00 00-00 00-00 00-00 F0-3F 00-00 00-00 70-55 00-00 ... 70-F3 E7-FD 70-55 00-00 E0-88 E7-FD 70-55 00-00 05-00 00-00 00-00 00-00 A0-F9 12-D0 70-55 00-00 00-00 00-00 00-00 00-00 E0-62 E5-FD 70-55 00-00 F8-62 E5-FD 70-55 00-00 F8-62 E5-FD 70-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.007" timestamp="2026-11-03T00:54:16.148" classname="Configs/Sanity">
+      <properties>
+        <property name="sanity.peak|Lfo/ch0" value="0.154902965"/>
+        <property name="sanity.audible|Lfo/ch0" value="0.154902965"/>
+        <property name="sanity.dc|Lfo/ch0" value="0.000672225724"/>
+        <property name="sanity.peak|Lfo/ch1" value="0.0983507484"/>
+        <property name="sanity.audible|Lfo/ch1" value="0.0983507484"/>
+        <property name="sanity.dc|Lfo/ch1" value="0.000616614183"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

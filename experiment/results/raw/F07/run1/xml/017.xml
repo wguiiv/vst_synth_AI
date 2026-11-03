@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.011" timestamp="2026-11-03T01:06:27.390" name="AllTests">
+  <testsuite name="Configs/Golden" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.011" timestamp="2026-11-03T01:06:27.390">
+    <testcase name="MatchesReference/Saw" value_param="104-byte object &lt;D0-54 71-4B 2D-56 00-00 03-00 00-00 00-00 00-00 53-61 77-00 75-6C 74-00 6F-6C 64-65 6E-2E 4D-61 74-63 68-65 73-52 65-66 00-00 00-00 63-65 2F-53 20-7E 71-4B 2D-56 00-00 60-7E 71-4B 2D-56 00-00 A0-7E 71-4B 2D-56 00-00 03-00 00-00 00-00 00-00 10-CA 6E-4B 2D-56 00-00 28-CA 6E-4B 2D-56 00-00 28-CA 6E-4B 2D-56 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/golden/GoldenTest.cpp" line="67" status="run" result="completed" time="0.011" timestamp="2026-11-03T01:06:27.390" classname="Configs/Golden">
+      <properties>
+        <property name="golden.maxAbsDiff|Saw" value="0"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

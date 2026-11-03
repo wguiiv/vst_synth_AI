@@ -1,0 +1,42 @@
+[0/2] Re-checking globbed directories...
+[1/36] Building CXX object CMakeFiles/tapSynth.dir/Source/SynthVoice.cpp.o
+[2/36] Building CXX object CMakeFiles/tapSynth.dir/Source/PluginProcessor.cpp.o
+[3/36] Building CXX object CMakeFiles/tapSynth.dir/Source/PluginEditor.cpp.o
+[4/36] Building CXX object CMakeFiles/tapSynth.dir/Source/Data/AdsrData.cpp.o
+[5/36] Building CXX object CMakeFiles/tapSynth.dir/Source/Data/FilterData.cpp.o
+[6/36] Building CXX object CMakeFiles/tapSynth.dir/Source/Data/MeterData.cpp.o
+[7/36] Building CXX object CMakeFiles/tapSynth.dir/Source/Data/OscData.cpp.o
+[8/36] Building CXX object CMakeFiles/tapSynth.dir/Source/UI/AdsrComponent.cpp.o
+[9/36] Building CXX object CMakeFiles/tapSynth.dir/Source/UI/CustomComponent.cpp.o
+[10/36] Building CXX object CMakeFiles/tapSynth.dir/Source/UI/Displays.cpp.o
+[11/36] Building CXX object CMakeFiles/tapSynth.dir/Source/UI/FilterComponent.cpp.o
+[12/36] Building CXX object CMakeFiles/tapSynth.dir/Source/UI/LfoComponent.cpp.o
+[13/36] Building CXX object CMakeFiles/tapSynth.dir/Source/UI/MeterComponent.cpp.o
+[14/36] Building CXX object CMakeFiles/tapSynth.dir/Source/UI/OscComponent.cpp.o
+[15/36] Building CXX object CMakeFiles/tapSynth.dir/Source/UI/PromptBar.cpp.o
+[16/36] Building CXX object CMakeFiles/tapSynth.dir/Source/UI/ReverbComponent.cpp.o
+[17/36] Building CXX object CMakeFiles/tapSynth.dir/Source/UI/TapLookAndFeel.cpp.o
+[18/36] Building CXX object CMakeFiles/tapSynth.dir/home/guiz/vst_synth_AI/experiment/work/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o
+[19/36] Building CXX object CMakeFiles/tapSynth.dir/home/guiz/vst_synth_AI/experiment/work/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o
+[20/36] Building CXX object CMakeFiles/tapSynth.dir/home/guiz/vst_synth_AI/experiment/work/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o
+[21/36] Building CXX object CMakeFiles/tapSynth.dir/home/guiz/vst_synth_AI/experiment/work/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o
+[22/36] Building CXX object CMakeFiles/tapSynth.dir/home/guiz/vst_synth_AI/experiment/work/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o
+[23/36] Building CXX object CMakeFiles/tapSynth.dir/home/guiz/vst_synth_AI/experiment/work/JUCE/modules/juce_dsp/juce_dsp.cpp.o
+[24/36] Linking CXX static library tapSynth_artefacts/Release/libtapSynth2_SharedCode.a
+[25/36] Building CXX object tests/CMakeFiles/tapSynth_tests.dir/main.cpp.o
+[26/36] Building CXX object tests/CMakeFiles/tapSynth_tests.dir/common/Analysis.cpp.o
+[27/36] Building CXX object CMakeFiles/tapSynth_VST3.dir/home/guiz/vst_synth_AI/experiment/work/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp.o
+[28/36] Building CXX object tests/CMakeFiles/tapSynth_tests.dir/common/Render.cpp.o
+[29/36] Building CXX object tests/CMakeFiles/tapSynth_tests.dir/analysis/AnalysisTest.cpp.o
+[30/36] Building CXX object tests/CMakeFiles/tapSynth_tests.dir/sanity/SanityTest.cpp.o
+[31/36] Building CXX object tests/CMakeFiles/tapSynth_tests.dir/spectral/SpectralTest.cpp.o
+[32/36] Building CXX object tests/CMakeFiles/tapSynth_tests.dir/golden/GoldenTest.cpp.o
+[33/36] Building CXX object tests/CMakeFiles/tapSynth_tests.dir/temporal/TemporalTest.cpp.o
+[34/36] Linking CXX shared module tapSynth_artefacts/Release/VST3/tapSynth2.vst3/Contents/x86_64-linux/tapSynth2.so
+lto-wrapper: warning: using serial compilation of 74 LTRANS jobs
+lto-wrapper: note: see the ‘-flto’ option documentation for more information
+removing moduleinfo.json
+creating /home/guiz/vst_synth_AI/experiment/work/build-release/tapSynth_artefacts/Release/VST3/tapSynth2.vst3
+[35/36] Linking CXX executable tests/tapSynth_tests
+lto-wrapper: warning: using serial compilation of 78 LTRANS jobs
+lto-wrapper: note: see the ‘-flto’ option documentation for more information

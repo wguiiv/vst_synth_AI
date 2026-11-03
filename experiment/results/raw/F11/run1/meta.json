@@ -1,0 +1,15 @@
+{
+ "id": "F11",
+ "kind": "defeito",
+ "config": "release",
+ "patch": "/home/guiz/vst_synth_AI/experiment/faults/F11-medidor-bloco-vazio.patch",
+ "origin": "projeto",
+ "category": "numerico",
+ "run": 1,
+ "started": "2026-11-03T01:16:32",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 95.35375499725342,
+ "finished": "2026-11-03T01:18:19"
+}
