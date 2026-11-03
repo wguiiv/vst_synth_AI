@@ -57,7 +57,7 @@ O plano completo está no doc "Plano do estudo: testes automatizados de áudio n
 
 - Testes ficam em tests/ e usam GoogleTest; o executável tapSynth_tests liga a biblioteca tapSynth.
 - Todo teste renderiza áudio pelo TapSynthAudioProcessor real (sem editor), via `tapsynth::test::render` em tests/common/Render.h.
-- Não leia, crie nem altere nada em experiment/faults/. Não escreva testes pensando em defeitos específicos.
+- Não crie nem altere nada em experiment/faults/ nem em experiment/harmless/. Antes da tag tests-frozen, esses patches também não podiam ser lidos; com os testes congelados, a leitura é permitida para a análise (fase 4).
 - Não leia o conteúdo de mutantes do Mull (diffs, linhas, operadores) antes da tag tests-frozen; contagens por arquivo são permitidas.
 - Depois da tag tests-frozen, não altere arquivos em tests/.
 - Tolerâncias ficam em tests/common/Tolerances.h e só mudam com aprovação explícita.
