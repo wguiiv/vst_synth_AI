@@ -78,6 +78,18 @@ Para cada abordagem e cada ponto da grade, calcula-se a taxa de detecção nos d
 - pluginval nos mutantes: só se um VST3 instrumentado pelo Mull permitir ativar um mutante por execução. Isso é testado antes; se não funcionar, os mutantes comparam apenas as quatro estratégias, e a limitação é relatada.
 - Mutantes que nenhuma abordagem detecta são classificados à parte como possivelmente equivalentes. As taxas são relatadas com e sem eles.
 
+### 7.1 Decisões fixadas antes da execução dos mutantes (2026-11-03)
+
+- **Configuração:** `experiment/mull.yml`. Os operadores são o grupo `cxx_default` (incremento, aritmética, comparação e limites). Uma lista vazia no Mull 0.36 dá exatamente esse grupo; isso foi conferido num programa de teste.
+- **Build:** um único build instrumentado do código congelado, com clang 19, Release, `-g -grecord-command-line -ffp-contract=off` e o plugin do Mull (`run_experiment.py mutants`). Sem `-ffp-contract=off`, o clang junta `a * b + c` numa só operação (`fmuladd`) que o Mull 0.36 não muta, e boa parte da aritmética das fórmulas de DSP ficaria sem mutantes. Em x86-64 sem FMA, como no build de referência com gcc, essa operação vira uma multiplicação e uma soma de qualquer forma, então a saída não muda.
+- **Ativação:** o Mull compila todos os mutantes nos binários, e cada um é ativado por uma variável de ambiente com o seu id. Os testes e o pluginval rodam com essa variável, sem recompilar. Verificado antes da execução: o mutante M0044 derruba o pluginval (falha de segmentação) e o M0075 faz o golden falhar; sem mutante ativo, tudo passa.
+- **Verificação do build instrumentado:** sem mutante ativo, os 80 testes e o pluginval passam (`experiment/results/mutants-check/`).
+- **Contagem:** 225 mutantes, 94 no projeto e 131 no JUCE. A lista numerada (M0001 a M0225) fica em `experiment/results/mutants.csv`.
+- **Quantidade:** cerca de 3 min por mutante na execução de teste, 11 h no total, dentro do limite de 24 h. Todos os mutantes são executados, sem amostra.
+- **Tempos-limite:** o código instrumentado roda cerca de 16 vezes mais devagar, porque o Mull consulta a variável de ambiente a cada chamada de função mutada. Nos mutantes, cada teste tem como limite 10 vezes o seu tempo na verificação sem mutante, com mínimo de 60 s (a mesma regra do executor do próprio Mull). O pluginval mantém 15 min.
+- **Testes pulados:** num mutante, quando um teste de uma abordagem trava ou estoura o tempo, os demais testes dessa abordagem não rodam. Pela regra 6.3, esse teste já falha em todos os pontos da grade, então o resultado da abordagem não muda; a regra só evita que um mutante que trava consuma um tempo-limite por teste.
+- **Limitação conhecida do Mull 0.36:** em código de template, quando há sobrecargas de `operator*` ou `operator+` visíveis no namespace, o detector de mutantes inválidos do Mull descarta os mutantes de `*` e `+`. É o caso do JUCE (`StateVariableTPTFilter`, `Oscillator`, `Gain`): esses arquivos ficam só com mutantes de divisão, comparação e incremento. Desligar o detector traz esses mutantes de volta, mas também cria mutantes inválidos (por exemplo, um `++` sobre uma soma), então o padrão do Mull foi mantido. Os mutantes do JUCE vêm sobretudo de `juce_Reverb.h` (78) e `juce_ADSR.h` (43), e isso é relatado na QP4.
+
 ## 8. Saídas
 
 `experiment/results/results.csv`, uma linha por condição × abordagem × ponto de tolerância:
@@ -110,6 +122,7 @@ Os relatórios XML brutos ficam em `experiment/results/raw/`, um diretório por 
 
 - Os defeitos foram criados por um agente de IA sem acesso aos testes, e não pelo colega previsto no plano. Os patches seguem o guia em `experiment/GUIA_DEFEITOS.pdf` e foram revisados pelo autor do estudo.
 - São 11 defeitos e 4 refatorações inofensivas.
+- Nos mutantes, o tempo-limite por teste deixa de ser 60 s fixos e passa a ser 10 vezes o tempo do teste no build instrumentado sem mutante, com mínimo de 60 s (seção 7.1), porque a instrumentação do Mull deixa os testes até 16 vezes mais lentos.
 
 ### Emendas antes da primeira execução
 

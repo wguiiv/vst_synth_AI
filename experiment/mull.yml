@@ -1,0 +1,22 @@
+# Mull 0.36 configuration for the mutant condition (experiment/PROTOCOLO.md, section 7).
+# Used through MULL_CONFIG when building the instrumented tapSynth; paths are regexes matched against the full source path.
+
+# The default set of Mull 0.36, written out: an empty list gives exactly cxx_default
+# (cxx_increment, cxx_arithmetic, cxx_comparison, cxx_boundary), checked on a test program before the run.
+mutators:
+  - cxx_default
+
+includePaths:
+  # Project: Source/ (UI and editor excluded below)
+  - "/Source/"
+  # JUCE: the classes tapSynth's audio path uses
+  - "/juce_audio_basics/utilities/juce_ADSR\\.h$"
+  - "/juce_dsp/widgets/juce_Oscillator\\.h$"
+  - "/juce_dsp/processors/juce_StateVariableTPTFilter\\.(h|cpp)$"
+  - "/juce_dsp/widgets/juce_Reverb\\.h$"
+  - "/juce_audio_basics/utilities/juce_Reverb\\.h$"
+  - "/juce_dsp/widgets/juce_Gain\\.h$"
+
+excludePaths:
+  - "/Source/UI/"
+  - "/Source/PluginEditor\\."

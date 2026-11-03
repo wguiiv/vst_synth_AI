@@ -6,9 +6,17 @@
   run_experiment.py run faults harmless       every patch of each folder
   run_experiment.py results                   raw reports -> experiment/results/results.csv
 
+  run_experiment.py mutants list              instrumented build, mutant list -> experiment/results/mutants.csv
+  run_experiment.py mutants check             instrumented build with no mutant active: every test must pass
+  run_experiment.py mutants run all           every mutant (or: mutants run M0001 M0002 ...)
+
 Each condition is applied alone to a git worktree of the tag tests-frozen (and, for JUCE faults, to a
 private clone of JUCE 8.0.9), built, run, recorded under experiment/results/raw/<condition>/run<k>/ and
 reverted. Every test runs in its own process, so a crash only affects that test.
+
+Mutants (PROTOCOLO, 7) come from one Mull build (clang 19, experiment/mull.yml). Mull compiles every mutant
+into the binaries, and a mutant is switched on by an environment variable named after its Mull id, so no
+rebuild is needed: the tests and pluginval run with that one variable set.
 """
 
 import argparse
@@ -35,6 +43,17 @@ RAW = RESULTS_DIR / "raw"
 RESULTS = RESULTS_DIR / "results.csv"
 TOLERANCES = RESULTS_DIR / "tolerances.json"
 
+MULL_CONFIG = EXP / "mull.yml"
+MULL_PLUGIN = ROOT / "tools" / "mull" / "usr" / "lib" / "mull-ir-frontend-19"
+MULL_BUILD = WORK / "build-mull"
+MUTANTS = RESULTS_DIR / "mutants.csv"
+MUTANTS_CHECK = RESULTS_DIR / "mutants-check"   # the instrumented build with no mutant active (not a condition)
+# Mull's dispatch calls getenv on every call of a mutated function, so the instrumented tests run much slower.
+# The check run has a generous limit; each mutant run then gives every test 10 times its time in the check
+# run, at least TEST_TIMEOUT_S (the same rule as Mull's own runner, PROTOCOLO 7)
+CHECK_TIMEOUT_S = 30 * 60
+MUTANT_TIMEOUT_FACTOR = 10
+
 FROZEN_TAG = "tests-frozen"
 TEST_TIMEOUT_S = 60
 PLUGINVAL_TIMEOUT_S = 15 * 60
@@ -47,6 +66,7 @@ CONFIGS = {
     "release": { "type": "Release", "cc": None,       "cxx": None },
     "debug":   { "type": "Debug",   "cc": None,       "cxx": None },
     "clang":   { "type": "Release", "cc": "clang-19", "cxx": "clang++-19" },
+    "mull":    { "type": "Release", "cc": "clang-19", "cxx": "clang++-19" },   # built by build_mull only
 }
 
 
@@ -215,12 +235,17 @@ def frozen_test_list():
     return json.loads (cache.read_text())
 
 
-def run_test (exe, name, xml_path):
+def environment (extra):
+    return { **os.environ, **extra } if extra else None
+
+
+def run_test (exe, name, xml_path, env = None, timeout = TEST_TIMEOUT_S):
     start = time.time()
 
     try:
         r = sh ([exe, f"--gtest_filter={name}", f"--gtest_output=xml:{xml_path}"], check = False,
-                capture_output = True, text = True, errors = "replace", timeout = TEST_TIMEOUT_S)
+                capture_output = True, text = True, errors = "replace", timeout = timeout,
+                env = environment (env))
     except subprocess.TimeoutExpired:
         return { "name": name, "status": "timeout", "time_s": time.time() - start, "properties": {}, "failures": [] }
 
@@ -252,24 +277,41 @@ def run_test (exe, name, xml_path):
     return rec
 
 
-def run_tests (exe, test_names, out_dir, label):
+def run_tests (exe, test_names, out_dir, label, env = None, skip_after_crash = False, timeouts = None):
+    """With skip_after_crash, once a test of an approach crashes or times out, the rest of that approach is
+    skipped: such a test fails at every tolerance point (PROTOCOLO, 6.3), so the approach's results cannot
+    change, and a mutant that hangs would otherwise cost a 60 s timeout per test."""
     log (f"{label}: running {len (test_names)} tests")
+    decided = set()
 
     with open (out_dir / "tests.jsonl", "w") as f:
         for i, name in enumerate (test_names):
-            rec = run_test (exe, name, out_dir / "xml" / f"{i:03d}.xml")
-            rec["approach"] = approach_of (name)
+            approach = approach_of (name)
+
+            if approach in decided:
+                rec = { "name": name, "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [] }
+            else:
+                timeout = timeouts[name] if timeouts else TEST_TIMEOUT_S
+                rec = run_test (exe, name, out_dir / "xml" / f"{i:03d}.xml", env, timeout)
+
+                if timeout != TEST_TIMEOUT_S:
+                    rec["timeout_s"] = timeout
+
+                if skip_after_crash and rec["status"] in ("crash", "timeout"):
+                    decided.add (approach)
+
+            rec["approach"] = approach
             f.write (json.dumps (rec) + "\n")
 
 
-def run_pluginval (plugin, out_dir, label):
+def run_pluginval (plugin, out_dir, label, env = None):
     log (f"{label}: running pluginval")
     start = time.time()
 
     try:
         with open (out_dir / "pluginval.log", "w") as f:
             r = sh ([shutil.which ("bash") or "bash", EXP / "run_pluginval.sh", plugin, out_dir / "pluginval"], check = False,
-                    stdout = f, stderr = subprocess.STDOUT, timeout = PLUGINVAL_TIMEOUT_S)
+                    stdout = f, stderr = subprocess.STDOUT, timeout = PLUGINVAL_TIMEOUT_S, env = environment (env))
         status = "pass" if r.returncode == 0 else "fail"
         code = r.returncode
     except subprocess.TimeoutExpired:
@@ -366,6 +408,191 @@ def cmd_run_prebuilt (args):
         meta["finished"] = time.strftime ("%Y-%m-%dT%H:%M:%S")
         (out_dir / "meta.json").write_text (json.dumps (meta, indent = 1))
         log (f"{label}: done")
+
+
+# ---------------------------------------------------------------------------------------------- mutants
+
+MULL_SYMBOL = re.compile (r"^[0-9a-f]+ [tT] (cxx_[a-z_]+):(/.+):(\d+):(\d+):(\d+):(\d+)$")
+
+
+def mull_vst3_binary():
+    return MULL_BUILD / "tapSynth_artefacts" / "Release" / "VST3" / "tapSynth2.vst3" / "Contents" / "x86_64-linux" / "tapSynth2.so"
+
+
+def build_mull():
+    """One instrumented build of the frozen code: clang 19 with the Mull plugin, Release, scope from mull.yml.
+
+    -ffp-contract=off: by default clang fuses a * b + c into one llvm.fmuladd, which Mull 0.36 does not mutate,
+    so most of the arithmetic of the DSP formulas would get no mutants. On x86-64 without FMA (as in the gcc
+    reference build) the fused operation is emitted as a multiply and an add anyway, so the output is the same."""
+    env = { "MULL_CONFIG": str (MULL_CONFIG) }
+
+    if not (MULL_BUILD / "CMakeCache.txt").exists():
+        sh (["cmake", "-S", SRC, "-B", MULL_BUILD, "-G", "Ninja", "-DCMAKE_BUILD_TYPE=Release",
+             "-DCMAKE_C_COMPILER=clang-19", "-DCMAKE_CXX_COMPILER=clang++-19",
+             f"-DCMAKE_CXX_FLAGS=-g -grecord-command-line -ffp-contract=off -fpass-plugin={MULL_PLUGIN}",
+             "-DCMAKE_C_FLAGS=-g -grecord-command-line", f"-DTAPSYNTH_JUCE_DIR={JUCE}"],
+            stdout = subprocess.DEVNULL, env = environment (env))
+
+    with open (WORK / "build-mull.log", "w") as f:
+        r = sh (["cmake", "--build", MULL_BUILD, "--target", "tapSynth_tests", "tapSynth_VST3"], check = False,
+                stdout = f, stderr = subprocess.STDOUT, env = environment (env))
+
+    if r.returncode != 0:
+        sys.exit ("the Mull build fails, see experiment/work/build-mull.log")
+
+
+def mutants_in (binary):
+    out = sh (["nm", "--defined-only", binary], capture_output = True, text = True).stdout
+    found = {}
+
+    for line in out.splitlines():
+        m = MULL_SYMBOL.match (line)
+
+        if m:
+            mutator, path, line_no, col = m.group (1), m.group (2), int (m.group (3)), int (m.group (4))
+            mull_id = line.split (" ", 2)[2]
+            found[mull_id] = (mutator, path, line_no, col)
+
+    return found
+
+
+def mutant_list():
+    """The mutants of the test executable, numbered M0001... in a stable order, written to mutants.csv."""
+    in_tests = mutants_in (tests_exe ("mull"))
+    in_vst3 = mutants_in (mull_vst3_binary())
+
+    if set (in_tests) != set (in_vst3):
+        log (f"warning: {len (set (in_tests) ^ set (in_vst3))} mutants are in only one of the two binaries")
+
+    rows = []
+
+    for mull_id, (mutator, path, line_no, col) in in_tests.items():
+        p = Path (path)
+
+        if p.is_relative_to (SRC):
+            origin, rel = "projeto", p.relative_to (SRC)
+        elif p.is_relative_to (JUCE):
+            origin, rel = "juce", p.relative_to (JUCE)
+        else:
+            sys.exit (f"mutant outside the scope: {mull_id}")
+
+        rows.append ({ "mull_id": mull_id, "mutator": mutator, "origin": origin, "file": str (rel),
+                       "line": line_no, "column": col, "in_vst3": int (mull_id in in_vst3) })
+
+    rows.sort (key = lambda r: (r["origin"] != "projeto", r["file"], r["line"], r["column"], r["mutator"]))
+
+    for i, r in enumerate (rows, 1):
+        r["id"] = f"M{i:04d}"
+
+    MUTANTS.parent.mkdir (parents = True, exist_ok = True)
+
+    with open (MUTANTS, "w", newline = "") as f:
+        w = csv.DictWriter (f, fieldnames = ["id", "origin", "file", "line", "column", "mutator", "in_vst3", "mull_id"])
+        w.writeheader()
+        w.writerows (rows)
+
+    return rows
+
+
+def mutant_timeouts():
+    """Per-test limits for the mutant runs, from the check run (see MUTANT_TIMEOUT_FACTOR)."""
+    path = MUTANTS_CHECK / "tests.jsonl"
+
+    if not path.exists():
+        sys.exit ("run 'mutants check' first")
+
+    tests = [json.loads (l) for l in path.read_text().splitlines()]
+
+    if any (t["status"] != "pass" for t in tests):
+        sys.exit ("the check run has failing tests: the instrumented build does not match the reference")
+
+    return { t["name"]: max (TEST_TIMEOUT_S, math.ceil (MUTANT_TIMEOUT_FACTOR * t["time_s"])) for t in tests }
+
+
+def run_mutant (m, test_names, timeouts):
+    out_dir = RAW / m["id"] / "run1"
+
+    if (out_dir / "meta.json").exists():
+        return
+
+    if out_dir.exists():
+        shutil.rmtree (out_dir)
+
+    (out_dir / "xml").mkdir (parents = True)
+    env = { m["mull_id"]: "1" }
+    meta = { "id": m["id"], "kind": "mutante", "config": "mull", "origin": m["origin"], "category": "",
+             "mutator": m["mutator"], "file": m["file"], "line": int (m["line"]), "mull_id": m["mull_id"],
+             "run": 1, "applied": True, "built": True, "build_s": 0.0,
+             "frozen_commit": git (SRC, "rev-parse", "HEAD", capture = True),
+             "started": time.strftime ("%Y-%m-%dT%H:%M:%S") }
+    label = f"{m['id']} ({m['mutator']} {m['file']}:{m['line']})"
+    run_tests (tests_exe ("mull"), test_names, out_dir, label, env, skip_after_crash = True, timeouts = timeouts)
+
+    if int (m["in_vst3"]):
+        run_pluginval (vst3 ("mull"), out_dir, label, env)
+    else:
+        (out_dir / "pluginval.json").write_text (json.dumps ({ "status": "pass", "returncode": None, "time_s": 0.0,
+                                                               "note": "mutant not in the VST3" }))
+
+    meta["finished"] = time.strftime ("%Y-%m-%dT%H:%M:%S")
+    (out_dir / "meta.json").write_text (json.dumps (meta, indent = 1))
+
+
+def cmd_mutants (args):
+    setup()
+    reset_sources()
+    build_mull()
+
+    if args.action == "list":
+        rows = mutant_list()
+        log (f"{len (rows)} mutants -> {MUTANTS}")
+
+        for key in ("origin", "file", "mutator"):
+            counts = {}
+
+            for r in rows:
+                counts[r[key]] = counts.get (r[key], 0) + 1
+
+            print (f"\nby {key}:")
+
+            for k, n in sorted (counts.items(), key = lambda kv: -kv[1]):
+                print (f"  {n:5d}  {k}")
+        return
+
+    test_names = frozen_test_list()
+
+    if args.action == "check":
+        if MUTANTS_CHECK.exists():
+            shutil.rmtree (MUTANTS_CHECK)
+
+        (MUTANTS_CHECK / "xml").mkdir (parents = True)
+        start = time.time()
+        run_tests (tests_exe ("mull"), test_names, MUTANTS_CHECK, "mull, no mutant",
+                   timeouts = { name: CHECK_TIMEOUT_S for name in test_names })
+        run_pluginval (vst3 ("mull"), MUTANTS_CHECK, "mull, no mutant")
+        tests = [json.loads (l) for l in (MUTANTS_CHECK / "tests.jsonl").read_text().splitlines()]
+        failed = [t["name"] for t in tests if t["status"] != "pass"]
+        pv = json.loads ((MUTANTS_CHECK / "pluginval.json").read_text())["status"]
+        log (f"{len (tests) - len (failed)}/{len (tests)} tests pass, pluginval {pv}, {time.time() - start:.0f} s")
+
+        for name in failed:
+            print ("  failed:", name)
+        return
+
+    if not MUTANTS.exists():
+        sys.exit ("run 'mutants list' first")
+
+    timeouts = mutant_timeouts()
+    rows = list (csv.DictReader (open (MUTANTS)))
+
+    if args.ids != ["all"]:
+        wanted = set (args.ids)
+        rows = [r for r in rows if r["id"] in wanted]
+
+    for i, m in enumerate (rows, 1):
+        log (f"[{i}/{len (rows)}] {m['id']}")
+        run_mutant (m, test_names, timeouts)
 
 
 # ---------------------------------------------------------------------------------------------- results
@@ -491,9 +718,12 @@ def main():
     pb.add_argument ("--vst3", required = True, help = "path to tapSynth2.vst3")
     pb.add_argument ("--frozen-commit", required = True)
     pb.add_argument ("--runs", type = int, default = 5)
+    mu = sub.add_parser ("mutants", help = "Mull mutants: list, check the instrumented build, run")
+    mu.add_argument ("action", choices = ["list", "check", "run"])
+    mu.add_argument ("ids", nargs = "*", default = ["all"], help = "for run: mutant ids (M0001 ...) or all")
     sub.add_parser ("results")
     args = p.parse_args()
-    { "run": cmd_run, "run-prebuilt": cmd_run_prebuilt, "results": cmd_results }[args.cmd] (args)
+    { "run": cmd_run, "run-prebuilt": cmd_run_prebuilt, "mutants": cmd_mutants, "results": cmd_results }[args.cmd] (args)
 
 
 if __name__ == "__main__":
