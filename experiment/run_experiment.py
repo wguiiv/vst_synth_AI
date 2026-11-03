@@ -219,7 +219,7 @@ def run_test (exe, name, xml_path):
     start = time.time()
 
     try:
-        r = sh ([exe, f"--gtest_filter={name}", f"--gtest_output=xml:{xml_path}"], cwd = SRC, check = False,
+        r = sh ([exe, f"--gtest_filter={name}", f"--gtest_output=xml:{xml_path}"], check = False,
                 capture_output = True, text = True, errors = "replace", timeout = TEST_TIMEOUT_S)
     except subprocess.TimeoutExpired:
         return { "name": name, "status": "timeout", "time_s": time.time() - start, "properties": {}, "failures": [] }
@@ -252,19 +252,31 @@ def run_test (exe, name, xml_path):
     return rec
 
 
-def run_pluginval (config, out_dir):
+def run_tests (exe, test_names, out_dir, label):
+    log (f"{label}: running {len (test_names)} tests")
+
+    with open (out_dir / "tests.jsonl", "w") as f:
+        for i, name in enumerate (test_names):
+            rec = run_test (exe, name, out_dir / "xml" / f"{i:03d}.xml")
+            rec["approach"] = approach_of (name)
+            f.write (json.dumps (rec) + "\n")
+
+
+def run_pluginval (plugin, out_dir, label):
+    log (f"{label}: running pluginval")
     start = time.time()
 
     try:
         with open (out_dir / "pluginval.log", "w") as f:
-            r = sh ([EXP / "run_pluginval.sh", vst3 (config), out_dir / "pluginval"], check = False,
+            r = sh ([shutil.which ("bash") or "bash", EXP / "run_pluginval.sh", plugin, out_dir / "pluginval"], check = False,
                     stdout = f, stderr = subprocess.STDOUT, timeout = PLUGINVAL_TIMEOUT_S)
         status = "pass" if r.returncode == 0 else "fail"
         code = r.returncode
     except subprocess.TimeoutExpired:
         status, code = "timeout", None
 
-    return { "status": status, "returncode": code, "time_s": time.time() - start }
+    result = { "status": status, "returncode": code, "time_s": time.time() - start }
+    (out_dir / "pluginval.json").write_text (json.dumps (result))
 
 
 def run_condition (cond, run_index, test_names):
@@ -296,17 +308,9 @@ def run_condition (cond, run_index, test_names):
         meta.update ({ "applied": applied, "built": built, "build_s": build_s })
 
         if built:
-            exe = tests_exe (cond["config"])
-            log (f"{cond['id']} run{run_index}: running {len (test_names)} tests")
-
-            with open (out_dir / "tests.jsonl", "w") as f:
-                for i, name in enumerate (test_names):
-                    rec = run_test (exe, name, out_dir / "xml" / f"{i:03d}.xml")
-                    rec["approach"] = approach_of (name)
-                    f.write (json.dumps (rec) + "\n")
-
-            log (f"{cond['id']} run{run_index}: running pluginval")
-            (out_dir / "pluginval.json").write_text (json.dumps (run_pluginval (cond["config"], out_dir)))
+            label = f"{cond['id']} run{run_index}"
+            run_tests (tests_exe (cond["config"]), test_names, out_dir, label)
+            run_pluginval (vst3 (cond["config"]), out_dir, label)
     finally:
         reset_sources()
 
@@ -334,6 +338,34 @@ def cmd_run (args):
 
         for k in range (1, runs + 1):
             run_condition (cond, k, test_names)
+
+
+def cmd_run_prebuilt (args):
+    """Runs an already built clean frozen build, e.g. on another OS in CI (PROTOCOLO, 4)."""
+    exe, plugin = Path (args.exe).resolve(), Path (args.vst3).resolve()
+    test_names = list_tests (exe)
+
+    if not TOLERANCES.exists():
+        TOLERANCES.parent.mkdir (parents = True, exist_ok = True)
+        out = sh ([exe, "--tapsynth-list-tolerances"], capture_output = True, text = True).stdout
+        TOLERANCES.write_text (json.dumps (json.loads (out), indent = 1))
+
+    for k in range (1, args.runs + 1):
+        out_dir = RAW / args.id / f"run{k}"
+
+        if (out_dir / "meta.json").exists():
+            continue
+
+        (out_dir / "xml").mkdir (parents = True, exist_ok = True)
+        meta = { "id": args.id, "kind": "inofensiva", "config": "ci", "platform": sys.platform, "run": k,
+                 "frozen_commit": args.frozen_commit, "applied": True, "built": True, "build_s": 0.0,
+                 "started": time.strftime ("%Y-%m-%dT%H:%M:%S") }
+        label = f"{args.id} run{k}"
+        run_tests (exe, test_names, out_dir, label)
+        run_pluginval (plugin, out_dir, label)
+        meta["finished"] = time.strftime ("%Y-%m-%dT%H:%M:%S")
+        (out_dir / "meta.json").write_text (json.dumps (meta, indent = 1))
+        log (f"{label}: done")
 
 
 # ---------------------------------------------------------------------------------------------- results
@@ -453,9 +485,15 @@ def main():
     r = sub.add_parser ("run")
     r.add_argument ("conditions", nargs = "+")
     r.add_argument ("--runs", type = int, default = 5, help = "runs of the baseline (default 5)")
+    pb = sub.add_parser ("run-prebuilt", help = "run an already built clean frozen build (CI, other OS)")
+    pb.add_argument ("id", help = "condition id, e.g. windows or macos")
+    pb.add_argument ("--exe", required = True, help = "path to tapSynth_tests")
+    pb.add_argument ("--vst3", required = True, help = "path to tapSynth2.vst3")
+    pb.add_argument ("--frozen-commit", required = True)
+    pb.add_argument ("--runs", type = int, default = 5)
     sub.add_parser ("results")
     args = p.parse_args()
-    { "run": cmd_run, "results": cmd_results }[args.cmd] (args)
+    { "run": cmd_run, "run-prebuilt": cmd_run_prebuilt, "results": cmd_results }[args.cmd] (args)
 
 
 if __name__ == "__main__":
