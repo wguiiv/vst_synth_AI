@@ -1,0 +1,9 @@
+condicao,execucoes,sanidade,espectral,temporal,golden,pluginval
+H01,1,0,0,0,0,0
+H02,1,0,0,0,0,0
+H03,1,0,0,0,0,0
+H04,1,0,0,0,0,0
+clang,1,0,0,0,0,0
+debug,1,0,0,0,0,0
+macos,5,0,0,0,0,0
+windows,5,0,0,0,0,0

@@ -1,0 +1,11 @@
+conjunto,abordagem,n,ids
+defeitos,sanidade,0,–
+defeitos,espectral,0,–
+defeitos,temporal,0,–
+defeitos,golden,0,–
+defeitos,pluginval,0,–
+mutantes,sanidade,1,M0101
+mutantes,espectral,0,–
+mutantes,temporal,0,–
+mutantes,golden,24,"M0023, M0026, M0085, M0113, M0138, M0141, M0142, M0145, M0152, M0160, M0162, M0165, M0167, M0170, M0174, M0176, M0179, M0181, M0197, M0200, M0204, M0206, M0211, M0214"
+mutantes,pluginval,5,"M0002, M0011, M0043, M0044, M0064"

@@ -1,0 +1,25 @@
+conjunto,teste,comparacao,estatistica,gl,p,p_holm,so_primeiro,so_segundo
+defeitos,cochran_q,todas,5.6,4,0.23107823797582827,,,
+defeitos,mcnemar_exato,sanidade x espectral,,,1.0,1.0,0,0
+defeitos,mcnemar_exato,sanidade x temporal,,,1.0,1.0,0,1
+defeitos,mcnemar_exato,sanidade x golden,,,1.0,1.0,0,1
+defeitos,mcnemar_exato,sanidade x pluginval,,,1.0,1.0,1,0
+defeitos,mcnemar_exato,espectral x temporal,,,1.0,1.0,0,1
+defeitos,mcnemar_exato,espectral x golden,,,1.0,1.0,0,1
+defeitos,mcnemar_exato,espectral x pluginval,,,1.0,1.0,1,0
+defeitos,mcnemar_exato,temporal x golden,,,1.0,1.0,0,0
+defeitos,mcnemar_exato,temporal x pluginval,,,0.5,1.0,2,0
+defeitos,mcnemar_exato,golden x pluginval,,,0.5,1.0,2,0
+defeitos,mcnemar_exato_complementar,qualquer teste x pluginval,,,0.5,,2,0
+mutantes,cochran_q,todas,164.629,4,1.4858690649680523e-34,,,
+mutantes,mcnemar_exato,sanidade x espectral,,,0.005924612283706665,0.01184922456741333,21,6
+mutantes,mcnemar_exato,sanidade x temporal,,,0.31232680747326924,0.31232680747326924,20,28
+mutantes,mcnemar_exato,sanidade x golden,,,3.1086244689504383e-15,2.4868995751603507e-14,1,54
+mutantes,mcnemar_exato,sanidade x pluginval,,,4.4337048166198656e-07,2.216852408309933e-06,37,5
+mutantes,mcnemar_exato,espectral x temporal,,,3.39532271027565e-05,0.000135812908411026,4,27
+mutantes,mcnemar_exato,espectral x golden,,,6.776263578034403e-21,6.098637220230962e-20,0,68
+mutantes,mcnemar_exato,espectral x pluginval,,,0.003326892852783203,0.00998067855834961,24,7
+mutantes,mcnemar_exato,temporal x golden,,,5.684341886080802e-14,3.979039320256561e-13,0,45
+mutantes,mcnemar_exato,temporal x pluginval,,,2.2918642095248742e-08,1.3751185257149245e-07,47,7
+mutantes,mcnemar_exato,golden x pluginval,,,3.093195048615164e-21,3.093195048615164e-20,90,5
+mutantes,mcnemar_exato_complementar,qualquer teste x pluginval,,,1.6305707200610766e-21,,91,5

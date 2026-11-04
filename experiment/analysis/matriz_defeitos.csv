@@ -1,0 +1,12 @@
+id,origem,categoria,sanidade,espectral,temporal,golden,pluginval,qualquer teste,qualquer abordagem
+F01,projeto,altura,0,0,0,0,0,0,0
+F02,projeto,nivel,1,1,1,1,0,1,1
+F03,juce,envelope,0,0,1,1,0,1,1
+F04,juce,envelope,0,0,0,0,0,0,0
+F05,projeto,filtro,1,1,1,1,1,1,1
+F06,projeto,numerico,0,0,0,0,0,0,0
+F07,projeto,estado,0,0,0,0,0,0,0
+F08,juce,nivel,0,0,0,0,0,0,0
+F09,juce,envelope,0,0,0,0,0,0,0
+F10,projeto,estado,0,0,0,0,0,0,0
+F11,projeto,numerico,0,0,0,0,0,0,0

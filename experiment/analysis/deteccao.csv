@@ -1,0 +1,64 @@
+conjunto,origem,abordagem,detectados,n,taxa,ic95_inf,ic95_sup
+defeitos,todos,sanidade,2,11,0.1818,0.0514,0.477
+defeitos,todos,espectral,2,11,0.1818,0.0514,0.477
+defeitos,todos,temporal,3,11,0.2727,0.0975,0.5656
+defeitos,todos,golden,3,11,0.2727,0.0975,0.5656
+defeitos,todos,pluginval,1,11,0.0909,0.0162,0.3774
+defeitos,todos,qualquer teste,3,11,0.2727,0.0975,0.5656
+defeitos,todos,qualquer abordagem,3,11,0.2727,0.0975,0.5656
+defeitos,projeto,sanidade,2,7,0.2857,0.0822,0.6411
+defeitos,projeto,espectral,2,7,0.2857,0.0822,0.6411
+defeitos,projeto,temporal,2,7,0.2857,0.0822,0.6411
+defeitos,projeto,golden,2,7,0.2857,0.0822,0.6411
+defeitos,projeto,pluginval,1,7,0.1429,0.0257,0.5131
+defeitos,projeto,qualquer teste,2,7,0.2857,0.0822,0.6411
+defeitos,projeto,qualquer abordagem,2,7,0.2857,0.0822,0.6411
+defeitos,juce,sanidade,0,4,0.0,0.0,0.4899
+defeitos,juce,espectral,0,4,0.0,0.0,0.4899
+defeitos,juce,temporal,1,4,0.25,0.0456,0.6994
+defeitos,juce,golden,1,4,0.25,0.0456,0.6994
+defeitos,juce,pluginval,0,4,0.0,0.0,0.4899
+defeitos,juce,qualquer teste,1,4,0.25,0.0456,0.6994
+defeitos,juce,qualquer abordagem,1,4,0.25,0.0456,0.6994
+mutantes,todos,sanidade,100,225,0.4444,0.381,0.5098
+mutantes,todos,espectral,85,225,0.3778,0.317,0.4427
+mutantes,todos,temporal,108,225,0.48,0.4156,0.5451
+mutantes,todos,golden,153,225,0.68,0.6165,0.7375
+mutantes,todos,pluginval,68,225,0.3022,0.246,0.3651
+mutantes,todos,qualquer teste,154,225,0.6844,0.6211,0.7416
+mutantes,todos,qualquer abordagem,159,225,0.7067,0.6441,0.7623
+mutantes,projeto,sanidade,44,94,0.4681,0.3705,0.5682
+mutantes,projeto,espectral,44,94,0.4681,0.3705,0.5682
+mutantes,projeto,temporal,44,94,0.4681,0.3705,0.5682
+mutantes,projeto,golden,54,94,0.5745,0.4735,0.6696
+mutantes,projeto,pluginval,31,94,0.3298,0.2431,0.4299
+mutantes,projeto,qualquer teste,54,94,0.5745,0.4735,0.6696
+mutantes,projeto,qualquer abordagem,59,94,0.6277,0.5267,0.7186
+mutantes,juce,sanidade,56,131,0.4275,0.346,0.5131
+mutantes,juce,espectral,41,131,0.313,0.2399,0.3968
+mutantes,juce,temporal,64,131,0.4885,0.4045,0.5732
+mutantes,juce,golden,99,131,0.7557,0.6756,0.8213
+mutantes,juce,pluginval,37,131,0.2824,0.2124,0.3649
+mutantes,juce,qualquer teste,100,131,0.7634,0.6837,0.828
+mutantes,juce,qualquer abordagem,100,131,0.7634,0.6837,0.828
+mutantes sem os possivelmente equivalentes,todos,sanidade,100,159,0.6289,0.5516,0.7002
+mutantes sem os possivelmente equivalentes,todos,espectral,85,159,0.5346,0.4572,0.6104
+mutantes sem os possivelmente equivalentes,todos,temporal,108,159,0.6792,0.6032,0.7468
+mutantes sem os possivelmente equivalentes,todos,golden,153,159,0.9623,0.9201,0.9826
+mutantes sem os possivelmente equivalentes,todos,pluginval,68,159,0.4277,0.3534,0.5054
+mutantes sem os possivelmente equivalentes,todos,qualquer teste,154,159,0.9686,0.9285,0.9865
+mutantes sem os possivelmente equivalentes,todos,qualquer abordagem,159,159,1.0,0.9764,1.0
+mutantes sem os possivelmente equivalentes,projeto,sanidade,44,59,0.7458,0.622,0.8394
+mutantes sem os possivelmente equivalentes,projeto,espectral,44,59,0.7458,0.622,0.8394
+mutantes sem os possivelmente equivalentes,projeto,temporal,44,59,0.7458,0.622,0.8394
+mutantes sem os possivelmente equivalentes,projeto,golden,54,59,0.9153,0.8165,0.9633
+mutantes sem os possivelmente equivalentes,projeto,pluginval,31,59,0.5254,0.4004,0.6473
+mutantes sem os possivelmente equivalentes,projeto,qualquer teste,54,59,0.9153,0.8165,0.9633
+mutantes sem os possivelmente equivalentes,projeto,qualquer abordagem,59,59,1.0,0.9389,1.0
+mutantes sem os possivelmente equivalentes,juce,sanidade,56,100,0.56,0.4623,0.6533
+mutantes sem os possivelmente equivalentes,juce,espectral,41,100,0.41,0.3187,0.508
+mutantes sem os possivelmente equivalentes,juce,temporal,64,100,0.64,0.5424,0.7273
+mutantes sem os possivelmente equivalentes,juce,golden,99,100,0.99,0.9455,0.9982
+mutantes sem os possivelmente equivalentes,juce,pluginval,37,100,0.37,0.2818,0.4678
+mutantes sem os possivelmente equivalentes,juce,qualquer teste,100,100,1.0,0.963,1.0
+mutantes sem os possivelmente equivalentes,juce,qualquer abordagem,100,100,1.0,0.963,1.0
