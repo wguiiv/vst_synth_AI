@@ -238,7 +238,7 @@ doctest; os três medem os mesmos 81 valores do teste original. Pontos para o te
 - **Demonstração da apresentação:** a planejada (defeito de taxa de amostragem com o teste espectral falhando)
   não funciona, porque o F01 não foi detectado. Sugestão: F02 (dry/wet trocados), que se ouve na hora e mostra
   a diferença entre testes e pluginval (os quatro testes falham, o pluginval passa); ou F05 (NaN, todos falham).
-- Guia de recomendação.
+- Guia de recomendação: feito, em `experiment/GUIA_RECOMENDACAO.md`.
 - Escrita: resultados, discussão, limitações.
 - LICENSE, nomes no README, conferir as referências "a conferir", merge para `master`.
 
@@ -252,4 +252,5 @@ doctest; os três medem os mesmos 81 valores do teste original. Pontos para o te
 | `experiment/PROTOCOLO.md` | método e desvios |
 | `experiment/faults/INDEX.md` | defeitos e fontes |
 | `experiment/frameworks/COMPARACAO.md` | comparação de frameworks |
+| `experiment/GUIA_RECOMENDACAO.md` | guia prático para desenvolvedores (entrega do plano) |
 | Plano do estudo (PDF) | perguntas, hipóteses, desenho |
