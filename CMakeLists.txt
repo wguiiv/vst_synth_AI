@@ -98,3 +98,10 @@ if (TAPSYNTH_BUILD_TESTS)
     enable_testing()
     add_subdirectory (tests)
 endif()
+
+# The same pitch test in GoogleTest, Catch2 and doctest, for the study's framework comparison (needs the tests on)
+option (TAPSYNTH_BUILD_FRAMEWORK_COMPARISON "Build the framework comparison in experiment/frameworks" OFF)
+
+if (TAPSYNTH_BUILD_FRAMEWORK_COMPARISON AND TAPSYNTH_BUILD_TESTS)
+    add_subdirectory (experiment/frameworks)
+endif()
