@@ -1,0 +1,18 @@
+{
+ "id": "M0096",
+ "kind": "mutante",
+ "config": "mull",
+ "origin": "juce",
+ "category": "",
+ "mutator": "cxx_gt_to_ge",
+ "file": "modules/juce_audio_basics/utilities/juce_ADSR.h",
+ "line": 132,
+ "mull_id": "cxx_gt_to_ge:/home/guiz/vst_synth_AI/experiment/work/JUCE/modules/juce_audio_basics/utilities/juce_ADSR.h:132:24:132:25",
+ "run": 1,
+ "applied": true,
+ "built": true,
+ "build_s": 0.0,
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "started": "2026-11-03T21:59:54",
+ "finished": "2026-11-03T22:03:19"
+}

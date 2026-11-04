@@ -1,0 +1,18 @@
+{
+ "id": "M0148",
+ "kind": "mutante",
+ "config": "mull",
+ "origin": "juce",
+ "category": "",
+ "mutator": "cxx_pre_inc_to_pre_dec",
+ "file": "modules/juce_audio_basics/utilities/juce_Reverb.h",
+ "line": 109,
+ "mull_id": "cxx_pre_inc_to_pre_dec:/home/guiz/vst_synth_AI/experiment/work/JUCE/modules/juce_audio_basics/utilities/juce_Reverb.h:109:39:109:41",
+ "run": 1,
+ "applied": true,
+ "built": true,
+ "build_s": 0.0,
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "started": "2026-11-04T00:32:32",
+ "finished": "2026-11-04T00:32:33"
+}

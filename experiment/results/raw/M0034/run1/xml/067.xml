@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.176" timestamp="2026-11-03T10:09:08.939" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.176" timestamp="2026-11-03T10:09:08.939">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Fm" value_param="144-byte object &lt;D0-00 7B-44 5B-55 00-00 02-00 00-00 00-00 00-00 46-6D 00-00 65-72 45-6E 76-65 6C-6F 70-65 00-00 00-00 00-00 00-70 E7-40 00-02 00-00 00-00 00-00 00-00 00-00 00-00 F0-3F 6C-65 41-6E 64-43 65-6E ... 20-2F 7B-44 5B-55 00-00 D0-27 7B-44 5B-55 00-00 04-00 00-00 00-00 00-00 D8-BE 9F-0C 5B-55 00-00 00-F0 3A-3C 04-7F 00-00 10-95 78-44 5B-55 00-00 28-95 78-44 5B-55 00-00 28-95 78-44 5B-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.176" timestamp="2026-11-03T10:09:08.939" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:130&#x0A;Value of: within (tol::sanityAudible, peak (held), label)&#x0A;  Actual: false (Fm/ch0: sanity.audible measured 1.23809389e-08 linear, limit &gt;= 0.001 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:130
+Value of: within (tol::sanityAudible, peak (held), label)
+  Actual: false (Fm/ch0: sanity.audible measured 1.23809389e-08 linear, limit >= 0.001 linear)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:130&#x0A;Value of: within (tol::sanityAudible, peak (held), label)&#x0A;  Actual: false (Fm/ch1: sanity.audible measured 1.23809389e-08 linear, limit &gt;= 0.001 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:130
+Value of: within (tol::sanityAudible, peak (held), label)
+  Actual: false (Fm/ch1: sanity.audible measured 1.23809389e-08 linear, limit >= 0.001 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peak|Fm/ch0" value="1.23812347e-08"/>
+        <property name="sanity.audible|Fm/ch0" value="1.23809389e-08"/>
+        <property name="sanity.dc|Fm/ch0" value="1.23809123e-08"/>
+        <property name="sanity.peak|Fm/ch1" value="1.23812347e-08"/>
+        <property name="sanity.audible|Fm/ch1" value="1.23809389e-08"/>
+        <property name="sanity.dc|Fm/ch1" value="1.23809123e-08"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

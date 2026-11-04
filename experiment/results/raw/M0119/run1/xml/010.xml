@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.041" timestamp="2026-11-03T23:07:52.793" name="AllTests">
+  <testsuite name="AnalysisSelfTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.041" timestamp="2026-11-03T23:07:52.793">
+    <testcase name="FundamentalOfSineAcrossRangeAndRates" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/analysis/AnalysisTest.cpp" line="32" status="run" result="completed" time="0.041" timestamp="2026-11-03T23:07:52.793" classname="AnalysisSelfTest" />
+  </testsuite>
+</testsuites>

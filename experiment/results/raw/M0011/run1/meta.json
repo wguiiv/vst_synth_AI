@@ -1,0 +1,18 @@
+{
+ "id": "M0011",
+ "kind": "mutante",
+ "config": "mull",
+ "origin": "projeto",
+ "category": "",
+ "mutator": "cxx_lt_to_le",
+ "file": "Source/Data/MeterData.cpp",
+ "line": 36,
+ "mull_id": "cxx_lt_to_le:/home/guiz/vst_synth_AI/experiment/work/src/Source/Data/MeterData.cpp:36:25:36:26",
+ "run": 1,
+ "applied": true,
+ "built": true,
+ "build_s": 0.0,
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "started": "2026-11-03T09:08:25",
+ "finished": "2026-11-03T09:11:20"
+}

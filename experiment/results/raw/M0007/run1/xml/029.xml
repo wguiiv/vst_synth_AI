@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.504" timestamp="2026-11-03T08:58:34.185" name="AllTests">
+  <testsuite name="Rates/TemporalAttack" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.504" timestamp="2026-11-03T08:58:34.185">
+    <testcase name="ReachesPeakInConfiguredTime/44100" value_param="44100" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/temporal/TemporalTest.cpp" line="80" status="run" result="completed" time="0.504" timestamp="2026-11-03T08:58:34.185" classname="Rates/TemporalAttack">
+      <properties>
+        <property name="temporal.time|attack0.10" value="0.000499998659"/>
+        <property name="temporal.time|attack0.30" value="0.000499989271"/>
+        <property name="temporal.time|attack0.60" value="0.00149997854"/>
+        <property name="temporal.time|attack1.00" value="0.0025"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

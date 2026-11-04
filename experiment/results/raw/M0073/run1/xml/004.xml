@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.714" timestamp="2026-11-03T21:08:41.425" name="AllTests">
+  <testsuite name="SpectralFm" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.714" timestamp="2026-11-03T21:08:41.426">
+    <testcase name="SidebandsMatchFrequencyModulationTheory" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp" line="105" status="run" result="completed" time="0.714" timestamp="2026-11-03T21:08:41.426" classname="SpectralFm">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:127&#x0A;Value of: within (tol::passband, std::abs (upperDb - carrierDb - expectedDb), label + &quot;/upper&quot;)&#x0A;  Actual: false (depth0.1/upper: spectral.passband measured 2.05136845 dB, limit &lt;= 1 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:127
+Value of: within (tol::passband, std::abs (upperDb - carrierDb - expectedDb), label + "/upper")
+  Actual: false (depth0.1/upper: spectral.passband measured 2.05136845 dB, limit <= 1 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:128&#x0A;Value of: within (tol::passband, std::abs (lowerDb - carrierDb - expectedDb), label + &quot;/lower&quot;)&#x0A;  Actual: false (depth0.1/lower: spectral.passband measured 2.13958018 dB, limit &lt;= 1 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:128
+Value of: within (tol::passband, std::abs (lowerDb - carrierDb - expectedDb), label + "/lower")
+  Actual: false (depth0.1/lower: spectral.passband measured 2.13958018 dB, limit <= 1 dB)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="spectral.passband|depth0.1/upper" value="2.05136845"/>
+        <property name="spectral.passband|depth0.1/lower" value="2.13958018"/>
+        <property name="spectral.passband|depth0.5/upper" value="0.0360379824"/>
+        <property name="spectral.passband|depth0.5/lower" value="0.00218042888"/>
+        <property name="spectral.passband|depth1.0/upper" value="0.247542345"/>
+        <property name="spectral.passband|depth1.0/lower" value="0.205690488"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.284" timestamp="2026-11-03T21:50:12.564" name="AllTests">
+  <testsuite name="Configs/Golden" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.283" timestamp="2026-11-03T21:50:12.564">
+    <testcase name="MatchesReference/Reverb" value_param="104-byte object &lt;90-3F 4B-D8 2B-56 00-00 06-00 00-00 00-00 00-00 52-65 76-65 72-62 00-65 00-67 75-69 7A-2F 76-73 74-5F 73-79 6E-74 68-5F 00-00 00-00 78-70 65-72 30-3D 4C-D8 2B-56 00-00 F0-3B 4C-D8 2B-56 00-00 30-36 4C-D8 2B-56 00-00 05-00 00-00 00-00 00-00 80-2E 49-D8 2B-56 00-00 98-2E 49-D8 2B-56 00-00 98-2E 49-D8 2B-56 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/golden/GoldenTest.cpp" line="67" status="run" result="completed" time="0.283" timestamp="2026-11-03T21:50:12.564" classname="Configs/Golden">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/golden/GoldenTest.cpp:92&#x0A;Value of: within (tol::golden, maxAbsDiff (out, reference), config.name)&#x0A;  Actual: false (Reverb: golden.maxAbsDiff measured 0.00774601568 linear, limit &lt;= 0.0001 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/golden/GoldenTest.cpp:92
+Value of: within (tol::golden, maxAbsDiff (out, reference), config.name)
+  Actual: false (Reverb: golden.maxAbsDiff measured 0.00774601568 linear, limit <= 0.0001 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="golden.maxAbsDiff|Reverb" value="0.00774601568"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

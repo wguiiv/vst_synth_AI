@@ -1,0 +1,1707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="103.813" timestamp="2026-11-04T00:40:43.886" name="AllTests">
+  <testsuite name="SanityRandom" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="103.813" timestamp="2026-11-04T00:40:43.886">
+    <testcase name="RandomPatchesThroughJson" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="138" status="run" result="completed" time="103.813" timestamp="2026-11-04T00:40:43.886" classname="SanityRandom">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch3/ch0: sanity.peakRandom measured 1.37386236e+12 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 3&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch3/ch0: sanity.peakRandom measured 1.37386236e+12 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 3
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch3/ch0: sanity.dcRandom measured 0.0573355146 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 3&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch3/ch0: sanity.dcRandom measured 0.0573355146 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 3
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch3/ch1: sanity.peakRandom measured 2.93842479e+12 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 3&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch3/ch1: sanity.peakRandom measured 2.93842479e+12 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 3
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch3/ch1: sanity.dcRandom measured 0.0895123854 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 3&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch3/ch1: sanity.dcRandom measured 0.0895123854 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 3
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch4/ch0: sanity.peakRandom measured 1.08819562e+11 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 4&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch4/ch0: sanity.peakRandom measured 1.08819562e+11 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 4
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch4/ch0: sanity.dcRandom measured 0.140814856 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 4&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch4/ch0: sanity.dcRandom measured 0.140814856 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 4
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch4/ch1: sanity.peakRandom measured 1.69402548e+11 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 4&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch4/ch1: sanity.peakRandom measured 1.69402548e+11 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 4
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch4/ch1: sanity.dcRandom measured 0.11506369 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 4&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch4/ch1: sanity.dcRandom measured 0.11506369 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 4
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch7/ch0: sanity.peakRandom measured 1.77727724e+27 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 7&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch7/ch0: sanity.peakRandom measured 1.77727724e+27 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 7
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch7/ch0: sanity.dcRandom measured 50842452 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 7&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch7/ch0: sanity.dcRandom measured 50842452 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 7
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch7/ch1: sanity.peakRandom measured 2.56608436e+27 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 7&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch7/ch1: sanity.peakRandom measured 2.56608436e+27 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 7
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch7/ch1: sanity.dcRandom measured 2378164 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 7&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch7/ch1: sanity.dcRandom measured 2378164 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 7
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch18/ch0: sanity.peakRandom measured 6.37805509e+28 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 18&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch18/ch0: sanity.peakRandom measured 6.37805509e+28 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 18
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch18/ch0: sanity.dcRandom measured 5060865.5 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 18&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch18/ch0: sanity.dcRandom measured 5060865.5 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 18
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch18/ch1: sanity.peakRandom measured 8.8588639e+28 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 18&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch18/ch1: sanity.peakRandom measured 8.8588639e+28 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 18
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch18/ch1: sanity.dcRandom measured 1015808 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 18&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch18/ch1: sanity.dcRandom measured 1015808 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 18
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch25/ch0: sanity.peakRandom measured 4.15594726e+14 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 25&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch25/ch0: sanity.peakRandom measured 4.15594726e+14 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 25
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch25/ch1: sanity.peakRandom measured 7.20484723e+14 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 25&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch25/ch1: sanity.peakRandom measured 7.20484723e+14 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 25
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch35/ch0: sanity.peakRandom measured 5.21463439e+10 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 35&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch35/ch0: sanity.peakRandom measured 5.21463439e+10 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 35
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch35/ch1: sanity.peakRandom measured 9.61056276e+10 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 35&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch35/ch1: sanity.peakRandom measured 9.61056276e+10 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 35
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch36/ch0: sanity.peakRandom measured 1.07641707e+17 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 36&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch36/ch0: sanity.peakRandom measured 1.07641707e+17 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 36
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch36/ch0: sanity.dcRandom measured 7.90097761 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 36&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch36/ch0: sanity.dcRandom measured 7.90097761 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 36
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch36/ch1: sanity.peakRandom measured 1.83906411e+17 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 36&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch36/ch1: sanity.peakRandom measured 1.83906411e+17 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 36
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch36/ch1: sanity.dcRandom measured 0.214600787 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 36&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch36/ch1: sanity.dcRandom measured 0.214600787 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 36
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch40/ch0: sanity.peakRandom measured 154347.875 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 40&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch40/ch0: sanity.peakRandom measured 154347.875 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 40
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch40/ch1: sanity.peakRandom measured 242143.812 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 40&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch40/ch1: sanity.peakRandom measured 242143.812 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 40
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch46/ch0: sanity.peakRandom measured 277275.344 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 46&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch46/ch0: sanity.peakRandom measured 277275.344 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 46
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch46/ch1: sanity.peakRandom measured 421166.844 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 46&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch46/ch1: sanity.peakRandom measured 421166.844 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 46
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch48/ch0: sanity.peakRandom measured 1.78539072e+09 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 48&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch48/ch0: sanity.peakRandom measured 1.78539072e+09 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 48
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch48/ch1: sanity.peakRandom measured 3.36295706e+09 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 48&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch48/ch1: sanity.peakRandom measured 3.36295706e+09 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 48
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch50/ch0: sanity.peakRandom measured 8.52391835e+29 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 50&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch50/ch0: sanity.peakRandom measured 8.52391835e+29 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 50
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch50/ch0: sanity.dcRandom measured 16999470 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 50&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch50/ch0: sanity.dcRandom measured 16999470 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 50
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch50/ch1: sanity.peakRandom measured 1.14473549e+30 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 50&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch50/ch1: sanity.peakRandom measured 1.14473549e+30 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 50
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch50/ch1: sanity.dcRandom measured 809121.375 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 50&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch50/ch1: sanity.dcRandom measured 809121.375 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 50
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch53/ch0: sanity.peakRandom measured 759811392 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 53&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch53/ch0: sanity.peakRandom measured 759811392 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 53
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch53/ch1: sanity.peakRandom measured 1.54431629e+09 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 53&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch53/ch1: sanity.peakRandom measured 1.54431629e+09 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 53
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch55/ch0: sanity.peakRandom measured 4.77390313e+13 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 55&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch55/ch0: sanity.peakRandom measured 4.77390313e+13 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 55
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch55/ch1: sanity.peakRandom measured 8.62870758e+13 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 55&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch55/ch1: sanity.peakRandom measured 8.62870758e+13 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 55
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch57: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 57&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch57: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 57
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch59/ch0: sanity.peakRandom measured 1.05289772e+27 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 59&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch59/ch0: sanity.peakRandom measured 1.05289772e+27 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 59
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch59/ch0: sanity.dcRandom measured 112970.422 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 59&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch59/ch0: sanity.dcRandom measured 112970.422 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 59
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch59/ch1: sanity.peakRandom measured 1.29895479e+27 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 59&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch59/ch1: sanity.peakRandom measured 1.29895479e+27 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 59
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch59/ch1: sanity.dcRandom measured 106057.094 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 59&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch59/ch1: sanity.dcRandom measured 106057.094 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 59
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch65/ch0: sanity.peakRandom measured 108706176 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 65&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch65/ch0: sanity.peakRandom measured 108706176 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 65
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch65/ch1: sanity.peakRandom measured 191411568 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 65&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch65/ch1: sanity.peakRandom measured 191411568 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 65
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch70/ch0: sanity.peakRandom measured 3.44596263e+18 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 70&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch70/ch0: sanity.peakRandom measured 3.44596263e+18 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 70
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch70/ch0: sanity.dcRandom measured 52.6531487 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 70&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch70/ch0: sanity.dcRandom measured 52.6531487 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 70
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch70/ch1: sanity.peakRandom measured 5.49421782e+18 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 70&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch70/ch1: sanity.peakRandom measured 5.49421782e+18 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 70
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch70/ch1: sanity.dcRandom measured 4.8650012 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 70&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch70/ch1: sanity.dcRandom measured 4.8650012 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 70
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch76/ch0: sanity.peakRandom measured 9.66508329e+22 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 76&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch76/ch0: sanity.peakRandom measured 9.66508329e+22 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 76
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch76/ch0: sanity.dcRandom measured 5642.50098 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 76&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch76/ch0: sanity.dcRandom measured 5642.50098 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 76
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch76/ch1: sanity.peakRandom measured 1.42916726e+23 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 76&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch76/ch1: sanity.peakRandom measured 1.42916726e+23 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 76
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch76/ch1: sanity.dcRandom measured 40.6743698 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 76&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch76/ch1: sanity.dcRandom measured 40.6743698 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 76
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch79/ch0: sanity.peakRandom measured 8.77471133e+28 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 79&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch79/ch0: sanity.peakRandom measured 8.77471133e+28 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 79
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch79/ch0: sanity.dcRandom measured 3417522.5 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 79&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch79/ch0: sanity.dcRandom measured 3417522.5 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 79
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch79/ch1: sanity.peakRandom measured 1.22898681e+29 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 79&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch79/ch1: sanity.peakRandom measured 1.22898681e+29 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 79
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch79/ch1: sanity.dcRandom measured 969291.812 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 79&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch79/ch1: sanity.dcRandom measured 969291.812 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 79
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch85/ch0: sanity.peakRandom measured 1.92620354e+24 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 85&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch85/ch0: sanity.peakRandom measured 1.92620354e+24 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 85
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch85/ch0: sanity.dcRandom measured 263532.219 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 85&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch85/ch0: sanity.dcRandom measured 263532.219 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 85
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch85/ch1: sanity.peakRandom measured 2.78452045e+24 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 85&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch85/ch1: sanity.peakRandom measured 2.78452045e+24 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 85
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch85/ch1: sanity.dcRandom measured 36052.2578 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 85&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch85/ch1: sanity.dcRandom measured 36052.2578 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 85
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch95: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 95&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch95: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 95
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch103/ch0: sanity.peakRandom measured 349.280273 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 103&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch103/ch0: sanity.peakRandom measured 349.280273 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 103
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch103/ch1: sanity.peakRandom measured 558.329468 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 103&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch103/ch1: sanity.peakRandom measured 558.329468 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 103
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch104/ch0: sanity.peakRandom measured 1345.01599 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 104&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch104/ch0: sanity.peakRandom measured 1345.01599 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 104
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch104/ch0: sanity.dcRandom measured 0.153694928 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 104&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch104/ch0: sanity.dcRandom measured 0.153694928 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 104
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch104/ch1: sanity.peakRandom measured 2309.15845 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 104&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch104/ch1: sanity.peakRandom measured 2309.15845 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 104
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch104/ch1: sanity.dcRandom measured 0.142968282 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 104&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch104/ch1: sanity.dcRandom measured 0.142968282 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 104
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch105/ch0: sanity.peakRandom measured 5.68263472e+16 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 105&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch105/ch0: sanity.peakRandom measured 5.68263472e+16 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 105
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch105/ch0: sanity.dcRandom measured 147.020767 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 105&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch105/ch0: sanity.dcRandom measured 147.020767 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 105
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch105/ch1: sanity.peakRandom measured 1.01637987e+17 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 105&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch105/ch1: sanity.peakRandom measured 1.01637987e+17 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 105
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch105/ch1: sanity.dcRandom measured 42.2575569 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 105&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch105/ch1: sanity.dcRandom measured 42.2575569 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 105
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch119/ch0: sanity.peakRandom measured 5.10821869e+22 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 119&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch119/ch0: sanity.peakRandom measured 5.10821869e+22 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 119
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch119/ch0: sanity.dcRandom measured 14943.0947 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 119&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch119/ch0: sanity.dcRandom measured 14943.0947 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 119
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch119/ch1: sanity.peakRandom measured 7.39076367e+22 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 119&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch119/ch1: sanity.peakRandom measured 7.39076367e+22 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 119
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch119/ch1: sanity.dcRandom measured 2920.70654 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 119&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch119/ch1: sanity.dcRandom measured 2920.70654 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 119
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch120/ch0: sanity.peakRandom measured 2.80262554e+23 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 120&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch120/ch0: sanity.peakRandom measured 2.80262554e+23 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 120
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch120/ch0: sanity.dcRandom measured 28851.9414 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 120&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch120/ch0: sanity.dcRandom measured 28851.9414 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 120
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch120/ch1: sanity.peakRandom measured 4.49283422e+23 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 120&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch120/ch1: sanity.peakRandom measured 4.49283422e+23 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 120
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch120/ch1: sanity.dcRandom measured 15514.9131 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 120&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch120/ch1: sanity.dcRandom measured 15514.9131 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 120
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch128/ch0: sanity.peakRandom measured 9321.77637 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 128&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch128/ch0: sanity.peakRandom measured 9321.77637 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 128
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch128/ch1: sanity.peakRandom measured 18634.8984 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 128&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch128/ch1: sanity.peakRandom measured 18634.8984 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 128
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch131/ch0: sanity.peakRandom measured 9.45944422e+19 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 131&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch131/ch0: sanity.peakRandom measured 9.45944422e+19 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 131
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch131/ch0: sanity.dcRandom measured 55.8974686 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 131&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch131/ch0: sanity.dcRandom measured 55.8974686 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 131
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch131/ch1: sanity.peakRandom measured 1.45303347e+20 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 131&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch131/ch1: sanity.peakRandom measured 1.45303347e+20 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 131
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch131/ch1: sanity.dcRandom measured 0.0694408789 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 131&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch131/ch1: sanity.dcRandom measured 0.0694408789 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 131
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch137/ch0: sanity.peakRandom measured 5.26918779e+23 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 137&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch137/ch0: sanity.peakRandom measured 5.26918779e+23 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 137
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch137/ch0: sanity.dcRandom measured 5747.6665 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 137&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch137/ch0: sanity.dcRandom measured 5747.6665 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 137
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch137/ch1: sanity.peakRandom measured 5.53643715e+23 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 137&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch137/ch1: sanity.peakRandom measured 5.53643715e+23 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 137
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch137/ch1: sanity.dcRandom measured 8038.75439 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 137&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch137/ch1: sanity.dcRandom measured 8038.75439 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 137
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch145/ch0: sanity.peakRandom measured 6.40538804e+24 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 145&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch145/ch0: sanity.peakRandom measured 6.40538804e+24 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 145
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch145/ch0: sanity.dcRandom measured 4036702.5 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 145&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch145/ch0: sanity.dcRandom measured 4036702.5 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 145
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch145/ch1: sanity.peakRandom measured 9.58626734e+24 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 145&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch145/ch1: sanity.peakRandom measured 9.58626734e+24 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 145
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch145/ch1: sanity.dcRandom measured 437232.438 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 145&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch145/ch1: sanity.dcRandom measured 437232.438 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 145
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch150/ch0: sanity.peakRandom measured 3.88747198e+11 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 150&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch150/ch0: sanity.peakRandom measured 3.88747198e+11 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 150
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch150/ch1: sanity.peakRandom measured 7.63667481e+11 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 150&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch150/ch1: sanity.peakRandom measured 7.63667481e+11 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 150
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch154/ch0: sanity.peakRandom measured 6.03851657e+16 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 154&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch154/ch0: sanity.peakRandom measured 6.03851657e+16 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 154
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch154/ch0: sanity.dcRandom measured 64.3140945 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 154&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch154/ch0: sanity.dcRandom measured 64.3140945 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 154
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch154/ch1: sanity.peakRandom measured 1.03750218e+17 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 154&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch154/ch1: sanity.peakRandom measured 1.03750218e+17 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 154
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch154/ch1: sanity.dcRandom measured 23.0578976 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 154&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch154/ch1: sanity.dcRandom measured 23.0578976 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 154
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch157/ch0: sanity.peakRandom measured 4.43514219e+13 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 157&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch157/ch0: sanity.peakRandom measured 4.43514219e+13 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 157
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch157/ch0: sanity.dcRandom measured 5.27604285e+10 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 157&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch157/ch0: sanity.dcRandom measured 5.27604285e+10 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 157
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch157/ch1: sanity.peakRandom measured 5.01221593e+13 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 157&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch157/ch1: sanity.peakRandom measured 5.01221593e+13 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 157
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch157/ch1: sanity.dcRandom measured 5.46251653e+10 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 157&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch157/ch1: sanity.dcRandom measured 5.46251653e+10 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 157
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch161/ch0: sanity.peakRandom measured 234280.328 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 161&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch161/ch0: sanity.peakRandom measured 234280.328 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 161
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch161/ch1: sanity.peakRandom measured 411250.844 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 161&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch161/ch1: sanity.peakRandom measured 411250.844 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 161
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch162: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 162&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch162: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 162
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch163: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 163&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch163: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 163
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch165/ch0: sanity.peakRandom measured 3.11943143e+31 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 165&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch165/ch0: sanity.peakRandom measured 3.11943143e+31 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 165
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch165/ch0: sanity.dcRandom measured 296288544 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 165&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch165/ch0: sanity.dcRandom measured 296288544 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 165
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch165/ch1: sanity.peakRandom measured 4.55537514e+31 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 165&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch165/ch1: sanity.peakRandom measured 4.55537514e+31 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 165
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch165/ch1: sanity.dcRandom measured 198499824 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 165&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch165/ch1: sanity.dcRandom measured 198499824 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 165
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch174/ch0: sanity.peakRandom measured 2.97083693e+14 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 174&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch174/ch0: sanity.peakRandom measured 2.97083693e+14 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 174
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch174/ch0: sanity.dcRandom measured 0.33572638 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 174&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch174/ch0: sanity.dcRandom measured 0.33572638 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 174
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch174/ch1: sanity.peakRandom measured 4.90196563e+14 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 174&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch174/ch1: sanity.peakRandom measured 4.90196563e+14 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 174
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch174/ch1: sanity.dcRandom measured 0.189761221 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 174&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch174/ch1: sanity.dcRandom measured 0.189761221 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 174
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch182/ch0: sanity.peakRandom measured 8.2606645e+26 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 182&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch182/ch0: sanity.peakRandom measured 8.2606645e+26 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 182
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch182/ch0: sanity.dcRandom measured 46667.9297 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 182&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch182/ch0: sanity.dcRandom measured 46667.9297 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 182
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch182/ch1: sanity.peakRandom measured 1.01600534e+27 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 182&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch182/ch1: sanity.peakRandom measured 1.01600534e+27 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 182
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch182/ch1: sanity.dcRandom measured 42831.6523 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 182&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch182/ch1: sanity.dcRandom measured 42831.6523 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 182
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch185/ch0: sanity.peakRandom measured 5.73258477e+23 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 185&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch185/ch0: sanity.peakRandom measured 5.73258477e+23 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 185
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch185/ch0: sanity.dcRandom measured 6125.49023 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 185&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch185/ch0: sanity.dcRandom measured 6125.49023 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 185
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch185/ch1: sanity.peakRandom measured 6.40182436e+23 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 185&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch185/ch1: sanity.peakRandom measured 6.40182436e+23 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 185
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch185/ch1: sanity.dcRandom measured 7823.92529 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 185&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch185/ch1: sanity.dcRandom measured 7823.92529 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 185
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch188/ch0: sanity.peakRandom measured 6.69889548e+22 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 188&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch188/ch0: sanity.peakRandom measured 6.69889548e+22 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 188
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch188/ch0: sanity.dcRandom measured 4735.20068 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 188&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch188/ch0: sanity.dcRandom measured 4735.20068 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 188
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch188/ch1: sanity.peakRandom measured 9.21595821e+22 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 188&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch188/ch1: sanity.peakRandom measured 9.21595821e+22 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 188
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch188/ch1: sanity.dcRandom measured 3604.24585 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 188&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch188/ch1: sanity.dcRandom measured 3604.24585 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 188
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch192/ch0: sanity.peakRandom measured 4.00565606e+09 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 192&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch192/ch0: sanity.peakRandom measured 4.00565606e+09 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 192
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (patch192/ch1: sanity.peakRandom measured 8.02199757e+09 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 192&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (patch192/ch1: sanity.peakRandom measured 8.02199757e+09 linear, limit <= 4 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 192
+]]></failure>
+      <properties>
+        <property name="sanity.peakRandom|patch0/ch0" value="0.0659093931"/>
+        <property name="sanity.dcRandom|patch0/ch0" value="0.000275420141"/>
+        <property name="sanity.peakRandom|patch0/ch1" value="0.0659093931"/>
+        <property name="sanity.dcRandom|patch0/ch1" value="0.000277002051"/>
+        <property name="sanity.peakRandom|patch1/ch0" value="0.094737947"/>
+        <property name="sanity.dcRandom|patch1/ch0" value="0.00195891294"/>
+        <property name="sanity.peakRandom|patch1/ch1" value="0.0924396664"/>
+        <property name="sanity.dcRandom|patch1/ch1" value="0.00196681661"/>
+        <property name="sanity.peakRandom|patch2/ch0" value="0.00985021051"/>
+        <property name="sanity.dcRandom|patch2/ch0" value="0.000117315634"/>
+        <property name="sanity.peakRandom|patch2/ch1" value="0.00985021051"/>
+        <property name="sanity.dcRandom|patch2/ch1" value="0.000116711664"/>
+        <property name="sanity.peakRandom|patch3/ch0" value="1.37386236e+12"/>
+        <property name="sanity.dcRandom|patch3/ch0" value="0.0573355146"/>
+        <property name="sanity.peakRandom|patch3/ch1" value="2.93842479e+12"/>
+        <property name="sanity.dcRandom|patch3/ch1" value="0.0895123854"/>
+        <property name="sanity.peakRandom|patch4/ch0" value="1.08819562e+11"/>
+        <property name="sanity.dcRandom|patch4/ch0" value="0.140814856"/>
+        <property name="sanity.peakRandom|patch4/ch1" value="1.69402548e+11"/>
+        <property name="sanity.dcRandom|patch4/ch1" value="0.11506369"/>
+        <property name="sanity.peakRandom|patch5/ch0" value="0.00731187547"/>
+        <property name="sanity.dcRandom|patch5/ch0" value="0.000147874263"/>
+        <property name="sanity.peakRandom|patch5/ch1" value="0.00738693401"/>
+        <property name="sanity.dcRandom|patch5/ch1" value="0.000147774626"/>
+        <property name="sanity.peakRandom|patch6/ch0" value="0.097217381"/>
+        <property name="sanity.dcRandom|patch6/ch0" value="4.18901909e-05"/>
+        <property name="sanity.peakRandom|patch6/ch1" value="0.103732251"/>
+        <property name="sanity.dcRandom|patch6/ch1" value="3.88007975e-05"/>
+        <property name="sanity.peakRandom|patch7/ch0" value="1.77727724e+27"/>
+        <property name="sanity.dcRandom|patch7/ch0" value="50842452"/>
+        <property name="sanity.peakRandom|patch7/ch1" value="2.56608436e+27"/>
+        <property name="sanity.dcRandom|patch7/ch1" value="2378164"/>
+        <property name="sanity.peakRandom|patch8/ch0" value="0.000790409686"/>
+        <property name="sanity.dcRandom|patch8/ch0" value="1.12908327e-09"/>
+        <property name="sanity.peakRandom|patch8/ch1" value="0.000931459537"/>
+        <property name="sanity.dcRandom|patch8/ch1" value="6.97184488e-09"/>
+        <property name="sanity.peakRandom|patch9/ch0" value="0.0404715091"/>
+        <property name="sanity.dcRandom|patch9/ch0" value="6.71937599e-08"/>
+        <property name="sanity.peakRandom|patch9/ch1" value="0.0404715091"/>
+        <property name="sanity.dcRandom|patch9/ch1" value="4.28317577e-07"/>
+        <property name="sanity.peakRandom|patch10/ch0" value="0.111003183"/>
+        <property name="sanity.dcRandom|patch10/ch0" value="9.90990156e-06"/>
+        <property name="sanity.peakRandom|patch10/ch1" value="0.111003183"/>
+        <property name="sanity.dcRandom|patch10/ch1" value="1.0347323e-05"/>
+        <property name="sanity.peakRandom|patch11/ch0" value="0.0296991374"/>
+        <property name="sanity.dcRandom|patch11/ch0" value="1.75856073e-07"/>
+        <property name="sanity.peakRandom|patch11/ch1" value="0.0296991374"/>
+        <property name="sanity.dcRandom|patch11/ch1" value="3.12825165e-07"/>
+        <property name="sanity.peakRandom|patch12/ch0" value="0.0574137643"/>
+        <property name="sanity.dcRandom|patch12/ch0" value="6.65999721e-07"/>
+        <property name="sanity.peakRandom|patch12/ch1" value="0.052032195"/>
+        <property name="sanity.dcRandom|patch12/ch1" value="4.42646797e-06"/>
+        <property name="sanity.peakRandom|patch13/ch0" value="0.0394561253"/>
+        <property name="sanity.dcRandom|patch13/ch0" value="3.94369672e-05"/>
+        <property name="sanity.peakRandom|patch13/ch1" value="0.0402423479"/>
+        <property name="sanity.dcRandom|patch13/ch1" value="4.05557766e-05"/>
+        <property name="sanity.peakRandom|patch14/ch0" value="0.0315023139"/>
+        <property name="sanity.dcRandom|patch14/ch0" value="0.000485696597"/>
+        <property name="sanity.peakRandom|patch14/ch1" value="0.0315023139"/>
+        <property name="sanity.dcRandom|patch14/ch1" value="0.00048551787"/>
+        <property name="sanity.peakRandom|patch15/ch0" value="0.0552005544"/>
+        <property name="sanity.dcRandom|patch15/ch0" value="1.17130076e-05"/>
+        <property name="sanity.peakRandom|patch15/ch1" value="0.0792338997"/>
+        <property name="sanity.dcRandom|patch15/ch1" value="3.16112983e-06"/>
+        <property name="sanity.peakRandom|patch16/ch0" value="0.00101440854"/>
+        <property name="sanity.dcRandom|patch16/ch0" value="8.85287577e-08"/>
+        <property name="sanity.peakRandom|patch16/ch1" value="0.00101440854"/>
+        <property name="sanity.dcRandom|patch16/ch1" value="1.37121788e-07"/>
+        <property name="sanity.peakRandom|patch17/ch0" value="0.02326959"/>
+        <property name="sanity.dcRandom|patch17/ch0" value="7.09660753e-07"/>
+        <property name="sanity.peakRandom|patch17/ch1" value="0.0242214538"/>
+        <property name="sanity.dcRandom|patch17/ch1" value="2.87293034e-07"/>
+        <property name="sanity.peakRandom|patch18/ch0" value="6.37805509e+28"/>
+        <property name="sanity.dcRandom|patch18/ch0" value="5060865.5"/>
+        <property name="sanity.peakRandom|patch18/ch1" value="8.8588639e+28"/>
+        <property name="sanity.dcRandom|patch18/ch1" value="1015808"/>
+        <property name="sanity.peakRandom|patch19/ch0" value="0.00321655557"/>
+        <property name="sanity.dcRandom|patch19/ch0" value="8.23840455e-05"/>
+        <property name="sanity.peakRandom|patch19/ch1" value="0.00321655557"/>
+        <property name="sanity.dcRandom|patch19/ch1" value="8.23388837e-05"/>
+        <property name="sanity.peakRandom|patch20/ch0" value="0.0124189975"/>
+        <property name="sanity.dcRandom|patch20/ch0" value="0.000100050456"/>
+        <property name="sanity.peakRandom|patch20/ch1" value="0.0126523245"/>
+        <property name="sanity.dcRandom|patch20/ch1" value="0.000110455294"/>
+        <property name="sanity.peakRandom|patch21/ch0" value="0.202437863"/>
+        <property name="sanity.dcRandom|patch21/ch0" value="2.63847573e-06"/>
+        <property name="sanity.peakRandom|patch21/ch1" value="0.227473035"/>
+        <property name="sanity.dcRandom|patch21/ch1" value="4.06102299e-06"/>
+        <property name="sanity.peakRandom|patch22/ch0" value="0.0430689454"/>
+        <property name="sanity.dcRandom|patch22/ch0" value="1.50878623e-06"/>
+        <property name="sanity.peakRandom|patch22/ch1" value="0.0430689454"/>
+        <property name="sanity.dcRandom|patch22/ch1" value="1.14965076e-06"/>
+        <property name="sanity.peakRandom|patch23/ch0" value="0.0383122973"/>
+        <property name="sanity.dcRandom|patch23/ch0" value="0.000305085647"/>
+        <property name="sanity.peakRandom|patch23/ch1" value="0.0360521302"/>
+        <property name="sanity.dcRandom|patch23/ch1" value="0.00029875015"/>
+        <property name="sanity.peakRandom|patch24/ch0" value="0.00509406487"/>
+        <property name="sanity.dcRandom|patch24/ch0" value="6.8503323e-09"/>
+        <property name="sanity.peakRandom|patch24/ch1" value="0.00509406487"/>
+        <property name="sanity.dcRandom|patch24/ch1" value="2.4639176e-08"/>
+        <property name="sanity.peakRandom|patch25/ch0" value="4.15594726e+14"/>
+        <property name="sanity.dcRandom|patch25/ch0" value="0.0264332518"/>
+        <property name="sanity.peakRandom|patch25/ch1" value="7.20484723e+14"/>
+        <property name="sanity.dcRandom|patch25/ch1" value="0.00187340507"/>
+        <property name="sanity.peakRandom|patch26/ch0" value="0.00451016007"/>
+        <property name="sanity.dcRandom|patch26/ch0" value="5.03486299e-05"/>
+        <property name="sanity.peakRandom|patch26/ch1" value="0.00451016007"/>
+        <property name="sanity.dcRandom|patch26/ch1" value="5.03486299e-05"/>
+        <property name="sanity.peakRandom|patch27/ch0" value="0.00057970715"/>
+        <property name="sanity.dcRandom|patch27/ch0" value="1.13323804e-05"/>
+        <property name="sanity.peakRandom|patch27/ch1" value="0.00057970715"/>
+        <property name="sanity.dcRandom|patch27/ch1" value="1.13390606e-05"/>
+        <property name="sanity.peakRandom|patch28/ch0" value="0.00974885188"/>
+        <property name="sanity.dcRandom|patch28/ch0" value="2.00586292e-05"/>
+        <property name="sanity.peakRandom|patch28/ch1" value="0.00974885188"/>
+        <property name="sanity.dcRandom|patch28/ch1" value="2.01903258e-05"/>
+        <property name="sanity.peakRandom|patch29/ch0" value="0.0861294866"/>
+        <property name="sanity.dcRandom|patch29/ch0" value="4.27379564e-06"/>
+        <property name="sanity.peakRandom|patch29/ch1" value="0.0960586667"/>
+        <property name="sanity.dcRandom|patch29/ch1" value="3.07563937e-06"/>
+        <property name="sanity.peakRandom|patch30/ch0" value="0.00553763844"/>
+        <property name="sanity.dcRandom|patch30/ch0" value="5.67731695e-06"/>
+        <property name="sanity.peakRandom|patch30/ch1" value="0.00590536091"/>
+        <property name="sanity.dcRandom|patch30/ch1" value="5.76258162e-06"/>
+        <property name="sanity.peakRandom|patch31/ch0" value="0.00352735352"/>
+        <property name="sanity.dcRandom|patch31/ch0" value="9.02813335e-05"/>
+        <property name="sanity.peakRandom|patch31/ch1" value="0.00304087996"/>
+        <property name="sanity.dcRandom|patch31/ch1" value="9.8415745e-05"/>
+        <property name="sanity.peakRandom|patch32/ch0" value="0.0744037554"/>
+        <property name="sanity.dcRandom|patch32/ch0" value="0.000207636855"/>
+        <property name="sanity.peakRandom|patch32/ch1" value="0.0910822824"/>
+        <property name="sanity.dcRandom|patch32/ch1" value="0.000209545775"/>
+        <property name="sanity.peakRandom|patch33/ch0" value="0.119671337"/>
+        <property name="sanity.dcRandom|patch33/ch0" value="6.42113207e-07"/>
+        <property name="sanity.peakRandom|patch33/ch1" value="0.119671337"/>
+        <property name="sanity.dcRandom|patch33/ch1" value="1.43018531e-06"/>
+        <property name="sanity.peakRandom|patch34/ch0" value="0.274434298"/>
+        <property name="sanity.dcRandom|patch34/ch0" value="0.00196525874"/>
+        <property name="sanity.peakRandom|patch34/ch1" value="0.278708458"/>
+        <property name="sanity.dcRandom|patch34/ch1" value="0.00195847568"/>
+        <property name="sanity.peakRandom|patch35/ch0" value="5.21463439e+10"/>
+        <property name="sanity.dcRandom|patch35/ch0" value="0.000693923619"/>
+        <property name="sanity.peakRandom|patch35/ch1" value="9.61056276e+10"/>
+        <property name="sanity.dcRandom|patch35/ch1" value="0.00169565016"/>
+        <property name="sanity.peakRandom|patch36/ch0" value="1.07641707e+17"/>
+        <property name="sanity.dcRandom|patch36/ch0" value="7.90097761"/>
+        <property name="sanity.peakRandom|patch36/ch1" value="1.83906411e+17"/>
+        <property name="sanity.dcRandom|patch36/ch1" value="0.214600787"/>
+        <property name="sanity.peakRandom|patch37/ch0" value="0.12530826"/>
+        <property name="sanity.dcRandom|patch37/ch0" value="0.00123083172"/>
+        <property name="sanity.peakRandom|patch37/ch1" value="0.119203418"/>
+        <property name="sanity.dcRandom|patch37/ch1" value="0.00122231606"/>
+        <property name="sanity.peakRandom|patch38/ch0" value="0.0094284201"/>
+        <property name="sanity.dcRandom|patch38/ch0" value="1.3696831e-06"/>
+        <property name="sanity.peakRandom|patch38/ch1" value="0.0094284201"/>
+        <property name="sanity.dcRandom|patch38/ch1" value="1.26263581e-06"/>
+        <property name="sanity.peakRandom|patch39/ch0" value="0.000113238966"/>
+        <property name="sanity.dcRandom|patch39/ch0" value="1.46074555e-07"/>
+        <property name="sanity.peakRandom|patch39/ch1" value="0.000113238966"/>
+        <property name="sanity.dcRandom|patch39/ch1" value="1.47981879e-07"/>
+        <property name="sanity.peakRandom|patch40/ch0" value="154347.875"/>
+        <property name="sanity.dcRandom|patch40/ch0" value="7.78978138e-05"/>
+        <property name="sanity.peakRandom|patch40/ch1" value="242143.812"/>
+        <property name="sanity.dcRandom|patch40/ch1" value="6.60241058e-05"/>
+        <property name="sanity.peakRandom|patch41/ch0" value="0.066810295"/>
+        <property name="sanity.dcRandom|patch41/ch0" value="2.67965174e-06"/>
+        <property name="sanity.peakRandom|patch41/ch1" value="0.066810295"/>
+        <property name="sanity.dcRandom|patch41/ch1" value="2.95302061e-06"/>
+        <property name="sanity.peakRandom|patch42/ch0" value="0.0218784176"/>
+        <property name="sanity.dcRandom|patch42/ch0" value="3.37364234e-08"/>
+        <property name="sanity.peakRandom|patch42/ch1" value="0.0288853403"/>
+        <property name="sanity.dcRandom|patch42/ch1" value="2.30860238e-07"/>
+        <property name="sanity.peakRandom|patch43/ch0" value="0.50267303"/>
+        <property name="sanity.dcRandom|patch43/ch0" value="0.000655216223"/>
+        <property name="sanity.peakRandom|patch43/ch1" value="0.478179842"/>
+        <property name="sanity.dcRandom|patch43/ch1" value="0.000595546211"/>
+        <property name="sanity.peakRandom|patch44/ch0" value="0.0332282074"/>
+        <property name="sanity.dcRandom|patch44/ch0" value="4.45913315e-07"/>
+        <property name="sanity.peakRandom|patch44/ch1" value="0.0332282074"/>
+        <property name="sanity.dcRandom|patch44/ch1" value="8.39081792e-07"/>
+        <property name="sanity.peakRandom|patch45/ch0" value="0.00877763331"/>
+        <property name="sanity.dcRandom|patch45/ch0" value="0.00025567296"/>
+        <property name="sanity.peakRandom|patch45/ch1" value="0.00877763331"/>
+        <property name="sanity.dcRandom|patch45/ch1" value="0.000255640334"/>
+        <property name="sanity.peakRandom|patch46/ch0" value="277275.344"/>
+        <property name="sanity.dcRandom|patch46/ch0" value="0.000605336681"/>
+        <property name="sanity.peakRandom|patch46/ch1" value="421166.844"/>
+        <property name="sanity.dcRandom|patch46/ch1" value="0.000495965709"/>
+        <property name="sanity.peakRandom|patch47/ch0" value="0.077691257"/>
+        <property name="sanity.dcRandom|patch47/ch0" value="0.000554995495"/>
+        <property name="sanity.peakRandom|patch47/ch1" value="0.0954511836"/>
+        <property name="sanity.dcRandom|patch47/ch1" value="0.000555513659"/>
+        <property name="sanity.peakRandom|patch48/ch0" value="1.78539072e+09"/>
+        <property name="sanity.dcRandom|patch48/ch0" value="0.00328079378"/>
+        <property name="sanity.peakRandom|patch48/ch1" value="3.36295706e+09"/>
+        <property name="sanity.dcRandom|patch48/ch1" value="0.00253165513"/>
+        <property name="sanity.peakRandom|patch49/ch0" value="0.0468001291"/>
+        <property name="sanity.dcRandom|patch49/ch0" value="4.76072364e-06"/>
+        <property name="sanity.peakRandom|patch49/ch1" value="0.0468001291"/>
+        <property name="sanity.dcRandom|patch49/ch1" value="5.05277194e-06"/>
+        <property name="sanity.peakRandom|patch50/ch0" value="8.52391835e+29"/>
+        <property name="sanity.dcRandom|patch50/ch0" value="16999470"/>
+        <property name="sanity.peakRandom|patch50/ch1" value="1.14473549e+30"/>
+        <property name="sanity.dcRandom|patch50/ch1" value="809121.375"/>
+        <property name="sanity.peakRandom|patch51/ch0" value="0.00484155118"/>
+        <property name="sanity.dcRandom|patch51/ch0" value="1.73506336e-07"/>
+        <property name="sanity.peakRandom|patch51/ch1" value="0.00484155118"/>
+        <property name="sanity.dcRandom|patch51/ch1" value="1.81593165e-07"/>
+        <property name="sanity.peakRandom|patch52/ch0" value="0.0131199872"/>
+        <property name="sanity.dcRandom|patch52/ch0" value="6.47732321e-08"/>
+        <property name="sanity.peakRandom|patch52/ch1" value="0.0131199872"/>
+        <property name="sanity.dcRandom|patch52/ch1" value="2.32874811e-07"/>
+        <property name="sanity.peakRandom|patch53/ch0" value="759811392"/>
+        <property name="sanity.dcRandom|patch53/ch0" value="0.00276100356"/>
+        <property name="sanity.peakRandom|patch53/ch1" value="1.54431629e+09"/>
+        <property name="sanity.dcRandom|patch53/ch1" value="0.00327483914"/>
+        <property name="sanity.peakRandom|patch54/ch0" value="0.0139549067"/>
+        <property name="sanity.dcRandom|patch54/ch0" value="8.61083294e-08"/>
+        <property name="sanity.peakRandom|patch54/ch1" value="0.0165272988"/>
+        <property name="sanity.dcRandom|patch54/ch1" value="6.99798903e-08"/>
+        <property name="sanity.peakRandom|patch55/ch0" value="4.77390313e+13"/>
+        <property name="sanity.dcRandom|patch55/ch0" value="0.0201586615"/>
+        <property name="sanity.peakRandom|patch55/ch1" value="8.62870758e+13"/>
+        <property name="sanity.dcRandom|patch55/ch1" value="0.0048194197"/>
+        <property name="sanity.peakRandom|patch56/ch0" value="0.00746871065"/>
+        <property name="sanity.dcRandom|patch56/ch0" value="4.77603407e-06"/>
+        <property name="sanity.peakRandom|patch56/ch1" value="0.00746871065"/>
+        <property name="sanity.dcRandom|patch56/ch1" value="5.13981149e-06"/>
+        <property name="sanity.peakRandom|patch58/ch0" value="0.265649766"/>
+        <property name="sanity.dcRandom|patch58/ch0" value="0.00013250242"/>
+        <property name="sanity.peakRandom|patch58/ch1" value="0.27266714"/>
+        <property name="sanity.dcRandom|patch58/ch1" value="0.00013467019"/>
+        <property name="sanity.peakRandom|patch59/ch0" value="1.05289772e+27"/>
+        <property name="sanity.dcRandom|patch59/ch0" value="112970.422"/>
+        <property name="sanity.peakRandom|patch59/ch1" value="1.29895479e+27"/>
+        <property name="sanity.dcRandom|patch59/ch1" value="106057.094"/>
+        <property name="sanity.peakRandom|patch60/ch0" value="0.00878112577"/>
+        <property name="sanity.dcRandom|patch60/ch0" value="2.20700272e-07"/>
+        <property name="sanity.peakRandom|patch60/ch1" value="0.00878112577"/>
+        <property name="sanity.dcRandom|patch60/ch1" value="2.16531987e-07"/>
+        <property name="sanity.peakRandom|patch61/ch0" value="0.0335153639"/>
+        <property name="sanity.dcRandom|patch61/ch0" value="0.000133973081"/>
+        <property name="sanity.peakRandom|patch61/ch1" value="0.0335153639"/>
+        <property name="sanity.dcRandom|patch61/ch1" value="0.000133983092"/>
+        <property name="sanity.peakRandom|patch62/ch0" value="0.0822359025"/>
+        <property name="sanity.dcRandom|patch62/ch0" value="0.000160596363"/>
+        <property name="sanity.peakRandom|patch62/ch1" value="0.0822359025"/>
+        <property name="sanity.dcRandom|patch62/ch1" value="0.000159302144"/>
+        <property name="sanity.peakRandom|patch63/ch0" value="0.216152027"/>
+        <property name="sanity.dcRandom|patch63/ch0" value="0.000192158797"/>
+        <property name="sanity.peakRandom|patch63/ch1" value="0.275747687"/>
+        <property name="sanity.dcRandom|patch63/ch1" value="0.000191227475"/>
+        <property name="sanity.peakRandom|patch64/ch0" value="0.0138326976"/>
+        <property name="sanity.dcRandom|patch64/ch0" value="6.89211492e-06"/>
+        <property name="sanity.peakRandom|patch64/ch1" value="0.0130446553"/>
+        <property name="sanity.dcRandom|patch64/ch1" value="5.50080858e-06"/>
+        <property name="sanity.peakRandom|patch65/ch0" value="108706176"/>
+        <property name="sanity.dcRandom|patch65/ch0" value="9.16773502e-08"/>
+        <property name="sanity.peakRandom|patch65/ch1" value="191411568"/>
+        <property name="sanity.dcRandom|patch65/ch1" value="4.5983852e-05"/>
+        <property name="sanity.peakRandom|patch66/ch0" value="0.0885054544"/>
+        <property name="sanity.dcRandom|patch66/ch0" value="0.00022179159"/>
+        <property name="sanity.peakRandom|patch66/ch1" value="0.0885054544"/>
+        <property name="sanity.dcRandom|patch66/ch1" value="0.000223760391"/>
+        <property name="sanity.peakRandom|patch67/ch0" value="0.035658028"/>
+        <property name="sanity.dcRandom|patch67/ch0" value="1.61811895e-05"/>
+        <property name="sanity.peakRandom|patch67/ch1" value="0.035658028"/>
+        <property name="sanity.dcRandom|patch67/ch1" value="1.57918403e-05"/>
+        <property name="sanity.peakRandom|patch68/ch0" value="0.0346064232"/>
+        <property name="sanity.dcRandom|patch68/ch0" value="9.17984949e-07"/>
+        <property name="sanity.peakRandom|patch68/ch1" value="0.0346064232"/>
+        <property name="sanity.dcRandom|patch68/ch1" value="9.31550915e-07"/>
+        <property name="sanity.peakRandom|patch69/ch0" value="0.00289959763"/>
+        <property name="sanity.dcRandom|patch69/ch0" value="4.71822901e-08"/>
+        <property name="sanity.peakRandom|patch69/ch1" value="0.00289959763"/>
+        <property name="sanity.dcRandom|patch69/ch1" value="1.82590071e-07"/>
+        <property name="sanity.peakRandom|patch70/ch0" value="3.44596263e+18"/>
+        <property name="sanity.dcRandom|patch70/ch0" value="52.6531487"/>
+        <property name="sanity.peakRandom|patch70/ch1" value="5.49421782e+18"/>
+        <property name="sanity.dcRandom|patch70/ch1" value="4.8650012"/>
+        <property name="sanity.peakRandom|patch71/ch0" value="0.00805887114"/>
+        <property name="sanity.dcRandom|patch71/ch0" value="1.57253822e-07"/>
+        <property name="sanity.peakRandom|patch71/ch1" value="0.00805887114"/>
+        <property name="sanity.dcRandom|patch71/ch1" value="3.96330307e-07"/>
+        <property name="sanity.peakRandom|patch72/ch0" value="0.00691189244"/>
+        <property name="sanity.dcRandom|patch72/ch0" value="3.93764253e-07"/>
+        <property name="sanity.peakRandom|patch72/ch1" value="0.00691189244"/>
+        <property name="sanity.dcRandom|patch72/ch1" value="4.66932192e-07"/>
+        <property name="sanity.peakRandom|patch73/ch0" value="0.0151527207"/>
+        <property name="sanity.dcRandom|patch73/ch0" value="0.000440904434"/>
+        <property name="sanity.peakRandom|patch73/ch1" value="0.0151527207"/>
+        <property name="sanity.dcRandom|patch73/ch1" value="0.000440572068"/>
+        <property name="sanity.peakRandom|patch74/ch0" value="0.183188185"/>
+        <property name="sanity.dcRandom|patch74/ch0" value="0.00152885728"/>
+        <property name="sanity.peakRandom|patch74/ch1" value="0.196936041"/>
+        <property name="sanity.dcRandom|patch74/ch1" value="0.00141158933"/>
+        <property name="sanity.peakRandom|patch75/ch0" value="0.0333819017"/>
+        <property name="sanity.dcRandom|patch75/ch0" value="2.9537194e-08"/>
+        <property name="sanity.peakRandom|patch75/ch1" value="0.0410921201"/>
+        <property name="sanity.dcRandom|patch75/ch1" value="7.97034431e-07"/>
+        <property name="sanity.peakRandom|patch76/ch0" value="9.66508329e+22"/>
+        <property name="sanity.dcRandom|patch76/ch0" value="5642.50098"/>
+        <property name="sanity.peakRandom|patch76/ch1" value="1.42916726e+23"/>
+        <property name="sanity.dcRandom|patch76/ch1" value="40.6743698"/>
+        <property name="sanity.peakRandom|patch77/ch0" value="0.00161781209"/>
+        <property name="sanity.dcRandom|patch77/ch0" value="3.87120469e-09"/>
+        <property name="sanity.peakRandom|patch77/ch1" value="0.00161781209"/>
+        <property name="sanity.dcRandom|patch77/ch1" value="7.23366895e-08"/>
+        <property name="sanity.peakRandom|patch78/ch0" value="0.0737726018"/>
+        <property name="sanity.dcRandom|patch78/ch0" value="0.00024926936"/>
+        <property name="sanity.peakRandom|patch78/ch1" value="0.109369285"/>
+        <property name="sanity.dcRandom|patch78/ch1" value="0.000245845353"/>
+        <property name="sanity.peakRandom|patch79/ch0" value="8.77471133e+28"/>
+        <property name="sanity.dcRandom|patch79/ch0" value="3417522.5"/>
+        <property name="sanity.peakRandom|patch79/ch1" value="1.22898681e+29"/>
+        <property name="sanity.dcRandom|patch79/ch1" value="969291.812"/>
+        <property name="sanity.peakRandom|patch80/ch0" value="0.0013812494"/>
+        <property name="sanity.dcRandom|patch80/ch0" value="4.88263959e-06"/>
+        <property name="sanity.peakRandom|patch80/ch1" value="0.0013812494"/>
+        <property name="sanity.dcRandom|patch80/ch1" value="4.9041646e-06"/>
+        <property name="sanity.peakRandom|patch81/ch0" value="0.0246721879"/>
+        <property name="sanity.dcRandom|patch81/ch0" value="2.02228944e-06"/>
+        <property name="sanity.peakRandom|patch81/ch1" value="0.0246721879"/>
+        <property name="sanity.dcRandom|patch81/ch1" value="3.01911473e-06"/>
+        <property name="sanity.peakRandom|patch82/ch0" value="0.000425932463"/>
+        <property name="sanity.dcRandom|patch82/ch0" value="1.31041542e-08"/>
+        <property name="sanity.peakRandom|patch82/ch1" value="0.000429738546"/>
+        <property name="sanity.dcRandom|patch82/ch1" value="2.50082177e-08"/>
+        <property name="sanity.peakRandom|patch83/ch0" value="0.0205810238"/>
+        <property name="sanity.dcRandom|patch83/ch0" value="6.36780495e-09"/>
+        <property name="sanity.peakRandom|patch83/ch1" value="0.0205810238"/>
+        <property name="sanity.dcRandom|patch83/ch1" value="2.16350742e-07"/>
+        <property name="sanity.peakRandom|patch84/ch0" value="0.0462487936"/>
+        <property name="sanity.dcRandom|patch84/ch0" value="3.68175506e-06"/>
+        <property name="sanity.peakRandom|patch84/ch1" value="0.0462487936"/>
+        <property name="sanity.dcRandom|patch84/ch1" value="3.58955435e-06"/>
+        <property name="sanity.peakRandom|patch85/ch0" value="1.92620354e+24"/>
+        <property name="sanity.dcRandom|patch85/ch0" value="263532.219"/>
+        <property name="sanity.peakRandom|patch85/ch1" value="2.78452045e+24"/>
+        <property name="sanity.dcRandom|patch85/ch1" value="36052.2578"/>
+        <property name="sanity.peakRandom|patch86/ch0" value="0.00318030524"/>
+        <property name="sanity.dcRandom|patch86/ch0" value="1.47982021e-07"/>
+        <property name="sanity.peakRandom|patch86/ch1" value="0.00318030524"/>
+        <property name="sanity.dcRandom|patch86/ch1" value="4.5219295e-07"/>
+        <property name="sanity.peakRandom|patch87/ch0" value="0.261670351"/>
+        <property name="sanity.dcRandom|patch87/ch0" value="9.89188948e-07"/>
+        <property name="sanity.peakRandom|patch87/ch1" value="0.261670351"/>
+        <property name="sanity.dcRandom|patch87/ch1" value="1.61970533e-07"/>
+        <property name="sanity.peakRandom|patch88/ch0" value="0.000394008297"/>
+        <property name="sanity.dcRandom|patch88/ch0" value="2.44629579e-08"/>
+        <property name="sanity.peakRandom|patch88/ch1" value="0.000382391998"/>
+        <property name="sanity.dcRandom|patch88/ch1" value="2.3059108e-09"/>
+        <property name="sanity.peakRandom|patch89/ch0" value="0.102980413"/>
+        <property name="sanity.dcRandom|patch89/ch0" value="0.000571408484"/>
+        <property name="sanity.peakRandom|patch89/ch1" value="0.155349538"/>
+        <property name="sanity.dcRandom|patch89/ch1" value="0.000555569073"/>
+        <property name="sanity.peakRandom|patch90/ch0" value="0.0125065744"/>
+        <property name="sanity.dcRandom|patch90/ch0" value="5.79861808e-05"/>
+        <property name="sanity.peakRandom|patch90/ch1" value="0.0155584402"/>
+        <property name="sanity.dcRandom|patch90/ch1" value="5.67158895e-05"/>
+        <property name="sanity.peakRandom|patch91/ch0" value="0.00181653001"/>
+        <property name="sanity.dcRandom|patch91/ch0" value="8.64038263e-09"/>
+        <property name="sanity.peakRandom|patch91/ch1" value="0.00181653001"/>
+        <property name="sanity.dcRandom|patch91/ch1" value="1.91356566e-08"/>
+        <property name="sanity.peakRandom|patch92/ch0" value="0.191564903"/>
+        <property name="sanity.dcRandom|patch92/ch0" value="0.000101192585"/>
+        <property name="sanity.peakRandom|patch92/ch1" value="0.205797374"/>
+        <property name="sanity.dcRandom|patch92/ch1" value="8.43767411e-05"/>
+        <property name="sanity.peakRandom|patch93/ch0" value="0.131231949"/>
+        <property name="sanity.dcRandom|patch93/ch0" value="2.11380757e-06"/>
+        <property name="sanity.peakRandom|patch93/ch1" value="0.131231949"/>
+        <property name="sanity.dcRandom|patch93/ch1" value="3.90544346e-06"/>
+        <property name="sanity.peakRandom|patch94/ch0" value="0.20379363"/>
+        <property name="sanity.dcRandom|patch94/ch0" value="0.00538347615"/>
+        <property name="sanity.peakRandom|patch94/ch1" value="0.20379363"/>
+        <property name="sanity.dcRandom|patch94/ch1" value="0.00539644156"/>
+        <property name="sanity.peakRandom|patch96/ch0" value="0.0330025889"/>
+        <property name="sanity.dcRandom|patch96/ch0" value="0.000720672484"/>
+        <property name="sanity.peakRandom|patch96/ch1" value="0.0341889039"/>
+        <property name="sanity.dcRandom|patch96/ch1" value="0.000762711919"/>
+        <property name="sanity.peakRandom|patch97/ch0" value="0.0199880823"/>
+        <property name="sanity.dcRandom|patch97/ch0" value="3.37940435e-07"/>
+        <property name="sanity.peakRandom|patch97/ch1" value="0.0271103531"/>
+        <property name="sanity.dcRandom|patch97/ch1" value="2.32686671e-06"/>
+        <property name="sanity.peakRandom|patch98/ch0" value="0.150654063"/>
+        <property name="sanity.dcRandom|patch98/ch0" value="2.22209266e-07"/>
+        <property name="sanity.peakRandom|patch98/ch1" value="0.150654063"/>
+        <property name="sanity.dcRandom|patch98/ch1" value="2.080483e-06"/>
+        <property name="sanity.peakRandom|patch99/ch0" value="0.223336577"/>
+        <property name="sanity.dcRandom|patch99/ch0" value="0.000253175182"/>
+        <property name="sanity.peakRandom|patch99/ch1" value="0.191494793"/>
+        <property name="sanity.dcRandom|patch99/ch1" value="0.000217517882"/>
+        <property name="sanity.peakRandom|patch100/ch0" value="0.0167597681"/>
+        <property name="sanity.dcRandom|patch100/ch0" value="2.86326995e-05"/>
+        <property name="sanity.peakRandom|patch100/ch1" value="0.0167597681"/>
+        <property name="sanity.dcRandom|patch100/ch1" value="2.85468232e-05"/>
+        <property name="sanity.peakRandom|patch101/ch0" value="0.0108949235"/>
+        <property name="sanity.dcRandom|patch101/ch0" value="1.40131726e-06"/>
+        <property name="sanity.peakRandom|patch101/ch1" value="0.0123327617"/>
+        <property name="sanity.dcRandom|patch101/ch1" value="3.38192137e-07"/>
+        <property name="sanity.peakRandom|patch102/ch0" value="0.0109134382"/>
+        <property name="sanity.dcRandom|patch102/ch0" value="0.000155229325"/>
+        <property name="sanity.peakRandom|patch102/ch1" value="0.0109134382"/>
+        <property name="sanity.dcRandom|patch102/ch1" value="0.000154714013"/>
+        <property name="sanity.peakRandom|patch103/ch0" value="349.280273"/>
+        <property name="sanity.dcRandom|patch103/ch0" value="1.06885336e-05"/>
+        <property name="sanity.peakRandom|patch103/ch1" value="558.329468"/>
+        <property name="sanity.dcRandom|patch103/ch1" value="9.94853417e-06"/>
+        <property name="sanity.peakRandom|patch104/ch0" value="1345.01599"/>
+        <property name="sanity.dcRandom|patch104/ch0" value="0.153694928"/>
+        <property name="sanity.peakRandom|patch104/ch1" value="2309.15845"/>
+        <property name="sanity.dcRandom|patch104/ch1" value="0.142968282"/>
+        <property name="sanity.peakRandom|patch105/ch0" value="5.68263472e+16"/>
+        <property name="sanity.dcRandom|patch105/ch0" value="147.020767"/>
+        <property name="sanity.peakRandom|patch105/ch1" value="1.01637987e+17"/>
+        <property name="sanity.dcRandom|patch105/ch1" value="42.2575569"/>
+        <property name="sanity.peakRandom|patch106/ch0" value="0.090105705"/>
+        <property name="sanity.dcRandom|patch106/ch0" value="0.00051613769"/>
+        <property name="sanity.peakRandom|patch106/ch1" value="0.090105705"/>
+        <property name="sanity.dcRandom|patch106/ch1" value="0.000519653026"/>
+        <property name="sanity.peakRandom|patch107/ch0" value="0.206116974"/>
+        <property name="sanity.dcRandom|patch107/ch0" value="0.000829514815"/>
+        <property name="sanity.peakRandom|patch107/ch1" value="0.208852187"/>
+        <property name="sanity.dcRandom|patch107/ch1" value="0.000916803139"/>
+        <property name="sanity.peakRandom|patch108/ch0" value="0.0162984263"/>
+        <property name="sanity.dcRandom|patch108/ch0" value="1.07992824e-08"/>
+        <property name="sanity.peakRandom|patch108/ch1" value="0.0162984263"/>
+        <property name="sanity.dcRandom|patch108/ch1" value="2.62484807e-08"/>
+        <property name="sanity.peakRandom|patch109/ch0" value="0.0245966539"/>
+        <property name="sanity.dcRandom|patch109/ch0" value="2.6485568e-06"/>
+        <property name="sanity.peakRandom|patch109/ch1" value="0.0246300809"/>
+        <property name="sanity.dcRandom|patch109/ch1" value="2.26444195e-06"/>
+        <property name="sanity.peakRandom|patch110/ch0" value="0.0591311753"/>
+        <property name="sanity.dcRandom|patch110/ch0" value="0.000207310659"/>
+        <property name="sanity.peakRandom|patch110/ch1" value="0.0643416345"/>
+        <property name="sanity.dcRandom|patch110/ch1" value="0.000212305225"/>
+        <property name="sanity.peakRandom|patch111/ch0" value="0.0414718501"/>
+        <property name="sanity.dcRandom|patch111/ch0" value="0.000307611277"/>
+        <property name="sanity.peakRandom|patch111/ch1" value="0.0414718501"/>
+        <property name="sanity.dcRandom|patch111/ch1" value="0.000307365815"/>
+        <property name="sanity.peakRandom|patch112/ch0" value="0.00812793523"/>
+        <property name="sanity.dcRandom|patch112/ch0" value="3.05039748e-07"/>
+        <property name="sanity.peakRandom|patch112/ch1" value="0.00796465762"/>
+        <property name="sanity.dcRandom|patch112/ch1" value="7.14384818e-09"/>
+        <property name="sanity.peakRandom|patch113/ch0" value="0.0857891738"/>
+        <property name="sanity.dcRandom|patch113/ch0" value="0.000535522879"/>
+        <property name="sanity.peakRandom|patch113/ch1" value="0.0857891738"/>
+        <property name="sanity.dcRandom|patch113/ch1" value="0.000536789419"/>
+        <property name="sanity.peakRandom|patch114/ch0" value="0.00241054548"/>
+        <property name="sanity.dcRandom|patch114/ch0" value="5.54055646e-09"/>
+        <property name="sanity.peakRandom|patch114/ch1" value="0.00241054548"/>
+        <property name="sanity.dcRandom|patch114/ch1" value="5.86616444e-09"/>
+        <property name="sanity.peakRandom|patch115/ch0" value="0.0497410484"/>
+        <property name="sanity.dcRandom|patch115/ch0" value="4.75643719e-05"/>
+        <property name="sanity.peakRandom|patch115/ch1" value="0.0497410484"/>
+        <property name="sanity.dcRandom|patch115/ch1" value="4.67504615e-05"/>
+        <property name="sanity.peakRandom|patch116/ch0" value="0.00503500924"/>
+        <property name="sanity.dcRandom|patch116/ch0" value="3.95457246e-05"/>
+        <property name="sanity.peakRandom|patch116/ch1" value="0.00503500924"/>
+        <property name="sanity.dcRandom|patch116/ch1" value="3.95965108e-05"/>
+        <property name="sanity.peakRandom|patch117/ch0" value="0.0020874124"/>
+        <property name="sanity.dcRandom|patch117/ch0" value="4.10750326e-05"/>
+        <property name="sanity.peakRandom|patch117/ch1" value="0.0020874124"/>
+        <property name="sanity.dcRandom|patch117/ch1" value="4.10407374e-05"/>
+        <property name="sanity.peakRandom|patch118/ch0" value="0.0517757051"/>
+        <property name="sanity.dcRandom|patch118/ch0" value="0.000376476441"/>
+        <property name="sanity.peakRandom|patch118/ch1" value="0.0517757051"/>
+        <property name="sanity.dcRandom|patch118/ch1" value="0.000376650656"/>
+        <property name="sanity.peakRandom|patch119/ch0" value="5.10821869e+22"/>
+        <property name="sanity.dcRandom|patch119/ch0" value="14943.0947"/>
+        <property name="sanity.peakRandom|patch119/ch1" value="7.39076367e+22"/>
+        <property name="sanity.dcRandom|patch119/ch1" value="2920.70654"/>
+        <property name="sanity.peakRandom|patch120/ch0" value="2.80262554e+23"/>
+        <property name="sanity.dcRandom|patch120/ch0" value="28851.9414"/>
+        <property name="sanity.peakRandom|patch120/ch1" value="4.49283422e+23"/>
+        <property name="sanity.dcRandom|patch120/ch1" value="15514.9131"/>
+        <property name="sanity.peakRandom|patch121/ch0" value="0.00359761855"/>
+        <property name="sanity.dcRandom|patch121/ch0" value="2.57690317e-07"/>
+        <property name="sanity.peakRandom|patch121/ch1" value="0.00359761855"/>
+        <property name="sanity.dcRandom|patch121/ch1" value="2.84891769e-07"/>
+        <property name="sanity.peakRandom|patch122/ch0" value="2.44362783"/>
+        <property name="sanity.dcRandom|patch122/ch0" value="3.99529017e-05"/>
+        <property name="sanity.peakRandom|patch122/ch1" value="2.7688396"/>
+        <property name="sanity.dcRandom|patch122/ch1" value="3.86329593e-05"/>
+        <property name="sanity.peakRandom|patch123/ch0" value="0.0482711419"/>
+        <property name="sanity.dcRandom|patch123/ch0" value="0.000148289764"/>
+        <property name="sanity.peakRandom|patch123/ch1" value="0.0454269536"/>
+        <property name="sanity.dcRandom|patch123/ch1" value="0.000142112942"/>
+        <property name="sanity.peakRandom|patch124/ch0" value="0.00202986132"/>
+        <property name="sanity.dcRandom|patch124/ch0" value="2.03271793e-05"/>
+        <property name="sanity.peakRandom|patch124/ch1" value="0.00215845834"/>
+        <property name="sanity.dcRandom|patch124/ch1" value="2.02744668e-05"/>
+        <property name="sanity.peakRandom|patch125/ch0" value="0.00261109974"/>
+        <property name="sanity.dcRandom|patch125/ch0" value="2.38881714e-08"/>
+        <property name="sanity.peakRandom|patch125/ch1" value="0.00261109974"/>
+        <property name="sanity.dcRandom|patch125/ch1" value="3.23844453e-08"/>
+        <property name="sanity.peakRandom|patch126/ch0" value="0.127205953"/>
+        <property name="sanity.dcRandom|patch126/ch0" value="0.00115201715"/>
+        <property name="sanity.peakRandom|patch126/ch1" value="0.157666966"/>
+        <property name="sanity.dcRandom|patch126/ch1" value="0.00115568214"/>
+        <property name="sanity.peakRandom|patch127/ch0" value="0.119910993"/>
+        <property name="sanity.dcRandom|patch127/ch0" value="0.000936032913"/>
+        <property name="sanity.peakRandom|patch127/ch1" value="0.119910993"/>
+        <property name="sanity.dcRandom|patch127/ch1" value="0.00094057736"/>
+        <property name="sanity.peakRandom|patch128/ch0" value="9321.77637"/>
+        <property name="sanity.dcRandom|patch128/ch0" value="0.000684543571"/>
+        <property name="sanity.peakRandom|patch128/ch1" value="18634.8984"/>
+        <property name="sanity.dcRandom|patch128/ch1" value="0.00068756548"/>
+        <property name="sanity.peakRandom|patch129/ch0" value="0.0201443732"/>
+        <property name="sanity.dcRandom|patch129/ch0" value="0.000170094107"/>
+        <property name="sanity.peakRandom|patch129/ch1" value="0.0201443732"/>
+        <property name="sanity.dcRandom|patch129/ch1" value="0.000170317959"/>
+        <property name="sanity.peakRandom|patch130/ch0" value="0.00371068437"/>
+        <property name="sanity.dcRandom|patch130/ch0" value="2.07004447e-07"/>
+        <property name="sanity.peakRandom|patch130/ch1" value="0.00393478852"/>
+        <property name="sanity.dcRandom|patch130/ch1" value="8.60502922e-08"/>
+        <property name="sanity.peakRandom|patch131/ch0" value="9.45944422e+19"/>
+        <property name="sanity.dcRandom|patch131/ch0" value="55.8974686"/>
+        <property name="sanity.peakRandom|patch131/ch1" value="1.45303347e+20"/>
+        <property name="sanity.dcRandom|patch131/ch1" value="0.0694408789"/>
+        <property name="sanity.peakRandom|patch132/ch0" value="0.00664177909"/>
+        <property name="sanity.dcRandom|patch132/ch0" value="6.38796337e-06"/>
+        <property name="sanity.peakRandom|patch132/ch1" value="0.00842277985"/>
+        <property name="sanity.dcRandom|patch132/ch1" value="5.33660386e-06"/>
+        <property name="sanity.peakRandom|patch133/ch0" value="0.0510982983"/>
+        <property name="sanity.dcRandom|patch133/ch0" value="3.55862176e-05"/>
+        <property name="sanity.peakRandom|patch133/ch1" value="0.068915002"/>
+        <property name="sanity.dcRandom|patch133/ch1" value="3.36066842e-05"/>
+        <property name="sanity.peakRandom|patch134/ch0" value="0.153056338"/>
+        <property name="sanity.dcRandom|patch134/ch0" value="0.000395718729"/>
+        <property name="sanity.peakRandom|patch134/ch1" value="0.153514221"/>
+        <property name="sanity.dcRandom|patch134/ch1" value="0.000392430607"/>
+        <property name="sanity.peakRandom|patch135/ch0" value="0.00620242441"/>
+        <property name="sanity.dcRandom|patch135/ch0" value="4.30288746e-05"/>
+        <property name="sanity.peakRandom|patch135/ch1" value="0.00620242441"/>
+        <property name="sanity.dcRandom|patch135/ch1" value="4.29421234e-05"/>
+        <property name="sanity.peakRandom|patch136/ch0" value="0.327110559"/>
+        <property name="sanity.dcRandom|patch136/ch0" value="0.0011032531"/>
+        <property name="sanity.peakRandom|patch136/ch1" value="0.54897666"/>
+        <property name="sanity.dcRandom|patch136/ch1" value="0.00109615095"/>
+        <property name="sanity.peakRandom|patch137/ch0" value="5.26918779e+23"/>
+        <property name="sanity.dcRandom|patch137/ch0" value="5747.6665"/>
+        <property name="sanity.peakRandom|patch137/ch1" value="5.53643715e+23"/>
+        <property name="sanity.dcRandom|patch137/ch1" value="8038.75439"/>
+        <property name="sanity.peakRandom|patch138/ch0" value="0.0908519253"/>
+        <property name="sanity.dcRandom|patch138/ch0" value="1.75453658e-06"/>
+        <property name="sanity.peakRandom|patch138/ch1" value="0.0908519253"/>
+        <property name="sanity.dcRandom|patch138/ch1" value="9.94671154e-07"/>
+        <property name="sanity.peakRandom|patch139/ch0" value="0.0261736233"/>
+        <property name="sanity.dcRandom|patch139/ch0" value="2.31578369e-07"/>
+        <property name="sanity.peakRandom|patch139/ch1" value="0.0261736233"/>
+        <property name="sanity.dcRandom|patch139/ch1" value="2.2039157e-07"/>
+        <property name="sanity.peakRandom|patch140/ch0" value="0.00187501812"/>
+        <property name="sanity.dcRandom|patch140/ch0" value="3.96386168e-09"/>
+        <property name="sanity.peakRandom|patch140/ch1" value="0.00187501812"/>
+        <property name="sanity.dcRandom|patch140/ch1" value="1.70955439e-09"/>
+        <property name="sanity.peakRandom|patch141/ch0" value="0.00669431873"/>
+        <property name="sanity.dcRandom|patch141/ch0" value="4.87873244e-08"/>
+        <property name="sanity.peakRandom|patch141/ch1" value="0.00669431873"/>
+        <property name="sanity.dcRandom|patch141/ch1" value="2.64768429e-09"/>
+        <property name="sanity.peakRandom|patch142/ch0" value="0.00679739984"/>
+        <property name="sanity.dcRandom|patch142/ch0" value="1.14606355e-05"/>
+        <property name="sanity.peakRandom|patch142/ch1" value="0.00679739984"/>
+        <property name="sanity.dcRandom|patch142/ch1" value="1.14041368e-05"/>
+        <property name="sanity.peakRandom|patch143/ch0" value="0.00656845467"/>
+        <property name="sanity.dcRandom|patch143/ch0" value="0.000159007788"/>
+        <property name="sanity.peakRandom|patch143/ch1" value="0.00737984618"/>
+        <property name="sanity.dcRandom|patch143/ch1" value="0.000159213814"/>
+        <property name="sanity.peakRandom|patch144/ch0" value="0.0162958223"/>
+        <property name="sanity.dcRandom|patch144/ch0" value="8.07307151e-05"/>
+        <property name="sanity.peakRandom|patch144/ch1" value="0.0162958223"/>
+        <property name="sanity.dcRandom|patch144/ch1" value="8.12349535e-05"/>
+        <property name="sanity.peakRandom|patch145/ch0" value="6.40538804e+24"/>
+        <property name="sanity.dcRandom|patch145/ch0" value="4036702.5"/>
+        <property name="sanity.peakRandom|patch145/ch1" value="9.58626734e+24"/>
+        <property name="sanity.dcRandom|patch145/ch1" value="437232.438"/>
+        <property name="sanity.peakRandom|patch146/ch0" value="0.0335609615"/>
+        <property name="sanity.dcRandom|patch146/ch0" value="1.70194696e-07"/>
+        <property name="sanity.peakRandom|patch146/ch1" value="0.0335609615"/>
+        <property name="sanity.dcRandom|patch146/ch1" value="9.17440346e-08"/>
+        <property name="sanity.peakRandom|patch147/ch0" value="0.287307024"/>
+        <property name="sanity.dcRandom|patch147/ch0" value="0.000531021797"/>
+        <property name="sanity.peakRandom|patch147/ch1" value="0.29605478"/>
+        <property name="sanity.dcRandom|patch147/ch1" value="0.000327111047"/>
+        <property name="sanity.peakRandom|patch148/ch0" value="0.0300688166"/>
+        <property name="sanity.dcRandom|patch148/ch0" value="2.75758254e-07"/>
+        <property name="sanity.peakRandom|patch148/ch1" value="0.0336246714"/>
+        <property name="sanity.dcRandom|patch148/ch1" value="1.32164291e-06"/>
+        <property name="sanity.peakRandom|patch149/ch0" value="0.0659794882"/>
+        <property name="sanity.dcRandom|patch149/ch0" value="0.000120800025"/>
+        <property name="sanity.peakRandom|patch149/ch1" value="0.0659794882"/>
+        <property name="sanity.dcRandom|patch149/ch1" value="0.000119210948"/>
+        <property name="sanity.peakRandom|patch150/ch0" value="3.88747198e+11"/>
+        <property name="sanity.dcRandom|patch150/ch0" value="0.00637746416"/>
+        <property name="sanity.peakRandom|patch150/ch1" value="7.63667481e+11"/>
+        <property name="sanity.dcRandom|patch150/ch1" value="0.00894761179"/>
+        <property name="sanity.peakRandom|patch151/ch0" value="0.0147788282"/>
+        <property name="sanity.dcRandom|patch151/ch0" value="8.26486303e-06"/>
+        <property name="sanity.peakRandom|patch151/ch1" value="0.0147788282"/>
+        <property name="sanity.dcRandom|patch151/ch1" value="8.28691736e-06"/>
+        <property name="sanity.peakRandom|patch152/ch0" value="0.0173066165"/>
+        <property name="sanity.dcRandom|patch152/ch0" value="8.11068603e-05"/>
+        <property name="sanity.peakRandom|patch152/ch1" value="0.0173066165"/>
+        <property name="sanity.dcRandom|patch152/ch1" value="8.09059929e-05"/>
+        <property name="sanity.peakRandom|patch153/ch0" value="0.00894872472"/>
+        <property name="sanity.dcRandom|patch153/ch0" value="3.73431817e-07"/>
+        <property name="sanity.peakRandom|patch153/ch1" value="0.00894872472"/>
+        <property name="sanity.dcRandom|patch153/ch1" value="5.26733913e-07"/>
+        <property name="sanity.peakRandom|patch154/ch0" value="6.03851657e+16"/>
+        <property name="sanity.dcRandom|patch154/ch0" value="64.3140945"/>
+        <property name="sanity.peakRandom|patch154/ch1" value="1.03750218e+17"/>
+        <property name="sanity.dcRandom|patch154/ch1" value="23.0578976"/>
+        <property name="sanity.peakRandom|patch155/ch0" value="0.00469874032"/>
+        <property name="sanity.dcRandom|patch155/ch0" value="2.44225191e-08"/>
+        <property name="sanity.peakRandom|patch155/ch1" value="0.00469874032"/>
+        <property name="sanity.dcRandom|patch155/ch1" value="1.25768722e-07"/>
+        <property name="sanity.peakRandom|patch156/ch0" value="0.00162227266"/>
+        <property name="sanity.dcRandom|patch156/ch0" value="7.39241557e-10"/>
+        <property name="sanity.peakRandom|patch156/ch1" value="0.00162227266"/>
+        <property name="sanity.dcRandom|patch156/ch1" value="9.42150469e-10"/>
+        <property name="sanity.peakRandom|patch157/ch0" value="4.43514219e+13"/>
+        <property name="sanity.dcRandom|patch157/ch0" value="5.27604285e+10"/>
+        <property name="sanity.peakRandom|patch157/ch1" value="5.01221593e+13"/>
+        <property name="sanity.dcRandom|patch157/ch1" value="5.46251653e+10"/>
+        <property name="sanity.peakRandom|patch158/ch0" value="0.00440442748"/>
+        <property name="sanity.dcRandom|patch158/ch0" value="3.0501738e-08"/>
+        <property name="sanity.peakRandom|patch158/ch1" value="0.00440442748"/>
+        <property name="sanity.dcRandom|patch158/ch1" value="7.63912453e-08"/>
+        <property name="sanity.peakRandom|patch159/ch0" value="0.081144318"/>
+        <property name="sanity.dcRandom|patch159/ch0" value="0.00514634186"/>
+        <property name="sanity.peakRandom|patch159/ch1" value="0.081144318"/>
+        <property name="sanity.dcRandom|patch159/ch1" value="0.0051441486"/>
+        <property name="sanity.peakRandom|patch160/ch0" value="0.0250010602"/>
+        <property name="sanity.dcRandom|patch160/ch0" value="5.13057739e-06"/>
+        <property name="sanity.peakRandom|patch160/ch1" value="0.0249410942"/>
+        <property name="sanity.dcRandom|patch160/ch1" value="4.40835902e-06"/>
+        <property name="sanity.peakRandom|patch161/ch0" value="234280.328"/>
+        <property name="sanity.dcRandom|patch161/ch0" value="0.00133750483"/>
+        <property name="sanity.peakRandom|patch161/ch1" value="411250.844"/>
+        <property name="sanity.dcRandom|patch161/ch1" value="0.00149052194"/>
+        <property name="sanity.peakRandom|patch164/ch0" value="0.000431345019"/>
+        <property name="sanity.dcRandom|patch164/ch0" value="2.10737398e-05"/>
+        <property name="sanity.peakRandom|patch164/ch1" value="0.000431345019"/>
+        <property name="sanity.dcRandom|patch164/ch1" value="2.10419257e-05"/>
+        <property name="sanity.peakRandom|patch165/ch0" value="3.11943143e+31"/>
+        <property name="sanity.dcRandom|patch165/ch0" value="296288544"/>
+        <property name="sanity.peakRandom|patch165/ch1" value="4.55537514e+31"/>
+        <property name="sanity.dcRandom|patch165/ch1" value="198499824"/>
+        <property name="sanity.peakRandom|patch166/ch0" value="0.000399415789"/>
+        <property name="sanity.dcRandom|patch166/ch0" value="3.33872925e-12"/>
+        <property name="sanity.peakRandom|patch166/ch1" value="0.000399415789"/>
+        <property name="sanity.dcRandom|patch166/ch1" value="1.79946669e-09"/>
+        <property name="sanity.peakRandom|patch167/ch0" value="0.0156756397"/>
+        <property name="sanity.dcRandom|patch167/ch0" value="3.56214005e-05"/>
+        <property name="sanity.peakRandom|patch167/ch1" value="0.0181970298"/>
+        <property name="sanity.dcRandom|patch167/ch1" value="3.44233304e-05"/>
+        <property name="sanity.peakRandom|patch168/ch0" value="0.0546344444"/>
+        <property name="sanity.dcRandom|patch168/ch0" value="0.000224736606"/>
+        <property name="sanity.peakRandom|patch168/ch1" value="0.0546344444"/>
+        <property name="sanity.dcRandom|patch168/ch1" value="0.000224732285"/>
+        <property name="sanity.peakRandom|patch169/ch0" value="0.0375917144"/>
+        <property name="sanity.dcRandom|patch169/ch0" value="0.000201201779"/>
+        <property name="sanity.peakRandom|patch169/ch1" value="0.0375917144"/>
+        <property name="sanity.dcRandom|patch169/ch1" value="0.000200200971"/>
+        <property name="sanity.peakRandom|patch170/ch0" value="0.124443121"/>
+        <property name="sanity.dcRandom|patch170/ch0" value="0.000421005912"/>
+        <property name="sanity.peakRandom|patch170/ch1" value="0.12288633"/>
+        <property name="sanity.dcRandom|patch170/ch1" value="0.000410378037"/>
+        <property name="sanity.peakRandom|patch171/ch0" value="0.00451088138"/>
+        <property name="sanity.dcRandom|patch171/ch0" value="7.91796566e-08"/>
+        <property name="sanity.peakRandom|patch171/ch1" value="0.00429503666"/>
+        <property name="sanity.dcRandom|patch171/ch1" value="1.04646779e-06"/>
+        <property name="sanity.peakRandom|patch172/ch0" value="0.0264185835"/>
+        <property name="sanity.dcRandom|patch172/ch0" value="0.000192641135"/>
+        <property name="sanity.peakRandom|patch172/ch1" value="0.0264185835"/>
+        <property name="sanity.dcRandom|patch172/ch1" value="0.000193713335"/>
+        <property name="sanity.peakRandom|patch173/ch0" value="0.0347769894"/>
+        <property name="sanity.dcRandom|patch173/ch0" value="1.93485575e-05"/>
+        <property name="sanity.peakRandom|patch173/ch1" value="0.0425455123"/>
+        <property name="sanity.dcRandom|patch173/ch1" value="2.01422463e-05"/>
+        <property name="sanity.peakRandom|patch174/ch0" value="2.97083693e+14"/>
+        <property name="sanity.dcRandom|patch174/ch0" value="0.33572638"/>
+        <property name="sanity.peakRandom|patch174/ch1" value="4.90196563e+14"/>
+        <property name="sanity.dcRandom|patch174/ch1" value="0.189761221"/>
+        <property name="sanity.peakRandom|patch175/ch0" value="0.0186207388"/>
+        <property name="sanity.dcRandom|patch175/ch0" value="8.37774223e-06"/>
+        <property name="sanity.peakRandom|patch175/ch1" value="0.0186207388"/>
+        <property name="sanity.dcRandom|patch175/ch1" value="9.49070272e-06"/>
+        <property name="sanity.peakRandom|patch176/ch0" value="0.0184814818"/>
+        <property name="sanity.dcRandom|patch176/ch0" value="1.09163909e-06"/>
+        <property name="sanity.peakRandom|patch176/ch1" value="0.0185306706"/>
+        <property name="sanity.dcRandom|patch176/ch1" value="1.09505868e-06"/>
+        <property name="sanity.peakRandom|patch177/ch0" value="0.00428803731"/>
+        <property name="sanity.dcRandom|patch177/ch0" value="5.82475025e-07"/>
+        <property name="sanity.peakRandom|patch177/ch1" value="0.00428803731"/>
+        <property name="sanity.dcRandom|patch177/ch1" value="5.79943844e-07"/>
+        <property name="sanity.peakRandom|patch178/ch0" value="0.000480410439"/>
+        <property name="sanity.dcRandom|patch178/ch0" value="5.20226457e-08"/>
+        <property name="sanity.peakRandom|patch178/ch1" value="0.000480410439"/>
+        <property name="sanity.dcRandom|patch178/ch1" value="8.65264305e-09"/>
+        <property name="sanity.peakRandom|patch179/ch0" value="0.0389290825"/>
+        <property name="sanity.dcRandom|patch179/ch0" value="0.000339324004"/>
+        <property name="sanity.peakRandom|patch179/ch1" value="0.0389290825"/>
+        <property name="sanity.dcRandom|patch179/ch1" value="0.000339541672"/>
+        <property name="sanity.peakRandom|patch180/ch0" value="0.0278457496"/>
+        <property name="sanity.dcRandom|patch180/ch0" value="3.93505206e-06"/>
+        <property name="sanity.peakRandom|patch180/ch1" value="0.0285111051"/>
+        <property name="sanity.dcRandom|patch180/ch1" value="2.60847219e-06"/>
+        <property name="sanity.peakRandom|patch181/ch0" value="0.0391811617"/>
+        <property name="sanity.dcRandom|patch181/ch0" value="4.13543785e-06"/>
+        <property name="sanity.peakRandom|patch181/ch1" value="0.0343113393"/>
+        <property name="sanity.dcRandom|patch181/ch1" value="5.38986524e-06"/>
+        <property name="sanity.peakRandom|patch182/ch0" value="8.2606645e+26"/>
+        <property name="sanity.dcRandom|patch182/ch0" value="46667.9297"/>
+        <property name="sanity.peakRandom|patch182/ch1" value="1.01600534e+27"/>
+        <property name="sanity.dcRandom|patch182/ch1" value="42831.6523"/>
+        <property name="sanity.peakRandom|patch183/ch0" value="0.0063157035"/>
+        <property name="sanity.dcRandom|patch183/ch0" value="2.73360874e-05"/>
+        <property name="sanity.peakRandom|patch183/ch1" value="0.0063157035"/>
+        <property name="sanity.dcRandom|patch183/ch1" value="2.74054946e-05"/>
+        <property name="sanity.peakRandom|patch184/ch0" value="0.00716117444"/>
+        <property name="sanity.dcRandom|patch184/ch0" value="5.07322038e-05"/>
+        <property name="sanity.peakRandom|patch184/ch1" value="0.00715782726"/>
+        <property name="sanity.dcRandom|patch184/ch1" value="5.06783181e-05"/>
+        <property name="sanity.peakRandom|patch185/ch0" value="5.73258477e+23"/>
+        <property name="sanity.dcRandom|patch185/ch0" value="6125.49023"/>
+        <property name="sanity.peakRandom|patch185/ch1" value="6.40182436e+23"/>
+        <property name="sanity.dcRandom|patch185/ch1" value="7823.92529"/>
+        <property name="sanity.peakRandom|patch186/ch0" value="0.132632047"/>
+        <property name="sanity.dcRandom|patch186/ch0" value="0.00134217169"/>
+        <property name="sanity.peakRandom|patch186/ch1" value="0.132632047"/>
+        <property name="sanity.dcRandom|patch186/ch1" value="0.00134124421"/>
+        <property name="sanity.peakRandom|patch187/ch0" value="0.0138284927"/>
+        <property name="sanity.dcRandom|patch187/ch0" value="2.9631142e-09"/>
+        <property name="sanity.peakRandom|patch187/ch1" value="0.0138284927"/>
+        <property name="sanity.dcRandom|patch187/ch1" value="4.08603114e-07"/>
+        <property name="sanity.peakRandom|patch188/ch0" value="6.69889548e+22"/>
+        <property name="sanity.dcRandom|patch188/ch0" value="4735.20068"/>
+        <property name="sanity.peakRandom|patch188/ch1" value="9.21595821e+22"/>
+        <property name="sanity.dcRandom|patch188/ch1" value="3604.24585"/>
+        <property name="sanity.peakRandom|patch189/ch0" value="0.029165186"/>
+        <property name="sanity.dcRandom|patch189/ch0" value="7.0970229e-05"/>
+        <property name="sanity.peakRandom|patch189/ch1" value="0.029165186"/>
+        <property name="sanity.dcRandom|patch189/ch1" value="7.07985018e-05"/>
+        <property name="sanity.peakRandom|patch190/ch0" value="0.0470943563"/>
+        <property name="sanity.dcRandom|patch190/ch0" value="0.000388637127"/>
+        <property name="sanity.peakRandom|patch190/ch1" value="0.0470943563"/>
+        <property name="sanity.dcRandom|patch190/ch1" value="0.000388663408"/>
+        <property name="sanity.peakRandom|patch191/ch0" value="0.110808954"/>
+        <property name="sanity.dcRandom|patch191/ch0" value="7.39804182e-06"/>
+        <property name="sanity.peakRandom|patch191/ch1" value="0.131185234"/>
+        <property name="sanity.dcRandom|patch191/ch1" value="9.7023958e-06"/>
+        <property name="sanity.peakRandom|patch192/ch0" value="4.00565606e+09"/>
+        <property name="sanity.dcRandom|patch192/ch0" value="0.000367250177"/>
+        <property name="sanity.peakRandom|patch192/ch1" value="8.02199757e+09"/>
+        <property name="sanity.dcRandom|patch192/ch1" value="0.00153620029"/>
+        <property name="sanity.peakRandom|patch193/ch0" value="0.00846170355"/>
+        <property name="sanity.dcRandom|patch193/ch0" value="0.000101205675"/>
+        <property name="sanity.peakRandom|patch193/ch1" value="0.00846170355"/>
+        <property name="sanity.dcRandom|patch193/ch1" value="0.000101297243"/>
+        <property name="sanity.peakRandom|patch194/ch0" value="0.0277503394"/>
+        <property name="sanity.dcRandom|patch194/ch0" value="1.3527125e-06"/>
+        <property name="sanity.peakRandom|patch194/ch1" value="0.0277503394"/>
+        <property name="sanity.dcRandom|patch194/ch1" value="1.43016337e-06"/>
+        <property name="sanity.peakRandom|patch195/ch0" value="0.185953841"/>
+        <property name="sanity.dcRandom|patch195/ch0" value="0.000518283283"/>
+        <property name="sanity.peakRandom|patch195/ch1" value="0.179543167"/>
+        <property name="sanity.dcRandom|patch195/ch1" value="0.000537311367"/>
+        <property name="sanity.peakRandom|patch196/ch0" value="0.000169370629"/>
+        <property name="sanity.dcRandom|patch196/ch0" value="3.75383635e-08"/>
+        <property name="sanity.peakRandom|patch196/ch1" value="0.000169370629"/>
+        <property name="sanity.dcRandom|patch196/ch1" value="3.75401825e-08"/>
+        <property name="sanity.peakRandom|patch197/ch0" value="0.0123490524"/>
+        <property name="sanity.dcRandom|patch197/ch0" value="2.61067198e-05"/>
+        <property name="sanity.peakRandom|patch197/ch1" value="0.0123490524"/>
+        <property name="sanity.dcRandom|patch197/ch1" value="2.56930743e-05"/>
+        <property name="sanity.peakRandom|patch198/ch0" value="0.0583432801"/>
+        <property name="sanity.dcRandom|patch198/ch0" value="0.00271693734"/>
+        <property name="sanity.peakRandom|patch198/ch1" value="0.0583432801"/>
+        <property name="sanity.dcRandom|patch198/ch1" value="0.00272341562"/>
+        <property name="sanity.peakRandom|patch199/ch0" value="0.243106917"/>
+        <property name="sanity.dcRandom|patch199/ch0" value="0.000584936875"/>
+        <property name="sanity.peakRandom|patch199/ch1" value="0.243106917"/>
+        <property name="sanity.dcRandom|patch199/ch1" value="0.00058545568"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.239" timestamp="2026-11-03T09:22:45.858" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.239" timestamp="2026-11-03T09:22:45.858">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Chord" value_param="144-byte object &lt;D0-30 72-A6 96-55 00-00 05-00 00-00 00-00 00-00 43-68 6F-72 64-00 00-73 65-64 00-6F 70-65 00-00 00-00 00-00 00-70 E7-40 00-02 00-00 B8-7F 00-00 00-00 00-00 00-00 F0-3F 6C-65 41-6E 64-43 65-6E ... 00-31 72-A6 96-55 00-00 00-31 72-A6 96-55 00-00 00-00 00-00 00-00 00-00 D8-9E A6-68 96-55 00-00 00-00 00-00 00-00 00-00 70-98 72-A6 96-55 00-00 B8-98 72-A6 96-55 00-00 B8-98 72-A6 96-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.239" timestamp="2026-11-03T09:22:45.858" classname="Configs/Sanity">
+      <properties>
+        <property name="sanity.peak|Chord/ch0" value="0.846512556"/>
+        <property name="sanity.audible|Chord/ch0" value="0.846512556"/>
+        <property name="sanity.dc|Chord/ch0" value="0.000111067828"/>
+        <property name="sanity.peak|Chord/ch1" value="0.846512556"/>
+        <property name="sanity.audible|Chord/ch1" value="0.846512556"/>
+        <property name="sanity.dc|Chord/ch1" value="0.000111067828"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

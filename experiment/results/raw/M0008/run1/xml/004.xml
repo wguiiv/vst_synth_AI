@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.561" timestamp="2026-11-03T08:59:43.836" name="AllTests">
+  <testsuite name="SpectralFm" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.561" timestamp="2026-11-03T08:59:43.836">
+    <testcase name="SidebandsMatchFrequencyModulationTheory" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp" line="105" status="run" result="completed" time="0.561" timestamp="2026-11-03T08:59:43.836" classname="SpectralFm">
+      <properties>
+        <property name="spectral.passband|depth0.1/upper" value="0.0392445795"/>
+        <property name="spectral.passband|depth0.1/lower" value="0.0138891787"/>
+        <property name="spectral.passband|depth0.5/upper" value="0.141185402"/>
+        <property name="spectral.passband|depth0.5/lower" value="0.112339704"/>
+        <property name="spectral.passband|depth1.0/upper" value="0.27329782"/>
+        <property name="spectral.passband|depth1.0/lower" value="0.233531794"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

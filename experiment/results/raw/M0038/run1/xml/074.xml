@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="3.151" timestamp="2026-11-03T11:10:41.575" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="3.151" timestamp="2026-11-03T11:10:41.575">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Rate44100" value_param="144-byte object &lt;C0-B8 F0-E4 FD-55 00-00 09-00 00-00 00-00 00-00 52-61 74-65 34-34 31-30 30-00 65-00 70-65 00-00 00-00 00-00 80-88 E5-40 00-02 00-00 00-00 00-00 00-00 00-00 00-00 F0-3F 03-00 00-00 00-00 00-00 ... F0-C3 F0-E4 FD-55 00-00 F0-C3 F0-E4 FD-55 00-00 01-00 00-00 00-00 00-00 D8-CE 75-CA FD-55 00-00 78-C4 E5-08 56-7F 00-00 D0-3D EE-E4 FD-55 00-00 E8-3D EE-E4 FD-55 00-00 E8-3D EE-E4 FD-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="3.151" timestamp="2026-11-03T11:10:41.576" classname="Configs/Sanity">
+      <failure message="unknown file&#x0A;C++ exception with description &quot;std::bad_alloc&quot; thrown in the test body.&#x0A;" type=""><![CDATA[unknown file
+C++ exception with description "std::bad_alloc" thrown in the test body.
+]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

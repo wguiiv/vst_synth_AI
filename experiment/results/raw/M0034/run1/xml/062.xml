@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.179" timestamp="2026-11-03T10:09:08.001" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.179" timestamp="2026-11-03T10:09:08.001">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/LowPassResonant" value_param="144-byte object &lt;20-B8 E6-FF 69-55 00-00 0F-00 00-00 00-00 00-00 4C-6F 77-50 61-73 73-52 65-73 6F-6E 61-6E 74-00 00-00 00-00 00-70 E7-40 00-02 00-00 00-00 00-00 00-00 00-00 00-00 F0-3F 03-00 00-00 00-00 00-00 ... 10-CD E6-FF 69-55 00-00 90-CC E6-FF 69-55 00-00 05-00 00-00 00-00 00-00 D8-CE E6-DA 69-55 00-00 C0-2C 32-4F 7C-7F 00-00 10-35 E4-FF 69-55 00-00 28-35 E4-FF 69-55 00-00 28-35 E4-FF 69-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.179" timestamp="2026-11-03T10:09:08.001" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131&#x0A;Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)&#x0A;  Actual: false (LowPassResonant/ch0: sanity.dc measured 0.141621053 linear, limit &lt;= 0.01 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131
+Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)
+  Actual: false (LowPassResonant/ch0: sanity.dc measured 0.141621053 linear, limit <= 0.01 linear)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131&#x0A;Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)&#x0A;  Actual: false (LowPassResonant/ch1: sanity.dc measured 0.141621053 linear, limit &lt;= 0.01 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131
+Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)
+  Actual: false (LowPassResonant/ch1: sanity.dc measured 0.141621053 linear, limit <= 0.01 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peak|LowPassResonant/ch0" value="0.142090097"/>
+        <property name="sanity.audible|LowPassResonant/ch0" value="0.141621053"/>
+        <property name="sanity.dc|LowPassResonant/ch0" value="0.141621053"/>
+        <property name="sanity.peak|LowPassResonant/ch1" value="0.142090097"/>
+        <property name="sanity.audible|LowPassResonant/ch1" value="0.141621053"/>
+        <property name="sanity.dc|LowPassResonant/ch1" value="0.141621053"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

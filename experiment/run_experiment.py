@@ -25,6 +25,7 @@ import json
 import math
 import os
 import re
+import resource
 import shutil
 import subprocess
 import sys
@@ -57,6 +58,10 @@ MUTANT_TIMEOUT_FACTOR = 10
 FROZEN_TAG = "tests-frozen"
 TEST_TIMEOUT_S = 60
 PLUGINVAL_TIMEOUT_S = 15 * 60
+# Address-space cap for every test and pluginval process. A mutant that turns a loop into an endless allocation
+# (M0038) otherwise fills the machine's RAM, and the kernel's OOM killer takes the runner down with it. With the
+# cap, the allocation fails inside the test process, which ends in a crash (PROTOCOLO 10)
+MEMORY_LIMIT_BYTES = 4 * 1024 ** 3
 
 APPROACHES = ["sanidade", "espectral", "temporal", "golden"]
 ALL_APPROACHES = APPROACHES + ["pluginval"]
@@ -239,13 +244,17 @@ def environment (extra):
     return { **os.environ, **extra } if extra else None
 
 
+def limit_memory():
+    resource.setrlimit (resource.RLIMIT_AS, (MEMORY_LIMIT_BYTES, MEMORY_LIMIT_BYTES))
+
+
 def run_test (exe, name, xml_path, env = None, timeout = TEST_TIMEOUT_S):
     start = time.time()
 
     try:
         r = sh ([exe, f"--gtest_filter={name}", f"--gtest_output=xml:{xml_path}"], check = False,
                 capture_output = True, text = True, errors = "replace", timeout = timeout,
-                env = environment (env))
+                env = environment (env), preexec_fn = limit_memory)
     except subprocess.TimeoutExpired:
         return { "name": name, "status": "timeout", "time_s": time.time() - start, "properties": {}, "failures": [] }
 
@@ -311,7 +320,8 @@ def run_pluginval (plugin, out_dir, label, env = None):
     try:
         with open (out_dir / "pluginval.log", "w") as f:
             r = sh ([shutil.which ("bash") or "bash", EXP / "run_pluginval.sh", plugin, out_dir / "pluginval"], check = False,
-                    stdout = f, stderr = subprocess.STDOUT, timeout = PLUGINVAL_TIMEOUT_S, env = environment (env))
+                    stdout = f, stderr = subprocess.STDOUT, timeout = PLUGINVAL_TIMEOUT_S, env = environment (env),
+                    preexec_fn = limit_memory)
         status = "pass" if r.returncode == 0 else "fail"
         code = r.returncode
     except subprocess.TimeoutExpired:

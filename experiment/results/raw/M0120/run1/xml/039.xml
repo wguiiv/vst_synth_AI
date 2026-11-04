@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="2.496" timestamp="2026-11-03T23:10:59.253" name="AllTests">
+  <testsuite name="Rates/TemporalRelease" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="2.496" timestamp="2026-11-03T23:10:59.253">
+    <testcase name="FadesToSilenceInConfiguredTime/48000" value_param="48000" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/temporal/TemporalTest.cpp" line="147" status="run" result="completed" time="2.495" timestamp="2026-11-03T23:10:59.253" classname="Rates/TemporalRelease">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/temporal/TemporalTest.cpp:161&#x0A;Value of: within (tol::releaseTime, std::abs (lastTimeAbove (tail, heldLevel, -60.0f) - release), &quot;release&quot; + juce::String (release, 2).toStdString())&#x0A;  Actual: false (release0.10: temporal.release measured 0.0965000015 s, limit &lt;= 0.02 s)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/temporal/TemporalTest.cpp:161
+Value of: within (tol::releaseTime, std::abs (lastTimeAbove (tail, heldLevel, -60.0f) - release), "release" + juce::String (release, 2).toStdString())
+  Actual: false (release0.10: temporal.release measured 0.0965000015 s, limit <= 0.02 s)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/temporal/TemporalTest.cpp:161&#x0A;Value of: within (tol::releaseTime, std::abs (lastTimeAbove (tail, heldLevel, -60.0f) - release), &quot;release&quot; + juce::String (release, 2).toStdString())&#x0A;  Actual: false (release0.40: temporal.release measured 0.396500006 s, limit &lt;= 0.02 s)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/temporal/TemporalTest.cpp:161
+Value of: within (tol::releaseTime, std::abs (lastTimeAbove (tail, heldLevel, -60.0f) - release), "release" + juce::String (release, 2).toStdString())
+  Actual: false (release0.40: temporal.release measured 0.396500006 s, limit <= 0.02 s)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/temporal/TemporalTest.cpp:161&#x0A;Value of: within (tol::releaseTime, std::abs (lastTimeAbove (tail, heldLevel, -60.0f) - release), &quot;release&quot; + juce::String (release, 2).toStdString())&#x0A;  Actual: false (release1.00: temporal.release measured 0.9965 s, limit &lt;= 0.02 s)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/temporal/TemporalTest.cpp:161
+Value of: within (tol::releaseTime, std::abs (lastTimeAbove (tail, heldLevel, -60.0f) - release), "release" + juce::String (release, 2).toStdString())
+  Actual: false (release1.00: temporal.release measured 0.9965 s, limit <= 0.02 s)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/temporal/TemporalTest.cpp:161&#x0A;Value of: within (tol::releaseTime, std::abs (lastTimeAbove (tail, heldLevel, -60.0f) - release), &quot;release&quot; + juce::String (release, 2).toStdString())&#x0A;  Actual: false (release3.00: temporal.release measured 2.9965 s, limit &lt;= 0.02 s)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/temporal/TemporalTest.cpp:161
+Value of: within (tol::releaseTime, std::abs (lastTimeAbove (tail, heldLevel, -60.0f) - release), "release" + juce::String (release, 2).toStdString())
+  Actual: false (release3.00: temporal.release measured 2.9965 s, limit <= 0.02 s)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="temporal.release|release0.10" value="0.0965000015"/>
+        <property name="temporal.release|release0.40" value="0.396500006"/>
+        <property name="temporal.release|release1.00" value="0.9965"/>
+        <property name="temporal.release|release3.00" value="2.9965"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

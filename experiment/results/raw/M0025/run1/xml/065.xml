@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.161" timestamp="2026-11-03T09:43:08.838" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.161" timestamp="2026-11-03T09:43:08.838">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/FilterEnvelope" value_param="144-byte object &lt;C0-58 FF-F1 B2-55 00-00 0E-00 00-00 00-00 00-00 46-69 6C-74 65-72 45-6E 76-65 6C-6F 70-65 00-00 00-00 00-00 00-70 E7-40 00-02 00-00 B2-55 00-00 00-00 00-00 00-00 F0-3F 03-00 00-00 00-00 00-00 ... B0-67 FF-F1 B2-55 00-00 70-6D FF-F1 B2-55 00-00 05-00 00-00 00-00 00-00 D8-CE A3-DE B2-55 00-00 00-00 00-00 00-00 00-00 10-D5 FC-F1 B2-55 00-00 28-D5 FC-F1 B2-55 00-00 28-D5 FC-F1 B2-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.161" timestamp="2026-11-03T09:43:08.838" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126&#x0A;Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)&#x0A;  Actual: false (FilterEnvelope/ch0: sanity.peak measured 2.46572065 linear, limit &lt;= 1 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126
+Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)
+  Actual: false (FilterEnvelope/ch0: sanity.peak measured 2.46572065 linear, limit <= 1 linear)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126&#x0A;Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)&#x0A;  Actual: false (FilterEnvelope/ch1: sanity.peak measured 2.46572065 linear, limit &lt;= 1 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126
+Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)
+  Actual: false (FilterEnvelope/ch1: sanity.peak measured 2.46572065 linear, limit <= 1 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peak|FilterEnvelope/ch0" value="2.46572065"/>
+        <property name="sanity.audible|FilterEnvelope/ch0" value="2.46572065"/>
+        <property name="sanity.dc|FilterEnvelope/ch0" value="0.00244981679"/>
+        <property name="sanity.peak|FilterEnvelope/ch1" value="2.46572065"/>
+        <property name="sanity.audible|FilterEnvelope/ch1" value="2.46572065"/>
+        <property name="sanity.dc|FilterEnvelope/ch1" value="0.00244981679"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

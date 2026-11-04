@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.209" timestamp="2026-11-04T03:22:39.714" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.209" timestamp="2026-11-04T03:22:39.714">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/HighPass" value_param="144-byte object &lt;C0-78 28-C7 13-56 00-00 08-00 00-00 00-00 00-00 48-69 67-68 50-61 73-73 00-73 6F-6E 61-6E 74-00 00-00 00-00 00-70 E7-40 00-02 00-00 61-7F 00-00 00-00 00-00 00-00 F0-3F 03-00 00-00 00-00 00-00 ... F0-88 28-C7 13-56 00-00 F0-90 28-C7 13-56 00-00 05-00 00-00 00-00 00-00 D8-8E 08-8E 13-56 00-00 2D-41 0C-A5 00-00 00-00 10-F5 25-C7 13-56 00-00 28-F5 25-C7 13-56 00-00 28-F5 25-C7 13-56 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.209" timestamp="2026-11-04T03:22:39.714" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126&#x0A;Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)&#x0A;  Actual: false (HighPass/ch1: sanity.peak measured 4.85059166 linear, limit &lt;= 1 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126
+Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)
+  Actual: false (HighPass/ch1: sanity.peak measured 4.85059166 linear, limit <= 1 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peak|HighPass/ch0" value="0.339541405"/>
+        <property name="sanity.audible|HighPass/ch0" value="0.339541405"/>
+        <property name="sanity.dc|HighPass/ch0" value="9.85926896e-11"/>
+        <property name="sanity.peak|HighPass/ch1" value="4.85059166"/>
+        <property name="sanity.audible|HighPass/ch1" value="4.85059118"/>
+        <property name="sanity.dc|HighPass/ch1" value="1.30229938e-09"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

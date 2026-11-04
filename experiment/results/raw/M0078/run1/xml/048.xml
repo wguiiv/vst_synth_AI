@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="3.185" timestamp="2026-11-03T21:25:06.111" name="AllTests">
+  <testsuite name="RatesAndWaves/SpectralPitch" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="3.185" timestamp="2026-11-03T21:25:06.112">
+    <testcase name="EveryNoteHasTheRightFundamental/Saw96000" value_param="16-byte object &lt;00-00 00-00 00-70 F7-40 01-00 00-00 67-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp" line="53" status="run" result="completed" time="3.185" timestamp="2026-11-03T21:25:06.112" classname="RatesAndWaves/SpectralPitch">
+      <properties>
+        <property name="spectral.pitch|note21" value="0.946144517"/>
+        <property name="spectral.pitch|note33" value="0.239569983"/>
+        <property name="spectral.pitch|note45" value="0.111471919"/>
+        <property name="spectral.pitch|note57" value="0.116157955"/>
+        <property name="spectral.pitch|note69" value="0.0636418567"/>
+        <property name="spectral.pitch|note81" value="0.0324634032"/>
+        <property name="spectral.pitch|note93" value="0.0011466455"/>
+        <property name="spectral.pitch|note105" value="0.000589764395"/>
+        <property name="spectral.pitch|note108" value="0.0068847374"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

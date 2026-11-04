@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.445" timestamp="2026-11-03T23:36:15.768" name="AllTests">
+  <testsuite name="Rates/TemporalAttack" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.445" timestamp="2026-11-03T23:36:15.768">
+    <testcase name="HoldsSustainLevel/44100" value_param="44100" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/temporal/TemporalTest.cpp" line="124" status="run" result="completed" time="0.445" timestamp="2026-11-03T23:36:15.768" classname="Rates/TemporalAttack">
+      <properties>
+        <property name="temporal.sustain|sustain0.25" value="0.0943040848"/>
+        <property name="temporal.sustain|sustain0.50" value="0.0729751587"/>
+        <property name="temporal.sustain|sustain0.80" value="0.0362694263"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

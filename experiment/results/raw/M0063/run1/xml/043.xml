@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="1.885" timestamp="2026-11-03T20:58:20.325" name="AllTests">
+  <testsuite name="RatesAndWaves/SpectralPitch" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="1.884" timestamp="2026-11-03T20:58:20.325">
+    <testcase name="EveryNoteHasTheRightFundamental/Square44100" value_param="16-byte object &lt;00-00 00-00 80-88 E5-40 02-00 00-00 00-00 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp" line="53" status="run" result="completed" time="1.884" timestamp="2026-11-03T20:58:20.325" classname="RatesAndWaves/SpectralPitch">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60&#x0A;Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), &quot;note&quot; + std::to_string (note))&#x0A;  Actual: false (note21: spectral.pitch measured 198.029346 cents, limit &lt;= 5 cents)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60
+Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), "note" + std::to_string (note))
+  Actual: false (note21: spectral.pitch measured 198.029346 cents, limit <= 5 cents)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60&#x0A;Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), &quot;note&quot; + std::to_string (note))&#x0A;  Actual: false (note33: spectral.pitch measured 1398.02935 cents, limit &lt;= 5 cents)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60
+Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), "note" + std::to_string (note))
+  Actual: false (note33: spectral.pitch measured 1398.02935 cents, limit <= 5 cents)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60&#x0A;Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), &quot;note&quot; + std::to_string (note))&#x0A;  Actual: false (note45: spectral.pitch measured 2598.02935 cents, limit &lt;= 5 cents)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60
+Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), "note" + std::to_string (note))
+  Actual: false (note45: spectral.pitch measured 2598.02935 cents, limit <= 5 cents)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60&#x0A;Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), &quot;note&quot; + std::to_string (note))&#x0A;  Actual: false (note57: spectral.pitch measured 3798.02935 cents, limit &lt;= 5 cents)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60
+Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), "note" + std::to_string (note))
+  Actual: false (note57: spectral.pitch measured 3798.02935 cents, limit <= 5 cents)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60&#x0A;Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), &quot;note&quot; + std::to_string (note))&#x0A;  Actual: false (note69: spectral.pitch measured 4998.02935 cents, limit &lt;= 5 cents)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60
+Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), "note" + std::to_string (note))
+  Actual: false (note69: spectral.pitch measured 4998.02935 cents, limit <= 5 cents)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60&#x0A;Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), &quot;note&quot; + std::to_string (note))&#x0A;  Actual: false (note81: spectral.pitch measured 6198.02935 cents, limit &lt;= 5 cents)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60
+Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), "note" + std::to_string (note))
+  Actual: false (note81: spectral.pitch measured 6198.02935 cents, limit <= 5 cents)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60&#x0A;Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), &quot;note&quot; + std::to_string (note))&#x0A;  Actual: false (note93: spectral.pitch measured 7398.02935 cents, limit &lt;= 5 cents)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60
+Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), "note" + std::to_string (note))
+  Actual: false (note93: spectral.pitch measured 7398.02935 cents, limit <= 5 cents)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60&#x0A;Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), &quot;note&quot; + std::to_string (note))&#x0A;  Actual: false (note105: spectral.pitch measured 8598.02935 cents, limit &lt;= 5 cents)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60
+Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), "note" + std::to_string (note))
+  Actual: false (note105: spectral.pitch measured 8598.02935 cents, limit <= 5 cents)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60&#x0A;Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), &quot;note&quot; + std::to_string (note))&#x0A;  Actual: false (note108: spectral.pitch measured 8898.02935 cents, limit &lt;= 5 cents)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60
+Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), "note" + std::to_string (note))
+  Actual: false (note108: spectral.pitch measured 8898.02935 cents, limit <= 5 cents)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="spectral.pitch|note21" value="198.029346"/>
+        <property name="spectral.pitch|note33" value="1398.02935"/>
+        <property name="spectral.pitch|note45" value="2598.02935"/>
+        <property name="spectral.pitch|note57" value="3798.02935"/>
+        <property name="spectral.pitch|note69" value="4998.02935"/>
+        <property name="spectral.pitch|note81" value="6198.02935"/>
+        <property name="spectral.pitch|note93" value="7398.02935"/>
+        <property name="spectral.pitch|note105" value="8598.02935"/>
+        <property name="spectral.pitch|note108" value="8898.02935"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

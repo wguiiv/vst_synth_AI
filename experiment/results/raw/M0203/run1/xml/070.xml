@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.088" timestamp="2026-11-04T02:31:37.160" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.088" timestamp="2026-11-04T02:31:37.160">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Reverb" value_param="144-byte object &lt;D0-80 10-D6 8C-55 00-00 06-00 00-00 00-00 00-00 52-65 76-65 72-62 00-73 65-64 00-6F 70-65 00-00 00-00 00-00 00-70 E7-40 00-02 00-00 58-7F 00-00 00-00 00-00 00-00 F0-3F 6C-65 41-6E 64-43 65-6E ... D0-A4 10-D6 8C-55 00-00 D0-AC 10-D6 8C-55 00-00 02-00 00-00 00-00 00-00 D8-1E 41-A1 8C-55 00-00 00-00 00-00 00-00 00-00 70-F4 0D-D6 8C-55 00-00 88-F4 0D-D6 8C-55 00-00 88-F4 0D-D6 8C-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.088" timestamp="2026-11-04T02:31:37.160" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126&#x0A;Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)&#x0A;  Actual: false (Reverb/ch0: sanity.peak measured 3366.78003 linear, limit &lt;= 1 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126
+Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)
+  Actual: false (Reverb/ch0: sanity.peak measured 3366.78003 linear, limit <= 1 linear)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131&#x0A;Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)&#x0A;  Actual: false (Reverb/ch0: sanity.dc measured 0.0121136419 linear, limit &lt;= 0.01 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131
+Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)
+  Actual: false (Reverb/ch0: sanity.dc measured 0.0121136419 linear, limit <= 0.01 linear)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126&#x0A;Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)&#x0A;  Actual: false (Reverb/ch1: sanity.peak measured 4344.52246 linear, limit &lt;= 1 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126
+Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)
+  Actual: false (Reverb/ch1: sanity.peak measured 4344.52246 linear, limit <= 1 linear)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131&#x0A;Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)&#x0A;  Actual: false (Reverb/ch1: sanity.dc measured 0.0309152901 linear, limit &lt;= 0.01 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131
+Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)
+  Actual: false (Reverb/ch1: sanity.dc measured 0.0309152901 linear, limit <= 0.01 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peak|Reverb/ch0" value="3366.78003"/>
+        <property name="sanity.audible|Reverb/ch0" value="25.7539425"/>
+        <property name="sanity.dc|Reverb/ch0" value="0.0121136419"/>
+        <property name="sanity.peak|Reverb/ch1" value="4344.52246"/>
+        <property name="sanity.audible|Reverb/ch1" value="32.7159538"/>
+        <property name="sanity.dc|Reverb/ch1" value="0.0309152901"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

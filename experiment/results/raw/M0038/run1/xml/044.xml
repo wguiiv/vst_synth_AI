@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="3.138" timestamp="2026-11-03T11:08:47.677" name="AllTests">
+  <testsuite name="RatesAndWaves/SpectralPitch" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="3.137" timestamp="2026-11-03T11:08:47.677">
+    <testcase name="EveryNoteHasTheRightFundamental/Sine48000" value_param="16-byte object &lt;00-00 00-00 00-70 E7-40 00-00 00-00 00-00 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp" line="53" status="run" result="completed" time="3.137" timestamp="2026-11-03T11:08:47.677" classname="RatesAndWaves/SpectralPitch">
+      <failure message="unknown file&#x0A;C++ exception with description &quot;std::bad_alloc&quot; thrown in the test body.&#x0A;" type=""><![CDATA[unknown file
+C++ exception with description "std::bad_alloc" thrown in the test body.
+]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

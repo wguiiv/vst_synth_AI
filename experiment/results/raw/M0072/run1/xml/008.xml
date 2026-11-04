@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.383" timestamp="2026-11-03T21:07:13.702" name="AllTests">
+  <testsuite name="SanityRandom" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.382" timestamp="2026-11-03T21:07:13.702">
+    <testcase name="AllParametersAtMaximum" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="154" status="run" result="completed" time="0.382" timestamp="2026-11-03T21:07:13.702" classname="SanityRandom">
+      <properties>
+        <property name="sanity.peakRandom|allMax/ch0" value="0"/>
+        <property name="sanity.dcRandom|allMax/ch0" value="0"/>
+        <property name="sanity.peakRandom|allMax/ch1" value="0"/>
+        <property name="sanity.dcRandom|allMax/ch1" value="0"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

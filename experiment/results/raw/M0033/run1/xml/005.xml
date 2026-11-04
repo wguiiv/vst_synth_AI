@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="4.928" timestamp="2026-11-03T10:03:31.477" name="AllTests">
+  <testsuite name="SpectralAliasing" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="4.928" timestamp="2026-11-03T10:03:31.477">
+    <testcase name="DoesNotExceedCharacterizedLevel" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp" line="230" status="run" result="completed" time="4.928" timestamp="2026-11-03T10:03:31.477" classname="SpectralAliasing">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Saw44100/note81: spectral.aliasing measured 20.0408296 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Saw44100/note81: spectral.aliasing measured 20.0408296 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Saw44100/note93: spectral.aliasing measured 16.8858537 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Saw44100/note93: spectral.aliasing measured 16.8858537 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Saw44100/note105: spectral.aliasing measured 12.9992915 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Saw44100/note105: spectral.aliasing measured 12.9992915 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Square44100/note81: spectral.aliasing measured 22.1999824 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Square44100/note81: spectral.aliasing measured 22.1999824 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Square44100/note93: spectral.aliasing measured 18.8998915 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Square44100/note93: spectral.aliasing measured 18.8998915 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Square44100/note105: spectral.aliasing measured 15.2999981 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Square44100/note105: spectral.aliasing measured 15.2999981 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Saw48000/note81: spectral.aliasing measured 21.952011 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Saw48000/note81: spectral.aliasing measured 21.952011 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Saw48000/note93: spectral.aliasing measured 18.4874261 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Saw48000/note93: spectral.aliasing measured 18.4874261 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Saw48000/note105: spectral.aliasing measured 14.0994537 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Saw48000/note105: spectral.aliasing measured 14.0994537 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Square48000/note81: spectral.aliasing measured 24.2 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Square48000/note81: spectral.aliasing measured 24.2 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Square48000/note93: spectral.aliasing measured 20.6999889 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Square48000/note93: spectral.aliasing measured 20.6999889 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Square48000/note105: spectral.aliasing measured 16.4999988 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Square48000/note105: spectral.aliasing measured 16.4999988 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Saw96000/note81: spectral.aliasing measured 29.991171 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Saw96000/note81: spectral.aliasing measured 29.991171 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Saw96000/note93: spectral.aliasing measured 25.3918916 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Saw96000/note93: spectral.aliasing measured 25.3918916 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Saw96000/note105: spectral.aliasing measured 18.9997745 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Saw96000/note105: spectral.aliasing measured 18.9997745 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Square96000/note81: spectral.aliasing measured 32.3999996 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Square96000/note81: spectral.aliasing measured 32.3999996 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Square96000/note93: spectral.aliasing measured 27.899999 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Square96000/note93: spectral.aliasing measured 27.899999 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238&#x0A;Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + &quot;/note&quot; + std::to_string (b.note))&#x0A;  Actual: false (Square96000/note105: spectral.aliasing measured 21.1999996 dB, limit &lt;= 3 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:238
+Value of: within (tol::aliasing, measured - b.inharmonicDb, waveNames[b.wave] + rateName (b.sampleRate) + "/note" + std::to_string (b.note))
+  Actual: false (Square96000/note105: spectral.aliasing measured 21.1999996 dB, limit <= 3 dB)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="spectral.aliasing|Saw44100/note81" value="20.0408296"/>
+        <property name="spectral.aliasing|Saw44100/note93" value="16.8858537"/>
+        <property name="spectral.aliasing|Saw44100/note105" value="12.9992915"/>
+        <property name="spectral.aliasing|Square44100/note81" value="22.1999824"/>
+        <property name="spectral.aliasing|Square44100/note93" value="18.8998915"/>
+        <property name="spectral.aliasing|Square44100/note105" value="15.2999981"/>
+        <property name="spectral.aliasing|Saw48000/note81" value="21.952011"/>
+        <property name="spectral.aliasing|Saw48000/note93" value="18.4874261"/>
+        <property name="spectral.aliasing|Saw48000/note105" value="14.0994537"/>
+        <property name="spectral.aliasing|Square48000/note81" value="24.2"/>
+        <property name="spectral.aliasing|Square48000/note93" value="20.6999889"/>
+        <property name="spectral.aliasing|Square48000/note105" value="16.4999988"/>
+        <property name="spectral.aliasing|Saw96000/note81" value="29.991171"/>
+        <property name="spectral.aliasing|Saw96000/note93" value="25.3918916"/>
+        <property name="spectral.aliasing|Saw96000/note105" value="18.9997745"/>
+        <property name="spectral.aliasing|Square96000/note81" value="32.3999996"/>
+        <property name="spectral.aliasing|Square96000/note93" value="27.899999"/>
+        <property name="spectral.aliasing|Square96000/note105" value="21.1999996"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

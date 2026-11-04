@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.209" timestamp="2026-11-04T00:12:59.539" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.209" timestamp="2026-11-04T00:12:59.539">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/LowPassResonant" value_param="144-byte object &lt;20-A8 D1-6E B9-55 00-00 0F-00 00-00 00-00 00-00 4C-6F 77-50 61-73 73-52 65-73 6F-6E 61-6E 74-00 00-00 00-00 00-70 E7-40 00-02 00-00 00-00 00-00 00-00 00-00 00-00 F0-3F 03-00 00-00 00-00 00-00 ... 10-BD D1-6E B9-55 00-00 90-BC D1-6E B9-55 00-00 05-00 00-00 00-00 00-00 D8-2E 81-38 B9-55 00-00 C0-2C A1-FC 6B-7F 00-00 10-25 CF-6E B9-55 00-00 28-25 CF-6E B9-55 00-00 28-25 CF-6E B9-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.208" timestamp="2026-11-04T00:12:59.539" classname="Configs/Sanity">
+      <properties>
+        <property name="sanity.peak|LowPassResonant/ch0" value="0.0373502783"/>
+        <property name="sanity.audible|LowPassResonant/ch0" value="0.0373344198"/>
+        <property name="sanity.dc|LowPassResonant/ch0" value="5.02282855e-05"/>
+        <property name="sanity.peak|LowPassResonant/ch1" value="0.0373502783"/>
+        <property name="sanity.audible|LowPassResonant/ch1" value="0.0373344198"/>
+        <property name="sanity.dc|LowPassResonant/ch1" value="5.02282855e-05"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>
