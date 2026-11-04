@@ -1,0 +1,321 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="522" viewBox="0 0 1000 522" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+<title id="t">Detecção por tolerância, uma tolerância por vez</title>
+<desc id="d">Taxa de detecção de 225 mutantes e 11 defeitos em cada ponto da grade de cada tolerância, com as demais no padrão. Faixas cinza marcam os pontos em que condições inofensivas falham. Os valores estão na seção 8 de RESULTADOS.md e em curva_tolerancia.csv.</desc>
+<rect width="1000" height="522" fill="#fcfcfb"/>
+<text x="16" y="28" font-size="16" font-weight="600" fill="#0b0b0b">Detecção por tolerância, uma tolerância por vez</text>
+<text x="16" y="50" font-size="12" fill="#52514e">Cada painel varia uma tolerância, da mais rigorosa (esquerda) para a mais frouxa, com as demais no padrão.</text>
+<text x="16" y="66" font-size="12" fill="#52514e">Sanidade e pluginval não têm grade de tolerância e ficam de fora.</text>
+<line x1="16" y1="92" x2="34" y2="92" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<circle cx="25" cy="92" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="40" y="96" font-size="12" fill="#52514e">mutantes (n = 225)</text>
+<line x1="176" y1="92" x2="194" y2="92" stroke="#eb6834" stroke-width="2" stroke-linecap="round"/>
+<circle cx="185" cy="92" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<text x="200" y="96" font-size="12" fill="#52514e">defeitos (n = 11)</text>
+<rect x="336" y="84" width="16" height="16" rx="2" fill="#f0efec"/>
+<text x="358" y="96" font-size="12" fill="#52514e">ponto com alarmes falsos (número: condições inofensivas que falham, de 8)</text>
+<text x="12" y="132" font-size="12" font-weight="600" fill="#0b0b0b">Altura</text>
+<text x="12" y="146" font-size="11" fill="#898781">spectral.pitch · espectral</text>
+<line x1="44" y1="268" x2="236" y2="268" stroke="#c3c2b7" stroke-width="1"/>
+<text x="38" y="272" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">0%</text>
+<line x1="44" y1="216.0" x2="236" y2="216.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="38" y="220.0" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">50%</text>
+<line x1="44" y1="164" x2="236" y2="164" stroke="#e1e0d9" stroke-width="1"/>
+<text x="38" y="168" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">100%</text>
+<text x="60.0" y="284" font-size="11" text-anchor="middle" fill="#898781">1</text>
+<text x="92.0" y="284" font-size="11" text-anchor="middle" fill="#898781">2</text>
+<text x="124.0" y="284" font-size="11" text-anchor="middle" fill="#0b0b0b" font-weight="600">5</text>
+<text x="124.0" y="297" font-size="10" text-anchor="middle" fill="#52514e">padrão</text>
+<text x="156.0" y="284" font-size="11" text-anchor="middle" fill="#898781">10</text>
+<text x="188.0" y="284" font-size="11" text-anchor="middle" fill="#898781">25</text>
+<text x="220.0" y="284" font-size="11" text-anchor="middle" fill="#898781">50</text>
+<text x="236" y="310" font-size="10" text-anchor="end" fill="#898781">cents</text>
+<path d="M60.0,228.7 L92.0,228.7 L124.0,228.7 L156.0,228.7 L188.0,228.7 L220.0,228.7" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="60.0" cy="228.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.pitch = 1 cents: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="60.0" cy="228.7" r="12" fill="transparent"><title>spectral.pitch = 1 cents: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="92.0" cy="228.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.pitch = 2 cents: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="92.0" cy="228.7" r="12" fill="transparent"><title>spectral.pitch = 2 cents: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="124.0" cy="228.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.pitch = 5 cents (padrão): mutantes 85/225 (37,8%)</title></circle>
+<circle cx="124.0" cy="228.7" r="12" fill="transparent"><title>spectral.pitch = 5 cents (padrão): mutantes 85/225 (37,8%)</title></circle>
+<circle cx="156.0" cy="228.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.pitch = 10 cents: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="156.0" cy="228.7" r="12" fill="transparent"><title>spectral.pitch = 10 cents: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="188.0" cy="228.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.pitch = 25 cents: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="188.0" cy="228.7" r="12" fill="transparent"><title>spectral.pitch = 25 cents: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="220.0" cy="228.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.pitch = 50 cents: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="220.0" cy="228.7" r="12" fill="transparent"><title>spectral.pitch = 50 cents: mutantes 85/225 (37,8%)</title></circle>
+<text x="48" y="219.7" font-size="11" fill="#52514e">mutantes</text>
+<path d="M60.0,249.1 L92.0,249.1 L124.0,249.1 L156.0,249.1 L188.0,249.1 L220.0,249.1" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="60.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.pitch = 1 cents: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="60.0" cy="249.1" r="12" fill="transparent"><title>spectral.pitch = 1 cents: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="92.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.pitch = 2 cents: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="92.0" cy="249.1" r="12" fill="transparent"><title>spectral.pitch = 2 cents: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="124.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.pitch = 5 cents (padrão): defeitos 2/11 (18,2%)</title></circle>
+<circle cx="124.0" cy="249.1" r="12" fill="transparent"><title>spectral.pitch = 5 cents (padrão): defeitos 2/11 (18,2%)</title></circle>
+<circle cx="156.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.pitch = 10 cents: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="156.0" cy="249.1" r="12" fill="transparent"><title>spectral.pitch = 10 cents: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="188.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.pitch = 25 cents: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="188.0" cy="249.1" r="12" fill="transparent"><title>spectral.pitch = 25 cents: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="220.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.pitch = 50 cents: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="220.0" cy="249.1" r="12" fill="transparent"><title>spectral.pitch = 50 cents: defeitos 2/11 (18,2%)</title></circle>
+<text x="48" y="267.1" font-size="11" fill="#52514e">defeitos</text>
+<text x="262" y="132" font-size="12" font-weight="600" fill="#0b0b0b">Atenuação na banda de corte</text>
+<text x="262" y="146" font-size="11" fill="#898781">spectral.stopband · espectral</text>
+<line x1="294" y1="268" x2="486" y2="268" stroke="#c3c2b7" stroke-width="1"/>
+<text x="288" y="272" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">0%</text>
+<line x1="294" y1="216.0" x2="486" y2="216.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="288" y="220.0" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">50%</text>
+<line x1="294" y1="164" x2="486" y2="164" stroke="#e1e0d9" stroke-width="1"/>
+<text x="288" y="168" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">100%</text>
+<text x="318.0" y="284" font-size="11" text-anchor="middle" fill="#898781">24</text>
+<text x="366.0" y="284" font-size="11" text-anchor="middle" fill="#0b0b0b" font-weight="600">18</text>
+<text x="366.0" y="297" font-size="10" text-anchor="middle" fill="#52514e">padrão</text>
+<text x="414.0" y="284" font-size="11" text-anchor="middle" fill="#898781">12</text>
+<text x="462.0" y="284" font-size="11" text-anchor="middle" fill="#898781">6</text>
+<text x="486" y="310" font-size="10" text-anchor="end" fill="#898781">dB</text>
+<path d="M318.0,228.7 L366.0,228.7 L414.0,228.7 L462.0,228.7" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="318.0" cy="228.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.stopband = 24 dB: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="318.0" cy="228.7" r="12" fill="transparent"><title>spectral.stopband = 24 dB: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="366.0" cy="228.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.stopband = 18 dB (padrão): mutantes 85/225 (37,8%)</title></circle>
+<circle cx="366.0" cy="228.7" r="12" fill="transparent"><title>spectral.stopband = 18 dB (padrão): mutantes 85/225 (37,8%)</title></circle>
+<circle cx="414.0" cy="228.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.stopband = 12 dB: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="414.0" cy="228.7" r="12" fill="transparent"><title>spectral.stopband = 12 dB: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="462.0" cy="228.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.stopband = 6 dB: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="462.0" cy="228.7" r="12" fill="transparent"><title>spectral.stopband = 6 dB: mutantes 85/225 (37,8%)</title></circle>
+<path d="M318.0,249.1 L366.0,249.1 L414.0,249.1 L462.0,249.1" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="318.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.stopband = 24 dB: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="318.0" cy="249.1" r="12" fill="transparent"><title>spectral.stopband = 24 dB: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="366.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.stopband = 18 dB (padrão): defeitos 2/11 (18,2%)</title></circle>
+<circle cx="366.0" cy="249.1" r="12" fill="transparent"><title>spectral.stopband = 18 dB (padrão): defeitos 2/11 (18,2%)</title></circle>
+<circle cx="414.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.stopband = 12 dB: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="414.0" cy="249.1" r="12" fill="transparent"><title>spectral.stopband = 12 dB: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="462.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.stopband = 6 dB: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="462.0" cy="249.1" r="12" fill="transparent"><title>spectral.stopband = 6 dB: defeitos 2/11 (18,2%)</title></circle>
+<text x="512" y="132" font-size="12" font-weight="600" fill="#0b0b0b">Banda de passagem</text>
+<text x="512" y="146" font-size="11" fill="#898781">spectral.passband · espectral</text>
+<rect x="545.0" y="164" width="46.0" height="104" fill="#f0efec"><title>8 de 8 condições inofensivas falham; o código limpo também falha</title></rect>
+<text x="568.0" y="262" font-size="11" text-anchor="middle" fill="#52514e">8</text>
+<line x1="544" y1="268" x2="736" y2="268" stroke="#c3c2b7" stroke-width="1"/>
+<text x="538" y="272" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">0%</text>
+<line x1="544" y1="216.0" x2="736" y2="216.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="538" y="220.0" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">50%</text>
+<line x1="544" y1="164" x2="736" y2="164" stroke="#e1e0d9" stroke-width="1"/>
+<text x="538" y="168" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">100%</text>
+<text x="568.0" y="284" font-size="11" text-anchor="middle" fill="#898781">0,25</text>
+<text x="616.0" y="284" font-size="11" text-anchor="middle" fill="#898781">0,5</text>
+<text x="664.0" y="284" font-size="11" text-anchor="middle" fill="#0b0b0b" font-weight="600">1</text>
+<text x="664.0" y="297" font-size="10" text-anchor="middle" fill="#52514e">padrão</text>
+<text x="712.0" y="284" font-size="11" text-anchor="middle" fill="#898781">3</text>
+<text x="736" y="310" font-size="10" text-anchor="end" fill="#898781">dB</text>
+<path d="M568.0,164.0 L616.0,228.2 L664.0,228.7 L712.0,228.7" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="568.0" cy="164.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.passband = 0,25 dB: mutantes 225/225 (100,0%)</title></circle>
+<circle cx="568.0" cy="164.0" r="12" fill="transparent"><title>spectral.passband = 0,25 dB: mutantes 225/225 (100,0%)</title></circle>
+<circle cx="616.0" cy="228.2" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.passband = 0,5 dB: mutantes 86/225 (38,2%)</title></circle>
+<circle cx="616.0" cy="228.2" r="12" fill="transparent"><title>spectral.passband = 0,5 dB: mutantes 86/225 (38,2%)</title></circle>
+<circle cx="664.0" cy="228.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.passband = 1 dB (padrão): mutantes 85/225 (37,8%)</title></circle>
+<circle cx="664.0" cy="228.7" r="12" fill="transparent"><title>spectral.passband = 1 dB (padrão): mutantes 85/225 (37,8%)</title></circle>
+<circle cx="712.0" cy="228.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.passband = 3 dB: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="712.0" cy="228.7" r="12" fill="transparent"><title>spectral.passband = 3 dB: mutantes 85/225 (37,8%)</title></circle>
+<path d="M568.0,164.0 L616.0,249.1 L664.0,249.1 L712.0,249.1" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="568.0" cy="164.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.passband = 0,25 dB: defeitos 11/11 (100,0%)</title></circle>
+<circle cx="568.0" cy="164.0" r="12" fill="transparent"><title>spectral.passband = 0,25 dB: defeitos 11/11 (100,0%)</title></circle>
+<circle cx="616.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.passband = 0,5 dB: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="616.0" cy="249.1" r="12" fill="transparent"><title>spectral.passband = 0,5 dB: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="664.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.passband = 1 dB (padrão): defeitos 2/11 (18,2%)</title></circle>
+<circle cx="664.0" cy="249.1" r="12" fill="transparent"><title>spectral.passband = 1 dB (padrão): defeitos 2/11 (18,2%)</title></circle>
+<circle cx="712.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.passband = 3 dB: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="712.0" cy="249.1" r="12" fill="transparent"><title>spectral.passband = 3 dB: defeitos 2/11 (18,2%)</title></circle>
+<text x="762" y="132" font-size="12" font-weight="600" fill="#0b0b0b">Aliasing</text>
+<text x="762" y="146" font-size="11" fill="#898781">spectral.aliasing · espectral</text>
+<line x1="794" y1="268" x2="986" y2="268" stroke="#c3c2b7" stroke-width="1"/>
+<text x="788" y="272" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">0%</text>
+<line x1="794" y1="216.0" x2="986" y2="216.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="788" y="220.0" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">50%</text>
+<line x1="794" y1="164" x2="986" y2="164" stroke="#e1e0d9" stroke-width="1"/>
+<text x="788" y="168" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">100%</text>
+<text x="818.0" y="284" font-size="11" text-anchor="middle" fill="#898781">1</text>
+<text x="866.0" y="284" font-size="11" text-anchor="middle" fill="#0b0b0b" font-weight="600">3</text>
+<text x="866.0" y="297" font-size="10" text-anchor="middle" fill="#52514e">padrão</text>
+<text x="914.0" y="284" font-size="11" text-anchor="middle" fill="#898781">6</text>
+<text x="962.0" y="284" font-size="11" text-anchor="middle" fill="#898781">10</text>
+<text x="986" y="310" font-size="10" text-anchor="end" fill="#898781">dB</text>
+<path d="M818.0,227.8 L866.0,228.7 L914.0,228.7 L962.0,228.7" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="818.0" cy="227.8" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.aliasing = 1 dB: mutantes 87/225 (38,7%)</title></circle>
+<circle cx="818.0" cy="227.8" r="12" fill="transparent"><title>spectral.aliasing = 1 dB: mutantes 87/225 (38,7%)</title></circle>
+<circle cx="866.0" cy="228.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.aliasing = 3 dB (padrão): mutantes 85/225 (37,8%)</title></circle>
+<circle cx="866.0" cy="228.7" r="12" fill="transparent"><title>spectral.aliasing = 3 dB (padrão): mutantes 85/225 (37,8%)</title></circle>
+<circle cx="914.0" cy="228.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.aliasing = 6 dB: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="914.0" cy="228.7" r="12" fill="transparent"><title>spectral.aliasing = 6 dB: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="962.0" cy="228.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>spectral.aliasing = 10 dB: mutantes 85/225 (37,8%)</title></circle>
+<circle cx="962.0" cy="228.7" r="12" fill="transparent"><title>spectral.aliasing = 10 dB: mutantes 85/225 (37,8%)</title></circle>
+<path d="M818.0,249.1 L866.0,249.1 L914.0,249.1 L962.0,249.1" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="818.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.aliasing = 1 dB: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="818.0" cy="249.1" r="12" fill="transparent"><title>spectral.aliasing = 1 dB: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="866.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.aliasing = 3 dB (padrão): defeitos 2/11 (18,2%)</title></circle>
+<circle cx="866.0" cy="249.1" r="12" fill="transparent"><title>spectral.aliasing = 3 dB (padrão): defeitos 2/11 (18,2%)</title></circle>
+<circle cx="914.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.aliasing = 6 dB: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="914.0" cy="249.1" r="12" fill="transparent"><title>spectral.aliasing = 6 dB: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="962.0" cy="249.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>spectral.aliasing = 10 dB: defeitos 2/11 (18,2%)</title></circle>
+<circle cx="962.0" cy="249.1" r="12" fill="transparent"><title>spectral.aliasing = 10 dB: defeitos 2/11 (18,2%)</title></circle>
+<text x="12" y="332" font-size="12" font-weight="600" fill="#0b0b0b">Tempo do envelope</text>
+<text x="12" y="346" font-size="11" fill="#898781">temporal.time · temporal</text>
+<rect x="45.0" y="364" width="36.4" height="104" fill="#f0efec"><title>8 de 8 condições inofensivas falham; o código limpo também falha</title></rect>
+<text x="63.2" y="462" font-size="11" text-anchor="middle" fill="#52514e">8</text>
+<rect x="83.4" y="364" width="36.4" height="104" fill="#f0efec"><title>8 de 8 condições inofensivas falham; o código limpo também falha</title></rect>
+<text x="101.6" y="462" font-size="11" text-anchor="middle" fill="#52514e">8</text>
+<line x1="44" y1="468" x2="236" y2="468" stroke="#c3c2b7" stroke-width="1"/>
+<text x="38" y="472" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">0%</text>
+<line x1="44" y1="416.0" x2="236" y2="416.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="38" y="420.0" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">50%</text>
+<line x1="44" y1="364" x2="236" y2="364" stroke="#e1e0d9" stroke-width="1"/>
+<text x="38" y="368" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">100%</text>
+<text x="63.2" y="484" font-size="11" text-anchor="middle" fill="#898781">2</text>
+<text x="101.6" y="484" font-size="11" text-anchor="middle" fill="#898781">5</text>
+<text x="140.0" y="484" font-size="11" text-anchor="middle" fill="#0b0b0b" font-weight="600">10</text>
+<text x="140.0" y="497" font-size="10" text-anchor="middle" fill="#52514e">padrão</text>
+<text x="178.4" y="484" font-size="11" text-anchor="middle" fill="#898781">20</text>
+<text x="216.79999999999998" y="484" font-size="11" text-anchor="middle" fill="#898781">50</text>
+<text x="236" y="510" font-size="10" text-anchor="end" fill="#898781">ms</text>
+<path d="M63.2,364.0 L101.6,364.5 L140.0,418.1 L178.4,418.1 L216.8,418.1" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="63.2" cy="364.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>temporal.time = 2 ms: mutantes 225/225 (100,0%)</title></circle>
+<circle cx="63.2" cy="364.0" r="12" fill="transparent"><title>temporal.time = 2 ms: mutantes 225/225 (100,0%)</title></circle>
+<circle cx="101.6" cy="364.5" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>temporal.time = 5 ms: mutantes 224/225 (99,6%)</title></circle>
+<circle cx="101.6" cy="364.5" r="12" fill="transparent"><title>temporal.time = 5 ms: mutantes 224/225 (99,6%)</title></circle>
+<circle cx="140.0" cy="418.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>temporal.time = 10 ms (padrão): mutantes 108/225 (48,0%)</title></circle>
+<circle cx="140.0" cy="418.1" r="12" fill="transparent"><title>temporal.time = 10 ms (padrão): mutantes 108/225 (48,0%)</title></circle>
+<circle cx="178.4" cy="418.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>temporal.time = 20 ms: mutantes 108/225 (48,0%)</title></circle>
+<circle cx="178.4" cy="418.1" r="12" fill="transparent"><title>temporal.time = 20 ms: mutantes 108/225 (48,0%)</title></circle>
+<circle cx="216.8" cy="418.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>temporal.time = 50 ms: mutantes 108/225 (48,0%)</title></circle>
+<circle cx="216.8" cy="418.1" r="12" fill="transparent"><title>temporal.time = 50 ms: mutantes 108/225 (48,0%)</title></circle>
+<path d="M63.2,364.0 L101.6,364.0 L140.0,439.6 L178.4,439.6 L216.8,439.6" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="63.2" cy="364.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>temporal.time = 2 ms: defeitos 11/11 (100,0%)</title></circle>
+<circle cx="63.2" cy="364.0" r="12" fill="transparent"><title>temporal.time = 2 ms: defeitos 11/11 (100,0%)</title></circle>
+<circle cx="101.6" cy="364.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>temporal.time = 5 ms: defeitos 11/11 (100,0%)</title></circle>
+<circle cx="101.6" cy="364.0" r="12" fill="transparent"><title>temporal.time = 5 ms: defeitos 11/11 (100,0%)</title></circle>
+<circle cx="140.0" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>temporal.time = 10 ms (padrão): defeitos 3/11 (27,3%)</title></circle>
+<circle cx="140.0" cy="439.6" r="12" fill="transparent"><title>temporal.time = 10 ms (padrão): defeitos 3/11 (27,3%)</title></circle>
+<circle cx="178.4" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>temporal.time = 20 ms: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="178.4" cy="439.6" r="12" fill="transparent"><title>temporal.time = 20 ms: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="216.8" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>temporal.time = 50 ms: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="216.8" cy="439.6" r="12" fill="transparent"><title>temporal.time = 50 ms: defeitos 3/11 (27,3%)</title></circle>
+<text x="262" y="332" font-size="12" font-weight="600" fill="#0b0b0b">Tempo de release</text>
+<text x="262" y="346" font-size="11" fill="#898781">temporal.release · temporal</text>
+<rect x="295.0" y="364" width="36.4" height="104" fill="#f0efec"><title>8 de 8 condições inofensivas falham; o código limpo também falha</title></rect>
+<text x="313.2" y="462" font-size="11" text-anchor="middle" fill="#52514e">8</text>
+<line x1="294" y1="468" x2="486" y2="468" stroke="#c3c2b7" stroke-width="1"/>
+<text x="288" y="472" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">0%</text>
+<line x1="294" y1="416.0" x2="486" y2="416.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="288" y="420.0" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">50%</text>
+<line x1="294" y1="364" x2="486" y2="364" stroke="#e1e0d9" stroke-width="1"/>
+<text x="288" y="368" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">100%</text>
+<text x="313.2" y="484" font-size="11" text-anchor="middle" fill="#898781">5</text>
+<text x="351.6" y="484" font-size="11" text-anchor="middle" fill="#898781">10</text>
+<text x="390.0" y="484" font-size="11" text-anchor="middle" fill="#0b0b0b" font-weight="600">20</text>
+<text x="390.0" y="497" font-size="10" text-anchor="middle" fill="#52514e">padrão</text>
+<text x="428.4" y="484" font-size="11" text-anchor="middle" fill="#898781">50</text>
+<text x="466.79999999999995" y="484" font-size="11" text-anchor="middle" fill="#898781">100</text>
+<text x="486" y="510" font-size="10" text-anchor="end" fill="#898781">ms</text>
+<path d="M313.2,364.0 L351.6,417.6 L390.0,418.1 L428.4,418.1 L466.8,418.1" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="313.2" cy="364.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>temporal.release = 5 ms: mutantes 225/225 (100,0%)</title></circle>
+<circle cx="313.2" cy="364.0" r="12" fill="transparent"><title>temporal.release = 5 ms: mutantes 225/225 (100,0%)</title></circle>
+<circle cx="351.6" cy="417.6" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>temporal.release = 10 ms: mutantes 109/225 (48,4%)</title></circle>
+<circle cx="351.6" cy="417.6" r="12" fill="transparent"><title>temporal.release = 10 ms: mutantes 109/225 (48,4%)</title></circle>
+<circle cx="390.0" cy="418.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>temporal.release = 20 ms (padrão): mutantes 108/225 (48,0%)</title></circle>
+<circle cx="390.0" cy="418.1" r="12" fill="transparent"><title>temporal.release = 20 ms (padrão): mutantes 108/225 (48,0%)</title></circle>
+<circle cx="428.4" cy="418.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>temporal.release = 50 ms: mutantes 108/225 (48,0%)</title></circle>
+<circle cx="428.4" cy="418.1" r="12" fill="transparent"><title>temporal.release = 50 ms: mutantes 108/225 (48,0%)</title></circle>
+<circle cx="466.8" cy="418.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>temporal.release = 100 ms: mutantes 108/225 (48,0%)</title></circle>
+<circle cx="466.8" cy="418.1" r="12" fill="transparent"><title>temporal.release = 100 ms: mutantes 108/225 (48,0%)</title></circle>
+<path d="M313.2,364.0 L351.6,439.6 L390.0,439.6 L428.4,439.6 L466.8,439.6" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="313.2" cy="364.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>temporal.release = 5 ms: defeitos 11/11 (100,0%)</title></circle>
+<circle cx="313.2" cy="364.0" r="12" fill="transparent"><title>temporal.release = 5 ms: defeitos 11/11 (100,0%)</title></circle>
+<circle cx="351.6" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>temporal.release = 10 ms: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="351.6" cy="439.6" r="12" fill="transparent"><title>temporal.release = 10 ms: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="390.0" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>temporal.release = 20 ms (padrão): defeitos 3/11 (27,3%)</title></circle>
+<circle cx="390.0" cy="439.6" r="12" fill="transparent"><title>temporal.release = 20 ms (padrão): defeitos 3/11 (27,3%)</title></circle>
+<circle cx="428.4" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>temporal.release = 50 ms: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="428.4" cy="439.6" r="12" fill="transparent"><title>temporal.release = 50 ms: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="466.8" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>temporal.release = 100 ms: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="466.8" cy="439.6" r="12" fill="transparent"><title>temporal.release = 100 ms: defeitos 3/11 (27,3%)</title></circle>
+<text x="512" y="332" font-size="12" font-weight="600" fill="#0b0b0b">Nível de sustain</text>
+<text x="512" y="346" font-size="11" fill="#898781">temporal.sustain · temporal</text>
+<line x1="544" y1="468" x2="736" y2="468" stroke="#c3c2b7" stroke-width="1"/>
+<text x="538" y="472" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">0%</text>
+<line x1="544" y1="416.0" x2="736" y2="416.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="538" y="420.0" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">50%</text>
+<line x1="544" y1="364" x2="736" y2="364" stroke="#e1e0d9" stroke-width="1"/>
+<text x="538" y="368" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">100%</text>
+<text x="563.2" y="484" font-size="11" text-anchor="middle" fill="#898781">0,1</text>
+<text x="601.6" y="484" font-size="11" text-anchor="middle" fill="#898781">0,25</text>
+<text x="640.0" y="484" font-size="11" text-anchor="middle" fill="#0b0b0b" font-weight="600">0,5</text>
+<text x="640.0" y="497" font-size="10" text-anchor="middle" fill="#52514e">padrão</text>
+<text x="678.4" y="484" font-size="11" text-anchor="middle" fill="#898781">1</text>
+<text x="716.8" y="484" font-size="11" text-anchor="middle" fill="#898781">3</text>
+<text x="736" y="510" font-size="10" text-anchor="end" fill="#898781">dB</text>
+<path d="M563.2,418.1 L601.6,418.1 L640.0,418.1 L678.4,418.1 L716.8,418.1" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="563.2" cy="418.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>temporal.sustain = 0,1 dB: mutantes 108/225 (48,0%)</title></circle>
+<circle cx="563.2" cy="418.1" r="12" fill="transparent"><title>temporal.sustain = 0,1 dB: mutantes 108/225 (48,0%)</title></circle>
+<circle cx="601.6" cy="418.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>temporal.sustain = 0,25 dB: mutantes 108/225 (48,0%)</title></circle>
+<circle cx="601.6" cy="418.1" r="12" fill="transparent"><title>temporal.sustain = 0,25 dB: mutantes 108/225 (48,0%)</title></circle>
+<circle cx="640.0" cy="418.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>temporal.sustain = 0,5 dB (padrão): mutantes 108/225 (48,0%)</title></circle>
+<circle cx="640.0" cy="418.1" r="12" fill="transparent"><title>temporal.sustain = 0,5 dB (padrão): mutantes 108/225 (48,0%)</title></circle>
+<circle cx="678.4" cy="418.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>temporal.sustain = 1 dB: mutantes 108/225 (48,0%)</title></circle>
+<circle cx="678.4" cy="418.1" r="12" fill="transparent"><title>temporal.sustain = 1 dB: mutantes 108/225 (48,0%)</title></circle>
+<circle cx="716.8" cy="418.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>temporal.sustain = 3 dB: mutantes 108/225 (48,0%)</title></circle>
+<circle cx="716.8" cy="418.1" r="12" fill="transparent"><title>temporal.sustain = 3 dB: mutantes 108/225 (48,0%)</title></circle>
+<path d="M563.2,439.6 L601.6,439.6 L640.0,439.6 L678.4,439.6 L716.8,439.6" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="563.2" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>temporal.sustain = 0,1 dB: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="563.2" cy="439.6" r="12" fill="transparent"><title>temporal.sustain = 0,1 dB: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="601.6" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>temporal.sustain = 0,25 dB: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="601.6" cy="439.6" r="12" fill="transparent"><title>temporal.sustain = 0,25 dB: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="640.0" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>temporal.sustain = 0,5 dB (padrão): defeitos 3/11 (27,3%)</title></circle>
+<circle cx="640.0" cy="439.6" r="12" fill="transparent"><title>temporal.sustain = 0,5 dB (padrão): defeitos 3/11 (27,3%)</title></circle>
+<circle cx="678.4" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>temporal.sustain = 1 dB: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="678.4" cy="439.6" r="12" fill="transparent"><title>temporal.sustain = 1 dB: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="716.8" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>temporal.sustain = 3 dB: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="716.8" cy="439.6" r="12" fill="transparent"><title>temporal.sustain = 3 dB: defeitos 3/11 (27,3%)</title></circle>
+<text x="762" y="332" font-size="12" font-weight="600" fill="#0b0b0b">Diferença máxima (golden)</text>
+<text x="762" y="346" font-size="11" fill="#898781">golden.maxAbsDiff · golden</text>
+<rect x="795.0" y="364" width="30.0" height="104" fill="#f0efec"><title>2 de 8 condições inofensivas falham</title></rect>
+<text x="810.0" y="462" font-size="11" text-anchor="middle" fill="#52514e">2</text>
+<rect x="827.0" y="364" width="30.0" height="104" fill="#f0efec"><title>1 de 8 condições inofensivas falham</title></rect>
+<text x="842.0" y="462" font-size="11" text-anchor="middle" fill="#52514e">1</text>
+<line x1="794" y1="468" x2="986" y2="468" stroke="#c3c2b7" stroke-width="1"/>
+<text x="788" y="472" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">0%</text>
+<line x1="794" y1="416.0" x2="986" y2="416.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="788" y="420.0" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">50%</text>
+<line x1="794" y1="364" x2="986" y2="364" stroke="#e1e0d9" stroke-width="1"/>
+<text x="788" y="368" font-size="11" text-anchor="end" fill="#898781" style="font-variant-numeric: tabular-nums">100%</text>
+<text x="810.0" y="484" font-size="11" text-anchor="middle" fill="#898781">0</text>
+<text x="842.0" y="484" font-size="11" text-anchor="middle" fill="#898781">10⁻⁶</text>
+<text x="874.0" y="484" font-size="11" text-anchor="middle" fill="#898781">10⁻⁵</text>
+<text x="906.0" y="484" font-size="11" text-anchor="middle" fill="#0b0b0b" font-weight="600">10⁻⁴</text>
+<text x="906.0" y="497" font-size="10" text-anchor="middle" fill="#52514e">padrão</text>
+<text x="938.0" y="484" font-size="11" text-anchor="middle" fill="#898781">10⁻³</text>
+<text x="970.0" y="484" font-size="11" text-anchor="middle" fill="#898781">10⁻²</text>
+<text x="986" y="510" font-size="10" text-anchor="end" fill="#898781">amplitude</text>
+<path d="M810.0,397.3 L842.0,397.3 L874.0,397.3 L906.0,397.3 L938.0,397.3 L970.0,397.3" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="810.0" cy="397.3" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>golden.maxAbsDiff = 0 amplitude: mutantes 153/225 (68,0%)</title></circle>
+<circle cx="810.0" cy="397.3" r="12" fill="transparent"><title>golden.maxAbsDiff = 0 amplitude: mutantes 153/225 (68,0%)</title></circle>
+<circle cx="842.0" cy="397.3" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>golden.maxAbsDiff = 10⁻⁶ amplitude: mutantes 153/225 (68,0%)</title></circle>
+<circle cx="842.0" cy="397.3" r="12" fill="transparent"><title>golden.maxAbsDiff = 10⁻⁶ amplitude: mutantes 153/225 (68,0%)</title></circle>
+<circle cx="874.0" cy="397.3" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>golden.maxAbsDiff = 10⁻⁵ amplitude: mutantes 153/225 (68,0%)</title></circle>
+<circle cx="874.0" cy="397.3" r="12" fill="transparent"><title>golden.maxAbsDiff = 10⁻⁵ amplitude: mutantes 153/225 (68,0%)</title></circle>
+<circle cx="906.0" cy="397.3" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>golden.maxAbsDiff = 10⁻⁴ amplitude (padrão): mutantes 153/225 (68,0%)</title></circle>
+<circle cx="906.0" cy="397.3" r="12" fill="transparent"><title>golden.maxAbsDiff = 10⁻⁴ amplitude (padrão): mutantes 153/225 (68,0%)</title></circle>
+<circle cx="938.0" cy="397.3" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>golden.maxAbsDiff = 10⁻³ amplitude: mutantes 153/225 (68,0%)</title></circle>
+<circle cx="938.0" cy="397.3" r="12" fill="transparent"><title>golden.maxAbsDiff = 10⁻³ amplitude: mutantes 153/225 (68,0%)</title></circle>
+<circle cx="970.0" cy="397.3" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>golden.maxAbsDiff = 10⁻² amplitude: mutantes 153/225 (68,0%)</title></circle>
+<circle cx="970.0" cy="397.3" r="12" fill="transparent"><title>golden.maxAbsDiff = 10⁻² amplitude: mutantes 153/225 (68,0%)</title></circle>
+<path d="M810.0,439.6 L842.0,439.6 L874.0,439.6 L906.0,439.6 L938.0,439.6 L970.0,439.6" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="810.0" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>golden.maxAbsDiff = 0 amplitude: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="810.0" cy="439.6" r="12" fill="transparent"><title>golden.maxAbsDiff = 0 amplitude: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="842.0" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>golden.maxAbsDiff = 10⁻⁶ amplitude: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="842.0" cy="439.6" r="12" fill="transparent"><title>golden.maxAbsDiff = 10⁻⁶ amplitude: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="874.0" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>golden.maxAbsDiff = 10⁻⁵ amplitude: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="874.0" cy="439.6" r="12" fill="transparent"><title>golden.maxAbsDiff = 10⁻⁵ amplitude: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="906.0" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>golden.maxAbsDiff = 10⁻⁴ amplitude (padrão): defeitos 3/11 (27,3%)</title></circle>
+<circle cx="906.0" cy="439.6" r="12" fill="transparent"><title>golden.maxAbsDiff = 10⁻⁴ amplitude (padrão): defeitos 3/11 (27,3%)</title></circle>
+<circle cx="938.0" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>golden.maxAbsDiff = 10⁻³ amplitude: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="938.0" cy="439.6" r="12" fill="transparent"><title>golden.maxAbsDiff = 10⁻³ amplitude: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="970.0" cy="439.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>golden.maxAbsDiff = 10⁻² amplitude: defeitos 3/11 (27,3%)</title></circle>
+<circle cx="970.0" cy="439.6" r="12" fill="transparent"><title>golden.maxAbsDiff = 10⁻² amplitude: defeitos 3/11 (27,3%)</title></circle>
+</svg>

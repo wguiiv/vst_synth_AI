@@ -262,6 +262,154 @@ def md_table (header, rows):
     return "\n".join (lines)
 
 
+# ---------------------------------------------------------------------------------------------- tolerance chart
+
+# Reference palette of the dataviz method (light mode only: the figure is for print). Series slots 1 and 2,
+# validated together (all pairs): CVD ΔE 24.7, normal-vision ΔE 33.6, contrast 4.30 and 3.12 on the surface.
+SURFACE, INK, INK_2, MUTED = "#fcfcfb", "#0b0b0b", "#52514e", "#898781"
+GRID, AXIS, BAND = "#e1e0d9", "#c3c2b7", "#f0efec"
+SERIES = [("mutantes", "#2a78d6"), ("defeitos", "#eb6834")]
+FONT = "system-ui, -apple-system, 'Segoe UI', sans-serif"
+SUPERSCRIPT = str.maketrans ("-0123456789", "⁻⁰¹²³⁴⁵⁶⁷⁸⁹")
+PANEL_TITLES = {
+    "spectral.pitch": "Altura",          "spectral.stopband": "Atenuação na banda de corte",
+    "spectral.passband": "Banda de passagem", "spectral.aliasing": "Aliasing",
+    "temporal.time": "Tempo do envelope",   "temporal.release": "Tempo de release",
+    "temporal.sustain": "Nível de sustain",  "golden.maxAbsDiff": "Diferença máxima (golden)",
+}
+
+
+def tick_label (value, unit):
+    """Short grid labels so they fit side by side: seconds in ms, the golden grid as powers of ten."""
+    if unit == "s":
+        return f"{value * 1000:g}"
+
+    if unit == "linear" and 0 < value < 0.1:
+        return "10" + f"{round (math.log10 (value))}".translate (SUPERSCRIPT)
+
+    return f"{value:g}".replace (".", ",")
+
+
+def unit_label (unit):
+    return { "s": "ms", "linear": "amplitude", "cents": "cents", "dB": "dB" }[unit]
+
+
+def esc (text):
+    return str (text).replace ("&", "&amp;").replace ("<", "&lt;").replace (">", "&gt;")
+
+
+def tolerance_chart (curve_rows, n_faults, n_mutants, n_harmless):
+    """Small multiples, one panel per swept tolerance: detection (%) of mutants and faults against the grid,
+    strictest value on the left. Grid points where harmless conditions fail sit on a gray band labelled with
+    how many of them fail. One y axis per panel, all on the same 0-100% scale."""
+    panels = defaultdict (list)
+
+    for name, unit, bound, approach, value, is_default, faults_k, mutants_k, _, alarms, _, ref_fails in curve_rows:
+        panels[name].append ({ "unit": unit, "approach": approach, "value": value, "default": is_default,
+                               "faults": faults_k, "mutants": mutants_k, "alarms": alarms, "ref": ref_fails })
+
+    cols, panel_w, panel_h = 4, 250, 200
+    left, right, top, bottom = 44, 14, 50, 46          # plot inset inside a panel
+    header_h, legend_h = 80, 34
+    width = cols * panel_w
+    height = header_h + legend_h + math.ceil (len (panels) / cols) * panel_h + 8
+    plot_w, plot_h = panel_w - left - right, panel_h - top - bottom
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" '
+           f'role="img" aria-labelledby="t d" font-family="{FONT}">',
+           '<title id="t">Detecção por tolerância, uma tolerância por vez</title>',
+           f'<desc id="d">Taxa de detecção de {n_mutants} mutantes e {n_faults} defeitos em cada ponto da grade de '
+           'cada tolerância, com as demais no padrão. Faixas cinza marcam os pontos em que condições inofensivas '
+           'falham. Os valores estão na seção 8 de RESULTADOS.md e em curva_tolerancia.csv.</desc>',
+           f'<rect width="{width}" height="{height}" fill="{SURFACE}"/>',
+           f'<text x="16" y="28" font-size="16" font-weight="600" fill="{INK}">Detecção por tolerância, '
+           'uma tolerância por vez</text>',
+           f'<text x="16" y="50" font-size="12" fill="{INK_2}">Cada painel varia uma tolerância, da mais rigorosa '
+           '(esquerda) para a mais frouxa, com as demais no padrão.</text>',
+           f'<text x="16" y="66" font-size="12" fill="{INK_2}">Sanidade e pluginval não têm grade de tolerância e '
+           'ficam de fora.</text>']
+
+    # Legend: always present for two series, one row above the panels
+    lx, ly = 16, header_h + 12
+
+    for label, color in SERIES:
+        n = n_mutants if label == "mutantes" else n_faults
+        out += [f'<line x1="{lx}" y1="{ly}" x2="{lx + 18}" y2="{ly}" stroke="{color}" stroke-width="2" stroke-linecap="round"/>',
+                f'<circle cx="{lx + 9}" cy="{ly}" r="4" fill="{color}" stroke="{SURFACE}" stroke-width="2"/>',
+                f'<text x="{lx + 24}" y="{ly + 4}" font-size="12" fill="{INK_2}">{label} (n = {n})</text>']
+        lx += 160
+
+    out += [f'<rect x="{lx}" y="{ly - 8}" width="16" height="16" rx="2" fill="{BAND}"/>',
+            f'<text x="{lx + 22}" y="{ly + 4}" font-size="12" fill="{INK_2}">ponto com alarmes falsos (número: '
+            f'condições inofensivas que falham, de {n_harmless})</text>']
+
+    for index, (name, points) in enumerate (panels.items()):
+        ox = (index % cols) * panel_w
+        oy = header_h + legend_h + (index // cols) * panel_h
+        px, py = ox + left, oy + top
+        step = plot_w / len (points)
+        x_of = lambda i: px + step * (i + 0.5)
+        y_of = lambda rate: py + plot_h * (1 - rate)
+        unit = points[0]["unit"]
+        out.append (f'<text x="{ox + 12}" y="{oy + 18}" font-size="12" font-weight="600" fill="{INK}">'
+                    f'{esc (PANEL_TITLES.get (name, name))}</text>')
+        out.append (f'<text x="{ox + 12}" y="{oy + 32}" font-size="11" fill="{MUTED}">{esc (name)} · '
+                    f'{points[0]["approach"]}</text>')
+
+        for i, p in enumerate (points):
+            if p["alarms"]:
+                out.append (f'<rect x="{px + step * i + 1}" y="{py}" width="{step - 2}" height="{plot_h}" fill="{BAND}">'
+                            f'<title>{p["alarms"]} de {n_harmless} condições inofensivas falham'
+                            f'{"; o código limpo também falha" if p["ref"] else ""}</title></rect>')
+                # Count at the foot of the band: the lines sit high (strict points detect everything)
+                out.append (f'<text x="{x_of (i)}" y="{py + plot_h - 6}" font-size="11" text-anchor="middle" fill="{INK_2}">'
+                            f'{p["alarms"]}</text>')
+
+        for frac in (0, 0.5, 1):
+            y = y_of (frac)
+            out.append (f'<line x1="{px}" y1="{y}" x2="{px + plot_w}" y2="{y}" stroke="{AXIS if frac == 0 else GRID}" '
+                        'stroke-width="1"/>')
+            out.append (f'<text x="{px - 6}" y="{y + 4}" font-size="11" text-anchor="end" fill="{MUTED}" '
+                        f'style="font-variant-numeric: tabular-nums">{int (frac * 100)}%</text>')
+
+        for i, p in enumerate (points):
+            weight = ' font-weight="600"' if p["default"] else ""
+            ink = INK if p["default"] else MUTED
+            out.append (f'<text x="{x_of (i)}" y="{py + plot_h + 16}" font-size="11" text-anchor="middle" '
+                        f'fill="{ink}"{weight}>{esc (tick_label (p["value"], unit))}</text>')
+
+            if p["default"]:
+                out.append (f'<text x="{x_of (i)}" y="{py + plot_h + 29}" font-size="10" text-anchor="middle" '
+                            f'fill="{INK_2}">padrão</text>')
+
+        out.append (f'<text x="{px + plot_w}" y="{py + plot_h + 42}" font-size="10" text-anchor="end" '
+                    f'fill="{MUTED}">{unit_label (unit)}</text>')
+
+        for label, color in SERIES:
+            key, n = ("mutants", n_mutants) if label == "mutantes" else ("faults", n_faults)
+            path = " ".join (f'{"M" if i == 0 else "L"}{x_of (i):.1f},{y_of (p[key] / n):.1f}' for i, p in enumerate (points))
+            out.append (f'<path d="{path}" fill="none" stroke="{color}" stroke-width="2" stroke-linejoin="round" '
+                        'stroke-linecap="round"/>')
+
+            for i, p in enumerate (points):
+                tip = (f'{name} = {tick_label (p["value"], unit)} {unit_label (unit)}{" (padrão)" if p["default"] else ""}: '
+                       f'{label} {p[key]}/{n} ({pct (p[key], n)})')
+                out.append (f'<circle cx="{x_of (i):.1f}" cy="{y_of (p[key] / n):.1f}" r="4" fill="{color}" '
+                            f'stroke="{SURFACE}" stroke-width="2"><title>{esc (tip)}</title></circle>')
+                # Larger invisible hit target for the tooltip
+                out.append (f'<circle cx="{x_of (i):.1f}" cy="{y_of (p[key] / n):.1f}" r="12" fill="transparent">'
+                            f'<title>{esc (tip)}</title></circle>')
+
+            if index == 0:
+                # Direct labels in the first panel, above the start of each line (text in ink, not the series color)
+                # mutants above their line, faults below theirs, so neither label touches the other line's markers
+                dy = -9 if key == "mutants" else 18
+                out.append (f'<text x="{px + 4}" y="{y_of (points[0][key] / n) + dy:.1f}" font-size="11" '
+                            f'fill="{INK_2}">{label}</text>')
+
+    out.append ("</svg>")
+    (OUT / "curva_tolerancia.svg").write_text ("\n".join (out) + "\n")
+
+
 def write_csv (name, header, rows):
     with open (OUT / name, "w", newline = "") as f:
         w = csv.writer (f)
@@ -494,6 +642,7 @@ def main():
                      md_table (["Valor", "Defeitos", "Mutantes", "Mutantes não equivalentes", "Alarmes falsos",
                                 "Falhas na referência"], rows), ""]
 
+    tolerance_chart (curve_rows, len (faults), len (mutants), len (harmless))
     write_csv ("curva_tolerancia.csv", ["tolerancia", "unidade", "limite", "abordagem", "valor", "padrao",
                                         "defeitos_detectados", "mutantes_detectados", "mutantes_nao_equiv_detectados",
                                         "alarmes_falsos", "condicoes_inofensivas", "falhas_referencia"], curve_rows)
@@ -512,7 +661,8 @@ def main():
                "Cada tolerância percorre sua grade com as demais no padrão (seção 6 do protocolo). Os conjuntos têm "
                f"{len (faults)} defeitos, {len (mutants)} mutantes e {len (mutants_ne)} mutantes não equivalentes; "
                f"alarmes falsos contam as {len (harmless)} condições inofensivas. \"Falhas na referência\" conta as "
-               "execuções do código limpo no Linux que falhariam naquele ponto.", ""] + md_curve + [
+               "execuções do código limpo no Linux que falhariam naquele ponto. Gráfico: `curva_tolerancia.svg`.",
+               ""] + md_curve + [
                f"Dos {len (equivalent)} mutantes possivelmente equivalentes, {len (revived)} são detectados em algum ponto "
                "da grade em que o código limpo passa" + (f": {revived_text}." if revived else ".")]
 

@@ -190,7 +190,7 @@ Complementar (QP2, fora da correção de Holm): qualquer teste × pluginval: só
 
 ## 8. Curva de tolerância (QP3)
 
-Cada tolerância percorre sua grade com as demais no padrão (seção 6 do protocolo). Os conjuntos têm 11 defeitos, 225 mutantes e 159 mutantes não equivalentes; alarmes falsos contam as 8 condições inofensivas. "Falhas na referência" conta as execuções do código limpo no Linux que falhariam naquele ponto.
+Cada tolerância percorre sua grade com as demais no padrão (seção 6 do protocolo). Os conjuntos têm 11 defeitos, 225 mutantes e 159 mutantes não equivalentes; alarmes falsos contam as 8 condições inofensivas. "Falhas na referência" conta as execuções do código limpo no Linux que falhariam naquele ponto. Gráfico: `curva_tolerancia.svg`.
 
 **spectral.pitch** (espectral, unidade: cents, limite máximo):
 
