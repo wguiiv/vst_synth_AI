@@ -7,6 +7,74 @@ Quando um número daqui e de `RESULTADOS.md` divergirem, vale o de `RESULTADOS.m
 
 Conferido em 2026-11-04 contra os dados brutos (`experiment/results/raw/`), o código-fonte e os patches.
 
+## 0. Conclusão central (ler primeiro)
+
+Definida com o autor em 2026-11-05. A discussão e a conclusão do artigo giram em torno dela; as seções
+seguintes dão os detalhes.
+
+**Tese:** no tapSynth, o pluginval e os testes do conteúdo sonoro são complementares e precisam ser usados em
+conjunto. Mesmo combinados, deixam passar uma classe de defeitos reais (segurança de tempo real e situações
+que nenhum dos dois cria), que exige verificações específicas.
+
+1. **O pluginval sozinho não basta: verifica o plugin como programa, não o som.**
+   - O F02 (níveis seco e molhado do reverb trocados: som completamente errado, mas áudio válido) passou no
+     pluginval e foi detectado pelas quatro estratégias de teste (seção 3; RESULTADOS, seção 3).
+   - Mutantes: os testes detectam 154, o pluginval 68 (RESULTADOS, seção 2). Só os testes detectam 91, só o
+     pluginval 5 (p < 0,001; RESULTADOS, seção 7, comparação complementar; inclui o golden).
+   - Sem o golden, a conclusão se mantém: cada estratégia de propriedade, sozinha, detecta significativamente
+     mais mutantes que o pluginval após Holm: sanidade 37 contra 5, espectral 24 contra 7, temporal 47
+     contra 7 (RESULTADOS, seção 7).
+2. **Os testes sozinhos também não bastam.** Os 5 mutantes que só o pluginval detecta (M0002, M0011, M0043,
+   M0044, M0064) são erros de memória (laços que leem além do fim de um vetor) que nenhum teste percebe, nem o
+   golden. O pluginval os encontra porque carrega o VST3 compilado e varia taxas de amostragem e tamanhos de
+   bloco (seção 4). Testes e pluginval acham *tipos* diferentes de problema: som errado contra programa que
+   se comporta mal.
+3. **Combinados, ainda deixam passar defeitos reais.** 8 dos 11 defeitos passaram pelas cinco abordagens
+   (seção 3), e isso dá ao desenvolvedor a lista de pontos cegos do ferramental usual:
+   - não mudam o som em nenhuma situação: uso de CPU sem flush de denormais (F06), alocação de memória na
+     thread de áudio (F10), medidor com bloco vazio (F11). Precisam de verificações próprias (CPU, tempo real,
+     teste do medidor), não de teste de áudio;
+   - aparecem só em situações que nem os testes nem o pluginval criam: FM fora de 48 kHz (F01), ataque 0
+     (F04), processamento mono (F08), freeze ligado durante a nota (F09);
+   - escondido pelo próprio arcabouço de teste: `render()` limpa o buffer, fazendo o papel do host (F07).
+
+**Como ler o "3 de 11":**
+
+- Não é que "os defeitos não serviam para os testes". Os defeitos foram escolhidos por um autor que nunca viu
+  os testes, do jeito que bugs reais chegam; escolher defeitos que os testes pegam seria justamente o viés que
+  o desenho evitou. A leitura correta é a inversa: a suíte, escrita antes e sem conhecer os defeitos, não
+  criava as situações em que cinco deles aparecem, e três não mudam o som em situação nenhuma.
+- O padrão de mercado (pluginval) detectou 1 de 11; com os testes de conteúdo, 3 de 11. Com n = 11, essa
+  diferença não é estatisticamente significativa (2 contra 0, p = 0,500; RESULTADOS, seção 7). Os defeitos dão
+  os exemplos concretos; o peso estatístico vem dos mutantes.
+- Um resultado de 11 de 11 com testes escritos pelo mesmo autor dos defeitos seria suspeito; 3 de 11 com
+  autores separados é uma medida honesta do que uma suíte razoável, escrita sem conhecer os bugs, alcança.
+
+**O golden master é secundário.** É uma rede de segurança barata para regressões (73 linhas, 0,3 s no Linux;
+RESULTADOS, seção 9). Sua detecção alta é esperada de uma comparação amostra a amostra e vale só para
+regressões (seção 8, ressalva 1). Vai na discussão, não na manchete.
+
+**Não afirmar:**
+- que o teste automatizado é melhor que ouvir (não foi medido);
+- que o estudo demonstrou a importância do teste automatizado em geral (isso vem da literatura, na
+  introdução: Wang et al., 2022; Andrei et al., 2025);
+- que os cenários que faltaram detectariam F01, F04, F08 e F09 (inferência: os testes estão congelados e isso
+  não foi medido);
+- generalização além do tapSynth.
+
+**Rascunho da conclusão:**
+
+> Os resultados indicam que, no tapSynth, o *pluginval* e os testes de propriedade do áudio são complementares
+> e precisam ser usados em conjunto. O *pluginval* verifica o *plugin* como programa, mas não o som: um defeito
+> que trocava os níveis seco e molhado do reverb, produzindo um som completamente errado, passou por ele, e cada
+> estratégia de propriedade detectou, sozinha, significativamente mais mutantes que ele. Em contrapartida, o
+> *pluginval* detectou cinco erros de memória que nenhum teste de áudio percebeu. Mesmo combinadas, as
+> abordagens não detectaram defeitos de segurança de tempo real, como alocação de memória e ausência de
+> tratamento de números desnormalizados na *thread* de áudio, nem defeitos que só aparecem em situações que
+> nenhuma delas cria, como processamento mono. Para desenvolvedores de *plugins*, isso sugere incluir testes
+> automatizados do conteúdo sonoro na integração contínua, ao lado do *pluginval*, e complementá-los com
+> verificações específicas de tempo real.
+
 ## 1. O estudo em poucas linhas
 
 - **Objeto:** tapSynth, sintetizador JUCE 8.0.9 com 5 vozes (2 osciladores com FM, ganho, ADSR de amplitude,
@@ -52,6 +120,13 @@ histórico e sem testes (desvio declarado no PROTOCOLO, seção 10; o colega pre
 são **defeitos reais transplantados** para o tapSynth. Isso responde à crítica de "defeitos artificiais", mas
 não totalmente: a adaptação ao tapSynth é feita à mão, e Andrews et al. (2005) observaram que defeitos
 semeados à mão podem ser mais difíceis de detectar que os reais.
+
+**Segundo lote (em andamento, 2026-11-05):** um segundo lote de defeitos reais (a partir do F12, meta de 40,
+fontes ampliadas para qualquer software de áudio open source em C/C++) está sendo escrito por um novo agente,
+com regras fixadas antes (PROTOCOLO, seção 10, emenda do segundo lote). No artigo, descrever os defeitos como
+produzidos **em dois lotes**, pelo mesmo procedimento: "O segundo lote foi acrescentado para ampliar a amostra,
+com as regras de inclusão e análise fixadas antes de sua criação." Os números desta seção e da seção 3 são só
+do lote 1 e serão atualizados quando o lote 2 rodar; até lá, não escreva números totais de defeitos.
 
 ## 3. Defeitos: o que cada um faz e por que foi ou não detectado
 
@@ -192,7 +267,8 @@ doctest; os três medem os mesmos 81 valores do teste original. Pontos para o te
   mede alarmes falsos entre plataformas e compiladores, varre as tolerâncias e compara projeto e JUCE.
   Conferir autores e iniciais na página do IEEE antes de citar: o plano lista "VALENTAN, A.; WOTAWA, F.", e a
   busca indica Franz Wotawa e Stephan Valentan.
-- **Lacuna de prática:** BOGDAN, A.; VERANO MERINO, M.; MALAVOLTA, I. The Ecosystem of Open-Source Music
+- **Lacuna de prática:** ANDREI, B.; VERANO MERINO, M.; MALAVOLTA, I. (o sobrenome é Andrei: o PDF traz
+  "Bogdan Andrei", e-mail b.m.andrei@uva.nl; o plano escreveu "BOGDAN, A." por engano). The Ecosystem of Open-Source Music
   Production Software: A Mining Study on the Development Practices of VST Plugins on GitHub. MSR 2025,
   p. 513–525. Minerou 299 repositórios de plugins VST, incluindo práticas de teste; ler para os números exatos.
 - **Mutantes como substitutos de defeitos reais:** ANDREWS et al., ICSE 2005; JUST et al., FSE 2014

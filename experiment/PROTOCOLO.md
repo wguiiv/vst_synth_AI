@@ -126,6 +126,32 @@ Os relatórios XML brutos ficam em `experiment/results/raw/`, um diretório por 
 - 2026-11-03, durante a execução dos mutantes: o M0038 troca `i++` por `i--` no laço que cria as 5 vozes, e o laço passa a alocar vozes sem fim. Sem limite de memória, o processo encheu a RAM da máquina (7,8 GB, sem swap), e o OOM killer do kernel derrubou também o executor, depois de 37 mutantes. A partir do M0038, todo processo de teste e do pluginval roda com o espaço de endereçamento limitado a 4 GiB (`RLIMIT_AS`). Assim, a alocação falha dentro do próprio teste (`std::bad_alloc`, que o GoogleTest registra como falha). Verificado antes de retomar: sem mutante ativo, os 80 testes e o pluginval passam mesmo com limite de 1 GiB, então o limite não muda o resultado de nenhum mutante que não esgote a memória, e os 37 já executados continuam válidos.
 - 2026-11-03, durante a execução dos mutantes: por volta das 12:03, no M0051, a Hostinger desligou a VPS por suspeita de malware. A verificação da máquina não encontrou sinal de invasão; a causa provável é um falso positivo do scanner da Hostinger diante da própria execução (binários instrumentados, processos que travam de propósito, CPU alta por horas). Os 50 mutantes concluídos foram mantidos e o M0051 recomeçou do zero. A partir daí, o executor roda com prioridade mínima (`nice -n 19`) e preso a um núcleo (`taskset -c 0`). Os testes já rodavam um de cada vez, e os tempos-limite são 10 vezes o tempo de cada teste, então isso não muda os resultados; só os tempos registrados (`runtime_s`) dos mutantes a partir do M0051 podem ficar um pouco maiores.
 
+### Emenda: segundo lote de defeitos (2026-11-05, antes de existir qualquer defeito do lote)
+
+Motivo: com 11 defeitos, os intervalos de confiança são largos e nenhuma diferença entre abordagens é
+significativa nos defeitos (RESULTADOS, seção 7). Um segundo lote aumenta a amostra de defeitos reais. Decidido
+antes de qualquer patch do lote existir:
+
+- **Autor:** um novo agente de IA, em sessão nova, num repositório sem testes e sem histórico, como no primeiro
+  lote. Ele não tem acesso aos testes, aos resultados, a este repositório nem aos patches F01–F11. Segue o mesmo
+  guia (`GUIA_DEFEITOS.pdf`), com um adendo: ids a partir de F12; meta de 40 defeitos, entregando os que
+  encontrar sem forçar adaptações; sem alterações inofensivas; sem reutilizar as 11 correções do primeiro
+  lote (recebe só a lista dos links).
+- **Fontes ampliadas:** além do JUCE e de plugins JUCE, vale a correção publicada de qualquer software de áudio
+  open source em C/C++ (plugins, sintetizadores, bibliotecas de DSP, frameworks de áudio), desde que o bug
+  tenha equivalente no código do tapSynth ou nas classes do JUCE que ele usa. Continua valendo: todo defeito
+  reintroduz uma correção real, com o link aberto e conferido.
+- **Quem escreveu os testes não escreve, não escolhe nem altera os patches;** só os executa.
+- **Todo patch entregue entra na análise.** Nenhum é descartado depois de executado. Um patch só pode ser excluído
+  antes da execução, e só se não aplicar ou não compilar; a exclusão é registrada aqui. O número entregue é
+  o número final; não há lote adicional depois de ver os resultados.
+- **Revisão pelo autor do estudo:** só formato, cabeçalho, link da fonte e se aplica e compila; nenhuma mudança
+  de conteúdo.
+- **Execução:** igual à do primeiro lote (seção 4): Linux local, build Release sobre `tests-frozen`, mesmas
+  abordagens e tolerâncias. As condições inofensivas não são repetidas.
+- **Análise:** os defeitos são relatados em três conjuntos: lote 1 (F01–F11, como já relatado), lote 2 e todos
+  juntos. As conclusões sobre defeitos usam o conjunto completo; o lote 1 continua relatado separadamente.
+
 ### Emendas antes da primeira execução
 
 - 2026-11-03, regra 6.4: a versão anterior dizia que `inf` viola qualquer ponto da grade. Uma atenuação de `inf` dB é um resultado válido para um limite "no mínimo" e passa na asserção do teste, então a regra faria o código limpo falhar na varredura. Corrigido antes de qualquer execução.
