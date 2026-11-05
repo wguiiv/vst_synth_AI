@@ -1,0 +1,21 @@
+# id: F15
+# category: envelope
+# origin: juce
+# target: modules/juce_audio_basics/utilities/juce_ADSR.h
+# source: https://github.com/TheWaveWarden/odin2/commit/2e2f2c1527965372bb225f1eb990a882ae453f92
+# original-fix: No ADSR do Odin 2 o ataque so terminava quando o valor passava de 1 (> 1); a correcao trocou para >= 1.
+# adaptation: Mesma troca de >= por > no fim do ataque em getNextSample() do juce::ADSR 8.0.9.
+
+diff --git a/modules/juce_audio_basics/utilities/juce_ADSR.h b/modules/juce_audio_basics/utilities/juce_ADSR.h
+index 11efa2e..e3a7ec6 100644
+--- a/modules/juce_audio_basics/utilities/juce_ADSR.h
++++ b/modules/juce_audio_basics/utilities/juce_ADSR.h
+@@ -180,7 +180,7 @@ public:
+             {
+                 envelopeVal += attackRate;
+ 
+-                if (envelopeVal >= 1.0f)
++                if (envelopeVal > 1.0f)
+                 {
+                     envelopeVal = 1.0f;
+                     goToNextState();

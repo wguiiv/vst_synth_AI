@@ -1,0 +1,22 @@
+# id: F35
+# category: estado
+# origin: projeto
+# target: Source/PluginProcessor.cpp
+# source: https://github.com/surge-synthesizer/surge/commit/f9549f8afb416e42474dcdc4a8e5cf956d9cddbf
+# original-fix: isBusesLayoutSupported do Surge XT so aceitava saida estereo (ou desativada); a correcao passou a aceitar saida mono tambem.
+# adaptation: Em isBusesLayoutSupported, a saida mono deixa de ser aceita; so estereo passa.
+
+diff --git a/Source/PluginProcessor.cpp b/Source/PluginProcessor.cpp
+index 8e1d8be..e8cb023 100644
+--- a/Source/PluginProcessor.cpp
++++ b/Source/PluginProcessor.cpp
+@@ -136,8 +136,7 @@ bool TapSynthAudioProcessor::isBusesLayoutSupported (const BusesLayout& layouts)
+   #else
+     // This is the place where you check if the layout is supported.
+     // In this template code we only support mono or stereo.
+-    if (layouts.getMainOutputChannelSet() != juce::AudioChannelSet::mono()
+-     && layouts.getMainOutputChannelSet() != juce::AudioChannelSet::stereo())
++    if (layouts.getMainOutputChannelSet() != juce::AudioChannelSet::stereo())
+         return false;
+ 
+     // This checks if the input layout matches the output layout

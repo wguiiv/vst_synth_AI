@@ -1,0 +1,21 @@
+# id: F18
+# category: filtro
+# origin: juce
+# target: modules/juce_dsp/processors/juce_StateVariableTPTFilter.cpp
+# source: https://github.com/mtytel/helm/commit/8475fd5cdb191c3b541d72fb99d0c3a01f6c9f2e
+# original-fix: O filtro de variaveis de estado do Helm nao zerava parte do estado interno (last_out) no reset, gerando DC; a correcao zera esse estado.
+# adaptation: No reset() do juce::dsp::StateVariableTPTFilter, so o integrador s1 e zerado; s2 mantem o valor anterior.
+
+diff --git a/modules/juce_dsp/processors/juce_StateVariableTPTFilter.cpp b/modules/juce_dsp/processors/juce_StateVariableTPTFilter.cpp
+index 880c0b5..605d521 100644
+--- a/modules/juce_dsp/processors/juce_StateVariableTPTFilter.cpp
++++ b/modules/juce_dsp/processors/juce_StateVariableTPTFilter.cpp
+@@ -91,7 +91,7 @@ void StateVariableTPTFilter<SampleType>::reset()
+ template <typename SampleType>
+ void StateVariableTPTFilter<SampleType>::reset (SampleType newValue)
+ {
+-    for (auto v : { &s1, &s2 })
++    for (auto v : { &s1 })
+         std::fill (v->begin(), v->end(), newValue);
+ }
+ 

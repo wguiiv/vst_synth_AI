@@ -1,0 +1,21 @@
+# id: F17
+# category: envelope
+# origin: juce
+# target: modules/juce_audio_basics/utilities/juce_ADSR.h
+# source: https://github.com/sfztools/sfizz/commit/844aa1a6c29e23bdc49d60793b261e340b7e20b4
+# original-fix: O ADSR do sfizz deixava o valor atual errado (abaixo do limiar) ao sair do release; a correcao restaura o ultimo valor valido na transicao.
+# adaptation: No juce::ADSR 8.0.9, o fim do release passa o estado para idle sem reset(), entao envelopeVal fica com o ultimo valor (negativo) do release.
+
+diff --git a/modules/juce_audio_basics/utilities/juce_ADSR.h b/modules/juce_audio_basics/utilities/juce_ADSR.h
+index 11efa2e..baac3cf 100644
+--- a/modules/juce_audio_basics/utilities/juce_ADSR.h
++++ b/modules/juce_audio_basics/utilities/juce_ADSR.h
+@@ -293,7 +293,7 @@ private:
+         }
+ 
+         if (state == State::release)
+-            reset();
++            state = State::idle;
+     }
+ 
+     //==============================================================================

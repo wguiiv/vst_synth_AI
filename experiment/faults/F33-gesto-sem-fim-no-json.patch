@@ -1,0 +1,20 @@
+# id: F33
+# category: estado
+# origin: projeto
+# target: Source/PluginProcessor.cpp
+# source: https://github.com/amsynth/amsynth/commit/81cd6e9f24bdbfd481b5e083ec296150503d60e7
+# original-fix: O amsynth podia chamar beginEdit() de um parametro sem o endEdit() correspondente; a correcao garante o endEdit().
+# adaptation: Em applyParametersFromJson, cada parametro recebe beginChangeGesture() mas nao endChangeGesture(), deixando o gesto aberto no host.
+
+diff --git a/Source/PluginProcessor.cpp b/Source/PluginProcessor.cpp
+index 8e1d8be..2a22c39 100644
+--- a/Source/PluginProcessor.cpp
++++ b/Source/PluginProcessor.cpp
+@@ -381,7 +381,6 @@ void TapSynthAudioProcessor::applyParametersFromJson (const juce::var& json)
+ 
+         param->beginChangeGesture();
+         param->setValueNotifyingHost (normalised);
+-        param->endChangeGesture();
+     }
+ }
+ 

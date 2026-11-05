@@ -152,6 +152,22 @@ antes de qualquer patch do lote existir:
 - **Análise:** os defeitos são relatados em três conjuntos: lote 1 (F01–F11, como já relatado), lote 2 e todos
   juntos. As conclusões sobre defeitos usam o conjunto completo; o lote 1 continua relatado separadamente.
 
+**Entrega e exclusões (2026-11-05, antes de executar qualquer defeito do lote 2):** o agente entregou 25 patches
+(F12–F36) de 40 pedidos, com o relatório `experiment/faults/RELATORIO-F12-F36.md` (bugs considerados e deixados
+de fora, e adaptações que se afastam do original). Os 25 links de fonte foram abertos e conferidos contra os
+patches. Dois patches foram excluídos antes da execução, por um motivo que a regra acima não previa: a mudança
+no código do tapSynth é idêntica, linha por linha, à de um defeito do lote 1, embora venha de outro bug real.
+Executá-los repetiria a mesma condição e contaria o mesmo resultado duas vezes.
+
+- F22 (fonte: odin2 465bfe2) é idêntico ao F01: remove `fmOsc.prepare (spec);`.
+- F27 (fonte: sfizz 54d2b73) é idêntico ao F05: remove o limite do cutoff modulado.
+
+A exclusão não favorece nenhum resultado: o F05 foi detectado e o F01 não. Os dois patches ficam em
+`experiment/faults/excluidos/`, fora da execução. O lote 2 analisado tem 23 defeitos; o total, 34. Os demais 23
+aplicam sobre o código limpo (conferido com `git apply --check`). O F31 se sobrepõe em parte ao F11 (os dois
+retiram a guarda de bloco vazio do medidor, mas o F31 mantém a de zero canais) e foi mantido, porque a mudança
+é diferente.
+
 ### Emendas antes da primeira execução
 
 - 2026-11-03, regra 6.4: a versão anterior dizia que `inf` viola qualquer ponto da grade. Uma atenuação de `inf` dB é um resultado válido para um limite "no mínimo" e passa na asserção do teste, então a regra faria o código limpo falhar na varredura. Corrigido antes de qualquer execução.

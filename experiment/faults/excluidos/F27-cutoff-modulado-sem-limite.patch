@@ -1,0 +1,29 @@
+# id: F27
+# category: filtro
+# origin: projeto
+# target: Source/SynthVoice.cpp
+# source: https://github.com/sfztools/sfizz/commit/54d2b7342cf16770fdc2160f771c0ecb37e0505f
+# original-fix: O sfizz nao limitava o cutoff depois de aplicar a modulacao, e os filtros explodiam; a correcao limita o cutoff modulado a faixa valida.
+# adaptation: Em SynthVoice::renderNextBlock, o cutoff modulado pelo envelope e pelo LFO vai para o filtro sem o limite [20 Hz, min(20 kHz, 0,49 fs)].
+
+diff --git a/Source/SynthVoice.cpp b/Source/SynthVoice.cpp
+index e7dadb0..a3bda2d 100644
+--- a/Source/SynthVoice.cpp
++++ b/Source/SynthVoice.cpp
+@@ -92,7 +92,6 @@ void SynthVoice::renderNextBlock (juce::AudioBuffer< float > &outputBuffer, int
+     adsr.applyEnvelopeToBuffer (synthBuffer, 0, numSamples);
+     
+     // Cutoff is modulated per sample by the filter envelope and the LFO
+-    const auto maxCutoff = juce::jmin (20000.0f, (float) currentSampleRate * 0.49f);
+     
+     for (int s = 0; s < numSamples; ++s)
+     {
+@@ -103,7 +102,7 @@ void SynthVoice::renderNextBlock (juce::AudioBuffer< float > &outputBuffer, int
+             lfoOutput[ch] = lfo[ch].processSample (0.0f);
+             
+             auto cutoff = baseCutoff + (filterAdsrDepth * filterAdsrOutput) + (lfoDepth * lfoOutput[ch]);
+-            filter[ch].setCutoffFrequency (juce::jlimit (20.0f, maxCutoff, cutoff));
++            filter[ch].setCutoffFrequency (cutoff);
+             
+             auto* buffer = synthBuffer.getWritePointer (ch, 0);
+             buffer[s] = filter[ch].processNextSample (ch, buffer[s]);

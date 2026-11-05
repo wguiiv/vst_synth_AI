@@ -1,0 +1,21 @@
+# id: F20
+# category: altura
+# origin: projeto
+# target: Source/Data/OscData.cpp
+# source: https://github.com/Tracktion/tracktion_engine/commit/8868f7dce11e9bed0c9b2f997831a6b3f75efc15
+# original-fix: Os osciladores do 4OSC (Tracktion) calculavam a frequencia da nota sem limite e falhavam acima de sampleRate / 2; a correcao limita a frequencia a Nyquist.
+# adaptation: Em OscData::updateFrequency, a frequencia calculada da nota (com transposicao e FM) vai para o oscilador sem o limite em Nyquist.
+
+diff --git a/Source/Data/OscData.cpp b/Source/Data/OscData.cpp
+index 16a0130..0dcbb73 100644
+--- a/Source/Data/OscData.cpp
++++ b/Source/Data/OscData.cpp
+@@ -115,7 +115,7 @@ void OscData::updateFrequency()
+ {
+     const auto note = (float) (lastMidiNote + lastPitch) + fmModulator;
+     const auto freq = 440.0f * std::pow (2.0f, (note - 69.0f) / 12.0f);
+-    setFrequency (juce::jlimit (0.0f, nyquist, freq), true);
++    setFrequency (freq, true);
+ }
+ 
+ void OscData::resetAll()

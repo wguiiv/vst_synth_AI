@@ -1,0 +1,20 @@
+# id: F32
+# category: estado
+# origin: projeto
+# target: Source/PluginProcessor.cpp
+# source: https://github.com/TheWaveWarden/odin2/commit/2921637b0c546f3582f93bf6f8245dbea369f529
+# original-fix: O Odin 2 nao repassava a taxa de amostragem nem chamava prepare() no reverb Zita, que explodia; a correcao adiciona setSampleRate e prepare no setSampleRate do processador.
+# adaptation: Em TapSynthAudioProcessor::prepareToPlay, o juce::dsp::Reverb nao recebe prepare(spec) e fica afinado para 44,1 kHz.
+
+diff --git a/Source/PluginProcessor.cpp b/Source/PluginProcessor.cpp
+index 8e1d8be..c68e855 100644
+--- a/Source/PluginProcessor.cpp
++++ b/Source/PluginProcessor.cpp
+@@ -108,7 +108,6 @@ void TapSynthAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlo
+     spec.sampleRate = sampleRate;
+     spec.numChannels = (juce::uint32) getTotalNumOutputChannels();
+     
+-    reverb.prepare (spec);
+     meter.prepare (sampleRate);
+     
+     reverbParams.roomSize = 0.5f;

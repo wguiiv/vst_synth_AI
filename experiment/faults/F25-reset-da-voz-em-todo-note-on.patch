@@ -1,0 +1,21 @@
+# id: F25
+# category: envelope
+# origin: projeto
+# target: Source/SynthVoice.cpp
+# source: https://github.com/amsynth/amsynth/commit/6ed11bec0016be8565ecd12fee452e907b4130f9
+# original-fix: O amsynth fazia reset da voz em todo note-on, o que causava clique ao reaproveitar uma voz que ainda soava; a correcao so faz reset de vozes silenciosas.
+# adaptation: SynthVoice::startNote chama reset() (zera os dois ADSR) em todo note-on, inclusive quando a voz roubada ainda esta soando.
+
+diff --git a/Source/SynthVoice.cpp b/Source/SynthVoice.cpp
+index e7dadb0..87025ca 100644
+--- a/Source/SynthVoice.cpp
++++ b/Source/SynthVoice.cpp
+@@ -7,6 +7,8 @@ bool SynthVoice::canPlaySound (juce::SynthesiserSound* sound)
+ 
+ void SynthVoice::startNote (int midiNoteNumber, float velocity, juce::SynthesiserSound *sound, int currentPitchWheelPosition)
+ {
++    reset();
++    
+     for (int i = 0; i < numChannelsToProcess; i++)
+     {
+         osc1[i].setFreq (midiNoteNumber);

@@ -1,0 +1,27 @@
+# id: F19
+# category: nivel
+# origin: juce
+# target: modules/juce_dsp/widgets/juce_Gain.h
+# source: https://github.com/juce-framework/JUCE/commit/dc7217fbbb4fd5541f62a049b838b137f1fc66ed
+# original-fix: AudioBlock::multiply com SmoothedValue copiava o sinal sem multiplicar quando o valor nao estava em rampa; a correcao multiplica pelo valor alvo.
+# adaptation: O mesmo atalho foi trazido para juce::dsp::Gain::process (mesma operacao: multiplicar por um SmoothedValue): sem rampa, o bloco e copiado e o ganho nao e aplicado. No tapSynth afeta o ganho fixo de 0,07 da voz.
+
+diff --git a/modules/juce_dsp/widgets/juce_Gain.h b/modules/juce_dsp/widgets/juce_Gain.h
+index 585e649..446b90e 100644
+--- a/modules/juce_dsp/widgets/juce_Gain.h
++++ b/modules/juce_dsp/widgets/juce_Gain.h
+@@ -121,6 +121,14 @@ public:
+             return;
+         }
+ 
++        if (! gain.isSmoothing())
++        {
++            if (context.usesSeparateInputAndOutputBlocks())
++                outBlock.copyFrom (inBlock);
++
++            return;
++        }
++
+         if (numChannels == 1)
+         {
+             auto* src = inBlock.getChannelPointer (0);

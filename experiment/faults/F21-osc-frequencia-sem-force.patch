@@ -1,0 +1,21 @@
+# id: F21
+# category: altura
+# origin: projeto
+# target: Source/Data/OscData.cpp
+# source: https://github.com/Tracktion/tracktion_engine/commit/18de4ff3ebd952b5dc54e7976521b350b366d13f
+# original-fix: O SinAudioNode chamava dsp::Oscillator::setFrequency sem force e comecava deslizando da frequencia padrao; a correcao passa force = true.
+# adaptation: Em OscData::updateFrequency, setFrequency e chamado sem force, entao a suavizacao de 50 ms do juce::dsp::Oscillator atua no inicio da nota e na FM.
+
+diff --git a/Source/Data/OscData.cpp b/Source/Data/OscData.cpp
+index 16a0130..dbd2d63 100644
+--- a/Source/Data/OscData.cpp
++++ b/Source/Data/OscData.cpp
+@@ -115,7 +115,7 @@ void OscData::updateFrequency()
+ {
+     const auto note = (float) (lastMidiNote + lastPitch) + fmModulator;
+     const auto freq = 440.0f * std::pow (2.0f, (note - 69.0f) / 12.0f);
+-    setFrequency (juce::jlimit (0.0f, nyquist, freq), true);
++    setFrequency (juce::jlimit (0.0f, nyquist, freq));
+ }
+ 
+ void OscData::resetAll()

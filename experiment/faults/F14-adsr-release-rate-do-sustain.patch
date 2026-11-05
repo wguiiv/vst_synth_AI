@@ -1,0 +1,20 @@
+# id: F14
+# category: envelope
+# origin: juce
+# target: modules/juce_audio_basics/utilities/juce_ADSR.h
+# source: https://github.com/juce-framework/JUCE/commit/efe197de398231dfec194bac5748bdadf8f7d49b
+# original-fix: noteOff() fora do sustain usava a taxa de release calculada a partir do nivel de sustain, e nao do valor atual do envelope; a correcao recalcula releaseRate a partir de envelopeVal.
+# adaptation: No juce::ADSR 8.0.9, noteOff() deixa de recalcular releaseRate e usa a taxa de recalculateRates() (sustain / tempo de release). A outra parte do commit (validar o estado em setParameters) nao foi reintroduzida.
+
+diff --git a/modules/juce_audio_basics/utilities/juce_ADSR.h b/modules/juce_audio_basics/utilities/juce_ADSR.h
+index 11efa2e..987486e 100644
+--- a/modules/juce_audio_basics/utilities/juce_ADSR.h
++++ b/modules/juce_audio_basics/utilities/juce_ADSR.h
+@@ -152,7 +152,6 @@ public:
+         {
+             if (parameters.release > 0.0f)
+             {
+-                releaseRate = (float) (envelopeVal / (parameters.release * sampleRate));
+                 state = State::release;
+             }
+             else
