@@ -1,8 +1,9 @@
 # Regras da universidade para o artigo (PFC I / TCC)
 
 Transcrição do modelo `modelo_artigo_2026_2.docx` (curso de Computação e Software, 2026/2) e resumo das duas
-aulas (`aula_introducao_materiais_e_metodos.pdf`, `aula_discussao_dos_resultados.pdf`). Em caso de dúvida,
-valem os arquivos originais desta pasta. Os exemplos do modelo (uvas, Pearson, jornal) são só ilustrativos.
+aulas (`aula_introducao_materiais_e_metodos.pdf`, `aula_discussao_dos_resultados.pdf`). Os originais estão
+nesta pasta e também nos arquivos do projeto do Claude usado para escrever o artigo (lá, com os nomes do envio
+original). Em caso de dúvida, valem os originais. Os exemplos do modelo (uvas, Pearson, jornal) são só ilustrativos.
 
 ## 1. Estrutura obrigatória (do modelo)
 

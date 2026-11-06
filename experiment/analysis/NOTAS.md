@@ -505,7 +505,7 @@ doctest; os três medem os mesmos 81 valores do teste original. Pontos para o te
 | Arquivo | Conteúdo |
 | --- | --- |
 | `artigo/ROTEIRO.md` | estrutura do artigo, orçamento de páginas, tabelas e figuras por seção |
-| `artigo/universidade/REGRAS.md` | regras do modelo e das aulas da universidade (originais na mesma pasta) |
+| `artigo/universidade/REGRAS.md` | regras do modelo e das aulas da universidade (originais na mesma pasta e nos arquivos do projeto do Claude) |
 | `experiment/analysis/RESULTADOS.md` | todas as tabelas (fonte dos números) |
 | `experiment/analysis/NOTAS.md` | este arquivo |
 | `experiment/analysis/curva_tolerancia.svg` | gráfico da QP3 |
