@@ -2,7 +2,7 @@ conjunto,abordagem,n,ids
 defeitos,sanidade,0,–
 defeitos,espectral,0,–
 defeitos,temporal,0,–
-defeitos,golden,0,–
+defeitos,golden,5,"F20, F24, F26, F32, F34"
 defeitos,pluginval,0,–
 mutantes,sanidade,1,M0101
 mutantes,espectral,0,–

@@ -434,6 +434,12 @@ def main():
     harmless = d.ids ("inofensiva")
     reference = d.ids ("referencia")
     sets = [("defeitos", faults), ("mutantes", mutants), ("mutantes sem os possivelmente equivalentes", mutants_ne)]
+    # The faults came in two batches (PROTOCOLO, 10): F01-F11, then F12 onwards. "defeitos" is both together;
+    # the batches are also reported on their own in the detection tables and the paired comparison.
+    batch_of = lambda i: 1 if int (i[1:]) <= 11 else 2
+    batches = [(f"defeitos, lote {b}", [i for i in faults if batch_of (i) == b]) for b in (1, 2)]
+    batch_sets = [s for s in batches if s[1]] if all (s[1] for s in batches) else []
+    report_sets = sets[:1] + batch_sets + sets[1:]
     columns = APPROACHES + [ANY_TEST, ANY]
 
     # ---- 1. validity
@@ -456,7 +462,7 @@ def main():
     det_rows = []
     md_rows = []
 
-    for set_name, ids in sets:
+    for set_name, ids in report_sets:
         for origin in (None, "projeto", "juce"):
             sub = [i for i in ids if origin is None or d.conditions[i]["origin"] == origin]
             label = origin or "todos"
@@ -476,8 +482,10 @@ def main():
 
     ci_rows = [[set_name, a, f"{sum (d.detects (i, a) for i in ids)}/{len (ids)}",
                 pct (sum (d.detects (i, a) for i in ids), len (ids)), ci_text (sum (d.detects (i, a) for i in ids), len (ids))]
-               for set_name, ids in sets for a in columns]
-    report += ["", "## 2. Detecção por abordagem e por origem (QP1, QP2, QP4)", "",
+               for set_name, ids in report_sets for a in columns]
+    batch_note = ([f"\"defeitos\" reúne os dois lotes ({len (batches[0][1])} + {len (batches[1][1])}; PROTOCOLO, "
+                   "seção 10), que também aparecem separados.", ""] if batch_sets else [])
+    report += ["", "## 2. Detecção por abordagem e por origem (QP1, QP2, QP4)", ""] + batch_note + [
                "Detectados (taxa) em cada conjunto. \"Possivelmente equivalentes\" são os mutantes que nenhuma abordagem "
                f"detecta nas tolerâncias padrão ({len (equivalent)} de {len (mutants)}; seção 7 do protocolo).", "",
                md_table (["Conjunto", "Origem", "n"] + columns, md_rows),
@@ -485,9 +493,9 @@ def main():
                md_table (["Conjunto", "Abordagem", "Detectados", "Taxa", "IC 95%"], ci_rows)]
 
     # ---- 3. condition x approach matrix
-    fault_matrix = [[i, d.conditions[i]["origin"], d.conditions[i]["category"]] + [d.detects (i, a) for a in columns]
-                    for i in faults]
-    write_csv ("matriz_defeitos.csv", ["id", "origem", "categoria"] + columns, fault_matrix)
+    fault_matrix = [[i, batch_of (i), d.conditions[i]["origin"], d.conditions[i]["category"]] +
+                    [d.detects (i, a) for a in columns] for i in faults]
+    write_csv ("matriz_defeitos.csv", ["id", "lote", "origem", "categoria"] + columns, fault_matrix)
 
     mutant_matrix = []
 
@@ -501,8 +509,8 @@ def main():
 
     mark = lambda v: "●" if v else "·"
     report += ["", "## 3. Matriz defeito × abordagem", "",
-               md_table (["Defeito", "Origem", "Categoria"] + columns,
-                         [row[:3] + [mark (v) for v in row[3:]] for row in fault_matrix]),
+               md_table (["Defeito", "Lote", "Origem", "Categoria"] + columns,
+                         [row[:4] + [mark (v) for v in row[4:]] for row in fault_matrix]),
                "", f"A matriz dos {len (mutants)} mutantes está em `matriz_mutantes.csv`."]
 
     # ---- 4. detection per category (faults) and per operator group and file (mutants)
@@ -576,7 +584,7 @@ def main():
     stat_rows = []
     md_stats = []
 
-    for set_name, ids in sets:
+    for set_name, ids in report_sets:
         if ids is mutants_ne:
             # Conditions no approach detects add nothing to Cochran's Q or McNemar, so the results equal the full set
             md_stats += [f"**{set_name}**: idênticos aos de todos os mutantes, porque condições que nenhuma abordagem "

@@ -1,46 +1,46 @@
 conjunto,grupo,abordagem,detectados,n
-defeitos por categoria,envelope,sanidade,0,3
-defeitos por categoria,envelope,espectral,0,3
-defeitos por categoria,envelope,temporal,1,3
-defeitos por categoria,envelope,golden,1,3
-defeitos por categoria,envelope,pluginval,0,3
-defeitos por categoria,envelope,qualquer teste,1,3
-defeitos por categoria,envelope,qualquer abordagem,1,3
-defeitos por categoria,estado,sanidade,0,2
-defeitos por categoria,estado,espectral,0,2
-defeitos por categoria,estado,temporal,0,2
-defeitos por categoria,estado,golden,0,2
-defeitos por categoria,estado,pluginval,0,2
-defeitos por categoria,estado,qualquer teste,0,2
-defeitos por categoria,estado,qualquer abordagem,0,2
-defeitos por categoria,nivel,sanidade,1,2
-defeitos por categoria,nivel,espectral,1,2
-defeitos por categoria,nivel,temporal,1,2
-defeitos por categoria,nivel,golden,1,2
-defeitos por categoria,nivel,pluginval,0,2
-defeitos por categoria,nivel,qualquer teste,1,2
-defeitos por categoria,nivel,qualquer abordagem,1,2
-defeitos por categoria,numerico,sanidade,0,2
-defeitos por categoria,numerico,espectral,0,2
-defeitos por categoria,numerico,temporal,0,2
-defeitos por categoria,numerico,golden,0,2
-defeitos por categoria,numerico,pluginval,0,2
-defeitos por categoria,numerico,qualquer teste,0,2
-defeitos por categoria,numerico,qualquer abordagem,0,2
-defeitos por categoria,altura,sanidade,0,1
-defeitos por categoria,altura,espectral,0,1
-defeitos por categoria,altura,temporal,0,1
-defeitos por categoria,altura,golden,0,1
-defeitos por categoria,altura,pluginval,0,1
-defeitos por categoria,altura,qualquer teste,0,1
-defeitos por categoria,altura,qualquer abordagem,0,1
-defeitos por categoria,filtro,sanidade,1,1
-defeitos por categoria,filtro,espectral,1,1
-defeitos por categoria,filtro,temporal,1,1
-defeitos por categoria,filtro,golden,1,1
-defeitos por categoria,filtro,pluginval,1,1
-defeitos por categoria,filtro,qualquer teste,1,1
-defeitos por categoria,filtro,qualquer abordagem,1,1
+defeitos por categoria,envelope,sanidade,0,12
+defeitos por categoria,envelope,espectral,0,12
+defeitos por categoria,envelope,temporal,1,12
+defeitos por categoria,envelope,golden,3,12
+defeitos por categoria,envelope,pluginval,0,12
+defeitos por categoria,envelope,qualquer teste,3,12
+defeitos por categoria,envelope,qualquer abordagem,3,12
+defeitos por categoria,estado,sanidade,1,9
+defeitos por categoria,estado,espectral,1,9
+defeitos por categoria,estado,temporal,1,9
+defeitos por categoria,estado,golden,3,9
+defeitos por categoria,estado,pluginval,1,9
+defeitos por categoria,estado,qualquer teste,3,9
+defeitos por categoria,estado,qualquer abordagem,3,9
+defeitos por categoria,nivel,sanidade,2,4
+defeitos por categoria,nivel,espectral,1,4
+defeitos por categoria,nivel,temporal,1,4
+defeitos por categoria,nivel,golden,2,4
+defeitos por categoria,nivel,pluginval,0,4
+defeitos por categoria,nivel,qualquer teste,2,4
+defeitos por categoria,nivel,qualquer abordagem,2,4
+defeitos por categoria,altura,sanidade,0,3
+defeitos por categoria,altura,espectral,1,3
+defeitos por categoria,altura,temporal,1,3
+defeitos por categoria,altura,golden,2,3
+defeitos por categoria,altura,pluginval,0,3
+defeitos por categoria,altura,qualquer teste,2,3
+defeitos por categoria,altura,qualquer abordagem,2,3
+defeitos por categoria,filtro,sanidade,2,3
+defeitos por categoria,filtro,espectral,2,3
+defeitos por categoria,filtro,temporal,2,3
+defeitos por categoria,filtro,golden,3,3
+defeitos por categoria,filtro,pluginval,1,3
+defeitos por categoria,filtro,qualquer teste,3,3
+defeitos por categoria,filtro,qualquer abordagem,3,3
+defeitos por categoria,numerico,sanidade,0,3
+defeitos por categoria,numerico,espectral,0,3
+defeitos por categoria,numerico,temporal,0,3
+defeitos por categoria,numerico,golden,0,3
+defeitos por categoria,numerico,pluginval,0,3
+defeitos por categoria,numerico,qualquer teste,0,3
+defeitos por categoria,numerico,qualquer abordagem,0,3
 mutantes por grupo de operador,comparação,sanidade,31,109
 mutantes por grupo de operador,comparação,espectral,33,109
 mutantes por grupo de operador,comparação,temporal,52,109

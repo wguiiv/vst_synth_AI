@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.007" timestamp="2026-11-05T10:17:23.565" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.007" timestamp="2026-11-05T10:17:23.565">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Square" value_param="144-byte object &lt;F0-67 F8-33 6F-55 00-00 06-00 00-00 00-00 00-00 53-71 75-61 72-65 00-00 01-00 00-00 4A-7F 00-00 00-00 00-00 00-70 E7-40 00-02 00-00 6F-55 00-00 00-00 00-00 00-00 F0-3F 00-00 00-00 6F-55 00-00 ... 10-EB F7-33 6F-55 00-00 90-46 F8-33 6F-55 00-00 02-00 00-00 00-00 00-00 A0-A9 65-07 6F-55 00-00 00-00 39-36 30-30 30-00 10-93 F5-33 6F-55 00-00 28-93 F5-33 6F-55 00-00 28-93 F5-33 6F-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.007" timestamp="2026-11-05T10:17:23.565" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126&#x0A;Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)&#x0A;  Actual: false (Square/ch0: sanity.peak measured 1.17714071 linear, limit &lt;= 1 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126
+Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)
+  Actual: false (Square/ch0: sanity.peak measured 1.17714071 linear, limit <= 1 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peak|Square/ch0" value="1.17714071"/>
+        <property name="sanity.audible|Square/ch0" value="0.283312023"/>
+        <property name="sanity.dc|Square/ch0" value="0"/>
+        <property name="sanity.peak|Square/ch1" value="0.283312052"/>
+        <property name="sanity.audible|Square/ch1" value="0.283312023"/>
+        <property name="sanity.dc|Square/ch1" value="0"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

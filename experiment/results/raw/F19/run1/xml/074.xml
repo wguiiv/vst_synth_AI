@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.006" timestamp="2026-11-05T10:23:37.339" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.006" timestamp="2026-11-05T10:23:37.339">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Rate44100" value_param="144-byte object &lt;C0-68 B9-90 AB-55 00-00 09-00 00-00 00-00 00-00 52-61 74-65 34-34 31-30 30-00 65-00 70-65 00-00 00-00 00-00 80-88 E5-40 00-02 00-00 AB-55 00-00 00-00 00-00 00-00 F0-3F 00-00 00-00 AB-55 00-00 ... A0-45 B9-90 AB-55 00-00 A0-45 B9-90 AB-55 00-00 01-00 00-00 00-00 00-00 A0-D9 FF-6D AB-55 00-00 00-00 00-00 00-00 00-00 D0-9C B6-90 AB-55 00-00 E8-9C B6-90 AB-55 00-00 E8-9C B6-90 AB-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.006" timestamp="2026-11-05T10:23:37.340" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126&#x0A;Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)&#x0A;  Actual: false (Rate44100/ch0: sanity.peak measured 3.13649535 linear, limit &lt;= 1 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126
+Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)
+  Actual: false (Rate44100/ch0: sanity.peak measured 3.13649535 linear, limit <= 1 linear)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126&#x0A;Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)&#x0A;  Actual: false (Rate44100/ch1: sanity.peak measured 3.13649535 linear, limit &lt;= 1 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126
+Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)
+  Actual: false (Rate44100/ch1: sanity.peak measured 3.13649535 linear, limit <= 1 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peak|Rate44100/ch0" value="3.13649535"/>
+        <property name="sanity.audible|Rate44100/ch0" value="3.13649535"/>
+        <property name="sanity.dc|Rate44100/ch0" value="0.000428203581"/>
+        <property name="sanity.peak|Rate44100/ch1" value="3.13649535"/>
+        <property name="sanity.audible|Rate44100/ch1" value="3.13649535"/>
+        <property name="sanity.dc|Rate44100/ch1" value="0.000428203581"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

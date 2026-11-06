@@ -1,0 +1,15 @@
+{
+ "id": "F24",
+ "kind": "defeito",
+ "config": "release",
+ "patch": "/home/guiz/vst_synth_AI/experiment/faults/F24-voz-ignora-startsample.patch",
+ "origin": "projeto",
+ "category": "envelope",
+ "run": 1,
+ "started": "2026-11-05T10:37:36",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 232.4232931137085,
+ "finished": "2026-11-05T10:41:40"
+}

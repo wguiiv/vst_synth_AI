@@ -1,0 +1,15 @@
+{
+ "id": "F18",
+ "kind": "defeito",
+ "config": "release",
+ "patch": "/home/guiz/vst_synth_AI/experiment/faults/F18-svf-reset-incompleto.patch",
+ "origin": "juce",
+ "category": "filtro",
+ "run": 1,
+ "started": "2026-11-05T10:10:49",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 384.82954001426697,
+ "finished": "2026-11-05T10:17:24"
+}

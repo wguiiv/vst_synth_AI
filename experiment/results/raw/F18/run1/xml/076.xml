@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.14" timestamp="2026-11-05T10:17:23.853" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.14" timestamp="2026-11-05T10:17:23.853">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Block1" value_param="144-byte object &lt;F0-07 97-62 7C-55 00-00 06-00 00-00 00-00 00-00 42-6C 6F-63 6B-31 00-30 30-00 65-00 70-65 00-00 00-00 00-00 00-70 E7-40 01-00 00-00 7C-55 00-00 00-00 00-00 00-00 F0-3F 00-00 00-00 7C-55 00-00 ... 70-E5 96-62 7C-55 00-00 70-E5 96-62 7C-55 00-00 01-00 00-00 00-00 00-00 A0-99 96-38 7C-55 00-00 60-47 D1-AF FC-7F 00-00 B0-56 97-62 7C-55 00-00 F8-56 97-62 7C-55 00-00 F8-56 97-62 7C-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.14" timestamp="2026-11-05T10:17:23.853" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126&#x0A;Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)&#x0A;  Actual: false (Block1/ch0: sanity.peak measured 3.53143167 linear, limit &lt;= 1 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126
+Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)
+  Actual: false (Block1/ch0: sanity.peak measured 3.53143167 linear, limit <= 1 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peak|Block1/ch0" value="3.53143167"/>
+        <property name="sanity.audible|Block1/ch0" value="0.655608058"/>
+        <property name="sanity.dc|Block1/ch0" value="0.000103760351"/>
+        <property name="sanity.peak|Block1/ch1" value="0.657970428"/>
+        <property name="sanity.audible|Block1/ch1" value="0.655608058"/>
+        <property name="sanity.dc|Block1/ch1" value="0.000103760351"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

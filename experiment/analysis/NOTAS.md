@@ -5,75 +5,156 @@ Este arquivo reúne a interpretação dos resultados, para a escrita do artigo. 
 porquê de cada resultado, as ressalvas e o posicionamento do estudo. Cada afirmação indica de onde vem.
 Quando um número daqui e de `RESULTADOS.md` divergirem, vale o de `RESULTADOS.md`.
 
-Conferido em 2026-11-04 contra os dados brutos (`experiment/results/raw/`), o código-fonte e os patches.
+Conferido em 2026-11-04 contra os dados brutos (`experiment/results/raw/`), o código-fonte e os patches; o
+segundo lote de defeitos, em 2026-11-05.
 
-## 0. Conclusão central (ler primeiro)
+## 0. Ângulo do artigo e conclusão central (ler primeiro)
 
-Definida com o autor em 2026-11-05. A discussão e a conclusão do artigo giram em torno dela; as seções
-seguintes dão os detalhes.
+Definidos com o autor em 2026-11-05 e 2026-11-06, depois do segundo lote de defeitos. A introdução, a
+discussão e as considerações finais giram em torno desta seção; as seções seguintes dão os detalhes. O roteiro
+do artigo, seção por seção, está em `artigo/ROTEIRO.md`.
 
-**Tese:** no tapSynth, o pluginval e os testes do conteúdo sonoro são complementares e precisam ser usados em
-conjunto. Mesmo combinados, deixam passar uma classe de defeitos reais (segurança de tempo real e situações
-que nenhum dos dois cria), que exige verificações específicas.
+### Fio condutor
 
-1. **O pluginval sozinho não basta: verifica o plugin como programa, não o som.**
-   - O F02 (níveis seco e molhado do reverb trocados: som completamente errado, mas áudio válido) passou no
-     pluginval e foi detectado pelas quatro estratégias de teste (seção 3; RESULTADOS, seção 3).
-   - Mutantes: os testes detectam 154, o pluginval 68 (RESULTADOS, seção 2). Só os testes detectam 91, só o
-     pluginval 5 (p < 0,001; RESULTADOS, seção 7, comparação complementar; inclui o golden).
-   - Sem o golden, a conclusão se mantém: cada estratégia de propriedade, sozinha, detecta significativamente
-     mais mutantes que o pluginval após Holm: sanidade 37 contra 5, espectral 24 contra 7, temporal 47
-     contra 7 (RESULTADOS, seção 7).
-2. **Os testes sozinhos também não bastam.** Os 5 mutantes que só o pluginval detecta (M0002, M0011, M0043,
-   M0044, M0064) são erros de memória (laços que leem além do fim de um vetor) que nenhum teste percebe, nem o
-   golden. O pluginval os encontra porque carrega o VST3 compilado e varia taxas de amostragem e tamanhos de
-   bloco (seção 4). Testes e pluginval acham *tipos* diferentes de problema: som errado contra programa que
-   se comporta mal.
-3. **Combinados, ainda deixam passar defeitos reais.** 8 dos 11 defeitos passaram pelas cinco abordagens
-   (seção 3), e isso dá ao desenvolvedor a lista de pontos cegos do ferramental usual:
-   - não mudam o som em nenhuma situação: uso de CPU sem flush de denormais (F06), alocação de memória na
-     thread de áudio (F10), medidor com bloco vazio (F11). Precisam de verificações próprias (CPU, tempo real,
-     teste do medidor), não de teste de áudio;
-   - aparecem só em situações que nem os testes nem o pluginval criam: FM fora de 48 kHz (F01), ataque 0
-     (F04), processamento mono (F08), freeze ligado durante a nota (F09);
-   - escondido pelo próprio arcabouço de teste: `render()` limpa o buffer, fazendo o papel do host (F07).
+**Testar software de áudio é difícil, e o estudo mostra concretamente por quê.** Para medir isso sem viés,
+foram mineradas 34 correções reais de bugs em 12 projetos de áudio de código aberto (o JUCE e outros 11),
+reintroduzidas no tapSynth por agentes que nunca viram os testes, além de 225 mutantes automáticos. Os testes
+foram congelados antes de qualquer defeito existir. O resultado aponta duas dificuldades concretas, e não uma
+terceira que se poderia esperar:
 
-**Como ler o "3 de 11":**
+- **Situações:** um *plugin* roda em muitas situações (taxas de amostragem, tamanhos de bloco, mono ou
+  estéreo, valores de borda dos parâmetros, parâmetros mudando durante a nota, vozes reaproveitadas, estado
+  salvo, restrições de tempo real). Um defeito só aparece na situação certa. Dos 21 defeitos que nenhuma
+  abordagem detectou, 16 não mudaram **nenhum** valor medido nas situações que os testes criaram (seção 3).
+- **Oráculo** (saber qual é a saída certa): em 9 casos, o teste criou a situação e o som mudou, mas o teste de
+  propriedade só verificava se o áudio era plausível (finito, sem *clipping*, audível) e aceitou. Quatro deles
+  ninguém detectou (F04, F12, F14, F16); cinco só o *golden master* detectou, porque compara com uma gravação
+  (F20, F24, F26, F32, F34).
+- **Não foi o rigor:** a tolerância decidiu um único defeito em 34 (F17). As tolerâncias padrão deram zero
+  alarmes falsos, e a curva de tolerância é plana até um "penhasco" (seção 6).
 
-- Não é que "os defeitos não serviam para os testes". Os defeitos foram escolhidos por um autor que nunca viu
+O fio condutor é **"situações e valores esperados, não rigor"**. Escrever "**quais** situações", não
+"**mais** situações": os defeitos perdidos apontam situações específicas, e é delas que saem as
+recomendações.
+
+### Resposta à pergunta geral do plano
+
+Pergunta: "como diferentes estratégias de teste automatizado de áudio se comparam, em detecção de defeitos e
+em alarmes falsos, na verificação de um *plugin* VST3?" Resposta, no tapSynth:
+
+1. **São complementares, cada uma com um ponto cego diferente.**
+   - O pluginval verifica o *plugin* como programa, não o som. Detectou 2 dos 34 defeitos, os dois que quebram
+     o *plugin* (F05, NaN na saída; F23, trava na primeira nota), e deixou passar seis de som claramente
+     errado que os testes de propriedade detectaram (F02, F03, F18, F19, F21, F29). Nos mutantes, cada
+     estratégia de propriedade, sozinha, detecta significativamente mais que ele após Holm (sanidade 37 contra
+     5, espectral 24 contra 7, temporal 47 contra 7; RESULTADOS, seção 7).
+   - Em contrapartida, o pluginval detectou 5 mutantes que nenhum teste percebeu (M0002, M0011, M0043, M0044,
+     M0064), todos erros de memória (seção 4).
+   - O *golden master* foi a rede mais ampla contra regressões: detectou os 13 defeitos detectados, 5 com
+     exclusividade, e é o único par significativo contra o pluginval nos defeitos (11 contra 0, p = 0,010 após
+     Holm). Vale só para regressões (seção 8, ressalva 1).
+   - Testes do conteúdo sonoro (as quatro estratégias) contra pluginval: defeitos 11 contra 0, mutantes 91
+     contra 5, ambos p < 0,001 (RESULTADOS, seção 7, comparação complementar).
+2. **Combinar é necessário, mas não basta.** Todas juntas detectaram 13 de 34 defeitos (38,2%, IC 23,9–55,0%).
+   Os 21 restantes formam a lista de pontos cegos do ferramental usual (seção 3).
+3. **O que limita a detecção são situações e oráculo, não o rigor** (fio condutor acima). Alarmes falsos: zero
+   para todas as abordagens nas tolerâncias padrão, em 8 condições inofensivas, incluindo Windows e macOS.
+4. **Isso vira recomendação prática** (`experiment/GUIA_RECOMENDACAO.md`): usar as três abordagens na
+   integração contínua; planejar explicitamente as situações (taxas, layouts de canais, bordas, automação
+   durante a nota, estado, vozes reaproveitadas); dar valor esperado aos testes; e complementar com
+   verificações de tempo real e de saídas que não são áudio.
+
+### "Então os testes eram ruins?" (resposta honesta, para a discussão)
+
+Em parte, a suíte tinha lacunas, e algumas eram evitáveis: todos os testes eram estéreo; o teste de FM só
+rodava em 48 kHz; os 200 *patches* aleatórios só verificavam se o áudio era válido; o *helper* `render()`
+limpava o *buffer*; nenhum teste salvava e restaurava estado nem reaproveitava uma voz ainda soando. O artigo
+deve dizer isso abertamente.
+
+Mas "malfeitos" não descreve o que os dados mostram:
+
+- os testes são **rigorosos, não frouxos**: apertar as tolerâncias mudaria o resultado de 1 defeito em 34;
+  faltou **amplitude**, não rigor;
+- funcionam no que cobrem: zero alarmes falsos entre plataformas, compiladores e refatorações; 82% dos
+  mutantes não equivalentes com as três estratégias de propriedade, 96% com o *golden*;
+- parte dos defeitos está fora do alcance de qualquer teste de áudio (CPU, alocação, medidor, host);
+- o autor dos testes nunca viu os defeitos. Toda suíte real é escrita antes dos bugs que depois deixa passar;
+  34 de 34 com testes escritos conhecendo os bugs seria suspeito.
+
+O estudo **não consegue separar** "testar áudio é difícil assim" de "esta suíte tinha estas lacunas"; outro
+autor poderia escrever uma suíte melhor (seção 8, ressalva 2). Isso vai nas limitações.
+
+Para a discussão, uma tabela que separa os 21 perdidos pelo que os resolveria (classificação
+interpretativa, não regra do protocolo; a tabela da seção 3 agrupa os mesmos 21 pelo efeito medido, por isso
+F07 e F15 aparecem em grupos diferentes):
+
+| Tipo de lacuna | n | Defeitos | O que resolveria (inferência, não medido) |
+| --- | --- | --- | --- |
+| Situação previsível que a suíte não criou | 9 | F01 (FM em uma só taxa), F07 (`render()` limpa o *buffer*), F08, F28, F35 (mono), F09 (automação durante a nota), F13 (ataque e decay 0), F25 (voz reaproveitada), F36 (estado salvo e restaurado) | planejar as situações por recurso do *plugin* |
+| Situação criada, mas sem valor esperado (oráculo) | 4 | F04, F12, F14, F16 | valores esperados ou relações entre saídas nos testes com *patches* aleatórios e extremos |
+| Abaixo da tolerância | 1 | F17 | *golden* com 10⁻⁵ (seção 6) |
+| Borda difícil de prever | 1 | F15 (só difere quando o envelope chega exatamente a 1) | — |
+| Fora do alcance de teste de áudio | 6 | F06, F10 (tempo real), F33 (gesto de automação no host), F11, F30, F31 (medidor) | ferramentas de tempo real e CPU; testes de unidade do medidor; verificação do protocolo com o host |
+
+Leitura: 14 dos 21 (as três primeiras linhas) são lacunas que um planejamento de situações e valores esperados
+poderia cobrir; 7 exigiriam outro tipo de verificação ou são muito difíceis de prever. Isso é inferência: os
+testes estão congelados e nenhuma suíte ampliada foi medida.
+
+### Como ler o "13 de 34"
+
+- Não é que "os defeitos não serviam para os testes". Os defeitos foram escolhidos por autores que nunca viram
   os testes, do jeito que bugs reais chegam; escolher defeitos que os testes pegam seria justamente o viés que
-  o desenho evitou. A leitura correta é a inversa: a suíte, escrita antes e sem conhecer os defeitos, não
-  criava as situações em que cinco deles aparecem, e três não mudam o som em situação nenhuma.
-- O padrão de mercado (pluginval) detectou 1 de 11; com os testes de conteúdo, 3 de 11. Com n = 11, essa
-  diferença não é estatisticamente significativa (2 contra 0, p = 0,500; RESULTADOS, seção 7). Os defeitos dão
-  os exemplos concretos; o peso estatístico vem dos mutantes.
-- Um resultado de 11 de 11 com testes escritos pelo mesmo autor dos defeitos seria suspeito; 3 de 11 com
-  autores separados é uma medida honesta do que uma suíte razoável, escrita sem conhecer os bugs, alcança.
+  o desenho evitou.
+- O padrão de mercado (pluginval) detectou 2 de 34; com os testes do conteúdo sonoro, 13 de 34 (RESULTADOS,
+  seção 2). Só os testes detectam 11, só o pluginval nenhum (p < 0,001; inclui o *golden*). Com o lote 1
+  sozinho, a diferença não era significativa (2 contra 0, p = 0,500).
+- Os dois lotes não devem ser comparados como "melhora": 3 de 11 (27,3%) e 10 de 23 (43,5%) têm intervalos que
+  se sobrepõem quase inteiros (9,7–56,6% e 25,6–63,2%), e os lotes têm fontes e categorias diferentes.
 
-**O golden master é secundário.** É uma rede de segurança barata para regressões (73 linhas, 0,3 s no Linux;
-RESULTADOS, seção 9). Sua detecção alta é esperada de uma comparação amostra a amostra e vale só para
-regressões (seção 8, ressalva 1). Vai na discussão, não na manchete.
+### O *golden master* no texto
 
-**Não afirmar:**
+É uma rede de segurança barata para regressões (73 linhas, 0,3 s no Linux; RESULTADOS, seção 9). Foi o mais
+amplo nos defeitos e nos mutantes, mas o desenho o favorece: todo defeito entrou depois da gravação das
+referências. Entra na resposta à pergunta (conclusão 1) e nas recomendações, não como manchete. Não omitir: a
+RESULTADOS mostra o número, e omiti-lo pareceria seletivo.
+
+### Não afirmar
+
 - que o teste automatizado é melhor que ouvir (não foi medido);
-- que o estudo demonstrou a importância do teste automatizado em geral (isso vem da literatura, na
-  introdução: Wang et al., 2022; Andrei et al., 2025);
-- que os cenários que faltaram detectariam F01, F04, F08 e F09 (inferência: os testes estão congelados e isso
-  não foi medido);
+- que áudio é mais difícil de testar que outros tipos de software (não houve comparação; dizer que o estudo
+  mostra **como** é difícil no tapSynth);
+- que o estudo demonstrou a importância do teste automatizado em geral (isso vem da literatura, na introdução:
+  Wang et al., 2022; Andrei, Verano Merino e Malavolta, 2025);
+- que as situações que faltaram detectariam os defeitos perdidos (inferência; os testes estão congelados);
+- que o segundo lote "melhorou" a detecção;
+- que cada estratégia de propriedade supera o pluginval nos defeitos reais com significância (3 a 4 contra 0,
+  não significativo; a significância vem dos mutantes, ou do conjunto com o *golden*);
+- por que o pluginval não detectou o F36 (não investigado);
 - generalização além do tapSynth.
 
-**Rascunho da conclusão:**
+### Rascunho das considerações finais
 
-> Os resultados indicam que, no tapSynth, o *pluginval* e os testes de propriedade do áudio são complementares
-> e precisam ser usados em conjunto. O *pluginval* verifica o *plugin* como programa, mas não o som: um defeito
-> que trocava os níveis seco e molhado do reverb, produzindo um som completamente errado, passou por ele, e cada
-> estratégia de propriedade detectou, sozinha, significativamente mais mutantes que ele. Em contrapartida, o
-> *pluginval* detectou cinco erros de memória que nenhum teste de áudio percebeu. Mesmo combinadas, as
-> abordagens não detectaram defeitos de segurança de tempo real, como alocação de memória e ausência de
-> tratamento de números desnormalizados na *thread* de áudio, nem defeitos que só aparecem em situações que
-> nenhuma delas cria, como processamento mono. Para desenvolvedores de *plugins*, isso sugere incluir testes
-> automatizados do conteúdo sonoro na integração contínua, ao lado do *pluginval*, e complementá-los com
-> verificações específicas de tempo real.
+> Este trabalho comparou estratégias de teste automatizado de áudio no tapSynth, um sintetizador VST3 em JUCE,
+> reintroduzindo no *plugin* 34 correções reais de *bugs*, mineradas de 12 projetos de áudio de código aberto,
+> além de 225 mutantes. Os resultados mostram por que testar *software* de áudio é difícil: o que limitou a
+> detecção não foi o rigor das comparações, mas as situações que os testes criam e a capacidade de saber qual
+> é o som correto. Dos 21 defeitos que nenhuma abordagem detectou, 16 não alteraram nenhum valor medido nas
+> situações testadas: só se manifestavam em processamento mono, em outras taxas de amostragem, em valores de
+> borda do envelope, no reaproveitamento de vozes ou na restauração do estado, ou não afetavam o som, como os
+> de segurança de tempo real. Em outros casos, o teste criou a situação e o som mudou, mas verificava apenas
+> se o áudio era válido, não se estava correto. Apertar a tolerância teria mudado o resultado de um único
+> defeito, e as tolerâncias adotadas não produziram nenhum alarme falso.
+>
+> As ferramentas mostraram-se complementares. O *pluginval* detectou erros de memória que nenhum teste de
+> áudio percebeu, mas não detecta som errado; os testes de propriedade detectaram defeitos sonoros que o
+> *pluginval* aceitou; e a comparação com gravações de referência funcionou como rede de segurança contra
+> regressões, inclusive quando o som mudou de forma plausível. Mesmo combinadas, porém, deixaram passar a
+> maioria dos defeitos reais. Para desenvolvedores de *plugins*, isso sugere combinar as três abordagens na
+> integração contínua e, sobretudo, planejar explicitamente as situações de teste (taxas de amostragem,
+> layouts de canais, valores de borda, automação durante a nota, estado salvo) e os valores esperados de cada
+> uma, complementando-as com verificações específicas de tempo real. Por se tratar de um único *plugin*, esses
+> resultados não se generalizam diretamente; trabalhos futuros podem medir se suítes construídas a partir
+> dessas situações detectam os defeitos que esta não detectou.
 
 ## 1. O estudo em poucas linhas
 
@@ -90,16 +171,21 @@ regressões (seção 8, ressalva 1). Vai na discussão, não na manchete.
   | golden master | 13 | comparação amostra a amostra com 13 gravações de referência (`tests/references/`) |
   | (autoteste) | 7 | verifica as próprias medições; não é estratégia |
 
-- **Condições:** 11 defeitos (F01–F11), 225 mutantes do Mull (M0001–M0225), 8 condições inofensivas (H01–H04,
-  build Debug, clang, Windows, macOS) e a referência (código limpo, 5 execuções).
+- **Condições:** 34 defeitos em dois lotes (F01–F11 e F12–F36, sem F22 e F27; seção 2), 225 mutantes do Mull
+  (M0001–M0225), 8 condições inofensivas (H01–H04, build Debug, clang, Windows, macOS) e a referência (código
+  limpo, 5 execuções).
 - **Desenho contra viés:** testes congelados na tag `tests-frozen` antes de qualquer defeito existir; defeitos
-  escritos por um autor sem acesso aos testes; protocolo fixado antes da execução, com desvios registrados.
+  escritos por autores sem acesso aos testes; protocolo fixado antes da execução, com desvios registrados.
 
 ## 2. Origem dos defeitos (importante para o texto)
 
 Os defeitos **não são inventados**: o guia (`experiment/GUIA_DEFEITOS.pdf`) exige que cada um reintroduza no
-tapSynth um bug real, corrigido em um plugin JUCE open source ou no próprio JUCE, com o link da correção
-aberto e conferido pelo autor. As fontes estão em `experiment/faults/INDEX.md`:
+tapSynth um bug real, corrigido em software de áudio open source, com o link da correção aberto e conferido
+pelo autor. No lote 1 as fontes eram plugins JUCE e o próprio JUCE; no lote 2, qualquer software de áudio
+open source em C/C++. As fontes estão em `experiment/faults/INDEX.md`. "Origem" (projeto/JUCE) indica **onde
+o patch é aplicado**, não de onde veio o bug.
+
+**Lote 1 (F01–F11):**
 
 | Defeito | Categoria | Origem | Fonte da correção real |
 | --- | --- | --- | --- |
@@ -115,22 +201,43 @@ aberto e conferido pelo autor. As fontes estão em `experiment/faults/INDEX.md`:
 | F10 | estado | projeto | JUCE |
 | F11 | numérico | projeto | LufsNormalizer |
 
-O autor foi um agente de IA separado, sem acesso aos testes nem ao plano, trabalhando num repositório sem
-histórico e sem testes (desvio declarado no PROTOCOLO, seção 10; o colega previsto desistiu). Para o texto:
-são **defeitos reais transplantados** para o tapSynth. Isso responde à crítica de "defeitos artificiais", mas
-não totalmente: a adaptação ao tapSynth é feita à mão, e Andrews et al. (2005) observaram que defeitos
-semeados à mão podem ser mais difíceis de detectar que os reais.
+**Lote 2 (F12–F36, sem F22 e F27):**
 
-**Segundo lote (em andamento, 2026-11-05):** um segundo lote de defeitos reais (a partir do F12, meta de 40,
-fontes ampliadas para qualquer software de áudio open source em C/C++) está sendo escrito por um novo agente,
-com regras fixadas antes (PROTOCOLO, seção 10, emenda do segundo lote). No artigo, descrever os defeitos como
-produzidos **em dois lotes**, pelo mesmo procedimento: "O segundo lote foi acrescentado para ampliar a amostra,
-com as regras de inclusão e análise fixadas antes de sua criação." Os números desta seção e da seção 3 são só
-do lote 1 e serão atualizados quando o lote 2 rodar; até lá, não escreva números totais de defeitos.
+| Fonte da correção real | Defeitos |
+| --- | --- |
+| JUCE | F12, F13, F14, F19 |
+| Odin 2 | F15, F32 |
+| Helm | F16, F18, F26 |
+| sfizz | F17, F34 |
+| Tracktion Engine | F20, F21, F24, F31 |
+| Monique | F23 |
+| amsynth | F25, F33 |
+| Dexed | F28 |
+| ZynAddSubFX | F29, F30, F36 |
+| Surge XT | F35 |
+
+O lote 2 foi escrito por um segundo agente de IA, também sem acesso aos testes, pelo mesmo guia, com as regras
+de inclusão e análise fixadas antes de o lote existir (PROTOCOLO, seção 10, emenda do segundo lote). Foram
+pedidos 40 e entregues 25; F22 e F27 eram cópias exatas de F01 e F05 e foram excluídos antes da execução,
+ficando 23. Todos aplicaram e compilaram (RESULTADOS, seção 1). Sete se afastam do mecanismo do bug original
+(F14, F19, F23, F24, F26, F31, F36; `experiment/faults/RELATORIO-F12-F36.md`). Há concentração: 6 dos 8
+defeitos com origem JUCE no lote 2 (F12–F17) estão no mesmo arquivo, `juce_ADSR.h`.
+
+O autor do lote 1 foi um agente de IA separado, sem acesso aos testes nem ao plano, trabalhando num
+repositório sem histórico e sem testes (desvio declarado no PROTOCOLO, seção 10; o colega previsto desistiu).
+Para o texto: são **defeitos reais transplantados** para o tapSynth, **produzidos em dois lotes** pelo mesmo
+procedimento: "O segundo lote foi acrescentado para ampliar a amostra, com as regras de inclusão e análise
+fixadas antes de sua criação." Isso responde à crítica de "defeitos artificiais", mas não totalmente: a
+adaptação ao tapSynth é feita à mão, e Andrews et al. (2005) observaram que defeitos semeados à mão podem ser
+mais difíceis de detectar que os reais.
 
 ## 3. Defeitos: o que cada um faz e por que foi ou não detectado
 
-Detectados nas tolerâncias padrão: **3 de 11** (RESULTADOS, seções 2 e 3).
+Detectados nas tolerâncias padrão: **13 de 34** (lote 1: 3 de 11; lote 2: 10 de 23; RESULTADOS, seções 2 e 3).
+Os valores citados nas explicações vêm das propriedades gravadas por cada teste (`tests.jsonl` em
+`experiment/results/raw/`), comparadas com a referência.
+
+**Lote 1:**
 
 | Defeito | Detectado por | Explicação |
 | --- | --- | --- |
@@ -146,14 +253,61 @@ Detectados nas tolerâncias padrão: **3 de 11** (RESULTADOS, seções 2 e 3).
 | F10 alocação no callback de áudio | ninguém | má prática de tempo real, sem efeito no som; o pluginval 1.0.4 não tem verificação de alocação no Linux |
 | F11 medidor com bloco vazio | ninguém | os testes nunca mandam bloco de 0 amostras, e o medidor não é áudio |
 
-**Achado principal:** 7 dos 8 defeitos perdidos deixaram **todos os valores medidos idênticos bit a bit** à
-referência (conferido comparando as propriedades gravadas de cada teste); o oitavo (F04) mudou um único patch
-em cerca de 1%. Nenhuma tolerância, por mais rígida, os pegaria. O limite dos testes é **quais situações eles
-criam** (taxas de amostragem, mono, blocos vazios, parâmetros que mudam durante a nota, CPU), não o rigor da
-comparação.
+**Lote 2:**
 
-Com n = 11, as taxas por defeito têm intervalos largos (27%: 9,7–56,6%) e o Q de Cochran não é significativo
-(p = 0,231). Os defeitos servem para a análise qualitativa; o peso estatístico vem dos mutantes.
+| Defeito | Detectado por | Explicação |
+| --- | --- | --- |
+| F23 tipo de onda sem atualização inicial | as cinco | o oscilador nunca é inicializado e o plugin trava na primeira nota; o pluginval também falha |
+| F18 reset incompleto do filtro | sanidade, golden | parte do estado do filtro sobra de uma nota para a outra; o pico passa do limite da sanidade |
+| F19 ganho da voz não aplicado | sanidade, golden | sem o ganho fixo de 0,07, a saída fica muito mais alta e passa do limite de pico |
+| F21 frequência sem `force` | espectral, temporal, golden | a suavização de 50 ms atua no início da nota e na FM; as bandas laterais da FM e a abertura do filtro saem do esperado |
+| F29 filtro zerado a cada bloco | espectral, temporal, golden | o estado do filtro é apagado a cada bloco; a atenuação do passa-baixa, o aliasing e a abertura do filtro saem do limite |
+| F20 oscilador sem limite em Nyquist | só golden | o golden falhou só na configuração com todos os parâmetros no máximo; nos patches aleatórios da sanidade o pico mudou até 56%, mas esse teste só verifica se o áudio é válido |
+| F24 voz ignora `startSample` | só golden | a nota perde a posição dentro do bloco; na sanidade, o pico de uma configuração dobrou (0,283 → 0,566), ainda abaixo do limite; o golden falhou só no acorde |
+| F26 envelope do filtro sem taxa de amostragem | só golden | o envelope do filtro fica na taxa padrão do JUCE ADSR (44,1 kHz); a abertura do filtro medida no temporal mudou pouco (41,7 → 41,1 dB, contra o mínimo de 18 dB) |
+| F32 reverb sem `prepare` | só golden | o reverb fica preparado para 44,1 kHz; na sanidade, o pico da configuração com reverb mudou 14%, dentro do limite |
+| F34 largura do reverb com padrão 0 | só golden | muda a imagem estéreo do reverb; na sanidade, o pico do canal direito com reverb caiu 30%, dentro do limite |
+| F12 ataque vai sempre para o decay | ninguém | só muda o envelope do filtro com decay 0; mudou a componente DC de um único patch aleatório, num teste que só verifica se o áudio é válido |
+| F13 sustain sem valor inicial | ninguém | exige ataque e decay iguais a 0 com sustain diferente de 0; nenhum teste cria essa combinação |
+| F14 taxa de release calculada do sustain | ninguém | errado só quando a nota é solta antes de chegar ao sustain; mudou 677 valores nos patches aleatórios e no "tudo no máximo" (pico até 8%), mas esses testes só verificam se o áudio é válido; o teste temporal do release solta a nota já no sustain |
+| F15 fim do ataque com `>` em vez de `>=` | ninguém | só difere quando o envelope chega exatamente a 1 |
+| F16 ataque zero sem passar ao decay | ninguém | mesmo cenário do F04 (patch aleatório 68): o pico subiu de 0,035 para 0,058 (+68%), mas o teste só verifica se o áudio é válido |
+| F17 fim do release sem zerar | ninguém | deixa um resíduo minúsculo depois do release; o golden mudou até 4,6 × 10⁻⁵, abaixo da tolerância de 10⁻⁴; com 10⁻⁵ seria detectado sem alarme falso (RESULTADOS, seção 8) |
+| F25 reset da voz em todo note-on | ninguém | só muda quando uma voz é reaproveitada enquanto ainda soa; nenhum teste cria essa situação |
+| F28 voz escreve no canal 2 em mono | ninguém | os testes são sempre estéreo (o mesmo ponto cego do F08) |
+| F30 medidor lê só o canal esquerdo | ninguém | os testes não leem o medidor |
+| F31 medidor divide por bloco vazio | ninguém | como o F11: nenhum teste manda bloco de 0 amostras |
+| F33 gesto de automação sem fim | ninguém | afeta só a comunicação com o host (automação), não o som |
+| F35 saída mono recusada | ninguém | os testes são estéreo, e o pluginval aceitou o plugin só com estéreo |
+| F36 estado restaurado descartado | ninguém | os testes não salvam e restauram o estado. O pluginval 1.0.4 tem a verificação "Plugin state restoration", que rodou (nível 10) e passou; o motivo não foi investigado |
+
+**Achado principal: por que 21 defeitos passaram.**
+
+| Por que passou | n | Defeitos |
+| --- | --- | --- |
+| Nenhum valor medido mudou: situação que os testes não criam | 9 | F01, F08, F09, F13, F15, F25, F28, F35, F36 |
+| Nenhum valor medido mudou: o defeito não afeta o som (tempo real, medidor, host) | 6 | F06, F10, F11, F30, F31, F33 |
+| Nenhum valor medido mudou: escondido pelo `render()` | 1 | F07 |
+| O som mudou, mas só em testes que verificam se o áudio é válido, sem valor esperado | 4 | F04, F12, F14, F16 |
+| O som mudou abaixo da tolerância do golden | 1 | F17 |
+
+16 dos 21 deixaram **todos os valores medidos idênticos bit a bit** à referência; para eles, nenhuma
+tolerância, por mais rígida, bastaria. O limite principal continua sendo **quais situações os testes criam**
+(taxas de amostragem, mono, blocos vazios, valores de borda, parâmetros que mudam durante a nota, vozes
+reaproveitadas, estado salvo, CPU). O lote 2 mostra um segundo limite, o do **oráculo** (saber qual é a saída
+certa): em 4 perdidos e nos 5 que só o golden pegou, o teste criou a situação e o som mudou, mas o teste de
+propriedade só verificava se o áudio era plausível (finito, sem clipping, audível) ou se uma medida ficava
+acima de um mínimo largo. A tolerância decidiu um único caso (F17).
+
+**Envelope é a categoria mais perdida** (3 de 12; RESULTADOS, seção 4). Cinco dos seis defeitos do ADSR do
+JUCE no lote 2 (F12–F16) envolvem tempos iguais a 0, o valor exato 1 ou soltar a nota antes do sustain; o
+teste temporal mede ataque, decay e release com valores normais e solta a nota no sustain.
+
+**Estatística:** com n = 34, o Q de Cochran é significativo (p < 0,001), mas, após Holm, só golden × pluginval
+difere (11 contra 0, p = 0,010). Lote 1: nada significativo (Q, p = 0,231). Lote 2: Q, p < 0,001; após Holm,
+só golden × pluginval (9 contra 0, p = 0,039) (RESULTADOS, seção 7). A taxa geral tem intervalo largo
+(38,2%, IC 23,9–55,0%). Os defeitos servem sobretudo para a análise qualitativa; o peso estatístico das
+comparações entre estratégias vem dos mutantes.
 
 ## 4. Mutantes
 
@@ -212,7 +366,12 @@ RESULTADOS, seção 8, e `curva_tolerancia.svg`.
 - Nos pontos mais rígidos, os testes **falham no código limpo** e "detectam" tudo, com 8 alarmes falsos:
   passband 0,25 dB, tempo do envelope 2 e 5 ms, release 5 ms.
 - No golden, o limite fica nas outras plataformas: 0 e 10⁻⁶ falham no macOS (e 0 também no Windows), sem
-  mudar a detecção.
+  mudar a detecção dos mutantes.
+- Nos defeitos, o único ponto que muda a detecção é o golden em 10⁻⁵ (e abaixo): detecta também o F17 (14 de
+  34 em vez de 13), e 10⁻⁵ ainda não dá alarme falso. Ou seja, um ponto mais rígido que o padrão pegaria um
+  defeito a mais sem custo nesta amostra. O padrão de 10⁻⁴ foi fixado antes de existir qualquer defeito;
+  escolher 10⁻⁵ agora, depois de ver o F17, seria ajustar a tolerância aos dados. Na discussão, vale como
+  observação: a folga de 10⁻⁴ sobre a maior diferença entre plataformas (1,5 × 10⁻⁶) era maior que o necessário.
 - Conclusão: não há um compromisso gradual entre detecção e alarmes falsos; há uma zona larga e segura e um
   penhasco. As tolerâncias padrão ficaram na zona segura.
 
@@ -220,28 +379,36 @@ RESULTADOS, seção 8, e `curva_tolerancia.svg`.
 
 | Pergunta | Hipótese do plano | Resultado |
 | --- | --- | --- |
-| QP1: que estratégia detecta que categoria, com quantos alarmes falsos? | cada estratégia se especializa | Parcial. O temporal detecta muito mais mutantes do ADSR (27/43) que o espectral (4/43) e a sanidade (5/43). Mas o golden detecta 28/43 e quase tudo que os outros detectam; em detecção, o generalista vence os especialistas. Zero alarmes falsos para todas |
-| QP2: como as estratégias se comparam ao pluginval? | o pluginval pega estado, host e travamento, poucos defeitos de som | Confirmada. Perde o F02 (som errado, áudio válido); seus 5 exclusivos são erros de memória. Complementar aos testes, não substituto (McNemar: 91 contra 5, p < 0,001) |
-| QP3: como a tolerância afeta o compromisso? | o golden detecta mais, com mais alarmes falsos | Metade. Detecta mais (significativo contra todas), mas sem alarmes falsos no padrão. A tolerância quase não importa até o penhasco (seção 6) |
-| QP4: projeto vs JUCE? | sem diferença relevante | Bruto: 57% (projeto) contra 76% (JUCE) nos testes. Sem os possivelmente equivalentes: 91,5% contra 100%. A diferença vem do código do projeto que não toca o áudio (medidor, editor), não de testes piores para o projeto |
+| QP1: que estratégia detecta que categoria, com quantos alarmes falsos? | cada estratégia se especializa | Parcial. O temporal detecta muito mais mutantes do ADSR (27/43) que o espectral (4/43) e a sanidade (5/43). Mas o golden detecta 28/43 e quase tudo que os outros detectam; em detecção, o generalista vence os especialistas. Nos defeitos, envelope é a categoria mais perdida (3/12): o temporal só pega o F03, porque os defeitos do ADSR do lote 2 dependem de valores de borda que ele não cria. Zero alarmes falsos para todas |
+| QP2: como as estratégias se comparam ao pluginval? | o pluginval pega estado, host e travamento, poucos defeitos de som | Confirmada em parte. Detecta 2 de 34 defeitos, os dois que quebram o plugin (F05, F23), e perde seis de som errado que os testes de propriedade pegam (F02, F03, F18, F19, F21, F29); seus 5 mutantes exclusivos são erros de memória. Não pegou os defeitos de host e estado do lote 2 (F33, F35, F36), incluindo o F36, apesar de ter verificação de restauração de estado. Complementar aos testes, não substituto (McNemar: mutantes 91 contra 5, defeitos 11 contra 0, ambos p < 0,001, ambos incluindo o golden) |
+| QP3: como a tolerância afeta o compromisso? | o golden detecta mais, com mais alarmes falsos | Metade. Detecta mais (nos mutantes, significativo contra todas), mas sem alarmes falsos no padrão. A tolerância quase não importa até o penhasco; nos defeitos, decidiu um caso (F17, golden em 10⁻⁵; seção 6) |
+| QP4: projeto vs JUCE? | sem diferença relevante | Mutantes, bruto: 57% (projeto) contra 76% (JUCE) nos testes. Sem os possivelmente equivalentes: 91,5% contra 100%. A diferença vem do código do projeto que não toca o áudio (medidor, editor), não de testes piores para o projeto. Defeitos: o inverso, 45,5% (10/22) no projeto contra 25,0% (3/12) no JUCE, com intervalos largos; 6 dos 12 defeitos do JUCE estão no mesmo arquivo (ADSR), quase todos com valores de borda e transições |
+
+**Situação das hipóteses (para o texto):** QP1 confirmada só em parte; QP2 confirmada só em parte (com o lote
+2, o pluginval não pegou os defeitos de estado e host que a hipótese previa); QP3 metade confirmada (detecta
+mais, sem mais alarmes falsos); QP4 sem diferença atribuível a viés de autoria (nos mutantes, a diferença vem
+de código que não toca o áudio; nos defeitos, intervalos largos e concentração no ADSR).
 
 Estatística (RESULTADOS, seção 7): nos mutantes, Q de Cochran p < 0,001; todos os pares diferem após Holm,
 exceto sanidade × temporal (20 contra 28, p = 0,312), que detectam quantidades parecidas de mutantes
-diferentes. Nos defeitos, nada é significativo (n = 11).
+diferentes. Nos defeitos (n = 34), Q de Cochran p < 0,001, mas após Holm só golden × pluginval difere
+(p = 0,010); no lote 1 sozinho (n = 11), nada é significativo.
 
 ## 8. Ressalvas de interpretação (escrever na discussão)
 
 1. **O desenho favorece o golden master.** As referências foram gravadas do código correto e todo defeito ou
    mutante entrou depois: todos são **regressões**, o ponto forte do golden. Um bug que já existe quando a
    referência é gravada fica protegido pelo golden; só os testes de propriedade (82% juntos) o pegariam. Logo,
-   "o golden detecta 96%" vale para regressões.
+   "o golden detecta 96%" vale para regressões. O mesmo vale para os defeitos: o golden detectou os 13
+   detectados, 5 com exclusividade, porque todos foram inseridos depois da gravação.
 2. **Os resultados são destes testes, não das estratégias em geral.** Um teste espectral escrito de outro jeito
    poderia detectar mais.
 3. **Parte dos resultados é esperada** (comparação amostra a amostra detecta quase toda mudança; o pluginval
    não sabe como o sintetizador deve soar; teste não pega bug em código que não executa). As contribuições
    menos óbvias são: zero alarmes falsos entre plataformas e compiladores com 10⁻⁴; o penhasco; cobertura de
    situações acima de rigor; o papel do pluginval como verificação de memória; a medida de quanto os testes de
-   propriedade perdem (1 em 6 regressões).
+   propriedade perdem (1 em 6 regressões); e o limite do oráculo nos defeitos reais (testes que criam a
+   situação, veem o som mudar e aceitam, porque só verificam se o áudio é plausível; seção 3).
 4. **Duas hipóteses do plano falharam** (golden com mais alarmes falsos; especialização forte), o que mostra que
    o estudo podia dar errado.
 
@@ -267,6 +434,10 @@ doctest; os três medem os mesmos 81 valores do teste original. Pontos para o te
   mede alarmes falsos entre plataformas e compiladores, varre as tolerâncias e compara projeto e JUCE.
   Conferir autores e iniciais na página do IEEE antes de citar: o plano lista "VALENTAN, A.; WOTAWA, F.", e a
   busca indica Franz Wotawa e Stephan Valentan.
+- **Automação de testes e qualidade (motivação):** WANG, Y.; MÄNTYLÄ, M. V.; LIU, Z.; MARKKULA, J. Test
+  automation maturity improves product quality: quantitative study of open source projects using continuous
+  integration. Journal of Systems and Software, v. 188, 2022. Conferido (existe; o resumo bate). São 37
+  projetos Java: serve de evidência de outro domínio, não de áudio.
 - **Lacuna de prática:** ANDREI, B.; VERANO MERINO, M.; MALAVOLTA, I. (o sobrenome é Andrei: o PDF traz
   "Bogdan Andrei", e-mail b.m.andrei@uva.nl; o plano escreveu "BOGDAN, A." por engano). The Ecosystem of Open-Source Music
   Production Software: A Mining Study on the Development Practices of VST Plugins on GitHub. MSR 2025,
@@ -287,8 +458,14 @@ doctest; os três medem os mesmos 81 valores do teste original. Pontos para o te
 ## 11. Limitações
 
 - Um único plugin, pequeno, em JUCE 8.0.9; estudo de caso exploratório, não regra geral.
-- 11 defeitos, 3 detectados: sem poder estatístico nos defeitos.
-- Defeitos reais transplantados por um agente de IA (não pelo colega previsto); adaptação manual ao tapSynth.
+- 34 defeitos, 13 detectados, com intervalo largo (IC 23,9–55,0%); nos defeitos, só golden × pluginval é
+  significativo após Holm.
+- Os defeitos vieram em dois lotes. A decisão de fazer o segundo foi tomada depois de ver os resultados do
+  primeiro; as regras foram fixadas antes de o lote existir, os testes continuaram congelados e o autor não viu
+  os testes (PROTOCOLO, seção 10). O lote 2 entregou 25 dos 40 pedidos, e 6 de seus defeitos estão no mesmo
+  arquivo (ADSR do JUCE).
+- Defeitos reais transplantados por dois agentes de IA (não pelo colega previsto); adaptação manual ao
+  tapSynth; no lote 2, 7 dos 23 se afastam do mecanismo do bug original.
 - Detecção medida só no Linux; Windows e macOS só para alarmes falsos, e "outro sistema" muda SO, compilador
   e processador juntos.
 - Mutantes do JUCE concentrados em Reverb e ADSR (limitação do Mull 0.36 com templates); mutantes rodaram num
@@ -305,8 +482,11 @@ doctest; os três medem os mesmos 81 valores do teste original. Pontos para o te
   escritos com o Claude Code (Anthropic), com revisão e aprovação do autor antes de cada commit (regra 6 do
   plano).
 - **Defeitos e alterações inofensivas:** escritos por um agente de IA separado, sem acesso aos testes, seguindo
-  `GUIA_DEFEITOS.pdf`; revisados pelo autor.
-- **Decisões de desenho, revisão, interpretação e escrita:** do autor.
+  `GUIA_DEFEITOS.pdf`; revisados pelo autor. O lote 2 de defeitos foi escrito por um segundo agente, nas mesmas
+  condições, com um adendo ao guia (PROTOCOLO, seção 10); revisão só de formato.
+- **Decisões de desenho, revisão e interpretação:** do autor, com apoio do Claude Code na análise.
+- **Redação do artigo:** rascunhos gerados com o Claude (Anthropic), seção por seção, a partir deste
+  repositório; o autor revisa, confere as afirmações e edita cada seção. Declarar isso também.
 - Conferir as regras da universidade e seguir as diretrizes de Baltes et al. ao descrever o uso.
 
 ## 13. Pendências
@@ -316,12 +496,16 @@ doctest; os três medem os mesmos 81 valores do teste original. Pontos para o te
   a diferença entre testes e pluginval (os quatro testes falham, o pluginval passa); ou F05 (NaN, todos falham).
 - Guia de recomendação: feito, em `experiment/GUIA_RECOMENDACAO.md`.
 - Escrita: resultados, discussão, limitações.
+- Guia de recomendação atualizado com o lote 2 em 2026-11-06 (cenários novos, seção 3.1 sobre valores
+  esperados, ressalva do pluginval sobre estado).
 - LICENSE, nomes no README, conferir as referências "a conferir", merge para `master`.
 
 ## 14. Arquivos para a escrita
 
 | Arquivo | Conteúdo |
 | --- | --- |
+| `artigo/ROTEIRO.md` | estrutura do artigo, orçamento de páginas, tabelas e figuras por seção |
+| `artigo/universidade/REGRAS.md` | regras do modelo e das aulas da universidade (originais na mesma pasta) |
 | `experiment/analysis/RESULTADOS.md` | todas as tabelas (fonte dos números) |
 | `experiment/analysis/NOTAS.md` | este arquivo |
 | `experiment/analysis/curva_tolerancia.svg` | gráfico da QP3 |

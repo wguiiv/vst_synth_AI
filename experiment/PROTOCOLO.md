@@ -168,6 +168,10 @@ aplicam sobre o código limpo (conferido com `git apply --check`). O F31 se sobr
 retiram a guarda de bloco vazio do medidor, mas o F31 mantém a de zero canais) e foi mantido, porque a mudança
 é diferente.
 
+**Execução (2026-11-05, 09:32–11:21 UTC):** os 23 defeitos rodaram uma vez cada, no Linux, em Release, como na
+seção 4, sobre o mesmo commit congelado dos testes. Todos aplicaram, compilaram e rodaram os 80 testes e o
+pluginval sem falha de infraestrutura (RESULTADOS, seção 1). Nenhum patch foi excluído depois da execução.
+
 ### Emendas antes da primeira execução
 
 - 2026-11-03, regra 6.4: a versão anterior dizia que `inf` viola qualquer ponto da grade. Uma atenuação de `inf` dB é um resultado válido para um limite "no mínimo" e passa na asserção do teste, então a regra faria o código limpo falhar na varredura. Corrigido antes de qualquer execução.

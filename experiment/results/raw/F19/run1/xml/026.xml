@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.028" timestamp="2026-11-05T10:23:33.970" name="AllTests">
+  <testsuite name="Configs/Golden" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.028" timestamp="2026-11-05T10:23:33.970">
+    <testcase name="MatchesReference/Chord" value_param="104-byte object &lt;E0-27 2C-95 22-56 00-00 05-00 00-00 00-00 00-00 43-68 6F-72 64-00 00-65 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 C0-3A 2C-95 22-56 00-00 00-32 2C-95 22-56 00-00 C0-33 2C-95 22-56 00-00 03-00 00-00 00-00 00-00 90-6A 2C-95 22-56 00-00 08-6B 2C-95 22-56 00-00 08-6B 2C-95 22-56 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/golden/GoldenTest.cpp" line="67" status="run" result="completed" time="0.028" timestamp="2026-11-05T10:23:33.970" classname="Configs/Golden">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/golden/GoldenTest.cpp:92&#x0A;Value of: within (tol::golden, maxAbsDiff (out, reference), config.name)&#x0A;  Actual: false (Chord: golden.maxAbsDiff measured 8.07927513 linear, limit &lt;= 0.0001 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/golden/GoldenTest.cpp:92
+Value of: within (tol::golden, maxAbsDiff (out, reference), config.name)
+  Actual: false (Chord: golden.maxAbsDiff measured 8.07927513 linear, limit <= 0.0001 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="golden.maxAbsDiff|Chord" value="8.07927513"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

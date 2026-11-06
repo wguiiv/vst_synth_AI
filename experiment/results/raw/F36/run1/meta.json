@@ -1,0 +1,15 @@
+{
+ "id": "F36",
+ "kind": "defeito",
+ "config": "release",
+ "patch": "/home/guiz/vst_synth_AI/experiment/faults/F36-estado-restaurado-descartado.patch",
+ "origin": "projeto",
+ "category": "estado",
+ "run": 1,
+ "started": "2026-11-05T11:17:53",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 222.990092754364,
+ "finished": "2026-11-05T11:21:48"
+}

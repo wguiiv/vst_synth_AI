@@ -1,0 +1,15 @@
+{
+ "id": "F20",
+ "kind": "defeito",
+ "config": "release",
+ "patch": "/home/guiz/vst_synth_AI/experiment/faults/F20-osc-sem-limite-nyquist.patch",
+ "origin": "projeto",
+ "category": "altura",
+ "run": 1,
+ "started": "2026-11-05T10:23:38",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 355.4129014015198,
+ "finished": "2026-11-05T10:29:44"
+}

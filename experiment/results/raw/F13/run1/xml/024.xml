@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.008" timestamp="2026-11-05T09:44:52.022" name="AllTests">
+  <testsuite name="Configs/Golden" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.008" timestamp="2026-11-05T09:44:52.022">
+    <testcase name="MatchesReference/Envelope" value_param="104-byte object &lt;F0-F7 5F-AC 55-55 00-00 08-00 00-00 00-00 00-00 45-6E 76-65 6C-6F 70-65 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 50-0C 60-AC 55-55 00-00 90-03 60-AC 55-55 00-00 10-FE 5F-AC 55-55 00-00 04-00 00-00 00-00 00-00 50-3E 5D-AC 55-55 00-00 68-3E 5D-AC 55-55 00-00 68-3E 5D-AC 55-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/golden/GoldenTest.cpp" line="67" status="run" result="completed" time="0.008" timestamp="2026-11-05T09:44:52.022" classname="Configs/Golden">
+      <properties>
+        <property name="golden.maxAbsDiff|Envelope" value="0"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,15 @@
+{
+ "id": "F29",
+ "kind": "defeito",
+ "config": "release",
+ "patch": "/home/guiz/vst_synth_AI/experiment/faults/F29-filtro-zerado-a-cada-bloco.patch",
+ "origin": "projeto",
+ "category": "filtro",
+ "run": 1,
+ "started": "2026-11-05T10:52:26",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 202.03097534179688,
+ "finished": "2026-11-05T10:55:59"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "F35",
+ "kind": "defeito",
+ "config": "release",
+ "patch": "/home/guiz/vst_synth_AI/experiment/faults/F35-layout-mono-recusado.patch",
+ "origin": "projeto",
+ "category": "estado",
+ "run": 1,
+ "started": "2026-11-05T11:13:51",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 229.54695630073547,
+ "finished": "2026-11-05T11:17:53"
+}

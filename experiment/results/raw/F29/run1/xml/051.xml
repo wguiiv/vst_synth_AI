@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.115" timestamp="2026-11-05T10:55:57.163" name="AllTests">
+  <testsuite name="Rates/SpectralFilter" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.115" timestamp="2026-11-05T10:55:57.163">
+    <testcase name="LowPassAttenuatesAboveCutoffAndPassesBelow/48000" value_param="48000" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp" line="159" status="run" result="completed" time="0.115" timestamp="2026-11-05T10:55:57.163" classname="Rates/SpectralFilter">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:167&#x0A;Value of: within (tol::stopband, attenuationDb (0, cutoff, butterworthQ, sampleRate, 4.0 * cutoff, 8.0 * cutoff), label)&#x0A;  Actual: false (c250: spectral.stopband measured 8.88233442 dB, limit &gt;= 18 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:167
+Value of: within (tol::stopband, attenuationDb (0, cutoff, butterworthQ, sampleRate, 4.0 * cutoff, 8.0 * cutoff), label)
+  Actual: false (c250: spectral.stopband measured 8.88233442 dB, limit >= 18 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:167&#x0A;Value of: within (tol::stopband, attenuationDb (0, cutoff, butterworthQ, sampleRate, 4.0 * cutoff, 8.0 * cutoff), label)&#x0A;  Actual: false (c500: spectral.stopband measured 8.50393231 dB, limit &gt;= 18 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:167
+Value of: within (tol::stopband, attenuationDb (0, cutoff, butterworthQ, sampleRate, 4.0 * cutoff, 8.0 * cutoff), label)
+  Actual: false (c500: spectral.stopband measured 8.50393231 dB, limit >= 18 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:167&#x0A;Value of: within (tol::stopband, attenuationDb (0, cutoff, butterworthQ, sampleRate, 4.0 * cutoff, 8.0 * cutoff), label)&#x0A;  Actual: false (c1000: spectral.stopband measured 8.31023871 dB, limit &gt;= 18 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:167
+Value of: within (tol::stopband, attenuationDb (0, cutoff, butterworthQ, sampleRate, 4.0 * cutoff, 8.0 * cutoff), label)
+  Actual: false (c1000: spectral.stopband measured 8.31023871 dB, limit >= 18 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:167&#x0A;Value of: within (tol::stopband, attenuationDb (0, cutoff, butterworthQ, sampleRate, 4.0 * cutoff, 8.0 * cutoff), label)&#x0A;  Actual: false (c2000: spectral.stopband measured 8.23572307 dB, limit &gt;= 18 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:167
+Value of: within (tol::stopband, attenuationDb (0, cutoff, butterworthQ, sampleRate, 4.0 * cutoff, 8.0 * cutoff), label)
+  Actual: false (c2000: spectral.stopband measured 8.23572307 dB, limit >= 18 dB)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="spectral.stopband|c250" value="8.88233442"/>
+        <property name="spectral.passband|c250" value="0.801450698"/>
+        <property name="spectral.stopband|c500" value="8.50393231"/>
+        <property name="spectral.passband|c500" value="0.372979328"/>
+        <property name="spectral.stopband|c1000" value="8.31023871"/>
+        <property name="spectral.passband|c1000" value="0.175646087"/>
+        <property name="spectral.stopband|c2000" value="8.23572307"/>
+        <property name="spectral.passband|c2000" value="0.0855702028"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

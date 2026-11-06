@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.007" timestamp="2026-11-05T10:17:23.639" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.007" timestamp="2026-11-05T10:17:23.639">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/FilterEnvelope" value_param="144-byte object &lt;C0-B8 A7-08 F6-55 00-00 0E-00 00-00 00-00 00-00 46-69 6C-74 65-72 45-6E 76-65 6C-6F 70-65 00-00 00-00 00-00 00-70 E7-40 00-02 00-00 F5-55 00-00 00-00 00-00 00-00 F0-3F 00-00 00-00 F5-55 00-00 ... 60-52 A7-08 F6-55 00-00 30-47 A7-08 F6-55 00-00 05-00 00-00 00-00 00-00 A0-69 41-CC F5-55 00-00 F2-00 00-00 00-00 00-00 E0-02 A5-08 F6-55 00-00 F8-02 A5-08 F6-55 00-00 F8-02 A5-08 F6-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.007" timestamp="2026-11-05T10:17:23.639" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126&#x0A;Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)&#x0A;  Actual: false (FilterEnvelope/ch0: sanity.peak measured 1.77789521 linear, limit &lt;= 1 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126
+Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)
+  Actual: false (FilterEnvelope/ch0: sanity.peak measured 1.77789521 linear, limit <= 1 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peak|FilterEnvelope/ch0" value="1.77789521"/>
+        <property name="sanity.audible|FilterEnvelope/ch0" value="0.249829739"/>
+        <property name="sanity.dc|FilterEnvelope/ch0" value="0.00024821909"/>
+        <property name="sanity.peak|FilterEnvelope/ch1" value="0.249829739"/>
+        <property name="sanity.audible|FilterEnvelope/ch1" value="0.249829739"/>
+        <property name="sanity.dc|FilterEnvelope/ch1" value="0.00024821909"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>
