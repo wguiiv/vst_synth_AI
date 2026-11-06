@@ -513,4 +513,5 @@ doctest; os três medem os mesmos 81 valores do teste original. Pontos para o te
 | `experiment/faults/INDEX.md` | defeitos e fontes |
 | `experiment/frameworks/COMPARACAO.md` | comparação de frameworks |
 | `experiment/GUIA_RECOMENDACAO.md` | guia prático para desenvolvedores (entrega do plano) |
-| Plano do estudo (PDF) | perguntas, hipóteses, desenho |
+| `artigo/PLANO.md` | transcrição do plano do estudo (PDF na raiz): perguntas, hipóteses, desenho, referências do plano |
+| `artigo/GUIA_DEFEITOS.md` | transcrição do guia dado aos autores dos defeitos (`experiment/GUIA_DEFEITOS.pdf`) |

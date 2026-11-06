@@ -194,7 +194,7 @@ Só o autor escreve: [AUTOR: agradecimentos], [AUTOR: nome, titulação e e-mail
 
 - ABNT NBR 6023, uma única ordem. Como as citações são autor-data (NBR 10520/2024), usar **ordem
   alfabética**.
-- Fontes permitidas: NOTAS, seção 10, e o plano do estudo. As marcadas "a conferir" levam [VERIFICAR].
+- Fontes permitidas: NOTAS, seção 10, e o plano do estudo (`artigo/PLANO.md`, transcrição do PDF). As marcadas "a conferir" levam [VERIFICAR].
   Ferramentas e repositórios (JUCE, pluginval, Mull, GoogleTest, o repositório do estudo) entram como
   documentos *on-line*, com "Disponível em:" e "Acesso em:" ([AUTOR: data de acesso]).
 
