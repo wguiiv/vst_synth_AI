@@ -1,0 +1,15 @@
+{
+ "id": "F31",
+ "kind": "defeito",
+ "config": "release",
+ "patch": "/home/guiz/vst_synth_AI/experiment/faults/F31-medidor-divide-por-bloco-vazio.patch",
+ "origin": "projeto",
+ "category": "numerico",
+ "run": 1,
+ "started": "2026-11-05T10:59:31",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 216.67414832115173,
+ "finished": "2026-11-05T11:03:19"
+}

@@ -1,0 +1,21 @@
+# id: F36
+# category: estado
+# origin: projeto
+# target: Source/PluginProcessor.cpp
+# source: https://github.com/zynaddsubfx/zynaddsubfx/commit/6e838ba43db848a0645e96d8609310b23db7ea7b
+# original-fix: O ZynAddSubFX lia o volume do XML com getparreal() mas descartava o valor retornado, e o volume nao era restaurado; a correcao atribui o retorno.
+# adaptation: Em setStateInformation, a arvore lida do XML (ValueTree::fromXml) e criada e descartada, sem passar por apvts.replaceState, entao nenhum parametro e restaurado.
+
+diff --git a/Source/PluginProcessor.cpp b/Source/PluginProcessor.cpp
+index 8e1d8be..e2e6aba 100644
+--- a/Source/PluginProcessor.cpp
++++ b/Source/PluginProcessor.cpp
+@@ -193,7 +193,7 @@ void TapSynthAudioProcessor::setStateInformation (const void* data, int sizeInBy
+ {
+     if (auto xml = getXmlFromBinary (data, sizeInBytes))
+         if (xml->hasTagName (apvts.state.getType()))
+-            apvts.replaceState (juce::ValueTree::fromXml (*xml));
++            juce::ValueTree::fromXml (*xml);
+ }
+ 
+ //==============================================================================

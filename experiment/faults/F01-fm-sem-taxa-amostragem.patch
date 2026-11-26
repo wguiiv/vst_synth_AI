@@ -1,0 +1,20 @@
+# id: F01
+# category: altura
+# origin: projeto
+# target: Source/Data/OscData.cpp
+# source: https://github.com/TheWaveWarden/odin2/commit/8cd9fa4002548b9095531ba49757b9f9d33eee28
+# original-fix: No Odin2, setSampleRate() não repassava a taxa de amostragem ao modulador em anel, que seguia com a taxa padrão; a correção adicionou a chamada que faltava.
+# adaptation: O oscilador modulador de FM (fmOsc) deixa de receber prepare() em OscData::prepareToPlay e fica com a taxa padrão do juce::dsp::Oscillator (48 kHz), então a frequência da FM sai errada nas outras taxas.
+
+diff --git a/Source/Data/OscData.cpp b/Source/Data/OscData.cpp
+index 16a0130..be6b57c 100644
+--- a/Source/Data/OscData.cpp
++++ b/Source/Data/OscData.cpp
+@@ -22,7 +22,6 @@ void OscData::prepareToPlay (double sampleRate, int samplesPerBlock, int outputC
+     nyquist = (float) sampleRate * 0.5f;
+     
+     prepare (spec);
+-    fmOsc.prepare (spec);
+     gain.prepare (spec);    
+ }
+ 

@@ -1,0 +1,21 @@
+# id: F24
+# category: envelope
+# origin: projeto
+# target: Source/SynthVoice.cpp
+# source: https://github.com/Tracktion/tracktion_engine/commit/404b546f053025c65b5464b676e8541dd54889df
+# original-fix: O FourOscPlugin usava o timestamp MIDI (em segundos) como posicao em amostras, e os eventos caiam no inicio do bloco; a correcao converte para a posicao correta.
+# adaptation: O juce::Synthesiser divide o bloco nos eventos MIDI e passa startSample a voz; em SynthVoice::renderNextBlock a voz soma sua saida a partir da amostra 0 em vez de startSample, perdendo a posicao da nota no bloco.
+
+diff --git a/Source/SynthVoice.cpp b/Source/SynthVoice.cpp
+index e7dadb0..b901dc4 100644
+--- a/Source/SynthVoice.cpp
++++ b/Source/SynthVoice.cpp
+@@ -111,7 +111,7 @@ void SynthVoice::renderNextBlock (juce::AudioBuffer< float > &outputBuffer, int
+     }
+     
+     for (int channel = 0; channel < outputBuffer.getNumChannels(); ++channel)
+-        outputBuffer.addFrom (channel, startSample, synthBuffer, juce::jmin (channel, numChannels - 1), 0, numSamples);
++        outputBuffer.addFrom (channel, 0, synthBuffer, juce::jmin (channel, numChannels - 1), 0, numSamples);
+     
+     if (! adsr.isActive())
+         clearCurrentNote();

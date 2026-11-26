@@ -1,0 +1,1607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="95.456" timestamp="2026-11-04T00:26:17.426" name="AllTests">
+  <testsuite name="SanityRandom" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="95.456" timestamp="2026-11-04T00:26:17.426">
+    <testcase name="RandomPatchesThroughJson" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="138" status="run" result="completed" time="95.455" timestamp="2026-11-04T00:26:17.426" classname="SanityRandom">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch0: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 0&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch0: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 0
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch1: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 1&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch1: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 1
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch2: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 2&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch2: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 2
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch3: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 3&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch3: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 3
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch4: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 4&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch4: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 4
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch5: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 5&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch5: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 5
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch6: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 6&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch6: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 6
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch7: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 7&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch7: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 7
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch8: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 8&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch8: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 8
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch9: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 9&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch9: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 9
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch10: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 10&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch10: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 10
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch11: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 11&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch11: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 11
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch12: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 12&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch12: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 12
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch13: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 13&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch13: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 13
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch14: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 14&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch14: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 14
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch15: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 15&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch15: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 15
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch16: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 16&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch16: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 16
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch17: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 17&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch17: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 17
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch18: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 18&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch18: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 18
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch19: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 19&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch19: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 19
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch20: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 20&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch20: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 20
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch21: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 21&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch21: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 21
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch22: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 22&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch22: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 22
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch23: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 23&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch23: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 23
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch24: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 24&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch24: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 24
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch25: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 25&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch25: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 25
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch26: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 26&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch26: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 26
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch27: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 27&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch27: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 27
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch28: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 28&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch28: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 28
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch29: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 29&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch29: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 29
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch30: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 30&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch30: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 30
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch31: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 31&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch31: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 31
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch32: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 32&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch32: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 32
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch33: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 33&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch33: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 33
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch34: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 34&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch34: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 34
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch35: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 35&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch35: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 35
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch36: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 36&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch36: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 36
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch37: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 37&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch37: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 37
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch38: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 38&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch38: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 38
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch39: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 39&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch39: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 39
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch40: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 40&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch40: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 40
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch41: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 41&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch41: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 41
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch42: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 42&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch42: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 42
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch43: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 43&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch43: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 43
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch44: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 44&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch44: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 44
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch45: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 45&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch45: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 45
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch46: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 46&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch46: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 46
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch47: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 47&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch47: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 47
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch48: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 48&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch48: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 48
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch49: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 49&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch49: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 49
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch50: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 50&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch50: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 50
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch51: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 51&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch51: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 51
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch52: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 52&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch52: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 52
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch53: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 53&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch53: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 53
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch54: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 54&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch54: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 54
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch55: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 55&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch55: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 55
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch56: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 56&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch56: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 56
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch57: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 57&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch57: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 57
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch58: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 58&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch58: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 58
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch59: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 59&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch59: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 59
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch60: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 60&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch60: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 60
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch61: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 61&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch61: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 61
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch62: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 62&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch62: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 62
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch63: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 63&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch63: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 63
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch64: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 64&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch64: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 64
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch65: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 65&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch65: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 65
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch66: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 66&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch66: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 66
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch67: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 67&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch67: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 67
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch68: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 68&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch68: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 68
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch69: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 69&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch69: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 69
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch70: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 70&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch70: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 70
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch71: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 71&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch71: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 71
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch72: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 72&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch72: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 72
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch73: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 73&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch73: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 73
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch74: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 74&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch74: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 74
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch75: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 75&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch75: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 75
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch76: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 76&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch76: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 76
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch77: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 77&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch77: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 77
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch78: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 78&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch78: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 78
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch79: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 79&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch79: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 79
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch80: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 80&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch80: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 80
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch81: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 81&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch81: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 81
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch82: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 82&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch82: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 82
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch83: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 83&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch83: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 83
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch84: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 84&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch84: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 84
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch85: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 85&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch85: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 85
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch86: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 86&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch86: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 86
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch87: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 87&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch87: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 87
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch88: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 88&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch88: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 88
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch89: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 89&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch89: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 89
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch90: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 90&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch90: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 90
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch91: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 91&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch91: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 91
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch92: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 92&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch92: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 92
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch93: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 93&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch93: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 93
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch94: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 94&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch94: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 94
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch95: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 95&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch95: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 95
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch96: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 96&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch96: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 96
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch97: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 97&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch97: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 97
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch98: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 98&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch98: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 98
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch99: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 99&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch99: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 99
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch100: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 100&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch100: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 100
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch101: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 101&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch101: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 101
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch102: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 102&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch102: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 102
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch103: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 103&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch103: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 103
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch104: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 104&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch104: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 104
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch105: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 105&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch105: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 105
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch106: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 106&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch106: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 106
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch107: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 107&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch107: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 107
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch108: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 108&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch108: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 108
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch109: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 109&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch109: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 109
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch110: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 110&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch110: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 110
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch111: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 111&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch111: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 111
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch112: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 112&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch112: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 112
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch113: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 113&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch113: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 113
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch114: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 114&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch114: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 114
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch115: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 115&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch115: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 115
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch116: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 116&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch116: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 116
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch117: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 117&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch117: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 117
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch118: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 118&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch118: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 118
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch119: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 119&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch119: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 119
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch120: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 120&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch120: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 120
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch121: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 121&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch121: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 121
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch122: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 122&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch122: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 122
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch123: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 123&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch123: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 123
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch124: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 124&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch124: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 124
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch125: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 125&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch125: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 125
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch126: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 126&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch126: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 126
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch127: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 127&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch127: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 127
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch128: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 128&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch128: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 128
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch129: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 129&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch129: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 129
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch130: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 130&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch130: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 130
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch131: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 131&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch131: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 131
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch132: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 132&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch132: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 132
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch133: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 133&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch133: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 133
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch134: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 134&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch134: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 134
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch135: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 135&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch135: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 135
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch136: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 136&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch136: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 136
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch137: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 137&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch137: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 137
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch138: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 138&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch138: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 138
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch139: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 139&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch139: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 139
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch140: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 140&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch140: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 140
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch141: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 141&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch141: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 141
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch142: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 142&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch142: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 142
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch143: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 143&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch143: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 143
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch144: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 144&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch144: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 144
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch145: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 145&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch145: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 145
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch146: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 146&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch146: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 146
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch147: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 147&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch147: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 147
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch148: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 148&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch148: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 148
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch149: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 149&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch149: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 149
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch150: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 150&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch150: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 150
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch151: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 151&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch151: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 151
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch152: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 152&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch152: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 152
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch153: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 153&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch153: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 153
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch154: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 154&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch154: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 154
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch155: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 155&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch155: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 155
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch156: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 156&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch156: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 156
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch157: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 157&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch157: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 157
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch158: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 158&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch158: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 158
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch159: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 159&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch159: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 159
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch160: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 160&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch160: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 160
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch161: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 161&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch161: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 161
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch162: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 162&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch162: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 162
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch163: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 163&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch163: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 163
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch164: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 164&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch164: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 164
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch165: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 165&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch165: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 165
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch166: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 166&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch166: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 166
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch167: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 167&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch167: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 167
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch168: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 168&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch168: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 168
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch169: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 169&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch169: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 169
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch170: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 170&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch170: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 170
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch171: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 171&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch171: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 171
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch172: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 172&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch172: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 172
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch173: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 173&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch173: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 173
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch174: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 174&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch174: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 174
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch175: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 175&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch175: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 175
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch176: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 176&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch176: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 176
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch177: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 177&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch177: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 177
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch178: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 178&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch178: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 178
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch179: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 179&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch179: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 179
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch180: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 180&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch180: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 180
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch181: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 181&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch181: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 181
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch182: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 182&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch182: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 182
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch183: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 183&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch183: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 183
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch184: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 184&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch184: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 184
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch185: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 185&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch185: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 185
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch186: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 186&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch186: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 186
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch187: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 187&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch187: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 187
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch188: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 188&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch188: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 188
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch189: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 189&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch189: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 189
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch190: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 190&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch190: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 190
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch191: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 191&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch191: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 191
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch192: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 192&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch192: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 192
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch193: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 193&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch193: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 193
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch194: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 194&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch194: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 194
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch195: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 195&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch195: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 195
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch196: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 196&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch196: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 196
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch197: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 197&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch197: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 197
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch198: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 198&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch198: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 198
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;patch199: output has NaN or infinity&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 199&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:101
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+patch199: output has NaN or infinity
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 199
+]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,15 @@
+{
+ "id": "F06",
+ "kind": "defeito",
+ "config": "release",
+ "patch": "/home/guiz/vst_synth_AI/experiment/faults/F06-sem-flush-de-denormais.patch",
+ "origin": "projeto",
+ "category": "numerico",
+ "run": 1,
+ "started": "2026-11-03T01:03:02",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 92.34406232833862,
+ "finished": "2026-11-03T01:04:46"
+}

@@ -1,0 +1,80 @@
+{"name": "TemporalVoices.ReleasingOneNoteLeavesTheOtherUntouched", "status": "crash", "time_s": 27.885071992874146, "returncode": -6, "properties": {}, "failures": [], "output_tail": "Note: Google Test filter = TemporalVoices.ReleasingOneNoteLeavesTheOtherUntouched\n[==========] Running 1 test from 1 test suite.\n[----------] Global test environment set-up.\n[----------] 1 test from TemporalVoices\n[ RUN      ] TemporalVoices.ReleasingOneNoteLeavesTheOtherUntouched\nterminate called after throwing an instance of 'std::bad_function_call'\n  what():  bad_function_call\n", "approach": "temporal"}
+{"name": "TemporalFilter.EnvelopeOpensTheFilterOverItsAttack", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "temporal"}
+{"name": "TemporalFilter.LfoSweepsTheCutoffAtItsRate", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "temporal"}
+{"name": "SpectralTranspose.EachOscillatorFollowsItsPitchParameter", "status": "timeout", "time_s": 60.067594051361084, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "SpectralFm.SidebandsMatchFrequencyModulationTheory", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "SpectralAliasing.DoesNotExceedCharacterizedLevel", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "SanityRandom.RandomPatchesThroughJson", "status": "crash", "time_s": 27.19525694847107, "returncode": -6, "properties": {}, "failures": [], "output_tail": "Note: Google Test filter = SanityRandom.RandomPatchesThroughJson\n[==========] Running 1 test from 1 test suite.\n[----------] Global test environment set-up.\n[----------] 1 test from SanityRandom\n[ RUN      ] SanityRandom.RandomPatchesThroughJson\nterminate called after throwing an instance of 'std::bad_function_call'\n  what():  bad_function_call\n", "timeout_s": 893, "approach": "sanidade"}
+{"name": "SanityRandom.AllParametersAtMinimum", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "SanityRandom.AllParametersAtMaximum", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "AnalysisSelfTest.RmsPeakAndDcOfSine", "status": "pass", "time_s": 0.018233537673950195, "returncode": 0, "properties": {}, "failures": [], "approach": "selftest"}
+{"name": "AnalysisSelfTest.FundamentalOfSineAcrossRangeAndRates", "status": "pass", "time_s": 0.04422426223754883, "returncode": 0, "properties": {}, "failures": [], "approach": "selftest"}
+{"name": "AnalysisSelfTest.BandEnergyFindsTheTone", "status": "pass", "time_s": 0.016979455947875977, "returncode": 0, "properties": {}, "failures": [], "approach": "selftest"}
+{"name": "AnalysisSelfTest.InharmonicEnergyOfToneMixture", "status": "pass", "time_s": 0.017562150955200195, "returncode": 0, "properties": {}, "failures": [], "approach": "selftest"}
+{"name": "AnalysisSelfTest.EnvelopeFollowsAmplitude", "status": "pass", "time_s": 0.011362552642822266, "returncode": 0, "properties": {}, "failures": [], "approach": "selftest"}
+{"name": "AnalysisSelfTest.MaxAbsDiffDetectsShapeAndNaN", "status": "pass", "time_s": 0.009058952331542969, "returncode": 0, "properties": {}, "failures": [], "approach": "selftest"}
+{"name": "AnalysisSelfTest.WavRoundTripIsBitExact", "status": "pass", "time_s": 0.008920431137084961, "returncode": 0, "properties": {}, "failures": [], "approach": "selftest"}
+{"name": "Configs/Golden.MatchesReference/Default", "status": "pass", "time_s": 28.32628035545349, "returncode": 0, "properties": {"golden.maxAbsDiff|Default": "0"}, "failures": [], "approach": "golden"}
+{"name": "Configs/Golden.MatchesReference/Saw", "status": "pass", "time_s": 27.710556268692017, "returncode": 0, "properties": {"golden.maxAbsDiff|Saw": "0"}, "failures": [], "approach": "golden"}
+{"name": "Configs/Golden.MatchesReference/Square", "status": "pass", "time_s": 28.97300362586975, "returncode": 0, "properties": {"golden.maxAbsDiff|Square": "0"}, "failures": [], "approach": "golden"}
+{"name": "Configs/Golden.MatchesReference/LowPass", "status": "pass", "time_s": 27.60677933692932, "returncode": 0, "properties": {"golden.maxAbsDiff|LowPass": "0"}, "failures": [], "approach": "golden"}
+{"name": "Configs/Golden.MatchesReference/BandPass", "status": "pass", "time_s": 28.923518657684326, "returncode": 0, "properties": {"golden.maxAbsDiff|BandPass": "0"}, "failures": [], "approach": "golden"}
+{"name": "Configs/Golden.MatchesReference/HighPass", "status": "pass", "time_s": 27.698297262191772, "returncode": 0, "properties": {"golden.maxAbsDiff|HighPass": "0"}, "failures": [], "approach": "golden"}
+{"name": "Configs/Golden.MatchesReference/Fm", "status": "pass", "time_s": 27.9704327583313, "returncode": 0, "properties": {"golden.maxAbsDiff|Fm": "0"}, "failures": [], "approach": "golden"}
+{"name": "Configs/Golden.MatchesReference/Lfo", "status": "pass", "time_s": 27.437779426574707, "returncode": 0, "properties": {"golden.maxAbsDiff|Lfo": "0"}, "failures": [], "approach": "golden"}
+{"name": "Configs/Golden.MatchesReference/Envelope", "status": "pass", "time_s": 29.454444646835327, "returncode": 0, "properties": {"golden.maxAbsDiff|Envelope": "0"}, "failures": [], "approach": "golden"}
+{"name": "Configs/Golden.MatchesReference/Reverb", "status": "pass", "time_s": 27.657313108444214, "returncode": 0, "properties": {"golden.maxAbsDiff|Reverb": "0"}, "failures": [], "approach": "golden"}
+{"name": "Configs/Golden.MatchesReference/Chord", "status": "crash", "time_s": 27.735389709472656, "returncode": -6, "properties": {}, "failures": [], "output_tail": "Note: Google Test filter = Configs/Golden.MatchesReference/Chord\n[==========] Running 1 test from 1 test suite.\n[----------] Global test environment set-up.\n[----------] 1 test from Configs/Golden\n[ RUN      ] Configs/Golden.MatchesReference/Chord\nterminate called after throwing an instance of 'std::bad_function_call'\n  what():  bad_function_call\n", "approach": "golden"}
+{"name": "Configs/Golden.MatchesReference/ExtremeMax", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "golden"}
+{"name": "Configs/Golden.MatchesReference/ExtremeMin", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "golden"}
+{"name": "Rates/TemporalAttack.ReachesPeakInConfiguredTime/44100", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "temporal"}
+{"name": "Rates/TemporalAttack.ReachesPeakInConfiguredTime/48000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "temporal"}
+{"name": "Rates/TemporalAttack.ReachesPeakInConfiguredTime/96000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "temporal"}
+{"name": "Rates/TemporalAttack.DecaysToSustainInConfiguredTime/44100", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "temporal"}
+{"name": "Rates/TemporalAttack.DecaysToSustainInConfiguredTime/48000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "temporal"}
+{"name": "Rates/TemporalAttack.DecaysToSustainInConfiguredTime/96000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "temporal"}
+{"name": "Rates/TemporalAttack.HoldsSustainLevel/44100", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "temporal"}
+{"name": "Rates/TemporalAttack.HoldsSustainLevel/48000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "temporal"}
+{"name": "Rates/TemporalAttack.HoldsSustainLevel/96000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "temporal"}
+{"name": "Rates/TemporalRelease.FadesToSilenceInConfiguredTime/44100", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "temporal"}
+{"name": "Rates/TemporalRelease.FadesToSilenceInConfiguredTime/48000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "temporal"}
+{"name": "Rates/TemporalRelease.FadesToSilenceInConfiguredTime/96000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "temporal"}
+{"name": "RatesAndWaves/SpectralPitch.EveryNoteHasTheRightFundamental/Sine44100", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "RatesAndWaves/SpectralPitch.EveryNoteHasTheRightFundamental/Saw44100", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "RatesAndWaves/SpectralPitch.EveryNoteHasTheRightFundamental/Square44100", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "RatesAndWaves/SpectralPitch.EveryNoteHasTheRightFundamental/Sine48000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "RatesAndWaves/SpectralPitch.EveryNoteHasTheRightFundamental/Saw48000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "RatesAndWaves/SpectralPitch.EveryNoteHasTheRightFundamental/Square48000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "RatesAndWaves/SpectralPitch.EveryNoteHasTheRightFundamental/Sine96000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "RatesAndWaves/SpectralPitch.EveryNoteHasTheRightFundamental/Saw96000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "RatesAndWaves/SpectralPitch.EveryNoteHasTheRightFundamental/Square96000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "Rates/SpectralFilter.LowPassAttenuatesAboveCutoffAndPassesBelow/44100", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "Rates/SpectralFilter.LowPassAttenuatesAboveCutoffAndPassesBelow/48000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "Rates/SpectralFilter.LowPassAttenuatesAboveCutoffAndPassesBelow/96000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "Rates/SpectralFilter.HighPassAttenuatesBelowCutoffAndPassesAbove/44100", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "Rates/SpectralFilter.HighPassAttenuatesBelowCutoffAndPassesAbove/48000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "Rates/SpectralFilter.HighPassAttenuatesBelowCutoffAndPassesAbove/96000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "Rates/SpectralFilter.BandPassPeaksAtCutoff/44100", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "Rates/SpectralFilter.BandPassPeaksAtCutoff/48000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "Rates/SpectralFilter.BandPassPeaksAtCutoff/96000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "espectral"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/Default", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/Saw", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/Square", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/LowPassResonant", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/BandPass", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/HighPass", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/FilterEnvelope", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/Lfo", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/Fm", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/Transposed", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/Quiet", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/Reverb", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/Chord", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/LowestNote", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/HighestNote", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/Rate44100", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/Rate96000", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/Block1", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/Block64", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/Block333", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}
+{"name": "Configs/Sanity.OutputIsFiniteBoundedAudibleAndCentred/Block4096", "status": "skipped", "time_s": 0.0, "properties": {}, "failures": [], "approach": "sanidade"}

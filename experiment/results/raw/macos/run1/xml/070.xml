@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.021" timestamp="2026-11-03T00:58:06.181" name="AllTests">
+  <testsuite name="Configs/Golden" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.021" timestamp="2026-11-03T00:58:06.181">
+    <testcase name="MatchesReference/LowPass" value_param="72-byte object &lt;4C-6F 77-50 61-73 73-00 B8-92 06-6D 00-00 00-00 00-00 00-00 00-00 00-07 90-D2 01-7B 08-00 00-00 D0-D1 01-7B 08-00 00-00 08-00 00-00 00-00 00-00 E0-82 02-7B 08-00 00-00 F8-82 02-7B 08-00 00-00 F8-82 02-7B 08-00 00-00&gt;" file="/Users/runner/work/vst_synth_AI/vst_synth_AI/frozen/tests/golden/GoldenTest.cpp" line="67" status="run" result="completed" time="0.021" timestamp="2026-11-03T00:58:06.181" classname="Configs/Golden">
+      <properties>
+        <property name="golden.maxAbsDiff|LowPass" value="2.38418579e-07"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

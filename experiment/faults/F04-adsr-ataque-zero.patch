@@ -1,0 +1,20 @@
+# id: F04
+# category: envelope
+# origin: juce
+# target: modules/juce_audio_basics/utilities/juce_ADSR.h
+# source: https://github.com/juce-framework/JUCE/commit/dd9802e265fc9e90f8bd7b2bc3a7160b69111508
+# original-fix: Com attack 0, ADSR::noteOn() ia direto para o decay sem levar o envelope a 1, que começava do valor em que estava (0 depois de reset()); a correção define envelopeVal = 1 nesse ramo.
+# adaptation: Remove envelopeVal = 1.0f do ramo de decay de noteOn() no JUCE 8.0.9. No tapSynth isso afeta o ADSR do filtro, cujo FILTERATTACK aceita 0.
+
+diff --git a/modules/juce_audio_basics/utilities/juce_ADSR.h b/modules/juce_audio_basics/utilities/juce_ADSR.h
+index 11efa2e..32d51ef 100644
+--- a/modules/juce_audio_basics/utilities/juce_ADSR.h
++++ b/modules/juce_audio_basics/utilities/juce_ADSR.h
+@@ -135,7 +135,6 @@ public:
+         }
+         else if (decayRate > 0.0f)
+         {
+-            envelopeVal = 1.0f;
+             state = State::decay;
+         }
+         else

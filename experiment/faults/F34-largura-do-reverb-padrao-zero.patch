@@ -1,0 +1,21 @@
+# id: F34
+# category: estado
+# origin: projeto
+# target: Source/PluginProcessor.cpp
+# source: https://github.com/sfztools/sfizz/commit/1faa7f0739d0f0c4c020cd0d6c96efe2fb655fba
+# original-fix: No sfizz o valor padrao de largura (width) era 0, deixando o estereo quebrado por padrao; a correcao muda o padrao para 100.
+# adaptation: Em createParams, o padrao de REVERBWIDTH passa de 1,0 para 0,0.
+
+diff --git a/Source/PluginProcessor.cpp b/Source/PluginProcessor.cpp
+index 8e1d8be..ab96dd2 100644
+--- a/Source/PluginProcessor.cpp
++++ b/Source/PluginProcessor.cpp
+@@ -252,7 +252,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout TapSynthAudioProcessor::crea
+     
+     // Reverb
+     params.push_back (std::make_unique<juce::AudioParameterFloat>(juce::ParameterID { "REVERBSIZE", 1 }, "Reverb Size", juce::NormalisableRange<float> { 0.0f, 1.0f, 0.01f }, 0.0f, ""));
+-    params.push_back (std::make_unique<juce::AudioParameterFloat>(juce::ParameterID { "REVERBWIDTH", 1 }, "Reverb Width", juce::NormalisableRange<float> { 0.0f, 1.0f, 0.01f }, 1.0f, ""));
++    params.push_back (std::make_unique<juce::AudioParameterFloat>(juce::ParameterID { "REVERBWIDTH", 1 }, "Reverb Width", juce::NormalisableRange<float> { 0.0f, 1.0f, 0.01f }, 0.0f, ""));
+     params.push_back (std::make_unique<juce::AudioParameterFloat>(juce::ParameterID { "REVERBDAMPING", 1 }, "Reverb Damping", juce::NormalisableRange<float> { 0.0f, 1.0f, 0.01f }, 0.5f, ""));
+     params.push_back (std::make_unique<juce::AudioParameterFloat>(juce::ParameterID { "REVERBDRY", 1 }, "Reverb Dry", juce::NormalisableRange<float> { 0.0f, 1.0f, 0.01f }, 1.0f, ""));
+     params.push_back (std::make_unique<juce::AudioParameterFloat>(juce::ParameterID { "REVERBWET", 1 }, "Reverb Wet", juce::NormalisableRange<float> { 0.0f, 1.0f, 0.01f }, 0.0f, ""));

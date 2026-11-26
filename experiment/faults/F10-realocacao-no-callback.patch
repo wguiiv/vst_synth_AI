@@ -1,0 +1,21 @@
+# id: F10
+# category: estado
+# origin: projeto
+# target: Source/SynthVoice.cpp
+# source: https://github.com/juce-framework/JUCE/commit/9a130f2810284cfee42a2f81c926303b152e4af5
+# original-fix: SynthesiserVoice::renderNextBlock (versão double) do JUCE chamava makeCopyOf sem avoidReallocating, realocando o buffer temporário dentro do callback de áudio; a correção passou avoidReallocating = true.
+# adaptation: Em SynthVoice::renderNextBlock, synthBuffer.setSize passa avoidReallocating = false, então o buffer da voz é realocado no thread de áudio toda vez que o tamanho do sub-bloco muda (o Synthesiser divide o bloco nos eventos MIDI).
+
+diff --git a/Source/SynthVoice.cpp b/Source/SynthVoice.cpp
+index e7dadb0..e9d4e64 100644
+--- a/Source/SynthVoice.cpp
++++ b/Source/SynthVoice.cpp
+@@ -76,7 +76,7 @@ void SynthVoice::renderNextBlock (juce::AudioBuffer< float > &outputBuffer, int
+         return;
+     
+     const auto numChannels = juce::jmin (outputBuffer.getNumChannels(), numChannelsToProcess);
+-    synthBuffer.setSize (numChannels, numSamples, false, false, true);
++    synthBuffer.setSize (numChannels, numSamples, false, false, false);
+     synthBuffer.clear();
+     
+     for (int ch = 0; ch < numChannels; ++ch)

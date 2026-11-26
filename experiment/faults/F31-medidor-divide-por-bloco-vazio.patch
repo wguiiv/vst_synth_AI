@@ -1,0 +1,21 @@
+# id: F31
+# category: numerico
+# origin: projeto
+# target: Source/Data/MeterData.cpp
+# source: https://github.com/Tracktion/tracktion_engine/commit/8e89fe5d6d4bddf1e9dfbdb9b16a68e660e3798c
+# original-fix: O FadeInOutNode do Tracktion podia dividir pelo comprimento de um intervalo vazio; a correcao pula o processamento quando o intervalo esta vazio.
+# adaptation: MeterData::process deixa de retornar cedo quando o bloco tem 0 amostras e divide a soma por numSamples = 0, gerando NaN na media quadratica.
+
+diff --git a/Source/Data/MeterData.cpp b/Source/Data/MeterData.cpp
+index ffd10a7..df29392 100644
+--- a/Source/Data/MeterData.cpp
++++ b/Source/Data/MeterData.cpp
+@@ -27,7 +27,7 @@ void MeterData::process (const juce::AudioBuffer<float>& buffer)
+     const auto numSamples = buffer.getNumSamples();
+     const auto numChannels = buffer.getNumChannels();
+ 
+-    if (numSamples == 0 || numChannels == 0)
++    if (numChannels == 0)
+         return;
+ 
+     // One-pole smoothing of the mean square, so the RMS reads over a fixed time window whatever the block size

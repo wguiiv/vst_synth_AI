@@ -1,0 +1,82 @@
+name: Experiment (other OS)
+
+# Harmless condition "other operating system" (experiment/PROTOCOLO.md, section 4): the clean frozen code,
+# built and run 5 times on Windows and macOS, with the same runner and pluginval settings as the local runs.
+# Started by pushing a tag named experiment-os-* (workflow_dispatch alone needs the file on the default branch).
+# Download the artifacts and unzip them into experiment/results/raw/.
+
+on:
+  push:
+    tags: ["experiment-os-*"]
+  workflow_dispatch:
+    inputs:
+      runs:
+        description: "Runs per OS"
+        default: "5"
+
+jobs:
+  experiment:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            id: windows
+            configure: ""
+            exe: build/tests/Release/tapSynth_tests.exe
+            pluginval_zip: pluginval_Windows.zip
+            pluginval_bin: pluginval.exe
+          - os: macos-latest
+            id: macos
+            configure: -G Ninja
+            exe: build/tests/tapSynth_tests
+            pluginval_zip: pluginval_macOS.zip
+            pluginval_bin: pluginval.app/Contents/MacOS/pluginval
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Check out the runner
+        uses: actions/checkout@v4
+
+      - name: Check out the frozen code
+        uses: actions/checkout@v4
+        with:
+          ref: tests-frozen
+          path: frozen
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Ninja (macOS)
+        if: runner.os == 'macOS'
+        run: brew install ninja
+
+      - name: Download pluginval 1.0.4
+        run: |
+          curl -sSL -o pluginval.zip "https://github.com/Tracktion/pluginval/releases/download/v1.0.4/${{ matrix.pluginval_zip }}"
+          mkdir -p tools/pluginval && unzip -q pluginval.zip -d tools/pluginval
+          echo "PLUGINVAL=$PWD/tools/pluginval/${{ matrix.pluginval_bin }}" >> "$GITHUB_ENV"
+
+      - name: Build the frozen code
+        working-directory: frozen
+        run: |
+          cmake -B build ${{ matrix.configure }} -DCMAKE_BUILD_TYPE=Release
+          cmake --build build --config Release --target tapSynth_tests tapSynth_VST3 --parallel
+
+      - name: Run the experiment
+        run: |
+          python experiment/run_experiment.py run-prebuilt ${{ matrix.id }} \
+            --exe "frozen/${{ matrix.exe }}" \
+            --vst3 frozen/build/tapSynth_artefacts/Release/VST3/tapSynth2.vst3 \
+            --frozen-commit "$(git -C frozen rev-parse HEAD)" \
+            --runs ${{ inputs.runs || '5' }}
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: experiment-${{ matrix.id }}
+          path: experiment/results/raw/${{ matrix.id }}

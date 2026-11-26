@@ -1,0 +1,17 @@
+[0/2] Re-checking globbed directories...
+[1/11] Building CXX object CMakeFiles/tapSynth.dir/Source/PluginProcessor.cpp.o
+[2/11] Building CXX object CMakeFiles/tapSynth.dir/Source/PluginEditor.cpp.o
+[3/11] Building CXX object CMakeFiles/tapSynth.dir/Source/Data/FilterData.cpp.o
+[4/11] Building CXX object CMakeFiles/tapSynth.dir/Source/SynthVoice.cpp.o
+[5/11] Building CXX object CMakeFiles/tapSynth.dir/Source/Data/OscData.cpp.o
+[6/11] Building CXX object tests/CMakeFiles/tapSynth_tests.dir/common/Render.cpp.o
+[7/11] Linking CXX static library tapSynth_artefacts/Release/libtapSynth2_SharedCode.a
+[8/11] Building CXX object tests/CMakeFiles/tapSynth_tests.dir/sanity/SanityTest.cpp.o
+[9/11] Linking CXX shared module tapSynth_artefacts/Release/VST3/tapSynth2.vst3/Contents/x86_64-linux/tapSynth2.so
+lto-wrapper: warning: using serial compilation of 74 LTRANS jobs
+lto-wrapper: note: see the ‘-flto’ option documentation for more information
+removing moduleinfo.json
+creating /home/guiz/vst_synth_AI/experiment/work/build-release/tapSynth_artefacts/Release/VST3/tapSynth2.vst3
+[10/11] Linking CXX executable tests/tapSynth_tests
+lto-wrapper: warning: using serial compilation of 78 LTRANS jobs
+lto-wrapper: note: see the ‘-flto’ option documentation for more information

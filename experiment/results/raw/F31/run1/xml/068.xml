@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.005" timestamp="2026-11-05T11:03:18.133" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.005" timestamp="2026-11-05T11:03:18.133">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Transposed" value_param="144-byte object &lt;C0-E8 8B-74 EF-55 00-00 0A-00 00-00 00-00 00-00 54-72 61-6E 73-70 6F-73 65-64 00-6F 70-65 00-00 00-00 00-00 00-70 E7-40 00-02 00-00 EF-55 00-00 00-00 00-00 00-00 F0-3F 00-00 00-00 EF-55 00-00 ... C0-58 8B-74 EF-55 00-00 B0-76 8B-74 EF-55 00-00 02-00 00-00 00-00 00-00 A0-B9 CC-39 EF-55 00-00 80-84 FC-AD FF-7F 00-00 B0-1D 89-74 EF-55 00-00 C8-1D 89-74 EF-55 00-00 C8-1D 89-74 EF-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.005" timestamp="2026-11-05T11:03:18.133" classname="Configs/Sanity">
+      <properties>
+        <property name="sanity.peak|Transposed/ch0" value="0.255070865"/>
+        <property name="sanity.audible|Transposed/ch0" value="0.255049914"/>
+        <property name="sanity.dc|Transposed/ch0" value="0.00441618729"/>
+        <property name="sanity.peak|Transposed/ch1" value="0.255070865"/>
+        <property name="sanity.audible|Transposed/ch1" value="0.255049914"/>
+        <property name="sanity.dc|Transposed/ch1" value="0.00441618729"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

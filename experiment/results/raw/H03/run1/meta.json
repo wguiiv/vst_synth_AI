@@ -1,0 +1,15 @@
+{
+ "id": "H03",
+ "kind": "inofensiva",
+ "config": "release",
+ "patch": "/home/guiz/vst_synth_AI/experiment/harmless/H03-cutoff-limitado-fora-do-laco.patch",
+ "origin": "projeto",
+ "category": "",
+ "run": 1,
+ "started": "2026-11-03T01:21:42",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 94.41691160202026,
+ "finished": "2026-11-03T01:23:27"
+}

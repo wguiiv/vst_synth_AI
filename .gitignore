@@ -2,3 +2,8 @@
 /JuceLibraryCode/
 .DS_Store
 /build/
+/tools/
+/build-mull/
+/build-debug/
+/experiment/work/
+__pycache__/

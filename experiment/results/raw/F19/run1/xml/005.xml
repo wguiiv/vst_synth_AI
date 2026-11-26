@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.188" timestamp="2026-11-05T10:23:26.858" name="AllTests">
+  <testsuite name="SpectralAliasing" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.188" timestamp="2026-11-05T10:23:26.858">
+    <testcase name="DoesNotExceedCharacterizedLevel" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp" line="230" status="run" result="completed" time="0.187" timestamp="2026-11-05T10:23:26.858" classname="SpectralAliasing">
+      <properties>
+        <property name="spectral.aliasing|Saw44100/note81" value="0.023246511"/>
+        <property name="spectral.aliasing|Saw44100/note93" value="0.0295896119"/>
+        <property name="spectral.aliasing|Saw44100/note105" value="-0.0380776597"/>
+        <property name="spectral.aliasing|Square44100/note81" value="0.038849298"/>
+        <property name="spectral.aliasing|Square44100/note93" value="0.0255872092"/>
+        <property name="spectral.aliasing|Square44100/note105" value="0.0461120963"/>
+        <property name="spectral.aliasing|Saw48000/note81" value="-0.0212931473"/>
+        <property name="spectral.aliasing|Saw48000/note93" value="-0.0271611167"/>
+        <property name="spectral.aliasing|Saw48000/note105" value="0.0220800032"/>
+        <property name="spectral.aliasing|Square48000/note81" value="0.0118760994"/>
+        <property name="spectral.aliasing|Square48000/note93" value="0.016465214"/>
+        <property name="spectral.aliasing|Square48000/note105" value="0.00122890237"/>
+        <property name="spectral.aliasing|Saw96000/note81" value="0.0282521274"/>
+        <property name="spectral.aliasing|Saw96000/note93" value="-0.00519645817"/>
+        <property name="spectral.aliasing|Saw96000/note105" value="-0.0300699688"/>
+        <property name="spectral.aliasing|Square96000/note81" value="0.0138609684"/>
+        <property name="spectral.aliasing|Square96000/note93" value="0.039281483"/>
+        <property name="spectral.aliasing|Square96000/note105" value="-0.0415983087"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

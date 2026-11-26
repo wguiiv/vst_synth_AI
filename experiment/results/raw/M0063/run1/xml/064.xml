@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.224" timestamp="2026-11-03T20:59:18.653" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.224" timestamp="2026-11-03T20:59:18.653">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/HighPass" value_param="144-byte object &lt;C0-E8 F5-E9 52-56 00-00 08-00 00-00 00-00 00-00 48-69 67-68 50-61 73-73 00-73 6F-6E 61-6E 74-00 00-00 00-00 00-70 E7-40 00-02 00-00 83-7F 00-00 00-00 00-00 00-00 F0-3F 03-00 00-00 00-00 00-00 ... F0-F8 F5-E9 52-56 00-00 F0-00 F6-E9 52-56 00-00 05-00 00-00 00-00 00-00 D8-8E BC-E5 52-56 00-00 0E-06 89-03 83-7F 00-00 10-65 F3-E9 52-56 00-00 28-65 F3-E9 52-56 00-00 28-65 F3-E9 52-56 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.224" timestamp="2026-11-03T20:59:18.653" classname="Configs/Sanity">
+      <properties>
+        <property name="sanity.peak|HighPass/ch0" value="0.341311246"/>
+        <property name="sanity.audible|HighPass/ch0" value="0.341311246"/>
+        <property name="sanity.dc|HighPass/ch0" value="2.46623225e-11"/>
+        <property name="sanity.peak|HighPass/ch1" value="0.341311246"/>
+        <property name="sanity.audible|HighPass/ch1" value="0.341311246"/>
+        <property name="sanity.dc|HighPass/ch1" value="2.46623225e-11"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

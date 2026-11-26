@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.188" timestamp="2026-11-03T22:41:08.075" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.187" timestamp="2026-11-03T22:41:08.075">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/FilterEnvelope" value_param="144-byte object &lt;C0-F8 9B-52 F0-55 00-00 0E-00 00-00 00-00 00-00 46-69 6C-74 65-72 45-6E 76-65 6C-6F 70-65 00-00 00-00 00-00 00-70 E7-40 00-02 00-00 FD-7F 00-00 00-00 00-00 00-00 F0-3F 03-00 00-00 00-00 00-00 ... B0-07 9C-52 F0-55 00-00 70-0D 9C-52 F0-55 00-00 05-00 00-00 00-00 00-00 D8-5E 3C-46 F0-55 00-00 F0-65 6B-66 AC-7F 00-00 10-75 99-52 F0-55 00-00 28-75 99-52 F0-55 00-00 28-75 99-52 F0-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.187" timestamp="2026-11-03T22:41:08.075" classname="Configs/Sanity">
+      <properties>
+        <property name="sanity.peak|FilterEnvelope/ch0" value="0.249829739"/>
+        <property name="sanity.audible|FilterEnvelope/ch0" value="0.249829739"/>
+        <property name="sanity.dc|FilterEnvelope/ch0" value="0.00024821909"/>
+        <property name="sanity.peak|FilterEnvelope/ch1" value="0.249829739"/>
+        <property name="sanity.audible|FilterEnvelope/ch1" value="0.249829739"/>
+        <property name="sanity.dc|FilterEnvelope/ch1" value="0.00024821909"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

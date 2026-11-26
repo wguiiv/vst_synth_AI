@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="5.12" timestamp="2026-11-03T01:00:15.829" name="AllTests">
+  <testsuite name="TemporalFilter" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="5.12" timestamp="2026-11-03T01:00:15.829">
+    <testcase name="LfoSweepsTheCutoffAtItsRate" file="/Users/runner/work/vst_synth_AI/vst_synth_AI/frozen/tests/temporal/TemporalTest.cpp" line="216" status="run" result="completed" time="5.12" timestamp="2026-11-03T01:00:15.829" classname="TemporalFilter">
+      <properties>
+        <property name="spectral.stopband|depth" value="109.842812"/>
+        <property name="temporal.time|period" value="0"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

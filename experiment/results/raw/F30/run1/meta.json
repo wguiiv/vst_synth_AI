@@ -1,0 +1,15 @@
+{
+ "id": "F30",
+ "kind": "defeito",
+ "config": "release",
+ "patch": "/home/guiz/vst_synth_AI/experiment/faults/F30-medidor-so-le-canal-esquerdo.patch",
+ "origin": "projeto",
+ "category": "nivel",
+ "run": 1,
+ "started": "2026-11-05T10:55:59",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 200.3460988998413,
+ "finished": "2026-11-05T10:59:31"
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.16" timestamp="2026-11-03T10:06:20.693" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.16" timestamp="2026-11-03T10:06:20.693">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/HighestNote" value_param="144-byte object &lt;C0-D8 B5-33 CE-55 00-00 0B-00 00-00 00-00 00-00 48-69 67-68 65-73 74-4E 6F-74 65-00 70-65 00-00 00-00 00-00 00-70 E7-40 00-02 00-00 00-00 00-00 00-00 00-00 00-00 F0-3F 03-00 00-00 00-00 00-00 ... F0-D8 B5-33 CE-55 00-00 F0-D8 B5-33 CE-55 00-00 00-00 00-00 00-00 00-00 D8-0E F4-10 CE-55 00-00 00-00 00-00 00-00 00-00 70-34 B3-33 CE-55 00-00 88-34 B3-33 CE-55 00-00 88-34 B3-33 CE-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.16" timestamp="2026-11-03T10:06:20.693" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131&#x0A;Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)&#x0A;  Actual: false (HighestNote/ch0: sanity.dc measured 0.0154747711 linear, limit &lt;= 0.01 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131
+Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)
+  Actual: false (HighestNote/ch0: sanity.dc measured 0.0154747711 linear, limit <= 0.01 linear)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131&#x0A;Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)&#x0A;  Actual: false (HighestNote/ch1: sanity.dc measured 0.0154747711 linear, limit &lt;= 0.01 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131
+Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)
+  Actual: false (HighestNote/ch1: sanity.dc measured 0.0154747711 linear, limit <= 0.01 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peak|HighestNote/ch0" value="0.283241302"/>
+        <property name="sanity.audible|HighestNote/ch0" value="0.283241302"/>
+        <property name="sanity.dc|HighestNote/ch0" value="0.0154747711"/>
+        <property name="sanity.peak|HighestNote/ch1" value="0.283241302"/>
+        <property name="sanity.audible|HighestNote/ch1" value="0.283241302"/>
+        <property name="sanity.dc|HighestNote/ch1" value="0.0154747711"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

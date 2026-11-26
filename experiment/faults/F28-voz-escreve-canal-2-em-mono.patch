@@ -1,0 +1,21 @@
+# id: F28
+# category: estado
+# origin: projeto
+# target: Source/SynthVoice.cpp
+# source: https://github.com/asb2m10/dexed/commit/2c2732816f15b304ae3e7e8478ab74578d70e2c6
+# original-fix: O Dexed copiava a saida para o canal 1 sem verificar se o buffer tinha mais de um canal, falhando em saida mono; a correcao verifica getNumChannels() > 1.
+# adaptation: Em SynthVoice::renderNextBlock, a soma na saida percorre os dois canais da voz em vez dos canais do buffer de saida, escrevendo no canal 1 mesmo com saida mono.
+
+diff --git a/Source/SynthVoice.cpp b/Source/SynthVoice.cpp
+index e7dadb0..ae94b12 100644
+--- a/Source/SynthVoice.cpp
++++ b/Source/SynthVoice.cpp
+@@ -110,7 +110,7 @@ void SynthVoice::renderNextBlock (juce::AudioBuffer< float > &outputBuffer, int
+         }
+     }
+     
+-    for (int channel = 0; channel < outputBuffer.getNumChannels(); ++channel)
++    for (int channel = 0; channel < numChannelsToProcess; ++channel)
+         outputBuffer.addFrom (channel, startSample, synthBuffer, juce::jmin (channel, numChannels - 1), 0, numSamples);
+     
+     if (! adsr.isActive())

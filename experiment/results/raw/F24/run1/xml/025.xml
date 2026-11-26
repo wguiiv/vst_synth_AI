@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.008" timestamp="2026-11-05T10:41:36.129" name="AllTests">
+  <testsuite name="Configs/Golden" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.008" timestamp="2026-11-05T10:41:36.129">
+    <testcase name="MatchesReference/Reverb" value_param="104-byte object &lt;E0-B7 18-B0 46-56 00-00 06-00 00-00 00-00 00-00 52-65 76-65 72-62 00-65 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-C7 18-B0 46-56 00-00 C0-C5 18-B0 46-56 00-00 40-BD 18-B0 46-56 00-00 05-00 00-00 00-00 00-00 50-19 16-B0 46-56 00-00 68-19 16-B0 46-56 00-00 68-19 16-B0 46-56 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/golden/GoldenTest.cpp" line="67" status="run" result="completed" time="0.008" timestamp="2026-11-05T10:41:36.129" classname="Configs/Golden">
+      <properties>
+        <property name="golden.maxAbsDiff|Reverb" value="0"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

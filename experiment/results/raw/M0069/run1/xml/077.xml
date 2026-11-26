@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.305" timestamp="2026-11-03T21:05:44.805" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.305" timestamp="2026-11-03T21:05:44.805">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Block64" value_param="144-byte object &lt;C0-68 F4-70 93-55 00-00 07-00 00-00 00-00 00-00 42-6C 6F-63 6B-36 34-00 30-00 65-00 70-65 00-00 00-00 00-00 00-70 E7-40 40-00 00-00 00-00 00-00 00-00 00-00 00-00 F0-3F 03-00 00-00 00-00 00-00 ... F0-73 F4-70 93-55 00-00 F0-73 F4-70 93-55 00-00 01-00 00-00 00-00 00-00 D8-BE 73-53 93-55 00-00 00-00 00-00 00-00 00-00 B0-98 F4-70 93-55 00-00 F8-98 F4-70 93-55 00-00 F8-98 F4-70 93-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.305" timestamp="2026-11-03T21:05:44.805" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:130&#x0A;Value of: within (tol::sanityAudible, peak (held), label)&#x0A;  Actual: false (Block64/ch0: sanity.audible measured 0 linear, limit &gt;= 0.001 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:130
+Value of: within (tol::sanityAudible, peak (held), label)
+  Actual: false (Block64/ch0: sanity.audible measured 0 linear, limit >= 0.001 linear)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:130&#x0A;Value of: within (tol::sanityAudible, peak (held), label)&#x0A;  Actual: false (Block64/ch1: sanity.audible measured 0 linear, limit &gt;= 0.001 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:130
+Value of: within (tol::sanityAudible, peak (held), label)
+  Actual: false (Block64/ch1: sanity.audible measured 0 linear, limit >= 0.001 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peak|Block64/ch0" value="0"/>
+        <property name="sanity.audible|Block64/ch0" value="0"/>
+        <property name="sanity.dc|Block64/ch0" value="0"/>
+        <property name="sanity.peak|Block64/ch1" value="0"/>
+        <property name="sanity.audible|Block64/ch1" value="0"/>
+        <property name="sanity.dc|Block64/ch1" value="0"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

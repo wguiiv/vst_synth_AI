@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.109" timestamp="2026-11-04T02:43:20.597" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.108" timestamp="2026-11-04T02:43:20.597">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Reverb" value_param="144-byte object &lt;D0-60 E7-DA 03-56 00-00 06-00 00-00 00-00 00-00 52-65 76-65 72-62 00-73 65-64 00-6F 70-65 00-00 00-00 00-00 00-70 E7-40 00-02 00-00 C1-7F 00-00 00-00 00-00 00-00 F0-3F 6C-65 41-6E 64-43 65-6E ... D0-84 E7-DA 03-56 00-00 D0-8C E7-DA 03-56 00-00 02-00 00-00 00-00 00-00 D8-DE 42-B6 03-56 00-00 00-00 00-00 00-00 00-00 70-D4 E4-DA 03-56 00-00 88-D4 E4-DA 03-56 00-00 88-D4 E4-DA 03-56 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.108" timestamp="2026-11-04T02:43:20.597" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126&#x0A;Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)&#x0A;  Actual: false (Reverb/ch1: sanity.peak measured 2.28289056 linear, limit &lt;= 1 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126
+Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)
+  Actual: false (Reverb/ch1: sanity.peak measured 2.28289056 linear, limit <= 1 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peak|Reverb/ch0" value="0.891278982"/>
+        <property name="sanity.audible|Reverb/ch0" value="0.525631249"/>
+        <property name="sanity.dc|Reverb/ch0" value="0.000110340639"/>
+        <property name="sanity.peak|Reverb/ch1" value="2.28289056"/>
+        <property name="sanity.audible|Reverb/ch1" value="1.00563788"/>
+        <property name="sanity.dc|Reverb/ch1" value="0.000239303976"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

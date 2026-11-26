@@ -1,0 +1,15 @@
+{
+ "id": "F13",
+ "kind": "defeito",
+ "config": "release",
+ "patch": "/home/guiz/vst_synth_AI/experiment/faults/F13-adsr-sustain-sem-valor-inicial.patch",
+ "origin": "juce",
+ "category": "envelope",
+ "run": 1,
+ "started": "2026-11-05T09:38:35",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 370.0016050338745,
+ "finished": "2026-11-05T09:44:55"
+}

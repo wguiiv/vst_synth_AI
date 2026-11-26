@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.025" timestamp="2026-11-03T01:02:13.168" name="AllTests">
+  <testsuite name="TemporalFilter" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.025" timestamp="2026-11-03T01:02:13.168">
+    <testcase name="EnvelopeOpensTheFilterOverItsAttack" file="D:\a\vst_synth_AI\vst_synth_AI\frozen\tests\temporal\TemporalTest.cpp" line="199" status="run" result="completed" time="0.025" timestamp="2026-11-03T01:02:13.168" classname="TemporalFilter">
+      <properties>
+        <property name="spectral.stopband|opening" value="41.6988844"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

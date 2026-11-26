@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.039" timestamp="2026-11-05T10:23:33.578" name="AllTests">
+  <testsuite name="SanityRandom" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.039" timestamp="2026-11-05T10:23:33.578">
+    <testcase name="AllParametersAtMaximum" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="154" status="run" result="completed" time="0.039" timestamp="2026-11-05T10:23:33.578" classname="SanityRandom">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (allMax/ch0: sanity.peakRandom measured 11.8999825 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (allMax/ch0: sanity.peakRandom measured 11.8999825 linear, limit <= 4 linear)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106&#x0A;Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)&#x0A;  Actual: false (allMax/ch1: sanity.peakRandom measured 11.8999825 linear, limit &lt;= 4 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:106
+Value of: within (tol::sanityPeakRandom, peak (segment (out, ch)), channel)
+  Actual: false (allMax/ch1: sanity.peakRandom measured 11.8999825 linear, limit <= 4 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peakRandom|allMax/ch0" value="11.8999825"/>
+        <property name="sanity.dcRandom|allMax/ch0" value="5.82107859e-05"/>
+        <property name="sanity.peakRandom|allMax/ch1" value="11.8999825"/>
+        <property name="sanity.dcRandom|allMax/ch1" value="5.82107859e-05"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

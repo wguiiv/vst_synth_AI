@@ -1,0 +1,21 @@
+# id: F08
+# category: nivel
+# origin: juce
+# target: modules/juce_audio_basics/utilities/juce_Reverb.h
+# source: https://github.com/juce-framework/JUCE/commit/7273838d8db2ff60b6112fda9f15bc19368629b9
+# original-fix: Reverb::processMono misturava o sinal seco usando input (a amostra já multiplicada pelo ganho interno de entrada, 0,015) em vez da amostra original; a correção passou a usar samples[i].
+# adaptation: A mesma linha volta em processMono do JUCE 8.0.9. O juce::dsp::Reverb chama processMono quando o bloco tem um canal, então com saída mono o sinal seco do tapSynth cai cerca de 36 dB.
+
+diff --git a/modules/juce_audio_basics/utilities/juce_Reverb.h b/modules/juce_audio_basics/utilities/juce_Reverb.h
+index ab552a3..1df74a1 100644
+--- a/modules/juce_audio_basics/utilities/juce_Reverb.h
++++ b/modules/juce_audio_basics/utilities/juce_Reverb.h
+@@ -200,7 +200,7 @@ public:
+             const float dry  = dryGain.getNextValue();
+             const float wet1 = wetGain1.getNextValue();
+ 
+-            samples[i] = output * wet1 + samples[i] * dry;
++            samples[i] = output * wet1 + input * dry;
+         }
+         JUCE_END_IGNORE_WARNINGS_MSVC
+     }

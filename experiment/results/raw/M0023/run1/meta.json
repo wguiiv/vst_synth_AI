@@ -1,0 +1,18 @@
+{
+ "id": "M0023",
+ "kind": "mutante",
+ "config": "mull",
+ "origin": "projeto",
+ "category": "",
+ "mutator": "cxx_mul_to_div",
+ "file": "Source/Data/OscData.cpp",
+ "line": 22,
+ "mull_id": "cxx_mul_to_div:/home/guiz/vst_synth_AI/experiment/work/src/Source/Data/OscData.cpp:22:34:22:35",
+ "run": 1,
+ "applied": true,
+ "built": true,
+ "build_s": 0.0,
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "started": "2026-11-03T09:37:29",
+ "finished": "2026-11-03T09:40:20"
+}

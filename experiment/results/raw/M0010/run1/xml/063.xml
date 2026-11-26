@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.17" timestamp="2026-11-03T09:08:19.939" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.17" timestamp="2026-11-03T09:08:19.939">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/BandPass" value_param="144-byte object &lt;C0-88 BA-CE 2A-56 00-00 08-00 00-00 00-00 00-00 42-61 6E-64 50-61 73-73 00-73 6F-6E 61-6E 74-00 00-00 00-00 00-70 E7-40 00-02 00-00 1A-7F 00-00 00-00 00-00 00-00 F0-3F 03-00 00-00 00-00 00-00 ... F0-9A BA-CE 2A-56 00-00 F0-94 BA-CE 2A-56 00-00 05-00 00-00 00-00 00-00 D8-5E B3-9D 2A-56 00-00 0E-E6 ED-C6 1A-7F 00-00 10-05 B8-CE 2A-56 00-00 28-05 B8-CE 2A-56 00-00 28-05 B8-CE 2A-56 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.17" timestamp="2026-11-03T09:08:19.939" classname="Configs/Sanity">
+      <properties>
+        <property name="sanity.peak|BandPass/ch0" value="0.0323088095"/>
+        <property name="sanity.audible|BandPass/ch0" value="0.0323088095"/>
+        <property name="sanity.dc|BandPass/ch0" value="1.50163526e-08"/>
+        <property name="sanity.peak|BandPass/ch1" value="0.0323088095"/>
+        <property name="sanity.audible|BandPass/ch1" value="0.0323088095"/>
+        <property name="sanity.dc|BandPass/ch1" value="1.50163526e-08"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

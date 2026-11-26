@@ -1,0 +1,21 @@
+# id: F12
+# category: envelope
+# origin: juce
+# target: modules/juce_audio_basics/utilities/juce_ADSR.h
+# source: https://github.com/juce-framework/JUCE/commit/5d3854732b22efa83bfce5f6de7d8fe9f4410a05
+# original-fix: Ao fim do ataque o ADSR do JUCE ia sempre para o decay, mesmo com decay zero; a correcao passou a ir para o sustain quando decayRate <= 0.
+# adaptation: Mesmo bug no goToNextState() do juce::ADSR 8.0.9: depois do ataque o estado vai sempre para decay. No tapSynth afeta o envelope do filtro, cujo decay pode ser 0.
+
+diff --git a/modules/juce_audio_basics/utilities/juce_ADSR.h b/modules/juce_audio_basics/utilities/juce_ADSR.h
+index 11efa2e..0d67ecd 100644
+--- a/modules/juce_audio_basics/utilities/juce_ADSR.h
++++ b/modules/juce_audio_basics/utilities/juce_ADSR.h
+@@ -282,7 +282,7 @@ private:
+     {
+         if (state == State::attack)
+         {
+-            state = (decayRate > 0.0f ? State::decay : State::sustain);
++            state = State::decay;
+             return;
+         }
+ 

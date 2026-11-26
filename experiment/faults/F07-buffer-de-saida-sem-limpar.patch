@@ -1,0 +1,24 @@
+# id: F07
+# category: estado
+# origin: projeto
+# target: Source/PluginProcessor.cpp
+# source: https://github.com/juce-framework/JUCE/commit/a933d7c4d0a9979de941475b02892b1c756e25e1
+# original-fix: O processBlock do SamplerPluginDemo do JUCE não limpava o buffer de áudio no início, então a saída somava o que o host tinha deixado nele; a correção adicionou buffer.clear().
+# adaptation: Remove de processBlock o laço que limpa os canais de saída antes de synth.renderNextBlock (no tapSynth, que não tem entradas, ele limpa todos os canais), junto com as duas variáveis que só ele usava. As vozes passam a somar sobre o conteúdo do buffer recebido do host.
+
+diff --git a/Source/PluginProcessor.cpp b/Source/PluginProcessor.cpp
+index 8e1d8be..245b416 100644
+--- a/Source/PluginProcessor.cpp
++++ b/Source/PluginProcessor.cpp
+@@ -154,11 +154,6 @@ bool TapSynthAudioProcessor::isBusesLayoutSupported (const BusesLayout& layouts)
+ void TapSynthAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce::MidiBuffer& midiMessages)
+ {
+     juce::ScopedNoDenormals noDenormals;
+-    auto totalNumInputChannels  = getTotalNumInputChannels();
+-    auto totalNumOutputChannels = getTotalNumOutputChannels();
+-
+-    for (auto i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
+-        buffer.clear (i, 0, buffer.getNumSamples());
+ 
+     setParams();
+         

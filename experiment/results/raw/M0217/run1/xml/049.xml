@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="3.136" timestamp="2026-11-04T03:03:42.031" name="AllTests">
+  <testsuite name="RatesAndWaves/SpectralPitch" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="3.136" timestamp="2026-11-04T03:03:42.031">
+    <testcase name="EveryNoteHasTheRightFundamental/Square96000" value_param="16-byte object &lt;00-00 00-00 00-70 F7-40 02-00 00-00 9D-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp" line="53" status="run" result="completed" time="3.136" timestamp="2026-11-04T03:03:42.031" classname="RatesAndWaves/SpectralPitch">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60&#x0A;Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), &quot;note&quot; + std::to_string (note))&#x0A;  Actual: false (note108: spectral.pitch measured 2786.31465 cents, limit &lt;= 5 cents)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:60
+Value of: within (tol::pitch, measuredCents (out, sampleRate, noteHz (note)), "note" + std::to_string (note))
+  Actual: false (note108: spectral.pitch measured 2786.31465 cents, limit <= 5 cents)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="spectral.pitch|note21" value="0.950634196"/>
+        <property name="spectral.pitch|note33" value="0.250207834"/>
+        <property name="spectral.pitch|note45" value="0.110887482"/>
+        <property name="spectral.pitch|note57" value="0.117309791"/>
+        <property name="spectral.pitch|note69" value="0.0635370625"/>
+        <property name="spectral.pitch|note81" value="0.0324457961"/>
+        <property name="spectral.pitch|note93" value="0.00114616647"/>
+        <property name="spectral.pitch|note105" value="0.000570499692"/>
+        <property name="spectral.pitch|note108" value="2786.31465"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.021" timestamp="2026-11-05T11:21:43.828" name="AllTests">
+  <testsuite name="Configs/Golden" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.021" timestamp="2026-11-05T11:21:43.828">
+    <testcase name="MatchesReference/Chord" value_param="104-byte object &lt;E0-67 C3-EE 0B-56 00-00 05-00 00-00 00-00 00-00 43-68 6F-72 64-00 00-65 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 C0-7A C3-EE 0B-56 00-00 00-72 C3-EE 0B-56 00-00 C0-73 C3-EE 0B-56 00-00 03-00 00-00 00-00 00-00 90-AA C3-EE 0B-56 00-00 08-AB C3-EE 0B-56 00-00 08-AB C3-EE 0B-56 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/golden/GoldenTest.cpp" line="67" status="run" result="completed" time="0.021" timestamp="2026-11-05T11:21:43.828" classname="Configs/Golden">
+      <properties>
+        <property name="golden.maxAbsDiff|Chord" value="0"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

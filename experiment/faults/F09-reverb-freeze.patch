@@ -1,0 +1,21 @@
+# id: F09
+# category: envelope
+# origin: juce
+# target: modules/juce_audio_basics/utilities/juce_Reverb.h
+# source: https://github.com/juce-framework/JUCE/commit/3262a3c5480dbefdc09776c805e18e23e9abe806
+# original-fix: No modo freeze, Reverb::updateDamping() chamava setDamping (1, 0), com amortecimento máximo e realimentação zero, em vez de setDamping (0, 1), e a cauda morria em vez de se sustentar; a correção destrocou os argumentos (o mesmo commit também mudou a declaração das variáveis de laço, o que não altera o comportamento e não foi reproduzido).
+# adaptation: A mesma troca volta em updateDamping() do JUCE 8.0.9. No tapSynth afeta REVERBFREEZE ≥ 0,5: a entrada do reverb é cortada e a cauda some rápido em vez de ficar congelada.
+
+diff --git a/modules/juce_audio_basics/utilities/juce_Reverb.h b/modules/juce_audio_basics/utilities/juce_Reverb.h
+index ab552a3..5336740 100644
+--- a/modules/juce_audio_basics/utilities/juce_Reverb.h
++++ b/modules/juce_audio_basics/utilities/juce_Reverb.h
+@@ -216,7 +216,7 @@ private:
+         const float dampScaleFactor = 0.4f;
+ 
+         if (isFrozen (parameters.freezeMode))
+-            setDamping (0.0f, 1.0f);
++            setDamping (1.0f, 0.0f);
+         else
+             setDamping (parameters.damping * dampScaleFactor,
+                         parameters.roomSize * roomScaleFactor + roomOffset);

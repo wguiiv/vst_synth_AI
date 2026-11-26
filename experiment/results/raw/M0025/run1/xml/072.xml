@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.176" timestamp="2026-11-03T09:43:10.207" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.176" timestamp="2026-11-03T09:43:10.207">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/LowestNote" value_param="144-byte object &lt;C0-38 1D-36 92-55 00-00 0A-00 00-00 00-00 00-00 4C-6F 77-65 73-74 4E-6F 74-65 00-6F 70-65 00-00 00-00 00-00 00-70 E7-40 00-02 00-00 00-00 00-00 00-00 00-00 00-00 F0-3F 03-00 00-00 00-00 00-00 ... F0-4C 1D-36 92-55 00-00 F0-43 1D-36 92-55 00-00 02-00 00-00 00-00 00-00 D8-BE 59-17 92-55 00-00 00-00 00-00 00-00 00-00 70-94 1A-36 92-55 00-00 88-94 1A-36 92-55 00-00 88-94 1A-36 92-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.175" timestamp="2026-11-03T09:43:10.207" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126&#x0A;Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)&#x0A;  Actual: false (LowestNote/ch0: sanity.peak measured 2.7939961 linear, limit &lt;= 1 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126
+Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)
+  Actual: false (LowestNote/ch0: sanity.peak measured 2.7939961 linear, limit <= 1 linear)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131&#x0A;Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)&#x0A;  Actual: false (LowestNote/ch0: sanity.dc measured 0.017800536 linear, limit &lt;= 0.01 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131
+Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)
+  Actual: false (LowestNote/ch0: sanity.dc measured 0.017800536 linear, limit <= 0.01 linear)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126&#x0A;Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)&#x0A;  Actual: false (LowestNote/ch1: sanity.peak measured 2.7939961 linear, limit &lt;= 1 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126
+Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)
+  Actual: false (LowestNote/ch1: sanity.peak measured 2.7939961 linear, limit <= 1 linear)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131&#x0A;Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)&#x0A;  Actual: false (LowestNote/ch1: sanity.dc measured 0.017800536 linear, limit &lt;= 0.01 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131
+Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)
+  Actual: false (LowestNote/ch1: sanity.dc measured 0.017800536 linear, limit <= 0.01 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peak|LowestNote/ch0" value="2.7939961"/>
+        <property name="sanity.audible|LowestNote/ch0" value="2.79377818"/>
+        <property name="sanity.dc|LowestNote/ch0" value="0.017800536"/>
+        <property name="sanity.peak|LowestNote/ch1" value="2.7939961"/>
+        <property name="sanity.audible|LowestNote/ch1" value="2.79377818"/>
+        <property name="sanity.dc|LowestNote/ch1" value="0.017800536"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

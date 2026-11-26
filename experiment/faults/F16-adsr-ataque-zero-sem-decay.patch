@@ -1,0 +1,20 @@
+# id: F16
+# category: envelope
+# origin: juce
+# target: modules/juce_audio_basics/utilities/juce_ADSR.h
+# source: https://github.com/mtytel/helm/commit/39f3c2728283bbfc45cf1ca00ce9d5dda9787d80
+# original-fix: No envelope do Helm, com ataque zero o valor ia para 1 mas o estado nao passava para decay, e o envelope travava; a correcao adiciona state_ = kDecaying.
+# adaptation: No ramo de ataque zero de noteOn() do juce::ADSR 8.0.9, o valor vai para 1 mas falta a passagem para State::decay. No tapSynth afeta o envelope do filtro, cujo ataque pode ser 0.
+
+diff --git a/modules/juce_audio_basics/utilities/juce_ADSR.h b/modules/juce_audio_basics/utilities/juce_ADSR.h
+index 11efa2e..c4e73c3 100644
+--- a/modules/juce_audio_basics/utilities/juce_ADSR.h
++++ b/modules/juce_audio_basics/utilities/juce_ADSR.h
+@@ -136,7 +136,6 @@ public:
+         else if (decayRate > 0.0f)
+         {
+             envelopeVal = 1.0f;
+-            state = State::decay;
+         }
+         else
+         {

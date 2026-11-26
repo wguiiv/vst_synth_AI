@@ -1,0 +1,20 @@
+# id: F13
+# category: envelope
+# origin: juce
+# target: modules/juce_audio_basics/utilities/juce_ADSR.h
+# source: https://github.com/juce-framework/JUCE/commit/792f992dfc5636543a976092c4f101acac5a92db
+# original-fix: Com ataque e decay zero, noteOn() ia direto para o sustain sem ajustar envelopeVal, e applyEnvelopeToBuffer() usava um valor antigo; a correcao define envelopeVal = sustain.
+# adaptation: Remove a mesma linha no ramo de sustain de noteOn() do juce::ADSR 8.0.9.
+
+diff --git a/modules/juce_audio_basics/utilities/juce_ADSR.h b/modules/juce_audio_basics/utilities/juce_ADSR.h
+index 11efa2e..35ff242 100644
+--- a/modules/juce_audio_basics/utilities/juce_ADSR.h
++++ b/modules/juce_audio_basics/utilities/juce_ADSR.h
+@@ -140,7 +140,6 @@ public:
+         }
+         else
+         {
+-            envelopeVal = parameters.sustain;
+             state = State::sustain;
+         }
+     }

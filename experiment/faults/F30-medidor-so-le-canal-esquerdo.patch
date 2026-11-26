@@ -1,0 +1,21 @@
+# id: F30
+# category: nivel
+# origin: projeto
+# target: Source/Data/MeterData.cpp
+# source: https://github.com/zynaddsubfx/zynaddsubfx/commit/c141f777ba02ab7f6580f194aa86b99d0be366c9
+# original-fix: O detector de nivel do DynamicFilter do ZynAddSubFX lia o canal esquerdo duas vezes em vez de esquerdo e direito; a correcao usa smp.r no segundo termo.
+# adaptation: Em MeterData::process, os dois canais do medidor leem o canal 0 do buffer, entao o canal direito mostra o nivel do esquerdo.
+
+diff --git a/Source/Data/MeterData.cpp b/Source/Data/MeterData.cpp
+index ffd10a7..6c8d139 100644
+--- a/Source/Data/MeterData.cpp
++++ b/Source/Data/MeterData.cpp
+@@ -36,7 +36,7 @@ void MeterData::process (const juce::AudioBuffer<float>& buffer)
+     for (int ch = 0; ch < maxChannels; ++ch)
+     {
+         // A mono output feeds both meter channels
+-        auto output = buffer.getReadPointer (juce::jmin (ch, numChannels - 1));
++        auto output = buffer.getReadPointer (0);
+         float sum = 0.0f;
+         float max = 0.0f;
+ 

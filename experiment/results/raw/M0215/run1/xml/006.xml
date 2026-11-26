@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="94.706" timestamp="2026-11-04T02:54:59.001" name="AllTests">
+  <testsuite name="SanityRandom" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="94.706" timestamp="2026-11-04T02:54:59.001">
+    <testcase name="RandomPatchesThroughJson" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="138" status="run" result="completed" time="94.706" timestamp="2026-11-04T02:54:59.001" classname="SanityRandom">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch1/ch0: sanity.dcRandom measured 0.135453612 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 1&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch1/ch0: sanity.dcRandom measured 0.135453612 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 1
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch1/ch1: sanity.dcRandom measured 0.135303199 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 1&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch1/ch1: sanity.dcRandom measured 0.135303199 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 1
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch3/ch0: sanity.dcRandom measured 0.0749185085 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 3&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch3/ch0: sanity.dcRandom measured 0.0749185085 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 3
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch3/ch1: sanity.dcRandom measured 0.0744395182 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 3&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch3/ch1: sanity.dcRandom measured 0.0744395182 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 3
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch4/ch0: sanity.dcRandom measured 1.12989557 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 4&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch4/ch0: sanity.dcRandom measured 1.12989557 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 4
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch4/ch1: sanity.dcRandom measured 1.12823081 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 4&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch4/ch1: sanity.dcRandom measured 1.12823081 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 4
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch37/ch0: sanity.dcRandom measured 0.055154115 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 37&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch37/ch0: sanity.dcRandom measured 0.055154115 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 37
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch37/ch1: sanity.dcRandom measured 0.0549486801 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 37&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch37/ch1: sanity.dcRandom measured 0.0549486801 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 37
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch65/ch0: sanity.dcRandom measured 0.123456553 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 65&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch65/ch0: sanity.dcRandom measured 0.123456553 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 65
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch65/ch1: sanity.dcRandom measured 0.122891232 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 65&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch65/ch1: sanity.dcRandom measured 0.122891232 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 65
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch104/ch0: sanity.dcRandom measured 0.560360134 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 104&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch104/ch0: sanity.dcRandom measured 0.560360134 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 104
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch104/ch1: sanity.dcRandom measured 0.557139456 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 104&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch104/ch1: sanity.dcRandom measured 0.557139456 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 104
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch105/ch0: sanity.dcRandom measured 0.0869460925 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 105&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch105/ch0: sanity.dcRandom measured 0.0869460925 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 105
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch105/ch1: sanity.dcRandom measured 0.086439088 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 105&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch105/ch1: sanity.dcRandom measured 0.086439088 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 105
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch107/ch0: sanity.dcRandom measured 0.0997083634 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 107&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch107/ch0: sanity.dcRandom measured 0.0997083634 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 107
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch107/ch1: sanity.dcRandom measured 0.0989130735 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 107&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch107/ch1: sanity.dcRandom measured 0.0989130735 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 107
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch136/ch0: sanity.dcRandom measured 0.0585622452 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 136&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch136/ch0: sanity.dcRandom measured 0.0585622452 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 136
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch136/ch1: sanity.dcRandom measured 0.0579679348 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 136&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch136/ch1: sanity.dcRandom measured 0.0579679348 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 136
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch161/ch0: sanity.dcRandom measured 0.10421057 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 161&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch161/ch0: sanity.dcRandom measured 0.10421057 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 161
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107&#x0A;Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)&#x0A;  Actual: false (patch161/ch1: sanity.dcRandom measured 0.10448508 linear, limit &lt;= 0.050000000000000003 linear)&#x0A;Expected: true&#x0A;Google Test trace:&#x0A;/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 161&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:107
+Value of: within (tol::sanityDcRandom, std::abs (dcOffset (segment (out, ch, spec.sampleRate, 0.3, 0.5))), channel)
+  Actual: false (patch161/ch1: sanity.dcRandom measured 0.10448508 linear, limit <= 0.050000000000000003 linear)
+Expected: true
+Google Test trace:
+/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:144: patch 161
+]]></failure>
+      <properties>
+        <property name="sanity.peakRandom|patch0/ch0" value="0.0659093931"/>
+        <property name="sanity.dcRandom|patch0/ch0" value="0.000275420141"/>
+        <property name="sanity.peakRandom|patch0/ch1" value="0.0659093931"/>
+        <property name="sanity.dcRandom|patch0/ch1" value="0.000275420141"/>
+        <property name="sanity.peakRandom|patch1/ch0" value="0.517214775"/>
+        <property name="sanity.dcRandom|patch1/ch0" value="0.135453612"/>
+        <property name="sanity.peakRandom|patch1/ch1" value="0.518890619"/>
+        <property name="sanity.dcRandom|patch1/ch1" value="0.135303199"/>
+        <property name="sanity.peakRandom|patch2/ch0" value="0.00985021051"/>
+        <property name="sanity.dcRandom|patch2/ch0" value="0.000117315634"/>
+        <property name="sanity.peakRandom|patch2/ch1" value="0.00985021051"/>
+        <property name="sanity.dcRandom|patch2/ch1" value="0.000117315634"/>
+        <property name="sanity.peakRandom|patch3/ch0" value="0.266940773"/>
+        <property name="sanity.dcRandom|patch3/ch0" value="0.0749185085"/>
+        <property name="sanity.peakRandom|patch3/ch1" value="0.242643058"/>
+        <property name="sanity.dcRandom|patch3/ch1" value="0.0744395182"/>
+        <property name="sanity.peakRandom|patch4/ch0" value="2.04076385"/>
+        <property name="sanity.dcRandom|patch4/ch0" value="1.12989557"/>
+        <property name="sanity.peakRandom|patch4/ch1" value="2.02550912"/>
+        <property name="sanity.dcRandom|patch4/ch1" value="1.12823081"/>
+        <property name="sanity.peakRandom|patch5/ch0" value="0.00731187547"/>
+        <property name="sanity.dcRandom|patch5/ch0" value="0.000147874263"/>
+        <property name="sanity.peakRandom|patch5/ch1" value="0.00731187547"/>
+        <property name="sanity.dcRandom|patch5/ch1" value="0.000147874263"/>
+        <property name="sanity.peakRandom|patch6/ch0" value="0.0965649113"/>
+        <property name="sanity.dcRandom|patch6/ch0" value="0.00176021841"/>
+        <property name="sanity.peakRandom|patch6/ch1" value="0.0854546875"/>
+        <property name="sanity.dcRandom|patch6/ch1" value="0.00180616416"/>
+        <property name="sanity.peakRandom|patch7/ch0" value="0.308740079"/>
+        <property name="sanity.dcRandom|patch7/ch0" value="0.000413568865"/>
+        <property name="sanity.peakRandom|patch7/ch1" value="0.298159182"/>
+        <property name="sanity.dcRandom|patch7/ch1" value="0.000449991785"/>
+        <property name="sanity.peakRandom|patch8/ch0" value="0.000790409686"/>
+        <property name="sanity.dcRandom|patch8/ch0" value="1.12908327e-09"/>
+        <property name="sanity.peakRandom|patch8/ch1" value="0.000790409686"/>
+        <property name="sanity.dcRandom|patch8/ch1" value="1.12908327e-09"/>
+        <property name="sanity.peakRandom|patch9/ch0" value="0.0404715091"/>
+        <property name="sanity.dcRandom|patch9/ch0" value="6.71937599e-08"/>
+        <property name="sanity.peakRandom|patch9/ch1" value="0.0404715091"/>
+        <property name="sanity.dcRandom|patch9/ch1" value="6.71937599e-08"/>
+        <property name="sanity.peakRandom|patch10/ch0" value="0.111003183"/>
+        <property name="sanity.dcRandom|patch10/ch0" value="9.90990156e-06"/>
+        <property name="sanity.peakRandom|patch10/ch1" value="0.111003183"/>
+        <property name="sanity.dcRandom|patch10/ch1" value="9.90990156e-06"/>
+        <property name="sanity.peakRandom|patch11/ch0" value="0.0296991374"/>
+        <property name="sanity.dcRandom|patch11/ch0" value="1.75856073e-07"/>
+        <property name="sanity.peakRandom|patch11/ch1" value="0.0296991374"/>
+        <property name="sanity.dcRandom|patch11/ch1" value="1.75856073e-07"/>
+        <property name="sanity.peakRandom|patch12/ch0" value="0.0457441285"/>
+        <property name="sanity.dcRandom|patch12/ch0" value="7.35754156e-07"/>
+        <property name="sanity.peakRandom|patch12/ch1" value="0.0462217219"/>
+        <property name="sanity.dcRandom|patch12/ch1" value="4.48086809e-07"/>
+        <property name="sanity.peakRandom|patch13/ch0" value="0.0374720059"/>
+        <property name="sanity.dcRandom|patch13/ch0" value="0.00348805124"/>
+        <property name="sanity.peakRandom|patch13/ch1" value="0.04002643"/>
+        <property name="sanity.dcRandom|patch13/ch1" value="0.00347610516"/>
+        <property name="sanity.peakRandom|patch14/ch0" value="0.0315023139"/>
+        <property name="sanity.dcRandom|patch14/ch0" value="0.000485696597"/>
+        <property name="sanity.peakRandom|patch14/ch1" value="0.0315023139"/>
+        <property name="sanity.dcRandom|patch14/ch1" value="0.000485696597"/>
+        <property name="sanity.peakRandom|patch15/ch0" value="0.0719920844"/>
+        <property name="sanity.dcRandom|patch15/ch0" value="7.70391398e-06"/>
+        <property name="sanity.peakRandom|patch15/ch1" value="0.0628205389"/>
+        <property name="sanity.dcRandom|patch15/ch1" value="2.4702947e-06"/>
+        <property name="sanity.peakRandom|patch16/ch0" value="0.00101440854"/>
+        <property name="sanity.dcRandom|patch16/ch0" value="8.85287577e-08"/>
+        <property name="sanity.peakRandom|patch16/ch1" value="0.00101440854"/>
+        <property name="sanity.dcRandom|patch16/ch1" value="8.85287577e-08"/>
+        <property name="sanity.peakRandom|patch17/ch0" value="0.0275553148"/>
+        <property name="sanity.dcRandom|patch17/ch0" value="1.05112662e-07"/>
+        <property name="sanity.peakRandom|patch17/ch1" value="0.0261430647"/>
+        <property name="sanity.dcRandom|patch17/ch1" value="4.48452759e-08"/>
+        <property name="sanity.peakRandom|patch18/ch0" value="0.0378336534"/>
+        <property name="sanity.dcRandom|patch18/ch0" value="0.00154677778"/>
+        <property name="sanity.peakRandom|patch18/ch1" value="0.0410149619"/>
+        <property name="sanity.dcRandom|patch18/ch1" value="0.00152407633"/>
+        <property name="sanity.peakRandom|patch19/ch0" value="0.00321655557"/>
+        <property name="sanity.dcRandom|patch19/ch0" value="8.23840455e-05"/>
+        <property name="sanity.peakRandom|patch19/ch1" value="0.00321655557"/>
+        <property name="sanity.dcRandom|patch19/ch1" value="8.23840455e-05"/>
+        <property name="sanity.peakRandom|patch20/ch0" value="0.0680960342"/>
+        <property name="sanity.dcRandom|patch20/ch0" value="0.00127126893"/>
+        <property name="sanity.peakRandom|patch20/ch1" value="0.0670211017"/>
+        <property name="sanity.dcRandom|patch20/ch1" value="0.00135761045"/>
+        <property name="sanity.peakRandom|patch21/ch0" value="0.202437863"/>
+        <property name="sanity.dcRandom|patch21/ch0" value="2.63847573e-06"/>
+        <property name="sanity.peakRandom|patch21/ch1" value="0.202437863"/>
+        <property name="sanity.dcRandom|patch21/ch1" value="2.63847573e-06"/>
+        <property name="sanity.peakRandom|patch22/ch0" value="0.0430689454"/>
+        <property name="sanity.dcRandom|patch22/ch0" value="1.50878623e-06"/>
+        <property name="sanity.peakRandom|patch22/ch1" value="0.0430689454"/>
+        <property name="sanity.dcRandom|patch22/ch1" value="1.50878623e-06"/>
+        <property name="sanity.peakRandom|patch23/ch0" value="0.653869629"/>
+        <property name="sanity.dcRandom|patch23/ch0" value="0.00367386825"/>
+        <property name="sanity.peakRandom|patch23/ch1" value="0.647068739"/>
+        <property name="sanity.dcRandom|patch23/ch1" value="0.0033627369"/>
+        <property name="sanity.peakRandom|patch24/ch0" value="0.00509406487"/>
+        <property name="sanity.dcRandom|patch24/ch0" value="6.8503323e-09"/>
+        <property name="sanity.peakRandom|patch24/ch1" value="0.00509406487"/>
+        <property name="sanity.dcRandom|patch24/ch1" value="6.8503323e-09"/>
+        <property name="sanity.peakRandom|patch25/ch0" value="0.054808341"/>
+        <property name="sanity.dcRandom|patch25/ch0" value="8.80588868e-06"/>
+        <property name="sanity.peakRandom|patch25/ch1" value="0.0538122691"/>
+        <property name="sanity.dcRandom|patch25/ch1" value="8.71084285e-06"/>
+        <property name="sanity.peakRandom|patch26/ch0" value="0.00451016007"/>
+        <property name="sanity.dcRandom|patch26/ch0" value="5.03486299e-05"/>
+        <property name="sanity.peakRandom|patch26/ch1" value="0.00451016007"/>
+        <property name="sanity.dcRandom|patch26/ch1" value="5.03486299e-05"/>
+        <property name="sanity.peakRandom|patch27/ch0" value="0.00057970715"/>
+        <property name="sanity.dcRandom|patch27/ch0" value="1.13323804e-05"/>
+        <property name="sanity.peakRandom|patch27/ch1" value="0.00057970715"/>
+        <property name="sanity.dcRandom|patch27/ch1" value="1.13323804e-05"/>
+        <property name="sanity.peakRandom|patch28/ch0" value="0.00974885188"/>
+        <property name="sanity.dcRandom|patch28/ch0" value="2.00586292e-05"/>
+        <property name="sanity.peakRandom|patch28/ch1" value="0.00974885188"/>
+        <property name="sanity.dcRandom|patch28/ch1" value="2.00586292e-05"/>
+        <property name="sanity.peakRandom|patch29/ch0" value="0.0934789032"/>
+        <property name="sanity.dcRandom|patch29/ch0" value="5.87665591e-06"/>
+        <property name="sanity.peakRandom|patch29/ch1" value="0.0791141614"/>
+        <property name="sanity.dcRandom|patch29/ch1" value="8.37327661e-06"/>
+        <property name="sanity.peakRandom|patch30/ch0" value="0.00553763844"/>
+        <property name="sanity.dcRandom|patch30/ch0" value="5.67731695e-06"/>
+        <property name="sanity.peakRandom|patch30/ch1" value="0.00553763844"/>
+        <property name="sanity.dcRandom|patch30/ch1" value="5.67731695e-06"/>
+        <property name="sanity.peakRandom|patch31/ch0" value="0.0139475195"/>
+        <property name="sanity.dcRandom|patch31/ch0" value="0.00741648441"/>
+        <property name="sanity.peakRandom|patch31/ch1" value="0.0134220282"/>
+        <property name="sanity.dcRandom|patch31/ch1" value="0.00737229502"/>
+        <property name="sanity.peakRandom|patch32/ch0" value="0.0744037554"/>
+        <property name="sanity.dcRandom|patch32/ch0" value="0.000207636855"/>
+        <property name="sanity.peakRandom|patch32/ch1" value="0.0744037554"/>
+        <property name="sanity.dcRandom|patch32/ch1" value="0.000207636855"/>
+        <property name="sanity.peakRandom|patch33/ch0" value="0.119671337"/>
+        <property name="sanity.dcRandom|patch33/ch0" value="6.42113207e-07"/>
+        <property name="sanity.peakRandom|patch33/ch1" value="0.119671337"/>
+        <property name="sanity.dcRandom|patch33/ch1" value="6.42113207e-07"/>
+        <property name="sanity.peakRandom|patch34/ch0" value="0.272330582"/>
+        <property name="sanity.dcRandom|patch34/ch0" value="0.00382677256"/>
+        <property name="sanity.peakRandom|patch34/ch1" value="0.272528976"/>
+        <property name="sanity.dcRandom|patch34/ch1" value="0.00377210299"/>
+        <property name="sanity.peakRandom|patch35/ch0" value="0.0157964453"/>
+        <property name="sanity.dcRandom|patch35/ch0" value="1.02949841e-07"/>
+        <property name="sanity.peakRandom|patch35/ch1" value="0.0156358536"/>
+        <property name="sanity.dcRandom|patch35/ch1" value="1.60467692e-07"/>
+        <property name="sanity.peakRandom|patch36/ch0" value="0.00955696404"/>
+        <property name="sanity.dcRandom|patch36/ch0" value="8.33500224e-07"/>
+        <property name="sanity.peakRandom|patch36/ch1" value="0.00991137512"/>
+        <property name="sanity.dcRandom|patch36/ch1" value="8.90146623e-07"/>
+        <property name="sanity.peakRandom|patch37/ch0" value="0.307685077"/>
+        <property name="sanity.dcRandom|patch37/ch0" value="0.055154115"/>
+        <property name="sanity.peakRandom|patch37/ch1" value="0.30731225"/>
+        <property name="sanity.dcRandom|patch37/ch1" value="0.0549486801"/>
+        <property name="sanity.peakRandom|patch38/ch0" value="0.0094284201"/>
+        <property name="sanity.dcRandom|patch38/ch0" value="1.3696831e-06"/>
+        <property name="sanity.peakRandom|patch38/ch1" value="0.0094284201"/>
+        <property name="sanity.dcRandom|patch38/ch1" value="1.3696831e-06"/>
+        <property name="sanity.peakRandom|patch39/ch0" value="0.000113238966"/>
+        <property name="sanity.dcRandom|patch39/ch0" value="1.46074555e-07"/>
+        <property name="sanity.peakRandom|patch39/ch1" value="0.000113238966"/>
+        <property name="sanity.dcRandom|patch39/ch1" value="1.46074555e-07"/>
+        <property name="sanity.peakRandom|patch40/ch0" value="0.0358127207"/>
+        <property name="sanity.dcRandom|patch40/ch0" value="0.00100264617"/>
+        <property name="sanity.peakRandom|patch40/ch1" value="0.0352575332"/>
+        <property name="sanity.dcRandom|patch40/ch1" value="0.000998710049"/>
+        <property name="sanity.peakRandom|patch41/ch0" value="0.066810295"/>
+        <property name="sanity.dcRandom|patch41/ch0" value="2.67965174e-06"/>
+        <property name="sanity.peakRandom|patch41/ch1" value="0.066810295"/>
+        <property name="sanity.dcRandom|patch41/ch1" value="2.67965174e-06"/>
+        <property name="sanity.peakRandom|patch42/ch0" value="0.0218784176"/>
+        <property name="sanity.dcRandom|patch42/ch0" value="3.37364234e-08"/>
+        <property name="sanity.peakRandom|patch42/ch1" value="0.0218784176"/>
+        <property name="sanity.dcRandom|patch42/ch1" value="3.37364234e-08"/>
+        <property name="sanity.peakRandom|patch43/ch0" value="0.768561006"/>
+        <property name="sanity.dcRandom|patch43/ch0" value="0.00786053669"/>
+        <property name="sanity.peakRandom|patch43/ch1" value="0.611678243"/>
+        <property name="sanity.dcRandom|patch43/ch1" value="0.00858539715"/>
+        <property name="sanity.peakRandom|patch44/ch0" value="0.0332282074"/>
+        <property name="sanity.dcRandom|patch44/ch0" value="4.45913315e-07"/>
+        <property name="sanity.peakRandom|patch44/ch1" value="0.0332282074"/>
+        <property name="sanity.dcRandom|patch44/ch1" value="4.45913315e-07"/>
+        <property name="sanity.peakRandom|patch45/ch0" value="0.00877763331"/>
+        <property name="sanity.dcRandom|patch45/ch0" value="0.00025567296"/>
+        <property name="sanity.peakRandom|patch45/ch1" value="0.00877763331"/>
+        <property name="sanity.dcRandom|patch45/ch1" value="0.00025567296"/>
+        <property name="sanity.peakRandom|patch46/ch0" value="0.0293632764"/>
+        <property name="sanity.dcRandom|patch46/ch0" value="0.00110030943"/>
+        <property name="sanity.peakRandom|patch46/ch1" value="0.0263432637"/>
+        <property name="sanity.dcRandom|patch46/ch1" value="0.00108565495"/>
+        <property name="sanity.peakRandom|patch47/ch0" value="0.077691257"/>
+        <property name="sanity.dcRandom|patch47/ch0" value="0.000554995495"/>
+        <property name="sanity.peakRandom|patch47/ch1" value="0.077691257"/>
+        <property name="sanity.dcRandom|patch47/ch1" value="0.000554995495"/>
+        <property name="sanity.peakRandom|patch48/ch0" value="0.156900495"/>
+        <property name="sanity.dcRandom|patch48/ch0" value="0.0109177697"/>
+        <property name="sanity.peakRandom|patch48/ch1" value="0.137278229"/>
+        <property name="sanity.dcRandom|patch48/ch1" value="0.0110075083"/>
+        <property name="sanity.peakRandom|patch49/ch0" value="0.0468001291"/>
+        <property name="sanity.dcRandom|patch49/ch0" value="4.76072364e-06"/>
+        <property name="sanity.peakRandom|patch49/ch1" value="0.0468001291"/>
+        <property name="sanity.dcRandom|patch49/ch1" value="4.76072364e-06"/>
+        <property name="sanity.peakRandom|patch50/ch0" value="0.0267773289"/>
+        <property name="sanity.dcRandom|patch50/ch0" value="3.99587634e-06"/>
+        <property name="sanity.peakRandom|patch50/ch1" value="0.0253594797"/>
+        <property name="sanity.dcRandom|patch50/ch1" value="3.97348458e-06"/>
+        <property name="sanity.peakRandom|patch51/ch0" value="0.00484155118"/>
+        <property name="sanity.dcRandom|patch51/ch0" value="1.73506336e-07"/>
+        <property name="sanity.peakRandom|patch51/ch1" value="0.00484155118"/>
+        <property name="sanity.dcRandom|patch51/ch1" value="1.73506336e-07"/>
+        <property name="sanity.peakRandom|patch52/ch0" value="0.0131199872"/>
+        <property name="sanity.dcRandom|patch52/ch0" value="6.47732321e-08"/>
+        <property name="sanity.peakRandom|patch52/ch1" value="0.0131199872"/>
+        <property name="sanity.dcRandom|patch52/ch1" value="6.47732321e-08"/>
+        <property name="sanity.peakRandom|patch53/ch0" value="0.0658367872"/>
+        <property name="sanity.dcRandom|patch53/ch0" value="0.00315839401"/>
+        <property name="sanity.peakRandom|patch53/ch1" value="0.073850669"/>
+        <property name="sanity.dcRandom|patch53/ch1" value="0.00311754411"/>
+        <property name="sanity.peakRandom|patch54/ch0" value="0.0139549067"/>
+        <property name="sanity.dcRandom|patch54/ch0" value="8.61083294e-08"/>
+        <property name="sanity.peakRandom|patch54/ch1" value="0.0139549067"/>
+        <property name="sanity.dcRandom|patch54/ch1" value="8.61083294e-08"/>
+        <property name="sanity.peakRandom|patch55/ch0" value="0.0406255759"/>
+        <property name="sanity.dcRandom|patch55/ch0" value="1.13715748e-06"/>
+        <property name="sanity.peakRandom|patch55/ch1" value="0.0397935845"/>
+        <property name="sanity.dcRandom|patch55/ch1" value="1.26484508e-06"/>
+        <property name="sanity.peakRandom|patch56/ch0" value="0.00746871065"/>
+        <property name="sanity.dcRandom|patch56/ch0" value="4.77603407e-06"/>
+        <property name="sanity.peakRandom|patch56/ch1" value="0.00746871065"/>
+        <property name="sanity.dcRandom|patch56/ch1" value="4.77603407e-06"/>
+        <property name="sanity.peakRandom|patch57/ch0" value="0.128341943"/>
+        <property name="sanity.dcRandom|patch57/ch0" value="0.000247809134"/>
+        <property name="sanity.peakRandom|patch57/ch1" value="0.128341943"/>
+        <property name="sanity.dcRandom|patch57/ch1" value="0.000247809134"/>
+        <property name="sanity.peakRandom|patch58/ch0" value="0.265649766"/>
+        <property name="sanity.dcRandom|patch58/ch0" value="0.00013250242"/>
+        <property name="sanity.peakRandom|patch58/ch1" value="0.265649766"/>
+        <property name="sanity.dcRandom|patch58/ch1" value="0.00013250242"/>
+        <property name="sanity.peakRandom|patch59/ch0" value="0.11777734"/>
+        <property name="sanity.dcRandom|patch59/ch0" value="0.00593290385"/>
+        <property name="sanity.peakRandom|patch59/ch1" value="0.117604464"/>
+        <property name="sanity.dcRandom|patch59/ch1" value="0.0059269364"/>
+        <property name="sanity.peakRandom|patch60/ch0" value="0.00878112577"/>
+        <property name="sanity.dcRandom|patch60/ch0" value="2.20700272e-07"/>
+        <property name="sanity.peakRandom|patch60/ch1" value="0.00878112577"/>
+        <property name="sanity.dcRandom|patch60/ch1" value="2.20700272e-07"/>
+        <property name="sanity.peakRandom|patch61/ch0" value="0.0335153639"/>
+        <property name="sanity.dcRandom|patch61/ch0" value="0.000133973081"/>
+        <property name="sanity.peakRandom|patch61/ch1" value="0.0335153639"/>
+        <property name="sanity.dcRandom|patch61/ch1" value="0.000133973081"/>
+        <property name="sanity.peakRandom|patch62/ch0" value="0.0822359025"/>
+        <property name="sanity.dcRandom|patch62/ch0" value="0.000160596363"/>
+        <property name="sanity.peakRandom|patch62/ch1" value="0.0822359025"/>
+        <property name="sanity.dcRandom|patch62/ch1" value="0.000160596363"/>
+        <property name="sanity.peakRandom|patch63/ch0" value="0.216152027"/>
+        <property name="sanity.dcRandom|patch63/ch0" value="0.000192158797"/>
+        <property name="sanity.peakRandom|patch63/ch1" value="0.216152027"/>
+        <property name="sanity.dcRandom|patch63/ch1" value="0.000192158797"/>
+        <property name="sanity.peakRandom|patch64/ch0" value="0.0127208112"/>
+        <property name="sanity.dcRandom|patch64/ch0" value="1.24630069e-05"/>
+        <property name="sanity.peakRandom|patch64/ch1" value="0.0128157446"/>
+        <property name="sanity.dcRandom|patch64/ch1" value="1.22229749e-05"/>
+        <property name="sanity.peakRandom|patch65/ch0" value="0.449607581"/>
+        <property name="sanity.dcRandom|patch65/ch0" value="0.123456553"/>
+        <property name="sanity.peakRandom|patch65/ch1" value="0.44324711"/>
+        <property name="sanity.dcRandom|patch65/ch1" value="0.122891232"/>
+        <property name="sanity.peakRandom|patch66/ch0" value="0.0885054544"/>
+        <property name="sanity.dcRandom|patch66/ch0" value="0.00022179159"/>
+        <property name="sanity.peakRandom|patch66/ch1" value="0.0885054544"/>
+        <property name="sanity.dcRandom|patch66/ch1" value="0.00022179159"/>
+        <property name="sanity.peakRandom|patch67/ch0" value="0.035658028"/>
+        <property name="sanity.dcRandom|patch67/ch0" value="1.61811895e-05"/>
+        <property name="sanity.peakRandom|patch67/ch1" value="0.035658028"/>
+        <property name="sanity.dcRandom|patch67/ch1" value="1.61811895e-05"/>
+        <property name="sanity.peakRandom|patch68/ch0" value="0.0346064232"/>
+        <property name="sanity.dcRandom|patch68/ch0" value="9.17984949e-07"/>
+        <property name="sanity.peakRandom|patch68/ch1" value="0.0346064232"/>
+        <property name="sanity.dcRandom|patch68/ch1" value="9.17984949e-07"/>
+        <property name="sanity.peakRandom|patch69/ch0" value="0.00289959763"/>
+        <property name="sanity.dcRandom|patch69/ch0" value="4.71822901e-08"/>
+        <property name="sanity.peakRandom|patch69/ch1" value="0.00289959763"/>
+        <property name="sanity.dcRandom|patch69/ch1" value="4.71822901e-08"/>
+        <property name="sanity.peakRandom|patch70/ch0" value="0.0928613469"/>
+        <property name="sanity.dcRandom|patch70/ch0" value="5.91876415e-07"/>
+        <property name="sanity.peakRandom|patch70/ch1" value="0.0895442739"/>
+        <property name="sanity.dcRandom|patch70/ch1" value="6.09109179e-07"/>
+        <property name="sanity.peakRandom|patch71/ch0" value="0.00805887114"/>
+        <property name="sanity.dcRandom|patch71/ch0" value="1.57253822e-07"/>
+        <property name="sanity.peakRandom|patch71/ch1" value="0.00805887114"/>
+        <property name="sanity.dcRandom|patch71/ch1" value="1.57253822e-07"/>
+        <property name="sanity.peakRandom|patch72/ch0" value="0.00691189244"/>
+        <property name="sanity.dcRandom|patch72/ch0" value="3.93764253e-07"/>
+        <property name="sanity.peakRandom|patch72/ch1" value="0.00691189244"/>
+        <property name="sanity.dcRandom|patch72/ch1" value="3.93764253e-07"/>
+        <property name="sanity.peakRandom|patch73/ch0" value="0.0151527207"/>
+        <property name="sanity.dcRandom|patch73/ch0" value="0.000440904434"/>
+        <property name="sanity.peakRandom|patch73/ch1" value="0.0151527207"/>
+        <property name="sanity.dcRandom|patch73/ch1" value="0.000440904434"/>
+        <property name="sanity.peakRandom|patch74/ch0" value="0.514637172"/>
+        <property name="sanity.dcRandom|patch74/ch0" value="0.0430460125"/>
+        <property name="sanity.peakRandom|patch74/ch1" value="0.485769331"/>
+        <property name="sanity.dcRandom|patch74/ch1" value="0.041487325"/>
+        <property name="sanity.peakRandom|patch75/ch0" value="0.0333819017"/>
+        <property name="sanity.dcRandom|patch75/ch0" value="2.9537194e-08"/>
+        <property name="sanity.peakRandom|patch75/ch1" value="0.0333819017"/>
+        <property name="sanity.dcRandom|patch75/ch1" value="2.9537194e-08"/>
+        <property name="sanity.peakRandom|patch76/ch0" value="0.0297613312"/>
+        <property name="sanity.dcRandom|patch76/ch0" value="0.000155948757"/>
+        <property name="sanity.peakRandom|patch76/ch1" value="0.0306905806"/>
+        <property name="sanity.dcRandom|patch76/ch1" value="0.000159987467"/>
+        <property name="sanity.peakRandom|patch77/ch0" value="0.00161781209"/>
+        <property name="sanity.dcRandom|patch77/ch0" value="3.87120469e-09"/>
+        <property name="sanity.peakRandom|patch77/ch1" value="0.00161781209"/>
+        <property name="sanity.dcRandom|patch77/ch1" value="3.87120469e-09"/>
+        <property name="sanity.peakRandom|patch78/ch0" value="0.0737726018"/>
+        <property name="sanity.dcRandom|patch78/ch0" value="0.00024926936"/>
+        <property name="sanity.peakRandom|patch78/ch1" value="0.0737726018"/>
+        <property name="sanity.dcRandom|patch78/ch1" value="0.00024926936"/>
+        <property name="sanity.peakRandom|patch79/ch0" value="0.0124054095"/>
+        <property name="sanity.dcRandom|patch79/ch0" value="0.000481947267"/>
+        <property name="sanity.peakRandom|patch79/ch1" value="0.0117440028"/>
+        <property name="sanity.dcRandom|patch79/ch1" value="0.000482076546"/>
+        <property name="sanity.peakRandom|patch80/ch0" value="0.0013812494"/>
+        <property name="sanity.dcRandom|patch80/ch0" value="4.88263959e-06"/>
+        <property name="sanity.peakRandom|patch80/ch1" value="0.0013812494"/>
+        <property name="sanity.dcRandom|patch80/ch1" value="4.88263959e-06"/>
+        <property name="sanity.peakRandom|patch81/ch0" value="0.0246721879"/>
+        <property name="sanity.dcRandom|patch81/ch0" value="2.02228944e-06"/>
+        <property name="sanity.peakRandom|patch81/ch1" value="0.0246721879"/>
+        <property name="sanity.dcRandom|patch81/ch1" value="2.02228944e-06"/>
+        <property name="sanity.peakRandom|patch82/ch0" value="0.000423127203"/>
+        <property name="sanity.dcRandom|patch82/ch0" value="2.67888889e-09"/>
+        <property name="sanity.peakRandom|patch82/ch1" value="0.00041121227"/>
+        <property name="sanity.dcRandom|patch82/ch1" value="5.43704914e-10"/>
+        <property name="sanity.peakRandom|patch83/ch0" value="0.0205810238"/>
+        <property name="sanity.dcRandom|patch83/ch0" value="6.36780495e-09"/>
+        <property name="sanity.peakRandom|patch83/ch1" value="0.0205810238"/>
+        <property name="sanity.dcRandom|patch83/ch1" value="6.36780495e-09"/>
+        <property name="sanity.peakRandom|patch84/ch0" value="0.0462487936"/>
+        <property name="sanity.dcRandom|patch84/ch0" value="3.68175506e-06"/>
+        <property name="sanity.peakRandom|patch84/ch1" value="0.0462487936"/>
+        <property name="sanity.dcRandom|patch84/ch1" value="3.68175506e-06"/>
+        <property name="sanity.peakRandom|patch85/ch0" value="0.0915763602"/>
+        <property name="sanity.dcRandom|patch85/ch0" value="0.00703413785"/>
+        <property name="sanity.peakRandom|patch85/ch1" value="0.0934694186"/>
+        <property name="sanity.dcRandom|patch85/ch1" value="0.00714803208"/>
+        <property name="sanity.peakRandom|patch86/ch0" value="0.00318030524"/>
+        <property name="sanity.dcRandom|patch86/ch0" value="1.47982021e-07"/>
+        <property name="sanity.peakRandom|patch86/ch1" value="0.00318030524"/>
+        <property name="sanity.dcRandom|patch86/ch1" value="1.47982021e-07"/>
+        <property name="sanity.peakRandom|patch87/ch0" value="0.261670351"/>
+        <property name="sanity.dcRandom|patch87/ch0" value="9.89188948e-07"/>
+        <property name="sanity.peakRandom|patch87/ch1" value="0.261670351"/>
+        <property name="sanity.dcRandom|patch87/ch1" value="9.89188948e-07"/>
+        <property name="sanity.peakRandom|patch88/ch0" value="0.000355570402"/>
+        <property name="sanity.dcRandom|patch88/ch0" value="5.87549831e-09"/>
+        <property name="sanity.peakRandom|patch88/ch1" value="0.000357024517"/>
+        <property name="sanity.dcRandom|patch88/ch1" value="9.12389364e-09"/>
+        <property name="sanity.peakRandom|patch89/ch0" value="0.205003634"/>
+        <property name="sanity.dcRandom|patch89/ch0" value="0.0269201044"/>
+        <property name="sanity.peakRandom|patch89/ch1" value="0.187865078"/>
+        <property name="sanity.dcRandom|patch89/ch1" value="0.026541546"/>
+        <property name="sanity.peakRandom|patch90/ch0" value="0.0119352192"/>
+        <property name="sanity.dcRandom|patch90/ch0" value="0.00393466791"/>
+        <property name="sanity.peakRandom|patch90/ch1" value="0.0122687398"/>
+        <property name="sanity.dcRandom|patch90/ch1" value="0.00395869231"/>
+        <property name="sanity.peakRandom|patch91/ch0" value="0.00181653001"/>
+        <property name="sanity.dcRandom|patch91/ch0" value="8.64038263e-09"/>
+        <property name="sanity.peakRandom|patch91/ch1" value="0.00181653001"/>
+        <property name="sanity.dcRandom|patch91/ch1" value="8.64038263e-09"/>
+        <property name="sanity.peakRandom|patch92/ch0" value="0.0888394862"/>
+        <property name="sanity.dcRandom|patch92/ch0" value="0.00383436377"/>
+        <property name="sanity.peakRandom|patch92/ch1" value="0.0892371833"/>
+        <property name="sanity.dcRandom|patch92/ch1" value="0.00374863832"/>
+        <property name="sanity.peakRandom|patch93/ch0" value="0.131231949"/>
+        <property name="sanity.dcRandom|patch93/ch0" value="2.11380757e-06"/>
+        <property name="sanity.peakRandom|patch93/ch1" value="0.131231949"/>
+        <property name="sanity.dcRandom|patch93/ch1" value="2.11380757e-06"/>
+        <property name="sanity.peakRandom|patch94/ch0" value="0.20379363"/>
+        <property name="sanity.dcRandom|patch94/ch0" value="0.00538347615"/>
+        <property name="sanity.peakRandom|patch94/ch1" value="0.20379363"/>
+        <property name="sanity.dcRandom|patch94/ch1" value="0.00538347615"/>
+        <property name="sanity.peakRandom|patch95/ch0" value="0.160972118"/>
+        <property name="sanity.dcRandom|patch95/ch0" value="0.029532427"/>
+        <property name="sanity.peakRandom|patch95/ch1" value="0.160848379"/>
+        <property name="sanity.dcRandom|patch95/ch1" value="0.0295167752"/>
+        <property name="sanity.peakRandom|patch96/ch0" value="0.240622237"/>
+        <property name="sanity.dcRandom|patch96/ch0" value="0.0392413437"/>
+        <property name="sanity.peakRandom|patch96/ch1" value="0.238017261"/>
+        <property name="sanity.dcRandom|patch96/ch1" value="0.0395110101"/>
+        <property name="sanity.peakRandom|patch97/ch0" value="0.0199880823"/>
+        <property name="sanity.dcRandom|patch97/ch0" value="3.37940435e-07"/>
+        <property name="sanity.peakRandom|patch97/ch1" value="0.0199880823"/>
+        <property name="sanity.dcRandom|patch97/ch1" value="3.37940435e-07"/>
+        <property name="sanity.peakRandom|patch98/ch0" value="0.150654063"/>
+        <property name="sanity.dcRandom|patch98/ch0" value="2.22209266e-07"/>
+        <property name="sanity.peakRandom|patch98/ch1" value="0.150654063"/>
+        <property name="sanity.dcRandom|patch98/ch1" value="2.22209266e-07"/>
+        <property name="sanity.peakRandom|patch99/ch0" value="0.183779255"/>
+        <property name="sanity.dcRandom|patch99/ch0" value="0.013987653"/>
+        <property name="sanity.peakRandom|patch99/ch1" value="0.19543463"/>
+        <property name="sanity.dcRandom|patch99/ch1" value="0.0140187396"/>
+        <property name="sanity.peakRandom|patch100/ch0" value="0.0167597681"/>
+        <property name="sanity.dcRandom|patch100/ch0" value="2.86326995e-05"/>
+        <property name="sanity.peakRandom|patch100/ch1" value="0.0167597681"/>
+        <property name="sanity.dcRandom|patch100/ch1" value="2.86326995e-05"/>
+        <property name="sanity.peakRandom|patch101/ch0" value="0.010928819"/>
+        <property name="sanity.dcRandom|patch101/ch0" value="4.01541365e-05"/>
+        <property name="sanity.peakRandom|patch101/ch1" value="0.0164265595"/>
+        <property name="sanity.dcRandom|patch101/ch1" value="4.0642808e-05"/>
+        <property name="sanity.peakRandom|patch102/ch0" value="0.0109134382"/>
+        <property name="sanity.dcRandom|patch102/ch0" value="0.000155229325"/>
+        <property name="sanity.peakRandom|patch102/ch1" value="0.0109134382"/>
+        <property name="sanity.dcRandom|patch102/ch1" value="0.000155229325"/>
+        <property name="sanity.peakRandom|patch103/ch0" value="0.0836569965"/>
+        <property name="sanity.dcRandom|patch103/ch0" value="2.87482379e-07"/>
+        <property name="sanity.peakRandom|patch103/ch1" value="0.0835778043"/>
+        <property name="sanity.dcRandom|patch103/ch1" value="3.40822709e-07"/>
+        <property name="sanity.peakRandom|patch104/ch0" value="1.01237476"/>
+        <property name="sanity.dcRandom|patch104/ch0" value="0.560360134"/>
+        <property name="sanity.peakRandom|patch104/ch1" value="0.992806673"/>
+        <property name="sanity.dcRandom|patch104/ch1" value="0.557139456"/>
+        <property name="sanity.peakRandom|patch105/ch0" value="0.566072643"/>
+        <property name="sanity.dcRandom|patch105/ch0" value="0.0869460925"/>
+        <property name="sanity.peakRandom|patch105/ch1" value="0.533862531"/>
+        <property name="sanity.dcRandom|patch105/ch1" value="0.086439088"/>
+        <property name="sanity.peakRandom|patch106/ch0" value="0.090105705"/>
+        <property name="sanity.dcRandom|patch106/ch0" value="0.00051613769"/>
+        <property name="sanity.peakRandom|patch106/ch1" value="0.090105705"/>
+        <property name="sanity.dcRandom|patch106/ch1" value="0.00051613769"/>
+        <property name="sanity.peakRandom|patch107/ch0" value="0.289146483"/>
+        <property name="sanity.dcRandom|patch107/ch0" value="0.0997083634"/>
+        <property name="sanity.peakRandom|patch107/ch1" value="0.238564685"/>
+        <property name="sanity.dcRandom|patch107/ch1" value="0.0989130735"/>
+        <property name="sanity.peakRandom|patch108/ch0" value="0.0162984263"/>
+        <property name="sanity.dcRandom|patch108/ch0" value="1.07992824e-08"/>
+        <property name="sanity.peakRandom|patch108/ch1" value="0.0162984263"/>
+        <property name="sanity.dcRandom|patch108/ch1" value="1.07992824e-08"/>
+        <property name="sanity.peakRandom|patch109/ch0" value="0.0281657055"/>
+        <property name="sanity.dcRandom|patch109/ch0" value="0.000145011305"/>
+        <property name="sanity.peakRandom|patch109/ch1" value="0.0295719914"/>
+        <property name="sanity.dcRandom|patch109/ch1" value="0.00014315205"/>
+        <property name="sanity.peakRandom|patch110/ch0" value="0.0957207978"/>
+        <property name="sanity.dcRandom|patch110/ch0" value="0.0201439261"/>
+        <property name="sanity.peakRandom|patch110/ch1" value="0.0970381424"/>
+        <property name="sanity.dcRandom|patch110/ch1" value="0.0199690182"/>
+        <property name="sanity.peakRandom|patch111/ch0" value="0.0414718501"/>
+        <property name="sanity.dcRandom|patch111/ch0" value="0.000307611277"/>
+        <property name="sanity.peakRandom|patch111/ch1" value="0.0414718501"/>
+        <property name="sanity.dcRandom|patch111/ch1" value="0.000307611277"/>
+        <property name="sanity.peakRandom|patch112/ch0" value="0.00820247456"/>
+        <property name="sanity.dcRandom|patch112/ch0" value="2.54466812e-08"/>
+        <property name="sanity.peakRandom|patch112/ch1" value="0.00885757059"/>
+        <property name="sanity.dcRandom|patch112/ch1" value="1.236712e-07"/>
+        <property name="sanity.peakRandom|patch113/ch0" value="0.0857891738"/>
+        <property name="sanity.dcRandom|patch113/ch0" value="0.000535522879"/>
+        <property name="sanity.peakRandom|patch113/ch1" value="0.0857891738"/>
+        <property name="sanity.dcRandom|patch113/ch1" value="0.000535522879"/>
+        <property name="sanity.peakRandom|patch114/ch0" value="0.00241054548"/>
+        <property name="sanity.dcRandom|patch114/ch0" value="5.54055646e-09"/>
+        <property name="sanity.peakRandom|patch114/ch1" value="0.00241054548"/>
+        <property name="sanity.dcRandom|patch114/ch1" value="5.54055646e-09"/>
+        <property name="sanity.peakRandom|patch115/ch0" value="0.0497410484"/>
+        <property name="sanity.dcRandom|patch115/ch0" value="4.75643719e-05"/>
+        <property name="sanity.peakRandom|patch115/ch1" value="0.0497410484"/>
+        <property name="sanity.dcRandom|patch115/ch1" value="4.75643719e-05"/>
+        <property name="sanity.peakRandom|patch116/ch0" value="0.00503500924"/>
+        <property name="sanity.dcRandom|patch116/ch0" value="3.95457246e-05"/>
+        <property name="sanity.peakRandom|patch116/ch1" value="0.00503500924"/>
+        <property name="sanity.dcRandom|patch116/ch1" value="3.95457246e-05"/>
+        <property name="sanity.peakRandom|patch117/ch0" value="0.0020874124"/>
+        <property name="sanity.dcRandom|patch117/ch0" value="4.10750326e-05"/>
+        <property name="sanity.peakRandom|patch117/ch1" value="0.0020874124"/>
+        <property name="sanity.dcRandom|patch117/ch1" value="4.10750326e-05"/>
+        <property name="sanity.peakRandom|patch118/ch0" value="0.0517757051"/>
+        <property name="sanity.dcRandom|patch118/ch0" value="0.000376476441"/>
+        <property name="sanity.peakRandom|patch118/ch1" value="0.0517757051"/>
+        <property name="sanity.dcRandom|patch118/ch1" value="0.000376476441"/>
+        <property name="sanity.peakRandom|patch119/ch0" value="0.0407285206"/>
+        <property name="sanity.dcRandom|patch119/ch0" value="1.47597357e-05"/>
+        <property name="sanity.peakRandom|patch119/ch1" value="0.0433924831"/>
+        <property name="sanity.dcRandom|patch119/ch1" value="1.37827828e-05"/>
+        <property name="sanity.peakRandom|patch120/ch0" value="0.102249704"/>
+        <property name="sanity.dcRandom|patch120/ch0" value="2.28308763e-05"/>
+        <property name="sanity.peakRandom|patch120/ch1" value="0.101009689"/>
+        <property name="sanity.dcRandom|patch120/ch1" value="2.26219618e-05"/>
+        <property name="sanity.peakRandom|patch121/ch0" value="0.00359761855"/>
+        <property name="sanity.dcRandom|patch121/ch0" value="2.57690317e-07"/>
+        <property name="sanity.peakRandom|patch121/ch1" value="0.00359761855"/>
+        <property name="sanity.dcRandom|patch121/ch1" value="2.57690317e-07"/>
+        <property name="sanity.peakRandom|patch122/ch0" value="0.0215031039"/>
+        <property name="sanity.dcRandom|patch122/ch0" value="0.00176163018"/>
+        <property name="sanity.peakRandom|patch122/ch1" value="0.0214998499"/>
+        <property name="sanity.dcRandom|patch122/ch1" value="0.00176148349"/>
+        <property name="sanity.peakRandom|patch123/ch0" value="0.166206449"/>
+        <property name="sanity.dcRandom|patch123/ch0" value="0.0205295924"/>
+        <property name="sanity.peakRandom|patch123/ch1" value="0.161673471"/>
+        <property name="sanity.dcRandom|patch123/ch1" value="0.0204802975"/>
+        <property name="sanity.peakRandom|patch124/ch0" value="0.00202986132"/>
+        <property name="sanity.dcRandom|patch124/ch0" value="2.03271793e-05"/>
+        <property name="sanity.peakRandom|patch124/ch1" value="0.00202986132"/>
+        <property name="sanity.dcRandom|patch124/ch1" value="2.03271793e-05"/>
+        <property name="sanity.peakRandom|patch125/ch0" value="0.00261109974"/>
+        <property name="sanity.dcRandom|patch125/ch0" value="2.38881714e-08"/>
+        <property name="sanity.peakRandom|patch125/ch1" value="0.00261109974"/>
+        <property name="sanity.dcRandom|patch125/ch1" value="2.38881714e-08"/>
+        <property name="sanity.peakRandom|patch126/ch0" value="0.127205953"/>
+        <property name="sanity.dcRandom|patch126/ch0" value="0.00115201715"/>
+        <property name="sanity.peakRandom|patch126/ch1" value="0.127205953"/>
+        <property name="sanity.dcRandom|patch126/ch1" value="0.00115201715"/>
+        <property name="sanity.peakRandom|patch127/ch0" value="0.119910993"/>
+        <property name="sanity.dcRandom|patch127/ch0" value="0.000936032913"/>
+        <property name="sanity.peakRandom|patch127/ch1" value="0.119910993"/>
+        <property name="sanity.dcRandom|patch127/ch1" value="0.000936032913"/>
+        <property name="sanity.peakRandom|patch128/ch0" value="0.107282907"/>
+        <property name="sanity.dcRandom|patch128/ch0" value="0.0151701784"/>
+        <property name="sanity.peakRandom|patch128/ch1" value="0.105437607"/>
+        <property name="sanity.dcRandom|patch128/ch1" value="0.0150537137"/>
+        <property name="sanity.peakRandom|patch129/ch0" value="0.0201443732"/>
+        <property name="sanity.dcRandom|patch129/ch0" value="0.000170094107"/>
+        <property name="sanity.peakRandom|patch129/ch1" value="0.0201443732"/>
+        <property name="sanity.dcRandom|patch129/ch1" value="0.000170094107"/>
+        <property name="sanity.peakRandom|patch130/ch0" value="0.00395673141"/>
+        <property name="sanity.dcRandom|patch130/ch0" value="3.70684923e-08"/>
+        <property name="sanity.peakRandom|patch130/ch1" value="0.00324431993"/>
+        <property name="sanity.dcRandom|patch130/ch1" value="5.55264386e-08"/>
+        <property name="sanity.peakRandom|patch131/ch0" value="0.0249051861"/>
+        <property name="sanity.dcRandom|patch131/ch0" value="0.00359844416"/>
+        <property name="sanity.peakRandom|patch131/ch1" value="0.0242527202"/>
+        <property name="sanity.dcRandom|patch131/ch1" value="0.0035606497"/>
+        <property name="sanity.peakRandom|patch132/ch0" value="0.00828154013"/>
+        <property name="sanity.dcRandom|patch132/ch0" value="0.000877691666"/>
+        <property name="sanity.peakRandom|patch132/ch1" value="0.00778205832"/>
+        <property name="sanity.dcRandom|patch132/ch1" value="0.00088034803"/>
+        <property name="sanity.peakRandom|patch133/ch0" value="0.0510982983"/>
+        <property name="sanity.dcRandom|patch133/ch0" value="3.55862176e-05"/>
+        <property name="sanity.peakRandom|patch133/ch1" value="0.0510982983"/>
+        <property name="sanity.dcRandom|patch133/ch1" value="3.55862176e-05"/>
+        <property name="sanity.peakRandom|patch134/ch0" value="0.231367916"/>
+        <property name="sanity.dcRandom|patch134/ch0" value="0.0088411849"/>
+        <property name="sanity.peakRandom|patch134/ch1" value="0.23074922"/>
+        <property name="sanity.dcRandom|patch134/ch1" value="0.00884512253"/>
+        <property name="sanity.peakRandom|patch135/ch0" value="0.00620242441"/>
+        <property name="sanity.dcRandom|patch135/ch0" value="4.30288746e-05"/>
+        <property name="sanity.peakRandom|patch135/ch1" value="0.00620242441"/>
+        <property name="sanity.dcRandom|patch135/ch1" value="4.30288746e-05"/>
+        <property name="sanity.peakRandom|patch136/ch0" value="0.192606956"/>
+        <property name="sanity.dcRandom|patch136/ch0" value="0.0585622452"/>
+        <property name="sanity.peakRandom|patch136/ch1" value="0.186814815"/>
+        <property name="sanity.dcRandom|patch136/ch1" value="0.0579679348"/>
+        <property name="sanity.peakRandom|patch137/ch0" value="0.179693639"/>
+        <property name="sanity.dcRandom|patch137/ch0" value="0.000587142888"/>
+        <property name="sanity.peakRandom|patch137/ch1" value="0.179398462"/>
+        <property name="sanity.dcRandom|patch137/ch1" value="0.00058825966"/>
+        <property name="sanity.peakRandom|patch138/ch0" value="0.0908519253"/>
+        <property name="sanity.dcRandom|patch138/ch0" value="1.75453658e-06"/>
+        <property name="sanity.peakRandom|patch138/ch1" value="0.0908519253"/>
+        <property name="sanity.dcRandom|patch138/ch1" value="1.75453658e-06"/>
+        <property name="sanity.peakRandom|patch139/ch0" value="0.0261736233"/>
+        <property name="sanity.dcRandom|patch139/ch0" value="2.31578369e-07"/>
+        <property name="sanity.peakRandom|patch139/ch1" value="0.0261736233"/>
+        <property name="sanity.dcRandom|patch139/ch1" value="2.31578369e-07"/>
+        <property name="sanity.peakRandom|patch140/ch0" value="0.00187501812"/>
+        <property name="sanity.dcRandom|patch140/ch0" value="3.96386168e-09"/>
+        <property name="sanity.peakRandom|patch140/ch1" value="0.00187501812"/>
+        <property name="sanity.dcRandom|patch140/ch1" value="3.96386168e-09"/>
+        <property name="sanity.peakRandom|patch141/ch0" value="0.00669431873"/>
+        <property name="sanity.dcRandom|patch141/ch0" value="4.87873244e-08"/>
+        <property name="sanity.peakRandom|patch141/ch1" value="0.00669431873"/>
+        <property name="sanity.dcRandom|patch141/ch1" value="4.87873244e-08"/>
+        <property name="sanity.peakRandom|patch142/ch0" value="0.00679739984"/>
+        <property name="sanity.dcRandom|patch142/ch0" value="1.14606355e-05"/>
+        <property name="sanity.peakRandom|patch142/ch1" value="0.00679739984"/>
+        <property name="sanity.dcRandom|patch142/ch1" value="1.14606355e-05"/>
+        <property name="sanity.peakRandom|patch143/ch0" value="0.00656845467"/>
+        <property name="sanity.dcRandom|patch143/ch0" value="0.000159007788"/>
+        <property name="sanity.peakRandom|patch143/ch1" value="0.00656845467"/>
+        <property name="sanity.dcRandom|patch143/ch1" value="0.000159007788"/>
+        <property name="sanity.peakRandom|patch144/ch0" value="0.0162958223"/>
+        <property name="sanity.dcRandom|patch144/ch0" value="8.07307151e-05"/>
+        <property name="sanity.peakRandom|patch144/ch1" value="0.0162958223"/>
+        <property name="sanity.dcRandom|patch144/ch1" value="8.07307151e-05"/>
+        <property name="sanity.peakRandom|patch145/ch0" value="0.00766718574"/>
+        <property name="sanity.dcRandom|patch145/ch0" value="0.00169069914"/>
+        <property name="sanity.peakRandom|patch145/ch1" value="0.00779444911"/>
+        <property name="sanity.dcRandom|patch145/ch1" value="0.00167651358"/>
+        <property name="sanity.peakRandom|patch146/ch0" value="0.0335609615"/>
+        <property name="sanity.dcRandom|patch146/ch0" value="1.70194696e-07"/>
+        <property name="sanity.peakRandom|patch146/ch1" value="0.0335609615"/>
+        <property name="sanity.dcRandom|patch146/ch1" value="1.70194696e-07"/>
+        <property name="sanity.peakRandom|patch147/ch0" value="0.388087928"/>
+        <property name="sanity.dcRandom|patch147/ch0" value="0.0263591856"/>
+        <property name="sanity.peakRandom|patch147/ch1" value="0.381311625"/>
+        <property name="sanity.dcRandom|patch147/ch1" value="0.0264392514"/>
+        <property name="sanity.peakRandom|patch148/ch0" value="0.0300688166"/>
+        <property name="sanity.dcRandom|patch148/ch0" value="2.75758254e-07"/>
+        <property name="sanity.peakRandom|patch148/ch1" value="0.0300688166"/>
+        <property name="sanity.dcRandom|patch148/ch1" value="2.75758254e-07"/>
+        <property name="sanity.peakRandom|patch149/ch0" value="0.0659794882"/>
+        <property name="sanity.dcRandom|patch149/ch0" value="0.000120800025"/>
+        <property name="sanity.peakRandom|patch149/ch1" value="0.0659794882"/>
+        <property name="sanity.dcRandom|patch149/ch1" value="0.000120800025"/>
+        <property name="sanity.peakRandom|patch150/ch0" value="0.159328401"/>
+        <property name="sanity.dcRandom|patch150/ch0" value="0.00731919101"/>
+        <property name="sanity.peakRandom|patch150/ch1" value="0.16187413"/>
+        <property name="sanity.dcRandom|patch150/ch1" value="0.00760163134"/>
+        <property name="sanity.peakRandom|patch151/ch0" value="0.0147788282"/>
+        <property name="sanity.dcRandom|patch151/ch0" value="8.26486303e-06"/>
+        <property name="sanity.peakRandom|patch151/ch1" value="0.0147788282"/>
+        <property name="sanity.dcRandom|patch151/ch1" value="8.26486303e-06"/>
+        <property name="sanity.peakRandom|patch152/ch0" value="0.0173066165"/>
+        <property name="sanity.dcRandom|patch152/ch0" value="8.11068603e-05"/>
+        <property name="sanity.peakRandom|patch152/ch1" value="0.0173066165"/>
+        <property name="sanity.dcRandom|patch152/ch1" value="8.11068603e-05"/>
+        <property name="sanity.peakRandom|patch153/ch0" value="0.00894872472"/>
+        <property name="sanity.dcRandom|patch153/ch0" value="3.73431817e-07"/>
+        <property name="sanity.peakRandom|patch153/ch1" value="0.00894872472"/>
+        <property name="sanity.dcRandom|patch153/ch1" value="3.73431817e-07"/>
+        <property name="sanity.peakRandom|patch154/ch0" value="0.0112475678"/>
+        <property name="sanity.dcRandom|patch154/ch0" value="7.15748392e-05"/>
+        <property name="sanity.peakRandom|patch154/ch1" value="0.0102930982"/>
+        <property name="sanity.dcRandom|patch154/ch1" value="7.2982235e-05"/>
+        <property name="sanity.peakRandom|patch155/ch0" value="0.00469874032"/>
+        <property name="sanity.dcRandom|patch155/ch0" value="2.44225191e-08"/>
+        <property name="sanity.peakRandom|patch155/ch1" value="0.00469874032"/>
+        <property name="sanity.dcRandom|patch155/ch1" value="2.44225191e-08"/>
+        <property name="sanity.peakRandom|patch156/ch0" value="0.00162227266"/>
+        <property name="sanity.dcRandom|patch156/ch0" value="7.39241557e-10"/>
+        <property name="sanity.peakRandom|patch156/ch1" value="0.00162227266"/>
+        <property name="sanity.dcRandom|patch156/ch1" value="7.39241557e-10"/>
+        <property name="sanity.peakRandom|patch157/ch0" value="0.000579264713"/>
+        <property name="sanity.dcRandom|patch157/ch0" value="8.05021614e-08"/>
+        <property name="sanity.peakRandom|patch157/ch1" value="0.000475414097"/>
+        <property name="sanity.dcRandom|patch157/ch1" value="6.69146516e-08"/>
+        <property name="sanity.peakRandom|patch158/ch0" value="0.00440442748"/>
+        <property name="sanity.dcRandom|patch158/ch0" value="3.0501738e-08"/>
+        <property name="sanity.peakRandom|patch158/ch1" value="0.00440442748"/>
+        <property name="sanity.dcRandom|patch158/ch1" value="3.0501738e-08"/>
+        <property name="sanity.peakRandom|patch159/ch0" value="0.081144318"/>
+        <property name="sanity.dcRandom|patch159/ch0" value="0.00514634186"/>
+        <property name="sanity.peakRandom|patch159/ch1" value="0.081144318"/>
+        <property name="sanity.dcRandom|patch159/ch1" value="0.00514634186"/>
+        <property name="sanity.peakRandom|patch160/ch0" value="0.0160850361"/>
+        <property name="sanity.dcRandom|patch160/ch0" value="1.52123912e-05"/>
+        <property name="sanity.peakRandom|patch160/ch1" value="0.013788783"/>
+        <property name="sanity.dcRandom|patch160/ch1" value="1.49931439e-05"/>
+        <property name="sanity.peakRandom|patch161/ch0" value="1.46351266"/>
+        <property name="sanity.dcRandom|patch161/ch0" value="0.10421057"/>
+        <property name="sanity.peakRandom|patch161/ch1" value="1.30169678"/>
+        <property name="sanity.dcRandom|patch161/ch1" value="0.10448508"/>
+        <property name="sanity.peakRandom|patch162/ch0" value="0.479302913"/>
+        <property name="sanity.dcRandom|patch162/ch0" value="0.0413111486"/>
+        <property name="sanity.peakRandom|patch162/ch1" value="0.475092411"/>
+        <property name="sanity.dcRandom|patch162/ch1" value="0.0400651693"/>
+        <property name="sanity.peakRandom|patch163/ch0" value="0.48413074"/>
+        <property name="sanity.dcRandom|patch163/ch0" value="0.0332736224"/>
+        <property name="sanity.peakRandom|patch163/ch1" value="0.441280961"/>
+        <property name="sanity.dcRandom|patch163/ch1" value="0.0330336131"/>
+        <property name="sanity.peakRandom|patch164/ch0" value="0.000431345019"/>
+        <property name="sanity.dcRandom|patch164/ch0" value="2.10737398e-05"/>
+        <property name="sanity.peakRandom|patch164/ch1" value="0.000431345019"/>
+        <property name="sanity.dcRandom|patch164/ch1" value="2.10737398e-05"/>
+        <property name="sanity.peakRandom|patch165/ch0" value="0.249038368"/>
+        <property name="sanity.dcRandom|patch165/ch0" value="0.00171613554"/>
+        <property name="sanity.peakRandom|patch165/ch1" value="0.246176809"/>
+        <property name="sanity.dcRandom|patch165/ch1" value="0.00170509191"/>
+        <property name="sanity.peakRandom|patch166/ch0" value="0.000399415789"/>
+        <property name="sanity.dcRandom|patch166/ch0" value="3.33872925e-12"/>
+        <property name="sanity.peakRandom|patch166/ch1" value="0.000399415789"/>
+        <property name="sanity.dcRandom|patch166/ch1" value="3.33872925e-12"/>
+        <property name="sanity.peakRandom|patch167/ch0" value="0.0189391673"/>
+        <property name="sanity.dcRandom|patch167/ch0" value="0.0026639991"/>
+        <property name="sanity.peakRandom|patch167/ch1" value="0.0183317922"/>
+        <property name="sanity.dcRandom|patch167/ch1" value="0.00262574502"/>
+        <property name="sanity.peakRandom|patch168/ch0" value="0.0546344444"/>
+        <property name="sanity.dcRandom|patch168/ch0" value="0.000224736606"/>
+        <property name="sanity.peakRandom|patch168/ch1" value="0.0546344444"/>
+        <property name="sanity.dcRandom|patch168/ch1" value="0.000224736606"/>
+        <property name="sanity.peakRandom|patch169/ch0" value="0.0375917144"/>
+        <property name="sanity.dcRandom|patch169/ch0" value="0.000201201779"/>
+        <property name="sanity.peakRandom|patch169/ch1" value="0.0375917144"/>
+        <property name="sanity.dcRandom|patch169/ch1" value="0.000201201779"/>
+        <property name="sanity.peakRandom|patch170/ch0" value="0.116693094"/>
+        <property name="sanity.dcRandom|patch170/ch0" value="0.00201828126"/>
+        <property name="sanity.peakRandom|patch170/ch1" value="0.115208723"/>
+        <property name="sanity.dcRandom|patch170/ch1" value="0.00200040243"/>
+        <property name="sanity.peakRandom|patch171/ch0" value="0.00392412441"/>
+        <property name="sanity.dcRandom|patch171/ch0" value="3.02182298e-06"/>
+        <property name="sanity.peakRandom|patch171/ch1" value="0.00457833847"/>
+        <property name="sanity.dcRandom|patch171/ch1" value="2.96199619e-06"/>
+        <property name="sanity.peakRandom|patch172/ch0" value="0.0264185835"/>
+        <property name="sanity.dcRandom|patch172/ch0" value="0.000192641135"/>
+        <property name="sanity.peakRandom|patch172/ch1" value="0.0264185835"/>
+        <property name="sanity.dcRandom|patch172/ch1" value="0.000192641135"/>
+        <property name="sanity.peakRandom|patch173/ch0" value="0.0347769894"/>
+        <property name="sanity.dcRandom|patch173/ch0" value="1.93485575e-05"/>
+        <property name="sanity.peakRandom|patch173/ch1" value="0.0347769894"/>
+        <property name="sanity.dcRandom|patch173/ch1" value="1.93485575e-05"/>
+        <property name="sanity.peakRandom|patch174/ch0" value="0.0662243888"/>
+        <property name="sanity.dcRandom|patch174/ch0" value="1.09834773e-05"/>
+        <property name="sanity.peakRandom|patch174/ch1" value="0.0642296523"/>
+        <property name="sanity.dcRandom|patch174/ch1" value="1.29943573e-05"/>
+        <property name="sanity.peakRandom|patch175/ch0" value="0.0186207388"/>
+        <property name="sanity.dcRandom|patch175/ch0" value="8.37774223e-06"/>
+        <property name="sanity.peakRandom|patch175/ch1" value="0.0186207388"/>
+        <property name="sanity.dcRandom|patch175/ch1" value="8.37774223e-06"/>
+        <property name="sanity.peakRandom|patch176/ch0" value="0.0185109824"/>
+        <property name="sanity.dcRandom|patch176/ch0" value="1.72948021e-05"/>
+        <property name="sanity.peakRandom|patch176/ch1" value="0.0186444595"/>
+        <property name="sanity.dcRandom|patch176/ch1" value="1.75788937e-05"/>
+        <property name="sanity.peakRandom|patch177/ch0" value="0.00428803731"/>
+        <property name="sanity.dcRandom|patch177/ch0" value="5.82475025e-07"/>
+        <property name="sanity.peakRandom|patch177/ch1" value="0.00428803731"/>
+        <property name="sanity.dcRandom|patch177/ch1" value="5.82475025e-07"/>
+        <property name="sanity.peakRandom|patch178/ch0" value="0.000480410439"/>
+        <property name="sanity.dcRandom|patch178/ch0" value="5.20226457e-08"/>
+        <property name="sanity.peakRandom|patch178/ch1" value="0.000480410439"/>
+        <property name="sanity.dcRandom|patch178/ch1" value="5.20226457e-08"/>
+        <property name="sanity.peakRandom|patch179/ch0" value="0.0389290825"/>
+        <property name="sanity.dcRandom|patch179/ch0" value="0.000339324004"/>
+        <property name="sanity.peakRandom|patch179/ch1" value="0.0389290825"/>
+        <property name="sanity.dcRandom|patch179/ch1" value="0.000339324004"/>
+        <property name="sanity.peakRandom|patch180/ch0" value="0.0224549137"/>
+        <property name="sanity.dcRandom|patch180/ch0" value="2.14716474e-05"/>
+        <property name="sanity.peakRandom|patch180/ch1" value="0.0251456052"/>
+        <property name="sanity.dcRandom|patch180/ch1" value="2.13485564e-05"/>
+        <property name="sanity.peakRandom|patch181/ch0" value="0.02889378"/>
+        <property name="sanity.dcRandom|patch181/ch0" value="2.39002816e-06"/>
+        <property name="sanity.peakRandom|patch181/ch1" value="0.0297775585"/>
+        <property name="sanity.dcRandom|patch181/ch1" value="7.43356281e-07"/>
+        <property name="sanity.peakRandom|patch182/ch0" value="0.00826280005"/>
+        <property name="sanity.dcRandom|patch182/ch0" value="1.02713921e-05"/>
+        <property name="sanity.peakRandom|patch182/ch1" value="0.00829599053"/>
+        <property name="sanity.dcRandom|patch182/ch1" value="1.03027405e-05"/>
+        <property name="sanity.peakRandom|patch183/ch0" value="0.0063157035"/>
+        <property name="sanity.dcRandom|patch183/ch0" value="2.73360874e-05"/>
+        <property name="sanity.peakRandom|patch183/ch1" value="0.0063157035"/>
+        <property name="sanity.dcRandom|patch183/ch1" value="2.73360874e-05"/>
+        <property name="sanity.peakRandom|patch184/ch0" value="0.0152879125"/>
+        <property name="sanity.dcRandom|patch184/ch0" value="0.000622326857"/>
+        <property name="sanity.peakRandom|patch184/ch1" value="0.0152632659"/>
+        <property name="sanity.dcRandom|patch184/ch1" value="0.000622224819"/>
+        <property name="sanity.peakRandom|patch185/ch0" value="0.0236141402"/>
+        <property name="sanity.dcRandom|patch185/ch0" value="4.42654091e-08"/>
+        <property name="sanity.peakRandom|patch185/ch1" value="0.0235347394"/>
+        <property name="sanity.dcRandom|patch185/ch1" value="4.06462313e-08"/>
+        <property name="sanity.peakRandom|patch186/ch0" value="0.132632047"/>
+        <property name="sanity.dcRandom|patch186/ch0" value="0.00134217169"/>
+        <property name="sanity.peakRandom|patch186/ch1" value="0.132632047"/>
+        <property name="sanity.dcRandom|patch186/ch1" value="0.00134217169"/>
+        <property name="sanity.peakRandom|patch187/ch0" value="0.0138284927"/>
+        <property name="sanity.dcRandom|patch187/ch0" value="2.9631142e-09"/>
+        <property name="sanity.peakRandom|patch187/ch1" value="0.0138284927"/>
+        <property name="sanity.dcRandom|patch187/ch1" value="2.9631142e-09"/>
+        <property name="sanity.peakRandom|patch188/ch0" value="0.347072423"/>
+        <property name="sanity.dcRandom|patch188/ch0" value="0.000847103889"/>
+        <property name="sanity.peakRandom|patch188/ch1" value="0.347478241"/>
+        <property name="sanity.dcRandom|patch188/ch1" value="0.00084635074"/>
+        <property name="sanity.peakRandom|patch189/ch0" value="0.029165186"/>
+        <property name="sanity.dcRandom|patch189/ch0" value="7.0970229e-05"/>
+        <property name="sanity.peakRandom|patch189/ch1" value="0.029165186"/>
+        <property name="sanity.dcRandom|patch189/ch1" value="7.0970229e-05"/>
+        <property name="sanity.peakRandom|patch190/ch0" value="0.0470943563"/>
+        <property name="sanity.dcRandom|patch190/ch0" value="0.000388637127"/>
+        <property name="sanity.peakRandom|patch190/ch1" value="0.0470943563"/>
+        <property name="sanity.dcRandom|patch190/ch1" value="0.000388637127"/>
+        <property name="sanity.peakRandom|patch191/ch0" value="0.110808954"/>
+        <property name="sanity.dcRandom|patch191/ch0" value="7.39804182e-06"/>
+        <property name="sanity.peakRandom|patch191/ch1" value="0.110808954"/>
+        <property name="sanity.dcRandom|patch191/ch1" value="7.39804182e-06"/>
+        <property name="sanity.peakRandom|patch192/ch0" value="0.00539410766"/>
+        <property name="sanity.dcRandom|patch192/ch0" value="4.29947278e-07"/>
+        <property name="sanity.peakRandom|patch192/ch1" value="0.00517605571"/>
+        <property name="sanity.dcRandom|patch192/ch1" value="3.92966513e-07"/>
+        <property name="sanity.peakRandom|patch193/ch0" value="0.00846170355"/>
+        <property name="sanity.dcRandom|patch193/ch0" value="0.000101205675"/>
+        <property name="sanity.peakRandom|patch193/ch1" value="0.00846170355"/>
+        <property name="sanity.dcRandom|patch193/ch1" value="0.000101205675"/>
+        <property name="sanity.peakRandom|patch194/ch0" value="0.0277503394"/>
+        <property name="sanity.dcRandom|patch194/ch0" value="1.3527125e-06"/>
+        <property name="sanity.peakRandom|patch194/ch1" value="0.0277503394"/>
+        <property name="sanity.dcRandom|patch194/ch1" value="1.3527125e-06"/>
+        <property name="sanity.peakRandom|patch195/ch0" value="0.317745835"/>
+        <property name="sanity.dcRandom|patch195/ch0" value="0.0257477202"/>
+        <property name="sanity.peakRandom|patch195/ch1" value="0.304437548"/>
+        <property name="sanity.dcRandom|patch195/ch1" value="0.0251179356"/>
+        <property name="sanity.peakRandom|patch196/ch0" value="0.000169370629"/>
+        <property name="sanity.dcRandom|patch196/ch0" value="3.75383635e-08"/>
+        <property name="sanity.peakRandom|patch196/ch1" value="0.000169370629"/>
+        <property name="sanity.dcRandom|patch196/ch1" value="3.75383635e-08"/>
+        <property name="sanity.peakRandom|patch197/ch0" value="0.0123490524"/>
+        <property name="sanity.dcRandom|patch197/ch0" value="2.61067198e-05"/>
+        <property name="sanity.peakRandom|patch197/ch1" value="0.0123490524"/>
+        <property name="sanity.dcRandom|patch197/ch1" value="2.61067198e-05"/>
+        <property name="sanity.peakRandom|patch198/ch0" value="0.0583432801"/>
+        <property name="sanity.dcRandom|patch198/ch0" value="0.00271693734"/>
+        <property name="sanity.peakRandom|patch198/ch1" value="0.0583432801"/>
+        <property name="sanity.dcRandom|patch198/ch1" value="0.00271693734"/>
+        <property name="sanity.peakRandom|patch199/ch0" value="0.243106917"/>
+        <property name="sanity.dcRandom|patch199/ch0" value="0.000584936875"/>
+        <property name="sanity.peakRandom|patch199/ch1" value="0.243106917"/>
+        <property name="sanity.dcRandom|patch199/ch1" value="0.000584936875"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

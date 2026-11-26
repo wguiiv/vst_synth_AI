@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.164" timestamp="2026-11-04T03:13:32.709" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.164" timestamp="2026-11-04T03:13:32.709">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Square" value_param="144-byte object &lt;D0-D0 1E-0C ED-55 00-00 06-00 00-00 00-00 00-00 53-71 75-61 72-65 00-00 61-6E 69-74 79-2E 4F-75 00-00 00-00 00-70 E7-40 00-02 00-00 00-00 00-00 00-00 00-00 00-00 F0-3F 6C-65 41-6E 64-43 65-6E ... 10-F4 1E-0C ED-55 00-00 D0-00 1F-0C ED-55 00-00 02-00 00-00 00-00 00-00 D8-DE 9B-D4 EC-55 00-00 00-00 00-00 00-00 00-00 20-48 1C-0C ED-55 00-00 38-48 1C-0C ED-55 00-00 38-48 1C-0C ED-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.164" timestamp="2026-11-04T03:13:32.709" classname="Configs/Sanity">
+      <properties>
+        <property name="sanity.peak|Square/ch0" value="0.283312052"/>
+        <property name="sanity.audible|Square/ch0" value="0.283312023"/>
+        <property name="sanity.dc|Square/ch0" value="0"/>
+        <property name="sanity.peak|Square/ch1" value="0.283312052"/>
+        <property name="sanity.audible|Square/ch1" value="0.283312023"/>
+        <property name="sanity.dc|Square/ch1" value="0"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

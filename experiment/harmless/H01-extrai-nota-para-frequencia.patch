@@ -1,0 +1,35 @@
+# id: H01
+# kind: refatoracao
+# origin: projeto
+# target: Source/Data/OscData.cpp
+# description: Extrai a conversão de nota MIDI para frequência de OscData::updateFrequency para uma função local noteToFrequency. A expressão é a mesma (mesmos tipos float e a mesma ordem das operações) e o resultado continua passando pelo mesmo jlimit, então a frequência de cada amostra não muda.
+
+diff --git a/Source/Data/OscData.cpp b/Source/Data/OscData.cpp
+index 16a0130..cdb4c4f 100644
+--- a/Source/Data/OscData.cpp
++++ b/Source/Data/OscData.cpp
+@@ -10,6 +10,14 @@
+ 
+ #include "OscData.h"
+ 
++namespace
++{
++    float noteToFrequency (float note)
++    {
++        return 440.0f * std::pow (2.0f, (note - 69.0f) / 12.0f);
++    }
++}
++
+ void OscData::prepareToPlay (double sampleRate, int samplesPerBlock, int outputChannels)
+ {
+     resetAll();
+@@ -114,8 +122,7 @@ void OscData::setParams (const int oscChoice, const float oscGain, const int osc
+ void OscData::updateFrequency()
+ {
+     const auto note = (float) (lastMidiNote + lastPitch) + fmModulator;
+-    const auto freq = 440.0f * std::pow (2.0f, (note - 69.0f) / 12.0f);
+-    setFrequency (juce::jlimit (0.0f, nyquist, freq), true);
++    setFrequency (juce::jlimit (0.0f, nyquist, noteToFrequency (note)), true);
+ }
+ 
+ void OscData::resetAll()

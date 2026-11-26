@@ -1,0 +1,15 @@
+{
+ "id": "F05",
+ "kind": "defeito",
+ "config": "release",
+ "patch": "/home/guiz/vst_synth_AI/experiment/faults/F05-cutoff-modulado-sem-limite.patch",
+ "origin": "projeto",
+ "category": "filtro",
+ "run": 1,
+ "started": "2026-11-03T00:59:59",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 169.55355072021484,
+ "finished": "2026-11-03T01:03:02"
+}

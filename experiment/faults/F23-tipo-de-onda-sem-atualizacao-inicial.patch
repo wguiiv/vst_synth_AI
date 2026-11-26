@@ -1,0 +1,21 @@
+# id: F23
+# category: estado
+# origin: projeto
+# target: Source/Data/OscData.h
+# source: https://github.com/surge-synthesizer/monique-monosynth/commit/bc296c0d6bd78bc8721e458e5085bd4533bd9f5b
+# original-fix: O filtro do Monique so recalculava os coeficientes quando os valores mudavam em relacao ao cache, e o cache inicial coincidia com os primeiros valores; a correcao forca a primeira atualizacao.
+# adaptation: O cache lastType do OscData comeca em 0 (Sine) em vez de -1, entao o primeiro setType(0) e ignorado e o oscilador nunca e inicializado com a forma de onda.
+
+diff --git a/Source/Data/OscData.h b/Source/Data/OscData.h
+index badc2cd..35ab086 100644
+--- a/Source/Data/OscData.h
++++ b/Source/Data/OscData.h
+@@ -31,7 +31,7 @@ private:
+     
+     juce::dsp::Oscillator<float> fmOsc { [](float x) { return std::sin (x); }};
+     juce::dsp::Gain<float> gain;
+-    int lastType { -1 };
++    int lastType { 0 };
+     int lastPitch { 0 };
+     int lastMidiNote { 0 };
+     float fmDepth { 0.0f };

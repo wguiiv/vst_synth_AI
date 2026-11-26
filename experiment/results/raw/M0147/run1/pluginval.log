@@ -1,0 +1,14 @@
+Started validating: /home/guiz/vst_synth_AI/experiment/work/build-mull/tapSynth_artefacts/Release/VST3/tapSynth2.vst3
+Random seed: 0x2a
+Validation started
+Strictness level: 10
+-----------------------------------------------------------------
+Starting tests in: pluginval / Scan for plugins located in: /home/guiz/vst_synth_AI/experiment/work/build-mull/tapSynth_artefacts/Release/VST3/tapSynth2.vst3...
+Num plugins found: 1
+
+Testing plugin: VST3-tapSynth2-682c53fb-dc798663
+tapSynth: tapSynth2 v1.0.0
+Completed tests in pluginval / Scan for plugins located in: /home/guiz/vst_synth_AI/experiment/work/build-mull/tapSynth_artefacts/Release/VST3/tapSynth2.vst3
+-----------------------------------------------------------------
+Starting tests in: pluginval / Open plugin (cold)...
+/home/guiz/vst_synth_AI/experiment/run_pluginval.sh: line 16: 69424 Segmentation fault      "$PLUGINVAL" --strictness-level "$STRICTNESS" --random-seed "$SEED" --skip-gui-tests --validate-in-process --output-dir "$OUT" --validate "$PLUGIN"

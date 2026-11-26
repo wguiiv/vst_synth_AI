@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="1.45" timestamp="2026-11-03T10:15:44.738" name="AllTests">
+  <testsuite name="Rates/TemporalRelease" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="1.45" timestamp="2026-11-03T10:15:44.738">
+    <testcase name="FadesToSilenceInConfiguredTime/44100" value_param="44100" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/temporal/TemporalTest.cpp" line="147" status="run" result="completed" time="1.45" timestamp="2026-11-03T10:15:44.738" classname="Rates/TemporalRelease">
+      <properties>
+        <property name="temporal.release|release0.10" value="0.00149999851"/>
+        <property name="temporal.release|release0.40" value="0.00049999404"/>
+        <property name="temporal.release|release1.00" value="0.0005"/>
+        <property name="temporal.release|release3.00" value="0.0065"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

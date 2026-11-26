@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.01" timestamp="2026-11-03T01:23:23.579" name="AllTests">
+  <testsuite name="Configs/Golden" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.01" timestamp="2026-11-03T01:23:23.579">
+    <testcase name="MatchesReference/ExtremeMax" value_param="104-byte object &lt;30-88 83-EE 7A-55 00-00 0A-00 00-00 00-00 00-00 45-78 74-72 65-6D 65-4D 61-78 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 50-95 83-EE 7A-55 00-00 70-91 83-EE 7A-55 00-00 10-96 83-EE 7A-55 00-00 13-00 00-00 00-00 00-00 D0-EE 80-EE 7A-55 00-00 E8-EE 80-EE 7A-55 00-00 E8-EE 80-EE 7A-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/golden/GoldenTest.cpp" line="67" status="run" result="completed" time="0.01" timestamp="2026-11-03T01:23:23.579" classname="Configs/Golden">
+      <properties>
+        <property name="golden.maxAbsDiff|ExtremeMax" value="0"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

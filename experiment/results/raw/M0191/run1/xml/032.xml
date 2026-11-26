@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.487" timestamp="2026-11-04T01:56:56.522" name="AllTests">
+  <testsuite name="Rates/TemporalAttack" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.487" timestamp="2026-11-04T01:56:56.522">
+    <testcase name="DecaysToSustainInConfiguredTime/44100" value_param="44100" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/temporal/TemporalTest.cpp" line="95" status="run" result="completed" time="0.486" timestamp="2026-11-04T01:56:56.522" classname="Rates/TemporalAttack">
+      <properties>
+        <property name="temporal.time|decay0.20" value="0.00149999583"/>
+        <property name="temporal.time|decay0.50" value="0.00249999851"/>
+        <property name="temporal.time|decay1.00" value="0.00249999851"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

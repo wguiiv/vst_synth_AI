@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.395" timestamp="2026-11-03T10:12:05.915" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.395" timestamp="2026-11-03T10:12:05.915">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Block333" value_param="144-byte object &lt;C0-88 1E-84 EA-55 00-00 08-00 00-00 00-00 00-00 42-6C 6F-63 6B-33 33-33 00-00 65-00 70-65 00-00 00-00 00-00 00-70 E7-40 4D-01 00-00 00-00 00-00 00-00 00-00 00-00 F0-3F 03-00 00-00 00-00 00-00 ... F0-93 1E-84 EA-55 00-00 F0-93 1E-84 EA-55 00-00 01-00 00-00 00-00 00-00 D8-7E FA-46 EA-55 00-00 64-69 62-6C 65-41 6E-64 B0-B8 1E-84 EA-55 00-00 F8-B8 1E-84 EA-55 00-00 F8-B8 1E-84 EA-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.395" timestamp="2026-11-03T10:12:05.915" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131&#x0A;Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)&#x0A;  Actual: false (Block333/ch0: sanity.dc measured 0.424869418 linear, limit &lt;= 0.01 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131
+Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)
+  Actual: false (Block333/ch0: sanity.dc measured 0.424869418 linear, limit <= 0.01 linear)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131&#x0A;Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)&#x0A;  Actual: false (Block333/ch1: sanity.dc measured 0.424869418 linear, limit &lt;= 0.01 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:131
+Value of: within (tol::sanityDc, std::abs (dcOffset (held)), label)
+  Actual: false (Block333/ch1: sanity.dc measured 0.424869418 linear, limit <= 0.01 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peak|Block333/ch0" value="0.424873024"/>
+        <property name="sanity.audible|Block333/ch0" value="0.42487219"/>
+        <property name="sanity.dc|Block333/ch0" value="0.424869418"/>
+        <property name="sanity.peak|Block333/ch1" value="0.424873024"/>
+        <property name="sanity.audible|Block333/ch1" value="0.42487219"/>
+        <property name="sanity.dc|Block333/ch1" value="0.424869418"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

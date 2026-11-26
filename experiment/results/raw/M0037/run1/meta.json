@@ -1,0 +1,18 @@
+{
+ "id": "M0037",
+ "kind": "mutante",
+ "config": "mull",
+ "origin": "projeto",
+ "category": "",
+ "mutator": "cxx_lt_to_le",
+ "file": "Source/PluginProcessor.cpp",
+ "line": 20,
+ "mull_id": "cxx_lt_to_le:/home/guiz/vst_synth_AI/experiment/work/src/Source/PluginProcessor.cpp:20:23:20:24",
+ "run": 1,
+ "applied": true,
+ "built": true,
+ "build_s": 0.0,
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "started": "2026-11-03T10:13:56",
+ "finished": "2026-11-03T10:16:46"
+}

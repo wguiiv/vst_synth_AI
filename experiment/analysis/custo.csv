@@ -1,0 +1,6 @@
+abordagem,testes,linhas_de_codigo,linux_media_s,linux_dp_s,windows_media_s,windows_dp_s,macos_media_s,macos_dp_s
+sanidade,24,123,6.499,0.198,13.441,0.739,12.466,0.366
+espectral,21,176,3.11,0.411,4.831,0.297,14.577,2.196
+temporal,15,171,0.995,0.063,1.76,0.068,8.347,1.227
+golden,13,73,0.254,0.017,0.574,0.053,0.481,0.056
+pluginval,–,0,0.678,0.112,1.091,0.373,1.545,0.371

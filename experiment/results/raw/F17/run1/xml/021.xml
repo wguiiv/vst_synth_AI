@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.009" timestamp="2026-11-05T10:10:44.653" name="AllTests">
+  <testsuite name="Configs/Golden" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.009" timestamp="2026-11-05T10:10:44.653">
+    <testcase name="MatchesReference/HighPass" value_param="104-byte object &lt;F0-E7 8B-4D 03-56 00-00 08-00 00-00 00-00 00-00 48-69 67-68 50-61 73-73 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 10-00 8C-4D 03-56 00-00 90-FA 8B-4D 03-56 00-00 10-EE 8B-4D 03-56 00-00 05-00 00-00 00-00 00-00 50-2E 89-4D 03-56 00-00 68-2E 89-4D 03-56 00-00 68-2E 89-4D 03-56 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/golden/GoldenTest.cpp" line="67" status="run" result="completed" time="0.008" timestamp="2026-11-05T10:10:44.653" classname="Configs/Golden">
+      <properties>
+        <property name="golden.maxAbsDiff|HighPass" value="9.26231405e-06"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

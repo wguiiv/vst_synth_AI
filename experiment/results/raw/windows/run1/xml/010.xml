@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.199" timestamp="2026-11-03T01:02:12.417" name="AllTests">
+  <testsuite name="SpectralTranspose" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.199" timestamp="2026-11-03T01:02:12.417">
+    <testcase name="EachOscillatorFollowsItsPitchParameter" file="D:\a\vst_synth_AI\vst_synth_AI\frozen\tests\spectral\SpectralTest.cpp" line="71" status="run" result="completed" time="0.199" timestamp="2026-11-03T01:02:12.417" classname="SpectralTranspose">
+      <properties>
+        <property name="spectral.pitch|OSC1/-24" value="0.0142035187"/>
+        <property name="spectral.pitch|OSC1/-12" value="0.0304240041"/>
+        <property name="spectral.pitch|OSC1/-5" value="0.000999458712"/>
+        <property name="spectral.pitch|OSC1/7" value="0.000306609138"/>
+        <property name="spectral.pitch|OSC1/12" value="0.00763277093"/>
+        <property name="spectral.pitch|OSC1/24" value="0.00116375725"/>
+        <property name="spectral.pitch|OSC2/-24" value="0.0142035187"/>
+        <property name="spectral.pitch|OSC2/-12" value="0.0304240041"/>
+        <property name="spectral.pitch|OSC2/-5" value="0.000999458712"/>
+        <property name="spectral.pitch|OSC2/7" value="0.000306609138"/>
+        <property name="spectral.pitch|OSC2/12" value="0.00763277093"/>
+        <property name="spectral.pitch|OSC2/24" value="0.00116375725"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

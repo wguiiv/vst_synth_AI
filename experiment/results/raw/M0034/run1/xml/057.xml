@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="3.243" timestamp="2026-11-03T10:08:56.153" name="AllTests">
+  <testsuite name="Rates/SpectralFilter" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="3.243" timestamp="2026-11-03T10:08:56.153">
+    <testcase name="BandPassPeaksAtCutoff/48000" value_param="48000" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp" line="184" status="run" result="completed" time="3.243" timestamp="2026-11-03T10:08:56.153" classname="Rates/SpectralFilter">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:197&#x0A;Value of: within (tol::stopband, 2.0 * below, label + &quot;/below&quot;)&#x0A;  Actual: false (c500/below: spectral.stopband measured 0.09626513 dB, limit &gt;= 18 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:197
+Value of: within (tol::stopband, 2.0 * below, label + "/below")
+  Actual: false (c500/below: spectral.stopband measured 0.09626513 dB, limit >= 18 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:198&#x0A;Value of: within (tol::stopband, 2.0 * above, label + &quot;/above&quot;)&#x0A;  Actual: false (c500/above: spectral.stopband measured 0.770284338 dB, limit &gt;= 18 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:198
+Value of: within (tol::stopband, 2.0 * above, label + "/above")
+  Actual: false (c500/above: spectral.stopband measured 0.770284338 dB, limit >= 18 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:197&#x0A;Value of: within (tol::stopband, 2.0 * below, label + &quot;/below&quot;)&#x0A;  Actual: false (c1000/below: spectral.stopband measured 2.10445783 dB, limit &gt;= 18 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:197
+Value of: within (tol::stopband, 2.0 * below, label + "/below")
+  Actual: false (c1000/below: spectral.stopband measured 2.10445783 dB, limit >= 18 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:198&#x0A;Value of: within (tol::stopband, 2.0 * above, label + &quot;/above&quot;)&#x0A;  Actual: false (c1000/above: spectral.stopband measured 1.35246069 dB, limit &gt;= 18 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:198
+Value of: within (tol::stopband, 2.0 * above, label + "/above")
+  Actual: false (c1000/above: spectral.stopband measured 1.35246069 dB, limit >= 18 dB)
+Expected: true
+]]></failure>
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:197&#x0A;Value of: within (tol::stopband, 2.0 * below, label + &quot;/below&quot;)&#x0A;  Actual: false (c2000/below: spectral.stopband measured 1.24456781 dB, limit &gt;= 18 dB)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/spectral/SpectralTest.cpp:197
+Value of: within (tol::stopband, 2.0 * below, label + "/below")
+  Actual: false (c2000/below: spectral.stopband measured 1.24456781 dB, limit >= 18 dB)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="spectral.stopband|c500/below" value="0.09626513"/>
+        <property name="spectral.stopband|c500/above" value="0.770284338"/>
+        <property name="spectral.stopband|c1000/below" value="2.10445783"/>
+        <property name="spectral.stopband|c1000/above" value="1.35246069"/>
+        <property name="spectral.stopband|c2000/below" value="1.24456781"/>
+        <property name="spectral.stopband|c2000/above" value="44.9821544"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

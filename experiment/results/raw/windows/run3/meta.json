@@ -1,0 +1,13 @@
+{
+ "id": "windows",
+ "kind": "inofensiva",
+ "config": "ci",
+ "platform": "win32",
+ "run": 3,
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 0.0,
+ "started": "2026-11-03T01:02:43",
+ "finished": "2026-11-03T01:03:07"
+}

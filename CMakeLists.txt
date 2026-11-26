@@ -90,3 +90,18 @@ target_link_libraries (tapSynth
     PUBLIC
         juce::juce_recommended_config_flags
         juce::juce_recommended_lto_flags)
+
+# Automated audio tests (GoogleTest). Off with -DTAPSYNTH_BUILD_TESTS=OFF.
+option (TAPSYNTH_BUILD_TESTS "Build the tapSynth_tests executable" ON)
+
+if (TAPSYNTH_BUILD_TESTS)
+    enable_testing()
+    add_subdirectory (tests)
+endif()
+
+# The same pitch test in GoogleTest, Catch2 and doctest, for the study's framework comparison (needs the tests on)
+option (TAPSYNTH_BUILD_FRAMEWORK_COMPARISON "Build the framework comparison in experiment/frameworks" OFF)
+
+if (TAPSYNTH_BUILD_FRAMEWORK_COMPARISON AND TAPSYNTH_BUILD_TESTS)
+    add_subdirectory (experiment/frameworks)
+endif()

@@ -1,0 +1,20 @@
+# id: F26
+# category: envelope
+# origin: projeto
+# target: Source/SynthVoice.cpp
+# source: https://github.com/mtytel/helm/commit/39280059621c32d5dfb130cf5ce30c6b3fbc1e47
+# original-fix: O Helm nao repassava a taxa de amostragem ao arpejador, e a velocidade mudava com a taxa; a correcao adiciona HelmEngine::setSampleRate que a repassa.
+# adaptation: Em SynthVoice::prepareToPlay, o envelope do filtro nao recebe setSampleRate e fica com o padrao de 44,1 kHz do juce::ADSR.
+
+diff --git a/Source/SynthVoice.cpp b/Source/SynthVoice.cpp
+index e7dadb0..b3fa71f 100644
+--- a/Source/SynthVoice.cpp
++++ b/Source/SynthVoice.cpp
+@@ -46,7 +46,6 @@ void SynthVoice::prepareToPlay (double sampleRate, int samplesPerBlock, int outp
+     
+     currentSampleRate = sampleRate;
+     adsr.setSampleRate (sampleRate);
+-    filterAdsr.setSampleRate (sampleRate);
+     
+     juce::dsp::ProcessSpec spec;
+     spec.maximumBlockSize = samplesPerBlock;

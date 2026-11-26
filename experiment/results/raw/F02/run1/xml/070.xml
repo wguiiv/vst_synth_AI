@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.009" timestamp="2026-11-03T00:54:16.220" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.009" timestamp="2026-11-03T00:54:16.220">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Reverb" value_param="144-byte object &lt;40-88 9A-5F 98-55 00-00 06-00 00-00 00-00 00-00 52-65 76-65 72-62 00-73 65-64 00-6F 70-65 00-00 00-00 00-00 00-70 E7-40 00-02 00-00 98-55 00-00 00-00 00-00 00-00 F0-3F 00-00 00-00 98-55 00-00 ... A0-F9 99-5F 98-55 00-00 D0-16 9A-5F 98-55 00-00 02-00 00-00 00-00 00-00 A0-D9 DA-5B 98-55 00-00 54-65 6D-70 6F-72 61-6C B0-BD 97-5F 98-55 00-00 C8-BD 97-5F 98-55 00-00 C8-BD 97-5F 98-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.009" timestamp="2026-11-03T00:54:16.220" classname="Configs/Sanity">
+      <properties>
+        <property name="sanity.peak|Reverb/ch0" value="0.435875207"/>
+        <property name="sanity.audible|Reverb/ch0" value="0.435875207"/>
+        <property name="sanity.dc|Reverb/ch0" value="3.29331524e-05"/>
+        <property name="sanity.peak|Reverb/ch1" value="0.45253849"/>
+        <property name="sanity.audible|Reverb/ch1" value="0.45253849"/>
+        <property name="sanity.dc|Reverb/ch1" value="0.000247534772"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0.278" timestamp="2026-11-04T00:59:55.182" name="AllTests">
+  <testsuite name="Configs/Golden" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.278" timestamp="2026-11-04T00:59:55.183">
+    <testcase name="MatchesReference/Lfo" value_param="104-byte object &lt;20-9F C4-6A 5E-55 00-00 03-00 00-00 00-00 00-00 4C-66 6F-00 50-61 73-73 00-67 75-69 7A-2F 76-73 74-5F 73-79 6E-74 68-5F 00-00 00-00 78-70 65-72 A0-90 C5-6A 5E-55 00-00 20-8D C5-6A 5E-55 00-00 20-96 C5-6A 5E-55 00-00 06-00 00-00 00-00 00-00 30-69 C2-6A 5E-55 00-00 48-69 C2-6A 5E-55 00-00 48-69 C2-6A 5E-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/golden/GoldenTest.cpp" line="67" status="run" result="completed" time="0.278" timestamp="2026-11-04T00:59:55.183" classname="Configs/Golden">
+      <properties>
+        <property name="golden.maxAbsDiff|Lfo" value="0"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

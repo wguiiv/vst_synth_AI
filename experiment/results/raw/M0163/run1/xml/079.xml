@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.286" timestamp="2026-11-04T00:43:46.933" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.286" timestamp="2026-11-04T00:43:46.933">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Block4096" value_param="144-byte object &lt;C0-B8 A1-99 F1-55 00-00 09-00 00-00 00-00 00-00 42-6C 6F-63 6B-34 30-39 36-00 65-00 70-65 00-00 00-00 00-00 00-70 E7-40 00-10 00-00 00-00 00-00 00-00 00-00 00-00 F0-3F 03-00 00-00 00-00 00-00 ... F0-C3 A1-99 F1-55 00-00 F0-C3 A1-99 F1-55 00-00 01-00 00-00 00-00 00-00 D8-FE 08-65 F1-55 00-00 00-00 00-00 00-00 00-00 B0-E8 A1-99 F1-55 00-00 F8-E8 A1-99 F1-55 00-00 F8-E8 A1-99 F1-55 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.286" timestamp="2026-11-04T00:43:46.933" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126&#x0A;Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)&#x0A;  Actual: false (Block4096/ch1: sanity.peak measured 1.14799345 linear, limit &lt;= 1 linear)&#x0A;Expected: true&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:126
+Value of: within (tol::sanityPeak, peak (segment (out, ch)), label)
+  Actual: false (Block4096/ch1: sanity.peak measured 1.14799345 linear, limit <= 1 linear)
+Expected: true
+]]></failure>
+      <properties>
+        <property name="sanity.peak|Block4096/ch0" value="0.657970428"/>
+        <property name="sanity.audible|Block4096/ch0" value="0.655608058"/>
+        <property name="sanity.dc|Block4096/ch0" value="0.000103760351"/>
+        <property name="sanity.peak|Block4096/ch1" value="1.14799345"/>
+        <property name="sanity.audible|Block4096/ch1" value="1.14799345"/>
+        <property name="sanity.dc|Block4096/ch1" value="0.000134748465"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

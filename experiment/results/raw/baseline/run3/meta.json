@@ -1,0 +1,12 @@
+{
+ "id": "baseline",
+ "kind": "referencia",
+ "config": "release",
+ "run": 3,
+ "started": "2026-11-03T00:50:18",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 0.05353689193725586,
+ "finished": "2026-11-03T00:50:29"
+}

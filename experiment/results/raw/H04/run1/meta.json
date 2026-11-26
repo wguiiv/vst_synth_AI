@@ -1,0 +1,15 @@
+{
+ "id": "H04",
+ "kind": "inofensiva",
+ "config": "release",
+ "patch": "/home/guiz/vst_synth_AI/experiment/harmless/H04-lambda-nos-parametros-do-reverb.patch",
+ "origin": "projeto",
+ "category": "",
+ "run": 1,
+ "started": "2026-11-03T01:23:27",
+ "frozen_commit": "6d9da97af80792479d8881e977ffa8c21c3b7c69",
+ "applied": true,
+ "built": true,
+ "build_s": 88.10876202583313,
+ "finished": "2026-11-03T01:25:08"
+}

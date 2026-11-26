@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" time="0.169" timestamp="2026-11-03T01:03:00.975" name="AllTests">
+  <testsuite name="Configs/Sanity" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="0.168" timestamp="2026-11-03T01:03:00.975">
+    <testcase name="OutputIsFiniteBoundedAudibleAndCentred/Block1" value_param="144-byte object &lt;40-08 59-66 1F-56 00-00 06-00 00-00 00-00 00-00 42-6C 6F-63 6B-31 00-30 30-00 65-00 70-65 00-00 00-00 00-00 00-70 E7-40 01-00 00-00 1F-56 00-00 00-00 00-00 00-00 F0-3F 00-00 00-00 1F-56 00-00 ... C0-E5 58-66 1F-56 00-00 C0-E5 58-66 1F-56 00-00 01-00 00-00 00-00 00-00 A0-B9 15-54 1F-56 00-00 90-5D E2-53 FD-7F 00-00 00-57 59-66 1F-56 00-00 48-57 59-66 1F-56 00-00 48-57 59-66 1F-56 00-00&gt;" file="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp" line="114" status="run" result="completed" time="0.168" timestamp="2026-11-03T01:03:00.975" classname="Configs/Sanity">
+      <failure message="/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:119&#x0A;Value of: allFinite (out)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;output has NaN or infinity&#x0A;" type=""><![CDATA[/home/guiz/vst_synth_AI/experiment/work/src/tests/sanity/SanityTest.cpp:119
+Value of: allFinite (out)
+  Actual: false
+Expected: true
+output has NaN or infinity
+]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

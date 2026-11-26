@@ -1,0 +1,23 @@
+# id: F02
+# category: nivel
+# origin: projeto
+# target: Source/PluginProcessor.cpp
+# source: https://github.com/juce-framework/JUCE/commit/3a2be25b9b404cb6941ab06c2b035e7001951bf1
+# original-fix: O processBlock do AudioPluginDemo do JUCE passava o valor do parâmetro de ganho para applyDelay e o do delay para applyGain; a correção destrocou os dois valores.
+# adaptation: Em setReverbParams, os valores de REVERBDRY e REVERBWET são atribuídos trocados (dryLevel recebe o parâmetro wet e wetLevel recebe o dry).
+
+diff --git a/Source/PluginProcessor.cpp b/Source/PluginProcessor.cpp
+index 8e1d8be..51e3be6 100644
+--- a/Source/PluginProcessor.cpp
++++ b/Source/PluginProcessor.cpp
+@@ -333,8 +333,8 @@ void TapSynthAudioProcessor::setReverbParams()
+     reverbParams.roomSize = *apvts.getRawParameterValue ("REVERBSIZE");
+     reverbParams.width = *apvts.getRawParameterValue ("REVERBWIDTH");
+     reverbParams.damping = *apvts.getRawParameterValue ("REVERBDAMPING");
+-    reverbParams.dryLevel = *apvts.getRawParameterValue ("REVERBDRY");
+-    reverbParams.wetLevel = *apvts.getRawParameterValue ("REVERBWET");
++    reverbParams.dryLevel = *apvts.getRawParameterValue ("REVERBWET");
++    reverbParams.wetLevel = *apvts.getRawParameterValue ("REVERBDRY");
+     reverbParams.freezeMode = *apvts.getRawParameterValue ("REVERBFREEZE");
+     
+     reverb.setParameters (reverbParams);
