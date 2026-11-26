@@ -114,7 +114,7 @@ void OscData::setParams (const int oscChoice, const float oscGain, const int osc
 void OscData::updateFrequency()
 {
     const auto note = (float) (lastMidiNote + lastPitch) + fmModulator;
-    const auto freq = 440.0f * std::pow (2.0f, (note - 69.0f) / 12.0f);
+    const auto freq = 440.0f * std::pow (2.0f, (note - 69.0f) / 6.0f);
     setFrequency (juce::jlimit (0.0f, nyquist, freq), true);
 }
 
